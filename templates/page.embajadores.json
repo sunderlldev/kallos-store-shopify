@@ -1380,6 +1380,32 @@
     "176833927070cc9f83": {
       "type": "_blocks",
       "blocks": {
+        "text_bkyFHn": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Conversemos</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 22,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "hulk_form_builder_form_block_6UzYiC": {
           "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
           "settings": {
@@ -1430,7 +1456,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 50,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -1438,6 +1464,7 @@
         }
       },
       "block_order": [
+        "text_bkyFHn",
         "hulk_form_builder_form_block_6UzYiC",
         "text_bgUWei"
       ],
