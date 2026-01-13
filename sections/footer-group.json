@@ -184,6 +184,9 @@
         "group_H6VpwJ",
         "group_7GTdJh"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.email-signup__input::placeholder {font-size: 14px; }}"
+      ],
       "name": "t:names.footer",
       "settings": {
         "section_width": "page-width",
