@@ -468,12 +468,43 @@
         "padding-block-start": 52,
         "padding-block-end": 52
       }
+    },
+    "custom_slider_ehyfyE": {
+      "type": "custom-slider",
+      "blocks": {
+        "banner_wrKN7w": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/banner_tik_tok.jpg"
+          }
+        },
+        "banner_QqgfVT": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/minoxidilCrema.jpg"
+          }
+        },
+        "banner_r6Yeyp": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/mock_up.png"
+          }
+        }
+      },
+      "block_order": [
+        "banner_wrKN7w",
+        "banner_QqgfVT",
+        "banner_r6Yeyp"
+      ],
+      "name": "Slider Responsive",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "hero_F8d9WU",
     "section_34WEf4",
-    "section_LfaJ78"
+    "section_LfaJ78",
+    "custom_slider_ehyfyE"
   ]
 }
