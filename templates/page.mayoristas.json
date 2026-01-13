@@ -249,8 +249,8 @@
             "thickness": 2,
             "corner_radius": "rounded",
             "width_percent": 40,
-            "padding-block-start": 60,
-            "padding-block-end": 60
+            "padding-block-start": 30,
+            "padding-block-end": 100
           },
           "blocks": {}
         },
