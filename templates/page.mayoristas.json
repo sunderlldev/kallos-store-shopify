@@ -127,6 +127,20 @@
         "padding-block-end": 66
       }
     },
+    "divider_GkWQxV": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "page-width",
+        "thickness": 2,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 45,
+        "padding-block-end": 16
+      }
+    },
     "section_34WEf4": {
       "type": "section",
       "blocks": {
@@ -158,7 +172,7 @@
             "border_opacity": 100,
             "border_radius": 32,
             "toggle_overlay": true,
-            "overlay_color": "#dfdfdf58",
+            "overlay_color": "#ac9651e8",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "link": "",
@@ -228,6 +242,18 @@
             "text_Dz3z7f"
           ]
         },
+        "divider_qfA8M6": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 2,
+            "corner_radius": "rounded",
+            "width_percent": 40,
+            "padding-block-start": 25,
+            "padding-block-end": 25
+          },
+          "blocks": {}
+        },
         "group_8bE4Fc": {
           "type": "group",
           "name": "t:names.group",
@@ -272,20 +298,20 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3><strong>Marca real. Negocios reales.</strong></h3>",
+                "text": "<h4><strong>Marca real. Negocios reales.</strong></h4>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "2rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": true,
-                "background_color": "#dfdfdf58",
+                "background_color": "#000000",
                 "corner_radius": 32,
                 "padding-block-start": 20,
                 "padding-block-end": 20,
@@ -302,6 +328,7 @@
       },
       "block_order": [
         "group_TydJND",
+        "divider_qfA8M6",
         "group_8bE4Fc"
       ],
       "name": "t:names.custom_section",
@@ -317,7 +344,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-0137353e-3189-4ab1-bc20-e801710b2b92",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -329,7 +356,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 70,
+        "padding-block-start": 35,
         "padding-block-end": 0
       }
     },
@@ -369,14 +396,14 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "3rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -394,14 +421,14 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "wrap": "balance",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -641,6 +668,20 @@
         "mobile_height": 350
       }
     },
+    "divider_3dMBa7": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "page-width",
+        "thickness": 2,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 30,
+        "padding-block-end": 16
+      }
+    },
     "section_LfaJ78": {
       "type": "section",
       "blocks": {
@@ -714,7 +755,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -728,6 +769,20 @@
         "gradient_direction": "to top",
         "padding-block-start": 52,
         "padding-block-end": 52
+      }
+    },
+    "divider_dCamxW": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "page-width",
+        "thickness": 2,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
       }
     },
     "section_RM9QKw": {
@@ -1446,10 +1501,13 @@
   "order": [
     "main",
     "hero_F8d9WU",
+    "divider_GkWQxV",
     "section_34WEf4",
     "slideshow_H9PELV",
     "custom_slider_ehyfyE",
+    "divider_3dMBa7",
     "section_LfaJ78",
+    "divider_dCamxW",
     "section_RM9QKw"
   ]
 }
