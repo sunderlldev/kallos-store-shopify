@@ -596,7 +596,7 @@
                   "settings": {
                     "icon": "facebook",
                     "image_upload": "shopify://shop_images/gift_16774126.png",
-                    "width": 64,
+                    "width": 56,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -747,7 +747,7 @@
                   "settings": {
                     "icon": "price_tag",
                     "image_upload": "shopify://shop_images/usd-circle_7661489.png",
-                    "width": 64,
+                    "width": 56,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -898,7 +898,7 @@
                   "settings": {
                     "icon": "map_pin",
                     "image_upload": "shopify://shop_images/chat-arrow-grow_5528023.png",
-                    "width": 64,
+                    "width": 56,
                     "link": "",
                     "open_in_new_tab": false
                   },
