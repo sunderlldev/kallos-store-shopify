@@ -483,6 +483,20 @@
         "padding-block-end": 0
       }
     },
+    "divider_tcnFRH": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "page-width",
+        "thickness": 2,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 36,
+        "padding-block-end": 36
+      }
+    },
     "section_WrxbQ4": {
       "type": "section",
       "blocks": {
@@ -1046,7 +1060,7 @@
         "padding-block-end": 20
       }
     },
-    "divider_tcnFRH": {
+    "divider_FD6b8d": {
       "type": "divider",
       "name": "t:names.divider_section",
       "settings": {
@@ -1184,8 +1198,9 @@
     "section_iYn9QA",
     "slideshow_VAVbWh",
     "section_ae8eMt",
-    "section_WrxbQ4",
     "divider_tcnFRH",
+    "section_WrxbQ4",
+    "divider_FD6b8d",
     "section_cFf7hE",
     "divider_9pUaUg",
     "divider_E6dpaL"
