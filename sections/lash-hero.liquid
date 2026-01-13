@@ -91,48 +91,56 @@
 
   @media screen and (min-width: 769px) {
     .lash-grid-wrapper {
-      flex-direction: row !important;
+      display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      text-align: left;
-      gap: 50px;
+      gap: 60px;
     }
 
     .lash-image-column {
-      width: 50% !important;
-      order: 1;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .lash-text-column {
-      width: 50% !important;
-      align-items: flex-start !important;
-      text-align: left !important;
-      order: 2;
+      width: 50%;
+      align-items: flex-start;
+      text-align: left;
     }
 
     .lash-description {
-      margin: 15px 0 !important;
-    }
-
-    .lash-btn-wrapper {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start !important;
+      margin: 20px 0;
     }
 
     .lash-features {
-        margin: 25px 0 !important;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 30px 0;
+      width: 100%;
+    }
+
+    .lash-btn-wrapper {
+      display: flex;
+      justify-content: flex-start;
     }
   }
 
-  .lash-badge, .lash-badge p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #151515;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
+  .lash-badge {
+  font-size: 16px;
+  color: #151515;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
   }
+
+  .lash-badge p {
+    margin: 0;
+  }
+
 
   .lash-main-title {
     font-size: clamp(34px, 5vw, 52px);
