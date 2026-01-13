@@ -1,0 +1,119 @@
+{%- liquid
+  assign slides = section.blocks | map: 'settings' | map: 'image'
+  assign total_slides = slides.size
+-%}
+
+<div class="banner-container">
+  <div class="slider" id="slider-{{ section.id }}">
+    {% for slide in slides %}
+      <div class="slick-slide">
+        <img src="{{ slide | image_url: width: 1200 }}" alt="Slide" width="1200" height="800" style="width: 100%; height: auto; display: block;" />
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Flechas -->
+  <button class="slider-prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 18px; z-index: 10;">‹</button>
+  <button class="slider-next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 18px; z-index: 10;">›</button>
+</div>
+
+<style>
+  .banner-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .slider .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  .hidden-desktop {
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    .hidden-mobile {
+      display: block !important; /* Mostrar en móvil */
+    }
+    .hidden-desktop {
+      display: none !important; /* Ocultar en móvil */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hidden-mobile {
+      display: none !important; /* Ocultar en escritorio */
+    }
+    .hidden-desktop {
+      display: block !important; /* Mostrar en escritorio */
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+
+    let currentIndex = 0;
+
+    // Función para actualizar el slider
+    function updateSlider() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Botón anterior
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    });
+
+    // Botón siguiente
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Slider Responsive",
+  "class": "desktop-mobile-slider-banner",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Imagen del Banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider Responsive",
+      "category": "Image",
+      "blocks": [
+        { "type": "banner" }
+      ]
+    }
+  ]
+}
+{% endschema %}
