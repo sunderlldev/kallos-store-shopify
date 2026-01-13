@@ -428,7 +428,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "balance",
-                "color": "var(--color-foreground-heading)",
+                "color": "var(--color-foreground)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -445,7 +445,7 @@
             "text_6MCjiF"
           ]
         },
-        "slide_Lm3xej": {
+        "slide_nYwM6M": {
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
@@ -470,7 +470,7 @@
             "padding-inline-end": 48
           },
           "blocks": {
-            "text_7M9TNK": {
+            "text_CfABik": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
@@ -478,14 +478,14 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "3rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -496,20 +496,20 @@
               },
               "blocks": {}
             },
-            "text_GGDhLU": {
+            "text_TpjUiM": {
               "type": "text",
               "settings": {
                 "text": "<p>Te presentamos nuestros productos más recientes, diseñados especialmente para la temporada. ¡Compra tus favoritos antes de que se agoten!</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "wrap": "pretty",
+                "wrap": "balance",
                 "color": "var(--color-foreground)",
                 "background": false,
                 "background_color": "#00000026",
@@ -523,11 +523,11 @@
             }
           },
           "block_order": [
-            "text_7M9TNK",
-            "text_GGDhLU"
+            "text_CfABik",
+            "text_TpjUiM"
           ]
         },
-        "slide_RhBTzk": {
+        "slide_3UbUhY": {
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
@@ -552,7 +552,7 @@
             "padding-inline-end": 48
           },
           "blocks": {
-            "text_k6a7wP": {
+            "text_nWXz3x": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
@@ -560,14 +560,14 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "3rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -578,20 +578,20 @@
               },
               "blocks": {}
             },
-            "text_WRmMJx": {
+            "text_exxigC": {
               "type": "text",
               "settings": {
                 "text": "<p>Te presentamos nuestros productos más recientes, diseñados especialmente para la temporada. ¡Compra tus favoritos antes de que se agoten!</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "wrap": "pretty",
+                "wrap": "balance",
                 "color": "var(--color-foreground)",
                 "background": false,
                 "background_color": "#00000026",
@@ -605,15 +605,15 @@
             }
           },
           "block_order": [
-            "text_k6a7wP",
-            "text_WRmMJx"
+            "text_nWXz3x",
+            "text_exxigC"
           ]
         }
       },
       "block_order": [
         "slide_FJkETj",
-        "slide_Lm3xej",
-        "slide_RhBTzk"
+        "slide_nYwM6M",
+        "slide_3UbUhY"
       ],
       "name": "t:names.slideshow_full_frame",
       "settings": {
