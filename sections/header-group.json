@@ -61,7 +61,7 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
-            "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
+            "color_scheme": "scheme-e609c0aa-6783-4864-88fe-cb66aa0b3eb5",
             "type_font_primary_size": "1.125rem",
             "menu_font_style": "inverse",
             "type_font_primary_link": "body",
@@ -99,7 +99,7 @@
         "divider_width": 0,
         "divider_size": "page-width",
         "border_width": 1,
-        "color_scheme_top": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
+        "color_scheme_top": "scheme-e609c0aa-6783-4864-88fe-cb66aa0b3eb5",
         "color_scheme_bottom": "",
         "color_scheme_transparent": "scheme-6",
         "enable_transparent_header_home": false,
