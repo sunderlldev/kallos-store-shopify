@@ -622,7 +622,7 @@
         "full_frame_on_mobile": false,
         "slideshow_gap": 12,
         "corner_radius": 0,
-        "slide_height": "small",
+        "slide_height": "medium",
         "content_position": "on-media",
         "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
         "icons_style": "chevron_large",
