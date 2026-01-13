@@ -475,19 +475,19 @@
         "banner_wrKN7w": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/banner_tik_tok.jpg"
+            "image_desktop": "shopify://shop_images/1768069055Rapi-Bundles-variante2.jpg"
           }
         },
         "banner_QqgfVT": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/minoxidilCrema.jpg"
+            "image_desktop": "shopify://shop_images/minoxidilBarbaBeneficios.jpg"
           }
         },
         "banner_r6Yeyp": {
           "type": "banner",
           "settings": {
-            "image": "shopify://shop_images/mock_up.png"
+            "image_desktop": "shopify://shop_images/minoxidilBarbaValoraciones.jpg"
           }
         }
       },
@@ -497,7 +497,10 @@
         "banner_r6Yeyp"
       ],
       "name": "Slider Responsive",
-      "settings": {}
+      "settings": {
+        "desktop_height": 500,
+        "mobile_height": 400
+      }
     }
   },
   "order": [
