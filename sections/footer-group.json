@@ -155,7 +155,7 @@
                 "width": "fill",
                 "custom_width": 100,
                 "inherit_color_scheme": false,
-                "color_scheme": "scheme-1",
+                "color_scheme": "scheme-5",
                 "heading": "",
                 "heading_preset": "h3",
                 "border_style": "all",
@@ -191,7 +191,7 @@
       "settings": {
         "section_width": "page-width",
         "gap": 20,
-        "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
+        "color_scheme": "scheme-5",
         "padding-block-start": 30,
         "padding-block-end": 0
       }
@@ -200,7 +200,7 @@
       "type": "divider",
       "name": "t:names.divider_section",
       "settings": {
-        "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
+        "color_scheme": "scheme-5",
         "section_width": "full-width",
         "thickness": 1,
         "corner_radius": "square",
@@ -714,7 +714,7 @@
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 20,
-        "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -734,7 +734,7 @@
       "type": "divider",
       "name": "t:names.divider_section",
       "settings": {
-        "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
+        "color_scheme": "scheme-5",
         "section_width": "full-width",
         "thickness": 1,
         "corner_radius": "square",
@@ -765,7 +765,7 @@
         "section_width": "page-width",
         "gap": 0,
         "divider_thickness": 0,
-        "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
+        "color_scheme": "scheme-5",
         "padding-block-start": 10,
         "padding-block-end": 25
       }
