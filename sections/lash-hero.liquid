@@ -34,7 +34,7 @@
                     class="custom-icon-img"
                   >
                 {% else %}
-                  <span class="dot-placeholder"></span>
+                  <span class="dot-placeholder" style="background-color: {{ section.settings.icon_color }};"></span>
                 {% endif %}
               </span>
               <p>{{ block.settings.text }}</p>
@@ -159,7 +159,6 @@
   .dot-placeholder {
     width: 8px;
     height: 8px;
-    background: #8B0000;
     border-radius: 50%;
   }
 
@@ -186,9 +185,9 @@
   }
 
   .lash-btn:hover {
-    background: #8B0000;
+    background: #AC9651;
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 15px rgba(172, 150, 81, 0.4);
   }
 
   @media (max-width: 768px) {
@@ -202,6 +201,7 @@
   "name": "Lash Plus Hero",
   "settings": [
     { "type": "color", "id": "bg_color", "label": "Color de Fondo", "default": "#F8F5F4" },
+    { "type": "color", "id": "icon_color", "label": "Color de Iconos/Puntos", "default": "#AC9651" },
     { "type": "image_picker", "id": "floating_image", "label": "Imagen Flotante (PNG)" },
     { "type": "text", "id": "top_title", "label": "Título Superior", "default": "¡NUEVO LANZAMIENTO!" },
     { "type": "text", "id": "title", "label": "Título Principal", "default": "LASH+ by Kallos" },
