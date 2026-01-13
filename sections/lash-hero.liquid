@@ -5,7 +5,7 @@
         {% if section.settings.floating_image != blank %}
           <div class="lash-floating-wrapper">
             <img
-              src="{{ section.settings.floating_image | image_url: width: 600 }}"
+              src="{{ section.settings.floating_image | image_url: width: 800 }}"
               alt="{{ section.settings.title }}"
               class="lash-img-animate"
               loading="lazy"
@@ -16,7 +16,7 @@
 
       <div class="lash-text-column">
         {% if section.settings.top_title != blank %}
-          <span class="lash-badge">{{ section.settings.top_title }}</span>
+          <div class="lash-badge">{{ section.settings.top_title }}</div>
         {% endif %}
 
         <h2 class="lash-main-title">{{ section.settings.title }}</h2>
@@ -64,8 +64,9 @@
 <style>
   #lash-{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
-    padding: 60px 20px;
+    padding: 80px 20px;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
   }
 
   .lash-container {
@@ -88,48 +89,53 @@
     text-align: center;
   }
 
-  @media (min-width: 769px) {
+  @media screen and (min-width: 769px) {
     .lash-grid-wrapper {
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: row !important;
+      align-items: center;
+      justify-content: space-between;
       text-align: left;
-      gap: 60px;
+      gap: 50px;
     }
 
     .lash-image-column {
-      width: 45%;
-      justify-content: center;
+      width: 50% !important;
+      order: 1;
     }
 
     .lash-text-column {
-      width: 55%;
-      align-items: flex-start;
-      text-align: left;
+      width: 50% !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+      order: 2;
     }
 
     .lash-description {
-      margin-left: 0;
-      margin-right: auto;
+      margin: 15px 0 !important;
     }
 
     .lash-btn-wrapper {
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-start !important;
+    }
+
+    .lash-features {
+        margin: 25px 0 !important;
     }
   }
 
-  .lash-badge {
+  .lash-badge, .lash-badge p {
     font-size: 16px;
     font-weight: 600;
     color: #151515;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin: 0 0 10px 0;
   }
 
   .lash-main-title {
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: clamp(34px, 5vw, 52px);
     font-weight: 600;
     margin: 0;
     color: #121212;
@@ -137,33 +143,25 @@
   }
 
   .lash-description {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
     font-style: italic;
     color: #3D3D3D;
-    max-width: 500px;
-    line-height: 1.5;
-    margin-top: 10px;
+    max-width: 550px;
+    line-height: 1.6;
+    margin: 15px auto;
   }
 
-  .lash-description strong, .lash-description b,
-  .feature-text strong, .feature-text b {
+  .lash-description strong, .feature-text strong {
     font-weight: 700 !important;
-    font-style: normal;
-  }
-
-  .lash-floating-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
 
   .lash-img-animate {
-    max-width: 350px;
-    width: 100%;
+    max-width: 100%;
+    width: 400px;
     height: auto;
     animation: lashFloat 4.5s ease-in-out infinite;
-    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.08));
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));
   }
 
   @keyframes lashFloat {
@@ -175,7 +173,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 30px 0;
+    margin: 30px auto;
     width: fit-content;
   }
 
@@ -192,7 +190,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin-top: 3px;
+    margin-top: 4px;
   }
 
   .custom-icon-img {
@@ -218,31 +216,25 @@
   .lash-btn {
     background: #121212;
     color: #fff;
-    padding: 14px 40px;
+    padding: 15px 45px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   }
 
   .lash-btn:hover {
     background: #AC9651;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(172, 150, 81, 0.3);
   }
 
   @media (max-width: 768px) {
-    .lash-features {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .lash-img-animate {
-      max-width: 280px;
-    }
+    .lash-features { margin-left: auto; margin-right: auto; }
+    .lash-img-animate { max-width: 300px; }
   }
 </style>
 
@@ -253,7 +245,12 @@
     { "type": "color", "id": "bg_color", "label": "Color de Fondo", "default": "#F8F5F4" },
     { "type": "color", "id": "icon_color", "label": "Color de Iconos/Puntos", "default": "#AC9651" },
     { "type": "image_picker", "id": "floating_image", "label": "Imagen Principal" },
-    { "type": "text", "id": "top_title", "label": "Título Superior", "default": "¡NUEVO LANZAMIENTO!" },
+    {
+      "type": "richtext",
+      "id": "top_title",
+      "label": "Título Superior (Enriquecido)",
+      "default": "<p>¡NUEVO LANZAMIENTO!</p>"
+    },
     { "type": "text", "id": "title", "label": "Título Principal", "default": "LASH+ by Kallos" },
     {
       "type": "richtext",
