@@ -1809,43 +1809,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "contact_form_aRPUxP": {
-          "type": "contact-form",
-          "settings": {
-            "width": "custom",
-            "custom_width": 50,
-            "width_mobile": "custom",
-            "custom_width_mobile": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "submit-button": {
-              "type": "contact-form-submit-button",
-              "static": true,
-              "settings": {
-                "label": "Enviar",
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": []
         }
       },
       "block_order": [
         "text_hrPEwN",
-        "text_DLKAJE",
-        "contact_form_aRPUxP"
+        "text_DLKAJE"
       ],
       "name": "t:names.contact_form",
       "settings": {
