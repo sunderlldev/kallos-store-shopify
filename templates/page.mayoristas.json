@@ -53,7 +53,7 @@
           "settings": {
             "text": "<h5>Productos dermocosméticos con alta rotación, márgenes atractivos y una marca en rápido crecimiento.</h5>",
             "width": "fit-content",
-            "max_width": "none",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
