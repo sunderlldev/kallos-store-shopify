@@ -672,7 +672,7 @@
                     "text_p7PrPB": {
                       "type": "text",
                       "settings": {
-                        "text": "<h4>Productos Kallos</h4>",
+                        "text": "<h4><strong>Productos Kallos</strong></h4>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -823,7 +823,7 @@
                     "text_a7G8MR": {
                       "type": "text",
                       "settings": {
-                        "text": "<h4>Comisiones y beneficios</h4>",
+                        "text": "<h4><strong>Comisiones y beneficios</strong></h4>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -974,7 +974,7 @@
                     "text_emAWJW": {
                       "type": "text",
                       "settings": {
-                        "text": "<h4>Exposición y crecimiento</h4>",
+                        "text": "<h4><strong>Exposición y crecimiento</strong></h4>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
