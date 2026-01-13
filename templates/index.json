@@ -81,7 +81,7 @@
       "name": "Destacados editorial",
       "settings": {
         "collection": "destacados",
-        "title": "Lo más destacado en Kallos Store",
+        "title": "Lo más destacado de Kallos",
         "title_weight": "700",
         "price_weight": "600",
         "card_bg": "#ac9651"
@@ -393,7 +393,7 @@
         "section_height_custom": 50,
         "color_scheme": "scheme-0137353e-3189-4ab1-bc20-e801710b2b92",
         "toggle_overlay": true,
-        "overlay_color": "#000000fb",
+        "overlay_color": "#000000fa",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
