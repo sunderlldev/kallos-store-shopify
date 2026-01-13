@@ -897,8 +897,7 @@
                 "icon_E4hfyM": {
                   "type": "icon",
                   "settings": {
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/gift_16774126.png",
+                    "icon": "box",
                     "width": 32,
                     "link": "",
                     "open_in_new_tab": false
@@ -1048,8 +1047,7 @@
                 "icon_EjXn9w": {
                   "type": "icon",
                   "settings": {
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/usd-circle_7661489.png",
+                    "icon": "truck",
                     "width": 32,
                     "link": "",
                     "open_in_new_tab": false
@@ -1199,8 +1197,7 @@
                 "icon_i7Mmng": {
                   "type": "icon",
                   "settings": {
-                    "icon": "none",
-                    "image_upload": "shopify://shop_images/chat-arrow-grow_5528023.png",
+                    "icon": "map_pin",
                     "width": 32,
                     "link": "",
                     "open_in_new_tab": false
