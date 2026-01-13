@@ -1,118 +1,166 @@
 {%- liquid
-  assign slides = section.blocks | map: 'settings' | map: 'image'
-  assign total_slides = slides.size
+  assign slider_id = 'slider-' | append: section.id
 -%}
 
-<div class="banner-container">
-  <div class="slider" id="slider-{{ section.id }}">
-    {% for slide in slides %}
-      <div class="slick-slide">
-        <img src="{{ slide | image_url: width: 1200 }}" alt="Slide" width="1200" height="800" style="width: 100%; height: auto; display: block;" />
-      </div>
-    {% endfor %}
-  </div>
+<div class="banner-wrapper-{{ section.id }}" style="--desktop-height: {{ section.settings.desktop_height }}px; --mobile-height: {{ section.settings.mobile_height }}px;">
+  <div class="banner-container">
+    <div class="slider-track" id="{{ slider_id }}">
+      {% for block in section.blocks %}
+        <div class="slide-item" {{ block.shopify_attributes }}>
+          {% if block.settings.image_desktop != blank %}
+            <img src="{{ block.settings.image_desktop | image_url: width: 2000 }}" 
+                 class="img-desktop" 
+                 alt="{{ block.settings.image_desktop.alt }}" 
+                 loading="lazy">
+          {% endif %}
+          
+          {% if block.settings.image_mobile != blank %}
+            <img src="{{ block.settings.image_mobile | image_url: width: 800 }}" 
+                 class="img-mobile" 
+                 alt="{{ block.settings.image_mobile.alt }}" 
+                 loading="lazy">
+          {% else %}
+             {% comment %} Fallback si no hay imagen móvil {% endcomment %}
+             <img src="{{ block.settings.image_desktop | image_url: width: 800 }}" class="img-mobile" alt="Slide">
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
 
-  <!-- Flechas -->
-  <button class="slider-prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 18px; z-index: 10;">‹</button>
-  <button class="slider-next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 18px; z-index: 10;">›</button>
+    {% if section.blocks.size > 1 %}
+      <button class="slider-arrow prev" aria-label="Anterior">‹</button>
+      <button class="slider-arrow next" aria-label="Siguiente">›</button>
+    {% endif %}
+  </div>
 </div>
 
 <style>
-  .banner-container {
+  .banner-wrapper-{{ section.id }} {
     width: 100%;
+    overflow: hidden;
     position: relative;
   }
-
-  .slider .slick-slide {
-    display: flex;
-    justify-content: center;
-  }
-
-  .slider img {
+  .banner-container {
+    position: relative;
     width: 100%;
-    height: auto;
+    height: var(--desktop-height);
   }
-
-  .hidden-mobile {
-    display: none;
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
   }
-
-  .hidden-desktop {
+  .slide-item {
+    min-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  .slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegura que la imagen llene el alto definido */
     display: block;
   }
+  
+  .img-mobile { display: none; }
+  .img-desktop { display: block; }
+
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.8);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 24px;
+    transition: 0.3s;
+  }
+  .slider-arrow:hover { background: #fff; scale: 1.1; }
+  .prev { left: 20px; }
+  .next { right: 20px; }
 
   @media (max-width: 767px) {
-    .hidden-mobile {
-      display: block !important; /* Mostrar en móvil */
-    }
-    .hidden-desktop {
-      display: none !important; /* Ocultar en móvil */
-    }
-  }
-
-  @media (min-width: 768px) {
-    .hidden-mobile {
-      display: none !important; /* Ocultar en escritorio */
-    }
-    .hidden-desktop {
-      display: block !important; /* Mostrar en escritorio */
-    }
+    .banner-container { height: var(--mobile-height); }
+    .img-desktop { display: none; }
+    .img-mobile { display: block; }
+    .slider-arrow { width: 35px; height: 35px; }
   }
 </style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.querySelector('.slider');
-    const prevBtn = document.querySelector('.slider-prev');
-    const nextBtn = document.querySelector('.slider-next');
+    const track = document.getElementById('{{ slider_id }}');
+    const slides = track.querySelectorAll('.slide-item');
+    const nextBtn = track.parentElement.querySelector('.next');
+    const prevBtn = track.parentElement.querySelector('.prev');
+    
+    if (!track || slides.length <= 1) return;
 
-    let currentIndex = 0;
+    let index = 0;
 
-    // Función para actualizar el slider
-    function updateSlider() {
-      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    function move(direction) {
+      index = (index + direction + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    // Botón anterior
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      updateSlider();
-    });
+    nextBtn.addEventListener('click', () => move(1));
+    prevBtn.addEventListener('click', () => move(-1));
 
-    // Botón siguiente
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateSlider();
-    });
+    // Auto-play opcional
+    setInterval(() => move(1), 6000);
   });
 </script>
 
 {% schema %}
 {
-  "name": "Slider Responsive",
-  "class": "desktop-mobile-slider-banner",
-  "tag": "section",
-  "settings": [],
+  "name": "Slider Responsive Pro",
+  "settings": [
+    {
+      "type": "range",
+      "id": "desktop_height",
+      "min": 300,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Altura Desktop",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "mobile_height",
+      "min": 200,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "label": "Altura Móvil",
+      "default": 400
+    }
+  ],
   "blocks": [
     {
       "type": "banner",
-      "name": "Imagen del Banner",
+      "name": "Imagen",
       "settings": [
         {
           "type": "image_picker",
-          "id": "image",
-          "label": "Imagen"
+          "id": "image_desktop",
+          "label": "Imagen Escritorio"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Imagen Móvil (Opcional)"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Slider Responsive",
-      "category": "Image",
-      "blocks": [
-        { "type": "banner" }
-      ]
+      "name": "Slider Responsive Pro"
     }
   ]
 }
