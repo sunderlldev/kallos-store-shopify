@@ -1406,7 +1406,7 @@
           },
           "blocks": {}
         },
-        "hulk_form_builder_form_block_6UzYiC": {
+        "hulk_form_builder_form_block_9QY4t8": {
           "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
           "settings": {
             "form_uuid": "JLqj7zXUHR4HRaYKru_WKA",
@@ -1465,7 +1465,7 @@
       },
       "block_order": [
         "text_bkyFHn",
-        "hulk_form_builder_form_block_6UzYiC",
+        "hulk_form_builder_form_block_9QY4t8",
         "text_bgUWei"
       ],
       "settings": {
