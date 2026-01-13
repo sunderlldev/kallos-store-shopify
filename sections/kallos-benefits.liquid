@@ -1,0 +1,212 @@
+<section class="kallos-science">
+  <div class="kallos-science-wrapper {% if section.settings.image_position == 'right' %}image-reversed{% endif %}">
+    <div class="kallos-science-media">
+      {% if section.settings.image != blank %}
+        {%- assign img = section.settings.image -%}
+        <img
+          src="{{ img | image_url: width: 1200 }}"
+          alt="{{ section.settings.title | escape }}"
+          loading="lazy"
+          width="1200"
+          height="{{ 1200 | divided_by: img.aspect_ratio | round }}"
+          class="kallos-science-img"
+        >
+      {% endif %}
+    </div>
+
+    <div class="kallos-science-content">
+      <h2 class="kallos-science-title">
+        {{ section.settings.title }}
+      </h2>
+
+      <div class="kallos-science-text">
+        {{ section.settings.text }}
+      </div>
+
+      <div class="kallos-science-features">
+        {% for block in section.blocks %}
+          <div class="kallos-science-feature">
+            <div class="kallos-science-icon">
+              {% if block.settings.icon != blank %}
+                <img
+                  src="{{ block.settings.icon | image_url: width: 80 }}"
+                  alt=""
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                >
+              {% endif %}
+            </div>
+            <p class="kallos-science-label">
+              {{ block.settings.label }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .kallos-science {
+    padding: 30px 0;
+    background: #fff;
+  }
+
+  .kallos-science-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 0 6vw;
+  }
+
+  .kallos-science-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 32px;
+    display: block;
+  }
+
+  .kallos-science-title {
+    font-family: 'Cormorant CS', serif;
+    font-size: 3rem;
+    margin-bottom: 32px;
+  }
+
+  .kallos-science-text {
+    font-family: 'Adelle Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 48px;
+  }
+
+  .kallos-science-features {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .kallos-science-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kallos-science-icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .kallos-science-label {
+    font-family: 'Adelle Sans', sans-serif;
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
+
+  .kallos-science-wrapper.image-reversed .kallos-science-media {
+    order: 2;
+  }
+  .kallos-science-wrapper.image-reversed .kallos-science-content {
+    order: 1;
+  }
+
+  @media (max-width: 900px) {
+    .kallos-science {
+      padding: 50px 0;
+    }
+
+    .kallos-science-wrapper {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
+
+    .kallos-science-features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kallos-science-title {
+      font-size: 2.4rem;
+    }
+
+    .kallos-science-wrapper.image-reversed .kallos-science-media {
+      order: 1;
+    }
+    .kallos-science-wrapper.image-reversed .kallos-science-content {
+      order: 0;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .kallos-science-features {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Kallos · Beneficios",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen principal"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "KALLOS es ciencia aplicada"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texto",
+      "default": "<p>Cada fórmula KALLOS nace del estudio profundo de ingredientes activos, combinados con precisión para ofrecer resultados visibles y cuidado consciente.</p>"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Posición de la imagen",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Izquierda" },
+        { "value": "right", "label": "Derecha" }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Beneficio",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icono SVG / Imagen"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Texto",
+          "default": "Dermatológicamente testeado"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kallos · Beneficios"
+    }
+  ]
+}
+{% endschema %}

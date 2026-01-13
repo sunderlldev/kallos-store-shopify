@@ -1,0 +1,192 @@
+<section class="kallos-innovation">
+  <div class="kallos-innovation-wrapper">
+    {% if section.settings.image_position == 'left' %}
+      <div class="kallos-innovation-image">
+        {% if section.settings.image != blank %}
+          <img
+            src="{{ section.settings.image | image_url: width: 1200 }}"
+            alt="{{ section.settings.title }}"
+            loading="lazy"
+          >
+        {% endif %}
+      </div>
+      <div class="kallos-innovation-text">
+        <h2>{{ section.settings.title }}</h2>
+        <div class="kallos-innovation-accordion">
+          {% for block in section.blocks %}
+            <div class="kallos-innovation-item">
+              <button class="kallos-accordion-trigger">
+                <span>{{ block.settings.heading }}</span>
+                <span class="kallos-plus">+</span>
+              </button>
+              <div class="kallos-accordion-content">
+                <div class="kallos-innovation-inner">
+                  {{ block.settings.text }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      <div class="kallos-innovation-text">
+        <h2>{{ section.settings.title }}</h2>
+        <div class="kallos-innovation-accordion">
+          {% for block in section.blocks %}
+            <div class="kallos-innovation-item">
+              <button class="kallos-accordion-trigger">
+                <span>{{ block.settings.heading }}</span>
+                <span class="kallos-plus">+</span>
+              </button>
+              <div class="kallos-accordion-content">
+                <div class="kallos-innovation-inner">
+                  {{ block.settings.text }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="kallos-innovation-image">
+        {% if section.settings.image != blank %}
+          <img
+            src="{{ section.settings.image | image_url: width: 1200 }}"
+            alt="{{ section.settings.title }}"
+            loading="lazy"
+          >
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .kallos-innovation {
+    padding: 30px 0;
+    background: #fff;
+  }
+  .kallos-innovation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 0 6vw;
+  }
+  .kallos-innovation-text h2 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 3rem;
+    margin-bottom: 48px;
+  }
+
+  .kallos-innovation-item {
+    border-bottom: 1px solid #000;
+  }
+
+  .kallos-accordion-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Adelle Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .kallos-plus {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+  .kallos-innovation-item.is-active .kallos-plus {
+    transform: rotate(45deg);
+  }
+
+  .kallos-accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .kallos-innovation-item.is-active .kallos-accordion-content {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .kallos-innovation-inner {
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+
+  .kallos-innovation-image img {
+    width: 100%;
+    border-radius: 32px;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    .kallos-innovation {
+      padding: 70px 0;
+    }
+
+    .kallos-innovation-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.kallos-accordion-trigger').forEach((button) => {
+    if (!button.hasAttribute('data-accordion-listener')) {
+      button.setAttribute('data-accordion-listener', 'true');
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const section = button.closest('.kallos-innovation');
+        const isActive = item.classList.contains('is-active');
+
+        section.querySelectorAll('.kallos-innovation-item').forEach((i) => i.classList.remove('is-active'));
+
+        if (!isActive) {
+          item.classList.add('is-active');
+        }
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Kallos · Innovación",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Título", "default": "Innovación" },
+    { "type": "image_picker", "id": "image", "label": "Imagen" },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Posición de la imagen",
+      "options": [
+        { "value": "left", "label": "Izquierda" },
+        { "value": "right", "label": "Derecha" }
+      ],
+      "default": "right"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Ítem",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Título", "default": "Activos" },
+        { "type": "richtext", "id": "text", "label": "Texto", "default": "<p>Contenido</p>" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Kallos · Innovación" }]
+}
+{% endschema %}

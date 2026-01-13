@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-section": {
+      "type": "main-cart",
+      "blocks": {
+        "cart-page-title": {
+          "type": "_cart-title",
+          "static": true,
+          "settings": {
+            "title": "Carrito",
+            "show_count": false,
+            "type_preset": "h3",
+            "alignment": "left",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cart-page-items": {
+          "type": "_cart-products",
+          "static": true,
+          "settings": {
+            "gap": 20,
+            "image_ratio": "adapt",
+            "dividers": true,
+            "vendor": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cart-page-summary": {
+          "type": "_cart-summary",
+          "static": true,
+          "settings": {
+            "extend_summary": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "settings": {
+        "section_width": "page-width",
+        "color_scheme": "",
+        "padding-block-start": 24,
+        "padding-block-end": 80
+      }
+    },
+    "kallos_benefits_q8GYkb": {
+      "type": "kallos-benefits",
+      "custom_css": [
+        ".kallos-science-media {width: 80%;}",
+        ".kallos-science-wrapper {gap: 20px; padding-bottom: 50px;}",
+        "@media (max-width: 949px) {.kallos-science-media {width: 100%; } .kallos-science-wrapper {padding-bottom: 0; text-align: center; gap: 45px; }}"
+      ],
+      "name": "Kallos · Beneficios",
+      "settings": {
+        "image": "shopify://shop_images/adds-11.png",
+        "title": "KALLOS es ciencia aplicada",
+        "text": "<p>Cada fórmula KALLOS nace del estudio profundo de ingredientes activos, combinados con precisión para ofrecer resultados visibles y cuidado consciente.</p>",
+        "image_position": "left"
+      }
+    }
+  },
+  "order": [
+    "cart-section",
+    "kallos_benefits_q8GYkb"
+  ]
+}
