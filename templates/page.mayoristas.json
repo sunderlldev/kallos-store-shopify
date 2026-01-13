@@ -618,7 +618,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 25,
-                "padding-block-end": 60,
+                "padding-block-end": 25,
                 "padding-inline-start": 25,
                 "padding-inline-end": 25
               },
@@ -918,7 +918,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 25,
-                "padding-block-end": 60,
+                "padding-block-end": 25,
                 "padding-inline-start": 25,
                 "padding-inline-end": 25
               },
