@@ -1,56 +1,62 @@
 <section class="lash-custom-hero" id="lash-{{ section.id }}">
   <div class="lash-container">
-    <div class="lash-content">
-      {% if section.settings.top_title != blank %}
-        <span class="lash-badge">{{ section.settings.top_title }}</span>
-      {% endif %}
+    <div class="lash-grid-wrapper">
+      <div class="lash-image-column">
+        {% if section.settings.floating_image != blank %}
+          <div class="lash-floating-wrapper">
+            <img
+              src="{{ section.settings.floating_image | image_url: width: 600 }}"
+              alt="{{ section.settings.title }}"
+              class="lash-img-animate"
+              loading="lazy"
+            >
+          </div>
+        {% endif %}
+      </div>
 
-      {% if section.settings.floating_image != blank %}
-        <div class="lash-floating-wrapper">
-          <img
-            src="{{ section.settings.floating_image | image_url: width: 500 }}"
-            alt="{{ section.settings.title }}"
-            class="lash-img-animate"
-            loading="lazy"
-          >
+      <div class="lash-text-column">
+        {% if section.settings.top_title != blank %}
+          <span class="lash-badge">{{ section.settings.top_title }}</span>
+        {% endif %}
+
+        <h2 class="lash-main-title">{{ section.settings.title }}</h2>
+
+        <div class="lash-description">
+          {{ section.settings.description }}
         </div>
-      {% endif %}
 
-      <h2 class="lash-main-title">{{ section.settings.title }}</h2>
+        <div class="lash-features">
+          {% for block in section.blocks %}
+            {% if block.type == 'feature' %}
+              <div class="feature-item" {{ block.shopify_attributes }}>
+                <span class="icon-wrapper">
+                  {% if block.settings.custom_icon != blank %}
+                    <img
+                      src="{{ block.settings.custom_icon | image_url: width: 50 }}"
+                      alt="Icon"
+                      class="custom-icon-img"
+                    >
+                  {% else %}
+                    <span class="dot-placeholder" style="background-color: {{ section.settings.icon_color }};"></span>
+                  {% endif %}
+                </span>
+                <div class="feature-text">{{ block.settings.text }}</div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
 
-      <div class="lash-description">
-        {{ section.settings.description }}
+        {% if section.settings.btn_label != blank %}
+          <div class="lash-btn-wrapper">
+            <a href="{{ section.settings.btn_link }}" class="lash-btn">
+              {{ section.settings.btn_label }}
+              <svg width="20" height="20" viewBox="0 0 256 256">
+                <path fill="currentColor" d="m224.49 136.49l-72 72a12 12 0 0 1-17-17L187 140H40a12 12 0 0 1 0-24h147l-51.49-51.52a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17.03Z"/>
+              </svg>
+            </a>
+          </div>
+        {% endif %}
       </div>
-
-      <div class="lash-features">
-        {% for block in section.blocks %}
-          {% if block.type == 'feature' %}
-            <div class="feature-item" {{ block.shopify_attributes }}>
-              <span class="icon-wrapper">
-                {% if block.settings.custom_icon != blank %}
-                  <img
-                    src="{{ block.settings.custom_icon | image_url: width: 50 }}"
-                    alt="Icon"
-                    class="custom-icon-img"
-                  >
-                {% else %}
-                  <span class="dot-placeholder" style="background-color: {{ section.settings.icon_color }};"></span>
-                {% endif %}
-              </span>
-              <div class="feature-text">{{ block.settings.text }}</div>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-      {% if section.settings.btn_label != blank %}
-        <a href="{{ section.settings.btn_link }}" class="lash-btn">
-          {{ section.settings.btn_label }}
-          <svg width="20" height="20" viewBox="0 0 256 256">
-            <path fill="currentColor" d="m224.49 136.49l-72 72a12 12 0 0 1-17-17L187 140H40a12 12 0 0 1 0-24h147l-51.49-51.52a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17.03Z"/>
-          </svg>
-        </a>
-      {% endif %}
     </div>
   </div>
 </section>
@@ -65,39 +71,79 @@
   .lash-container {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
   }
 
-  .lash-content {
+  .lash-grid-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 40px;
+  }
+
+  .lash-image-column, .lash-text-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (min-width: 769px) {
+    .lash-grid-wrapper {
+      flex-direction: row;
+      justify-content: center;
+      text-align: left;
+      gap: 60px;
+    }
+
+    .lash-image-column {
+      width: 45%;
+      justify-content: center;
+    }
+
+    .lash-text-column {
+      width: 55%;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .lash-description {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .lash-btn-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 
   .lash-badge {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #151515;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-bottom: 5px;
   }
 
   .lash-main-title {
-    font-size: clamp(32px, 5vw, 40px);
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: 600;
     margin: 0;
-    color: #151515;
-    line-height: 1.2;
+    color: #121212;
+    line-height: 1.1;
   }
 
   .lash-description {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     font-style: italic;
     color: #3D3D3D;
     max-width: 500px;
-    line-height: 1.6;
+    line-height: 1.5;
+    margin-top: 10px;
   }
 
   .lash-description strong, .lash-description b,
@@ -110,15 +156,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
   }
 
   .lash-img-animate {
-    max-width: 260px;
+    max-width: 350px;
     width: 100%;
     height: auto;
     animation: lashFloat 4.5s ease-in-out infinite;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.08));
   }
 
   @keyframes lashFloat {
@@ -129,11 +174,9 @@
   .lash-features {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin: 25px 0;
-    text-align: left;
+    gap: 15px;
+    margin: 30px 0;
     width: fit-content;
-    max-width: 100%;
   }
 
   .feature-item {
@@ -149,7 +192,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .custom-icon-img {
@@ -175,28 +218,30 @@
   .lash-btn {
     background: #121212;
     color: #fff;
-    padding: 12px 35px;
+    padding: 14px 40px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   }
 
   .lash-btn:hover {
     background: #AC9651;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(172, 150, 81, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(172, 150, 81, 0.3);
   }
 
   @media (max-width: 768px) {
     .lash-features {
       margin-left: auto;
       margin-right: auto;
+    }
+    .lash-img-animate {
+      max-width: 280px;
     }
   }
 </style>
@@ -207,7 +252,7 @@
   "settings": [
     { "type": "color", "id": "bg_color", "label": "Color de Fondo", "default": "#F8F5F4" },
     { "type": "color", "id": "icon_color", "label": "Color de Iconos/Puntos", "default": "#AC9651" },
-    { "type": "image_picker", "id": "floating_image", "label": "Imagen Flotante (PNG)" },
+    { "type": "image_picker", "id": "floating_image", "label": "Imagen Principal" },
     { "type": "text", "id": "top_title", "label": "Título Superior", "default": "¡NUEVO LANZAMIENTO!" },
     { "type": "text", "id": "title", "label": "Título Principal", "default": "LASH+ by Kallos" },
     {
