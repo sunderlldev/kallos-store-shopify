@@ -2,6 +2,12 @@
   <div class="lash-container">
     <div class="lash-grid-wrapper">
       <div class="lash-image-column">
+        {% if section.settings.top_title != blank %}
+          <div class="lash-badge lash-badge--mobile">
+            {{ section.settings.top_title }}
+          </div>
+        {% endif %}
+
         {% if section.settings.floating_image != blank %}
           <div class="lash-floating-wrapper">
             <img
@@ -16,7 +22,9 @@
 
       <div class="lash-text-column">
         {% if section.settings.top_title != blank %}
-          <div class="lash-badge">{{ section.settings.top_title }}</div>
+          <div class="lash-badge lash-badge--desktop">
+            {{ section.settings.top_title }}
+          </div>
         {% endif %}
 
         <h2 class="lash-main-title">{{ section.settings.title }}</h2>
@@ -40,7 +48,9 @@
                     <span class="dot-placeholder" style="background-color: {{ section.settings.icon_color }};"></span>
                   {% endif %}
                 </span>
-                <div class="feature-text">{{ block.settings.text }}</div>
+                <div class="feature-text">
+                  {{ block.settings.text }}
+                </div>
               </div>
             {% endif %}
           {% endfor %}
@@ -77,11 +87,11 @@
   .lash-grid-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
   }
 
-  .lash-image-column, .lash-text-column {
+  .lash-image-column,
+  .lash-text-column {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -89,58 +99,21 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 769px) {
-    .lash-grid-wrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      gap: 60px;
-    }
-
-    .lash-image-column {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .lash-text-column {
-      width: 50%;
-      align-items: flex-start;
-      text-align: left;
-    }
-
-    .lash-description {
-      margin: 20px 0;
-    }
-
-    .lash-features {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin: 30px 0;
-      width: 100%;
-    }
-
-    .lash-btn-wrapper {
-      display: flex;
-      justify-content: flex-start;
-    }
-  }
-
   .lash-badge {
-  font-size: 16px;
-  color: #151515;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #151515;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
 
   .lash-badge p {
     margin: 0;
   }
 
+  .lash-badge--desktop {
+    display: none;
+  }
 
   .lash-main-title {
     font-size: clamp(34px, 5vw, 52px);
@@ -155,25 +128,24 @@
     font-weight: 300;
     font-style: italic;
     color: #3D3D3D;
-    max-width: 550px;
     line-height: 1.6;
-    margin: 15px auto;
+    margin: 20px 0;
+    max-width: 550px;
   }
 
-  .lash-description strong, .feature-text strong {
-    font-weight: 700 !important;
+  .lash-description strong {
+    font-weight: 700;
   }
 
   .lash-img-animate {
-    max-width: 100%;
     width: 400px;
-    height: auto;
+    max-width: 100%;
     animation: lashFloat 4.5s ease-in-out infinite;
     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));
   }
 
   @keyframes lashFloat {
-    0%, 100% { transform: translateY(0px); }
+    0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
   }
 
@@ -181,13 +153,13 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 30px auto;
-    width: fit-content;
+    margin: 30px 0;
+    width: 100%;
   }
 
   .feature-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
   }
 
@@ -198,7 +170,6 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin-top: 4px;
   }
 
   .custom-icon-img {
@@ -213,12 +184,19 @@
     border-radius: 50%;
   }
 
-  .feature-text, .feature-text p {
+  .feature-text,
+  .feature-text p {
     margin: 0;
     font-size: 16px;
     color: #121212;
     line-height: 1.4;
     text-align: left;
+  }
+
+  .lash-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .lash-btn {
@@ -240,9 +218,48 @@
     transform: translateY(-3px);
   }
 
+  @media screen and (min-width: 769px) {
+
+    .lash-grid-wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .lash-image-column {
+      width: 50%;
+      align-items: center;
+    }
+
+    .lash-text-column {
+      width: 50%;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .lash-description {
+      margin: 20px 0;
+      max-width: 100%;
+    }
+
+    .lash-btn-wrapper {
+      justify-content: flex-start;
+    }
+
+    .lash-badge--mobile {
+      display: none;
+    }
+
+    .lash-badge--desktop {
+      display: block;
+    }
+  }
+
   @media (max-width: 768px) {
-    .lash-features { margin-left: auto; margin-right: auto; }
-    .lash-img-animate { max-width: 300px; }
+    .lash-img-animate {
+      max-width: 300px;
+    }
   }
 </style>
 
@@ -257,7 +274,7 @@
       "type": "richtext",
       "id": "top_title",
       "label": "Título Superior (Enriquecido)",
-      "default": "<p>¡NUEVO LANZAMIENTO!</p>"
+      "default": "<p><strong>¡NUEVO LANZAMIENTO!</strong></p>"
     },
     { "type": "text", "id": "title", "label": "Título Principal", "default": "LASH+ by Kallos" },
     {
@@ -266,7 +283,6 @@
       "label": "Descripción",
       "default": "<p>El serum de pestañas que transforma tu mirada con cuidado y ciencia.</p>"
     },
-    { "type": "header", "content": "Botón" },
     { "type": "text", "id": "btn_label", "label": "Texto Botón", "default": "Ver más sobre LASH+" },
     { "type": "url", "id": "btn_link", "label": "Link Botón" }
   ],
@@ -276,17 +292,8 @@
       "name": "Característica",
       "limit": 5,
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "custom_icon",
-          "label": "Icono Personalizado (PNG/SVG)"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Texto Enriquecido",
-          "default": "<p>Nueva característica</p>"
-        }
+        { "type": "image_picker", "id": "custom_icon", "label": "Icono Personalizado" },
+        { "type": "richtext", "id": "text", "label": "Texto Enriquecido" }
       ]
     }
   ],
