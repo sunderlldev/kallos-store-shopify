@@ -281,7 +281,7 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "link": "https://wa.me/51924084922",
+                "link": "https://wa.me/51941914527",
                 "open_in_new_tab": true,
                 "placeholder": "",
                 "padding-block-start": 0,
@@ -306,7 +306,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h5><strong>+51  924 084 922</strong></h5>",
+                    "text": "<h5><strong>+51  941 914 527</strong><br/><br/></h5>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
