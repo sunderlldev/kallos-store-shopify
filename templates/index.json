@@ -92,6 +92,13 @@
     "kallos_benefits_XUHpeJ": {
       "type": "kallos-benefits",
       "blocks": {
+        "feature_E49knF": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/dermLogo.png",
+            "label": "Dermatológicamente aprobado"
+          }
+        },
         "feature_hwageP": {
           "type": "feature",
           "settings": {
@@ -112,20 +119,13 @@
             "icon": "shopify://shop_images/sensory.png",
             "label": "Experiencia sensorial"
           }
-        },
-        "feature_E49knF": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/dermLogo.png",
-            "label": "Dermatológicamente aprobado"
-          }
         }
       },
       "block_order": [
+        "feature_E49knF",
         "feature_hwageP",
         "feature_bUPFpR",
-        "feature_L9DDUc",
-        "feature_E49knF"
+        "feature_L9DDUc"
       ],
       "name": "Kallos · Beneficios",
       "settings": {
