@@ -37,7 +37,7 @@
                   <span class="dot-placeholder" style="background-color: {{ section.settings.icon_color }};"></span>
                 {% endif %}
               </span>
-              <p>{{ block.settings.text }}</p>
+              <div class="feature-text">{{ block.settings.text }}</div>
             </div>
           {% endif %}
         {% endfor %}
@@ -100,9 +100,9 @@
     line-height: 1.6;
   }
 
-  .lash-description strong,
-  .lash-description b {
-    font-weight: 700;
+  .lash-description strong, .lash-description b,
+  .feature-text strong, .feature-text b {
+    font-weight: 700 !important;
     font-style: normal;
   }
 
@@ -133,11 +133,12 @@
     margin: 25px 0;
     text-align: left;
     width: fit-content;
+    max-width: 100%;
   }
 
   .feature-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
   }
 
@@ -148,6 +149,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-top: 2px;
   }
 
   .custom-icon-img {
@@ -162,11 +164,12 @@
     border-radius: 50%;
   }
 
-  .feature-item p {
+  .feature-text, .feature-text p {
     margin: 0;
     font-size: 16px;
     color: #121212;
     line-height: 1.4;
+    text-align: left;
   }
 
   .lash-btn {
@@ -191,8 +194,10 @@
   }
 
   @media (max-width: 768px) {
-    .lash-features { align-items: center; text-align: center; }
-    .feature-item { flex-direction: row; }
+    .lash-features {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 </style>
 
@@ -227,10 +232,10 @@
           "label": "Icono Personalizado (PNG/SVG)"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
-          "label": "Texto",
-          "default": "Nueva característica"
+          "label": "Texto Enriquecido",
+          "default": "<p>Nueva característica</p>"
         }
       ]
     }
@@ -239,9 +244,9 @@
     {
       "name": "Lash Plus Hero",
       "blocks": [
-        { "type": "feature", "settings": { "text": "Ayuda a fortalecer y alargar las pestañas" } },
-        { "type": "feature", "settings": { "text": "Mejora visiblemente su apariencia" } },
-        { "type": "feature", "settings": { "text": "Fórmula suave para uso diario" } }
+        { "type": "feature", "settings": { "text": "<p>Ayuda a fortalecer y alargar las pestañas</p>" } },
+        { "type": "feature", "settings": { "text": "<p>Mejora visiblemente su apariencia</p>" } },
+        { "type": "feature", "settings": { "text": "<p>Fórmula suave para uso diario</p>" } }
       ]
     }
   ]
