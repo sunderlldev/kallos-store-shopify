@@ -595,6 +595,7 @@
                   "type": "icon",
                   "settings": {
                     "icon": "facebook",
+                    "image_upload": "shopify://shop_images/gift_16774126.png",
                     "width": 32,
                     "link": "",
                     "open_in_new_tab": false
@@ -745,6 +746,7 @@
                   "type": "icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/usd-circle_7661489.png",
                     "width": 32,
                     "link": "",
                     "open_in_new_tab": false
@@ -895,6 +897,7 @@
                   "type": "icon",
                   "settings": {
                     "icon": "map_pin",
+                    "image_upload": "shopify://shop_images/chat-arrow-grow_5528023.png",
                     "width": 32,
                     "link": "",
                     "open_in_new_tab": false
@@ -1001,164 +1004,12 @@
                 "icon_LY8bYi",
                 "group_kktFUU"
               ]
-            },
-            "group_BaY3Gg": {
-              "type": "group",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 16,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fill",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 32,
-                "toggle_overlay": true,
-                "overlay_color": "#dfdfdf59",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 25,
-                "padding-block-end": 25,
-                "padding-inline-start": 25,
-                "padding-inline-end": 25
-              },
-              "blocks": {
-                "icon_Grn49R": {
-                  "type": "icon",
-                  "settings": {
-                    "icon": "star",
-                    "image_upload": "shopify://shop_images/acuerdo_03f7a1d8-35a9-46ae-8c58-29a4483c1836.png",
-                    "width": 32,
-                    "link": "",
-                    "open_in_new_tab": false
-                  },
-                  "blocks": {}
-                },
-                "group_cfdMk3": {
-                  "type": "group",
-                  "settings": {
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 4,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "text_63kGdV": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<h4>Relación a largo plazo</h4>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1.5rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_8GRE8i": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Buscamos socios, no ventas únicas.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_63kGdV",
-                    "text_8GRE8i"
-                  ]
-                }
-              },
-              "block_order": [
-                "icon_Grn49R",
-                "group_cfdMk3"
-              ]
             }
           },
           "block_order": [
             "group_Wy3mGE",
             "group_BC7MCY",
-            "group_HPwHYV",
-            "group_BaY3Gg"
+            "group_HPwHYV"
           ]
         }
       },
