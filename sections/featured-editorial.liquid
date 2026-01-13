@@ -99,6 +99,7 @@
     margin: 0 0 0.5rem 0; 
     color: #000; 
     font-weight: var(--title-weight);
+    line-height: 1.2;
   }
 
   .kallos-editorial-subtitle {
@@ -176,7 +177,7 @@
   .kallos-card-title {
     margin: 0;
     font-size: 1.05rem;
-    font-weight: 700; /* Puedes hacerlo dinámico si prefieres también para el producto */
+    font-weight: 700;
     line-height: 1.2;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -295,8 +296,7 @@
       "default": "700",
       "options": [
         { "value": "400", "label": "Normal" },
-        { "value": "500", "label": "Medio" },
-        { "value": "700", "label": "Negrita (Bold)" }
+        { "value": "700", "label": "Bold" }
       ]
     },
     { "type": "text", "id": "subtitle", "label": "Subtítulo", "default": "Descubre nuestras últimas tendencias" },
@@ -307,19 +307,17 @@
       "default": "400",
       "options": [
         { "value": "400", "label": "Normal" },
-        { "value": "500", "label": "Medio" },
-        { "value": "700", "label": "Negrita (Bold)" }
+        { "value": "700", "label": "Bold" }
       ]
     },
     {
       "type": "select",
       "id": "price_weight",
       "label": "Grosor precio",
-      "default": "600",
+      "default": "700",
       "options": [
         { "value": "400", "label": "Normal" },
-        { "value": "600", "label": "Semibold" },
-        { "value": "700", "label": "Negrita (Bold)" }
+        { "value": "700", "label": "Bold" }
       ]
     },
     { "type": "color", "id": "card_bg", "label": "Fondo Card", "default": "#AC9651" }
