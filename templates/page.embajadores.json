@@ -1298,7 +1298,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h5><strong>👉 No necesitas experiencia previa con marcas.</strong></h5>",
+                "text": "<h5>👉 No necesitas experiencia previa con marcas.</h5>",
                 "width": "fit-content",
                 "max_width": "none",
                 "alignment": "left",
@@ -1306,7 +1306,7 @@
                 "font": "var(--font-body--family)",
                 "font_size": "0.875rem",
                 "line_height": "normal",
-                "letter_spacing": "normal",
+                "letter_spacing": "tight",
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground-heading)",
