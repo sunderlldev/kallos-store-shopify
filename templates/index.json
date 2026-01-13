@@ -134,11 +134,54 @@
         "text": "<p>Cada producto Kallos nace del estudio preciso de ingredientes activos, pensados para cuidar la piel y el vello de forma consciente y efectiva.</p><p>Desarrollados por especialistas en dermocosmética, nuestras fórmulas equilibran eficacia, tolerancia y experiencia sensorial para integrarse naturalmente a tu rutina diaria.</p>",
         "image_position": "left"
       }
+    },
+    "lash_hero_BBMn3n": {
+      "type": "lash-hero",
+      "blocks": {
+        "feature_bHMeYN": {
+          "type": "feature",
+          "settings": {
+            "custom_icon": "shopify://shop_images/molecule.png",
+            "text": "Ayuda a fortalecer y alargar las pestañas"
+          }
+        },
+        "feature_DWwfC6": {
+          "type": "feature",
+          "settings": {
+            "custom_icon": "shopify://shop_images/svgviewer-png-output_1.png",
+            "text": "Mejora visiblemente su apariencia"
+          }
+        },
+        "feature_wXcqjk": {
+          "type": "feature",
+          "settings": {
+            "custom_icon": "shopify://shop_images/svgviewer-png-output.png",
+            "text": "Fórmula suave para uso diario"
+          }
+        }
+      },
+      "block_order": [
+        "feature_bHMeYN",
+        "feature_DWwfC6",
+        "feature_wXcqjk"
+      ],
+      "name": "Lash Plus Hero",
+      "settings": {
+        "bg_color": "#F8F5F4",
+        "icon_color": "#AC9651",
+        "floating_image": "shopify://shop_images/Screenshot-2024-07-08-at-3.39.31.png",
+        "top_title": "¡NUEVO LANZAMIENTO!",
+        "title": "LASH+ by Kallos",
+        "description": "<p>El <strong>serum de pestañas</strong> que transforma tu mirada con cuidado y ciencia.</p>",
+        "btn_label": "Ver más sobre LASH+",
+        "btn_link": ""
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "featured_editorial_AmL6qw",
-    "kallos_benefits_XUHpeJ"
+    "kallos_benefits_XUHpeJ",
+    "lash_hero_BBMn3n"
   ]
 }
