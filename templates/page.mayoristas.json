@@ -249,8 +249,8 @@
             "thickness": 2,
             "corner_radius": "rounded",
             "width_percent": 40,
-            "padding-block-start": 25,
-            "padding-block-end": 25
+            "padding-block-start": 60,
+            "padding-block-end": 60
           },
           "blocks": {}
         },
@@ -288,7 +288,7 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 70,
+            "padding-block-start": 0,
             "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
