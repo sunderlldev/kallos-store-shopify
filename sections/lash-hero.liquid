@@ -1,28 +1,28 @@
-<section class="slipy-custom-hero" id="slipy-{{ section.id }}">
-  <div class="slipy-container">
-    <div class="slipy-content">
+<section class="lash-custom-hero" id="lash-{{ section.id }}">
+  <div class="lash-container">
+    <div class="lash-content">
       {% if section.settings.top_title != blank %}
-        <span class="slipy-badge">{{ section.settings.top_title }}</span>
+        <span class="lash-badge">{{ section.settings.top_title }}</span>
       {% endif %}
 
       {% if section.settings.floating_image != blank %}
-        <div class="slipy-floating-wrapper">
+        <div class="lash-floating-wrapper">
           <img
             src="{{ section.settings.floating_image | image_url: width: 500 }}"
             alt="{{ section.settings.title }}"
-            class="slipy-img-animate"
+            class="lash-img-animate"
             loading="lazy"
           >
         </div>
       {% endif %}
 
-      <h2 class="slipy-main-title">{{ section.settings.title }}</h2>
+      <h2 class="lash-main-title">{{ section.settings.title }}</h2>
 
-      <div class="slipy-description">
+      <div class="lash-description">
         {{ section.settings.description }}
       </div>
 
-      <div class="slipy-features">
+      <div class="lash-features">
         {% for block in section.blocks %}
           {% if block.type == 'feature' %}
             <div class="feature-item" {{ block.shopify_attributes }}>
@@ -44,7 +44,7 @@
       </div>
 
       {% if section.settings.btn_label != blank %}
-        <a href="{{ section.settings.btn_link }}" class="slipy-btn">
+        <a href="{{ section.settings.btn_link }}" class="lash-btn">
           {{ section.settings.btn_label }}
           <svg width="20" height="20" viewBox="0 0 256 256">
             <path fill="currentColor" d="m224.49 136.49l-72 72a12 12 0 0 1-17-17L187 140H40a12 12 0 0 1 0-24h147l-51.49-51.52a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17.03Z"/>
@@ -56,26 +56,26 @@
 </section>
 
 <style>
-  #slipy-{{ section.id }} {
+  #lash-{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
     padding: 60px 20px;
     font-family: 'Poppins', sans-serif;
   }
 
-  .slipy-container {
+  .lash-container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
   }
 
-  .slipy-content {
+  .lash-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
 
-  .slipy-badge {
+  .lash-badge {
     font-size: 18px;
     font-weight: 600;
     color: #151515;
@@ -83,7 +83,7 @@
     text-transform: uppercase;
   }
 
-  .slipy-main-title {
+  .lash-main-title {
     font-size: clamp(32px, 5vw, 40px);
     font-weight: 600;
     margin: 0;
@@ -91,7 +91,7 @@
     line-height: 1.2;
   }
 
-  .slipy-description {
+  .lash-description {
     font-size: 16px;
     font-weight: 300;
     font-style: italic;
@@ -100,27 +100,33 @@
     line-height: 1.6;
   }
 
-  .slipy-floating-wrapper {
+  .lash-description strong,
+  .lash-description b {
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .lash-floating-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 20px 0;
   }
 
-  .slipy-img-animate {
+  .lash-img-animate {
     max-width: 260px;
     width: 100%;
     height: auto;
-    animation: slipyFloat 4.5s ease-in-out infinite;
+    animation: lashFloat 4.5s ease-in-out infinite;
     filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
   }
 
-  @keyframes slipyFloat {
+  @keyframes lashFloat {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
   }
 
-  .slipy-features {
+  .lash-features {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -164,7 +170,7 @@
     line-height: 1.4;
   }
 
-  .slipy-btn {
+  .lash-btn {
     background: #121212;
     color: #fff;
     padding: 12px 35px;
@@ -179,34 +185,34 @@
     margin-top: 15px;
   }
 
-  .slipy-btn:hover {
+  .lash-btn:hover {
     background: #8B0000;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   }
 
   @media (max-width: 768px) {
-    .slipy-features { align-items: center; text-align: center; }
+    .lash-features { align-items: center; text-align: center; }
     .feature-item { flex-direction: row; }
   }
 </style>
 
 {% schema %}
 {
-  "name": "Slipy Hero Animate",
+  "name": "Lash Plus Hero",
   "settings": [
     { "type": "color", "id": "bg_color", "label": "Color de Fondo", "default": "#F8F5F4" },
     { "type": "image_picker", "id": "floating_image", "label": "Imagen Flotante (PNG)" },
     { "type": "text", "id": "top_title", "label": "Título Superior", "default": "¡NUEVO LANZAMIENTO!" },
-    { "type": "text", "id": "title", "label": "Título Principal", "default": "SLIPY by Wayra" },
+    { "type": "text", "id": "title", "label": "Título Principal", "default": "LASH+ by Kallos" },
     {
       "type": "richtext",
       "id": "description",
       "label": "Descripción",
-      "default": "<p>El antifaz con 250g de microperlas que transforma tu descanso.</p>"
+      "default": "<p>El serum de pestañas que transforma tu mirada con cuidado y ciencia.</p>"
     },
     { "type": "header", "content": "Botón" },
-    { "type": "text", "id": "btn_label", "label": "Texto Botón", "default": "Ver más sobre SLIPY" },
+    { "type": "text", "id": "btn_label", "label": "Texto Botón", "default": "Ver más sobre LASH+" },
     { "type": "url", "id": "btn_link", "label": "Link Botón" }
   ],
   "blocks": [
@@ -231,11 +237,11 @@
   ],
   "presets": [
     {
-      "name": "Slipy Hero Animate",
+      "name": "Lash Plus Hero",
       "blocks": [
-        { "type": "feature", "settings": { "text": "Reduce migrañas y fatiga ocular" } },
-        { "type": "feature", "settings": { "text": "Bloquea completamente la luz exterior" } },
-        { "type": "feature", "settings": { "text": "Ayuda con la tensión, estrés y ansiedad" } }
+        { "type": "feature", "settings": { "text": "Ayuda a fortalecer y alargar las pestañas" } },
+        { "type": "feature", "settings": { "text": "Mejora visiblemente su apariencia" } },
+        { "type": "feature", "settings": { "text": "Fórmula suave para uso diario" } }
       ]
     }
   ]
