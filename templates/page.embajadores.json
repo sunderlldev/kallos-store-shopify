@@ -127,6 +127,20 @@
         "padding-block-end": 55
       }
     },
+    "divider_nXUMpx": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "page-width",
+        "thickness": 2,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 36,
+        "padding-block-end": 36
+      }
+    },
     "section_iYn9QA": {
       "type": "section",
       "blocks": {
@@ -278,7 +292,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 60,
+        "padding-block-start": 40,
         "padding-block-end": 20
       }
     },
@@ -1056,7 +1070,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
+        "padding-block-start": 30,
         "padding-block-end": 20
       }
     },
@@ -1081,7 +1095,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>¿Por qué sumar Kallos a tu portafolio?</h2>",
+            "text": "<h3><strong>Buscamos personas que:</strong></h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -1107,7 +1121,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h5><strong>✔️ Alta demanda y recompra constante</strong></h5><h5><strong>✔️ Marca enfocada en cuidado personal y dermocosmética</strong></h5><h5><strong>✔️ Precios mayoristas pensados para crecer contigo</strong></h5><h5><strong>✔️ Productos que se explican y se venden fácil</strong></h5>",
+            "text": "<ul><li>Creen contenido en redes sociales</li><li>Se identifiquen con el cuidado personal</li><li>Sean auténticas y constantes</li></ul>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -1176,25 +1190,12 @@
         "padding-block-start": 16,
         "padding-block-end": 16
       }
-    },
-    "divider_E6dpaL": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "",
-        "section_width": "page-width",
-        "thickness": 2,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 36,
-        "padding-block-end": 36
-      }
     }
   },
   "order": [
     "main",
     "hero_yVtfyJ",
+    "divider_nXUMpx",
     "section_iYn9QA",
     "slideshow_VAVbWh",
     "section_ae8eMt",
@@ -1202,7 +1203,6 @@
     "section_WrxbQ4",
     "divider_FD6b8d",
     "section_cFf7hE",
-    "divider_9pUaUg",
-    "divider_E6dpaL"
+    "divider_9pUaUg"
   ]
 }
