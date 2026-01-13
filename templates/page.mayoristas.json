@@ -81,10 +81,10 @@
             "link": "https://wa.me/51941914527",
             "open_in_new_tab": true,
             "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+            "width": "custom",
+            "custom_width": 20,
+            "width_mobile": "custom",
+            "custom_width_mobile": 70
           },
           "blocks": {}
         }
