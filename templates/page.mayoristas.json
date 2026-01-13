@@ -468,7 +468,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 25,
-                "padding-block-end": 25,
+                "padding-block-end": 60,
                 "padding-inline-start": 25,
                 "padding-inline-end": 25
               },
@@ -618,7 +618,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 25,
-                "padding-block-end": 25,
+                "padding-block-end": 60,
                 "padding-inline-start": 25,
                 "padding-inline-end": 25
               },
@@ -768,7 +768,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 25,
-                "padding-block-end": 25,
+                "padding-block-end": 60,
                 "padding-inline-start": 25,
                 "padding-inline-end": 25
               },
@@ -918,7 +918,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 25,
-                "padding-block-end": 25,
+                "padding-block-end": 60,
                 "padding-inline-start": 25,
                 "padding-inline-end": 25
               },
@@ -1061,7 +1061,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
