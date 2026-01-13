@@ -142,21 +142,21 @@
           "type": "feature",
           "settings": {
             "custom_icon": "shopify://shop_images/molecule.png",
-            "text": "Ayuda a fortalecer y alargar las pestañas"
+            "text": "<h5>Ayuda a fortalecer y alargar las pestañas</h5>"
           }
         },
         "feature_DWwfC6": {
           "type": "feature",
           "settings": {
             "custom_icon": "shopify://shop_images/svgviewer-png-output_1.png",
-            "text": "Mejora visiblemente su apariencia"
+            "text": "<h5>Mejora visiblemente su apariencia</h5>"
           }
         },
         "feature_wXcqjk": {
           "type": "feature",
           "settings": {
             "custom_icon": "shopify://shop_images/svgviewer-png-output.png",
-            "text": "Fórmula suave para uso diario"
+            "text": "<h5>Fórmula suave para uso diario</h5>"
           }
         }
       },
@@ -167,10 +167,10 @@
       ],
       "name": "Lash Plus Hero",
       "settings": {
-        "bg_color": "#F8F5F4",
-        "icon_color": "#AC9651",
+        "bg_color": "#f8f5f4",
+        "icon_color": "#ac9651",
         "floating_image": "shopify://shop_images/Screenshot-2024-07-08-at-3.39.31.png",
-        "top_title": "¡NUEVO LANZAMIENTO!",
+        "top_title": "<h5><strong>¡NUEVO LANZAMIENTO!</strong></h5>",
         "title": "LASH+ by Kallos",
         "description": "<p>El <strong>serum de pestañas</strong> que transforma tu mirada con cuidado y ciencia.</p>",
         "btn_label": "Ver más sobre LASH+",
