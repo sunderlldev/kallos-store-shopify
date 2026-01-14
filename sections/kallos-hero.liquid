@@ -1,0 +1,143 @@
+<section class="kallos-hero" id="kallos-hero-{{ section.id }}">
+  <div class="kallos-hero-container">
+    <div class="hero-grid">
+      <div class="hero-image-col">
+        <div class="noka-animation-container">
+          {% if section.settings.img_1 != blank %}
+            <img
+              src="{{ section.settings.img_1 | image_url: width: 600 }}"
+              class="floating-piece piece-main"
+              alt="Producto Estrella"
+            >
+          {% endif %}
+          {% if section.settings.img_2 != blank %}
+            <img
+              src="{{ section.settings.img_2 | image_url: width: 400 }}"
+              class="floating-piece piece-accent"
+              alt="Elemento Decorativo"
+            >
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="hero-text-col">
+        <div class="social-proof">
+          <span class="stars">{{ section.settings.stars_icon }}</span>
+          <p>
+            +<span class="count" contenteditable="true">{{ section.settings.client_count }}</span>
+            {{ section.settings.client_text }}
+          </p>
+        </div>
+
+        <h1 class="hero-title">
+          {{ section.settings.title_rich }}
+          <div class="rotating-wrapper">
+            <span class="rotating-item active">cejas.</span>
+            <span class="rotating-item">barba.</span>
+            <span class="rotating-item">cabello.</span>
+          </div>
+        </h1>
+
+        <div class="hero-description richtext">
+          {{ section.settings.description_rich }}
+        </div>
+
+        <div class="hero-offer-banner">
+          <div class="offer-content">
+            <span class="gift-icon">🎁</span>
+            <div class="offer-text">
+              <strong>{{ section.settings.offer_title }}</strong>
+              <span>{{ section.settings.offer_sub }}</span>
+            </div>
+          </div>
+          <a href="{{ section.settings.btn_link }}" class="hero-cta-btn">{{ section.settings.btn_label }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #kallos-hero-{{ section.id }} {
+    background: {{ section.settings.bg_color }};
+    padding: 60px 20px;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    #kallos-hero-{{ section.id }} {
+      background: linear-gradient(0deg, {{ section.settings.mobile_grad_color }} 0%, {{ section.settings.bg_color }} 100%);
+    }
+  }
+
+  .noka-animation-container { position: relative; width: 100%; height: 400px; display: flex; justify-content: center; align-items: center; }
+
+  .floating-piece { position: absolute; transition: transform 0.3s ease; }
+
+  .piece-main {
+    width: 80%; z-index: 2;
+    animation: floatMain 6s infinite ease-in-out;
+  }
+
+  .piece-accent {
+    width: 40%; z-index: 1; top: 10%; right: 5%;
+    animation: floatAccent 4s infinite ease-in-out;
+  }
+
+  @keyframes floatMain {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+  }
+
+  @keyframes floatAccent {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(15px, -15px); }
+  }
+
+  .rotating-wrapper { display: inline-block; position: relative; height: 1.2em; vertical-align: bottom; color: {{ section.settings.accent_color }}; }
+  .rotating-item { position: absolute; left: 0; opacity: 0; transition: 0.5s; transform: translateY(10px); }
+  .rotating-item.active { opacity: 1; transform: translateY(0); }
+
+  .hero-title { font-size: clamp(30px, 5vw, 48px); line-height: 1.1; }
+  .hero-offer-banner { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; margin-top: 25px; border: 1px solid {{ section.settings.accent_color }}; }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const words = document.querySelectorAll('#kallos-hero-{{ section.id }} .rotating-item');
+    let i = 0;
+    setInterval(() => {
+      words[i].classList.remove('active');
+      i = (i + 1) % words.length;
+      words[i].classList.add('active');
+    }, 2500);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Kallos Hero Pro",
+  "settings": [
+    { "type": "color", "id": "bg_color", "label": "Color Fondo (Negro)", "default": "#000000" },
+    { "type": "color", "id": "mobile_grad_color", "label": "Degradado Móvil (Base)", "default": "#AC9651" },
+    { "type": "color", "id": "accent_color", "label": "Color Acento", "default": "#AC9651" },
+    { "type": "image_picker", "id": "img_1", "label": "Imagen Principal (Producto)" },
+    { "type": "image_picker", "id": "img_2", "label": "Imagen Secundaria (Gota/Detalle)" },
+    { "type": "text", "id": "stars_icon", "label": "Icono Estrellas", "default": "⭐⭐⭐⭐⭐" },
+    { "type": "text", "id": "client_count", "label": "Num Clientes", "default": "10,000" },
+    { "type": "text", "id": "client_text", "label": "Texto Clientes", "default": "clientes Kallos" },
+    { "type": "richtext", "id": "title_rich", "label": "Título (Enriquecido)", "default": "<p>Más confianza, más</p>" },
+    {
+      "type": "richtext",
+      "id": "description_rich",
+      "label": "Descripción",
+      "default": "<p>Líder en crecimiento capilar...</p>"
+    },
+    { "type": "text", "id": "offer_title", "label": "Título Oferta", "default": "Te REGALAMOS 2 eBooks premium" },
+    { "type": "text", "id": "offer_sub", "label": "Subtítulo Oferta", "default": "Glow Up integral & Guía vello" },
+    { "type": "text", "id": "btn_label", "label": "Botón", "default": "Ir al Catálogo" },
+    { "type": "url", "id": "btn_link", "label": "Link Botón" }
+  ],
+  "presets": [{ "name": "Kallos Hero Pro" }]
+}
+{% endschema %}
