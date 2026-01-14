@@ -1,24 +1,5 @@
 <section class="kallos-hero" id="kallos-hero-{{ section.id }}">
   <div class="kallos-hero__inner">
-    <div class="kallos-hero__media">
-      {% if section.settings.img_main %}
-        <img
-          src="{{ section.settings.img_main | image_url: width: 900 }}"
-          class="kallos-img kallos-img--main"
-          loading="lazy"
-          alt="Producto Kallos"
-        >
-      {% endif %}
-      {% if section.settings.img_secondary %}
-        <img
-          src="{{ section.settings.img_secondary | image_url: width: 700 }}"
-          class="kallos-img kallos-img--secondary"
-          loading="lazy"
-          alt="Producto Kallos secundario"
-        >
-      {% endif %}
-    </div>
-
     <div class="kallos-hero__text">
       <div class="kallos-hero__proof">
         <div class="kallos-hero__stars">
@@ -43,6 +24,25 @@
       <div class="kallos-hero__desc">
         {{ section.settings.description_rich }}
       </div>
+    </div>
+
+    <div class="kallos-hero__media">
+      {% if section.settings.img_main %}
+        <img
+          src="{{ section.settings.img_main | image_url: width: 900 }}"
+          class="kallos-img kallos-img--main"
+          alt="Producto Kallos"
+          loading="lazy"
+        >
+      {% endif %}
+      {% if section.settings.img_secondary %}
+        <img
+          src="{{ section.settings.img_secondary | image_url: width: 700 }}"
+          class="kallos-img kallos-img--secondary"
+          alt="Producto Kallos secundario"
+          loading="lazy"
+        >
+      {% endif %}
     </div>
   </div>
 </section>
@@ -79,10 +79,14 @@
     padding: 80px 20px;
     display:flex;
     align-items:center;
-    gap:60px;
     justify-content:space-between;
+    gap:60px;
     position:relative;
     z-index:1;
+  }
+
+  .kallos-hero__text{
+    width:50%;
   }
 
   .kallos-hero__media{
@@ -98,6 +102,8 @@
 
   .kallos-img--main{
     width:68%;
+    left:0;
+    top:0;
     z-index:2;
   }
 
@@ -111,10 +117,6 @@
   @keyframes float{
     0%,100%{ transform:translateY(0); }
     50%{ transform:translateY(-15px); }
-  }
-
-  .kallos-hero__text{
-    width:50%;
   }
 
   .kallos-hero__proof{
@@ -168,7 +170,7 @@
 
   @media(max-width:768px){
     #kallos-hero-{{ section.id }}{
-      min-height:690px;
+      height:692px;
     }
 
     .kallos-hero__inner{
@@ -189,6 +191,15 @@
       margin:0 auto;
     }
 
+    .kallos-img--main{
+      width:70%;
+    }
+
+    .kallos-img--secondary{
+      width:45%;
+      margin-top:-16px;
+    }
+
     .kallos-hero__text{
       width:100%;
       order:2;
@@ -198,39 +209,10 @@
       justify-content:center;
     }
 
-    .kallos-hero__title{
-      font-size:38px;
-    }
-
-    .kallos-hero__desc{
-      font-size:15px;
-    }
+    .kallos-hero__title{ font-size:38px; }
+    .kallos-hero__desc{ font-size:15px; }
   }
 </style>
-
-<script>
-  (function(){
-    var el = document.getElementById("kallos-typed-{{ section.id }}");
-    if(!el) return;
-
-    var words = [
-      {% for block in section.blocks %}
-        {{ block.settings.word | json }}{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ];
-    if(!words.length){ words=["cejas","barba","cabello"]; }
-
-    var i=0,j=0,del=false;
-    function type(){
-      var w=words[i];
-      el.textContent = del ? w.slice(0,--j) : w.slice(0,++j);
-      if(!del && j===w.length){ del=true; setTimeout(type,2000); return; }
-      if(del && j===0){ del=false; i=(i+1)%words.length; }
-      setTimeout(type, del?70:140);
-    }
-    type();
-  })();
-</script>
 
 {% schema %}
 {
