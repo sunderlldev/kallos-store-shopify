@@ -1290,7 +1290,7 @@
                     "text_fkywBi": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Nuestro objetivo es que cada cliente quede totalmente satisfecho con su compra. Si no es así, cuéntanoslo y haremos todo lo posible para solucionarlo.</p>",
+                        "text": "<h5><strong>- Lima</strong></h5><h6>Realizamos envíos en <strong>24 a 48 horas hábiles.</strong></h6><h6>Si deseas recibir tu pedido <strong>el mismo día</strong>, puedes solicitar <strong>envío express por S/10 adicionales.</strong></h6><h1></h1><h5><strong>- Provincia</strong></h5><h6>Enviamos a provincia a través de las agencias <strong>Olva Courier y Shalom.</strong></h6><ul><li><h6><strong>Envío express a agencia: </strong>S/10 adicionales</h6></li><li><h6><strong>Envío a domicilio: </strong>S/20 adicionales</h6></li></ul><p></p><h6>En todos los casos, brindamos<strong> seguimiento del pedido</strong> hasta la entrega.</h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1372,7 +1372,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5>Cada pedido es <strong>verificado y despachado bajo control de calidad</strong> antes del envío.</h5><h5>Solo realizamos <strong>cambios o reposiciones</strong> en caso de:</h5><ul><li><h5>Producto dañado</h5></li><li><h5>Error en el envío</h5></li></ul><h5></h5><h5>Nuestro equipo te acompaña durante todo el proceso para asegurar una buena experiencia de compra.</h5>",
+                        "text": "<h6>Cada pedido es <strong>verificado y despachado bajo control de calidad</strong> antes del envío.</h6><h6>Solo realizamos <strong>cambios o reposiciones</strong> en caso de:</h6><ul><li><h6>Producto dañado</h6></li><li><h6>Error en el envío</h6></li></ul><h6></h6><h6>Nuestro equipo te acompaña durante todo el proceso para asegurar una buena experiencia de compra.</h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
