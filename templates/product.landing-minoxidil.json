@@ -1968,8 +1968,8 @@
       "type": "featured-editorial",
       "name": "Destacados editorial",
       "settings": {
-        "collection": "",
-        "title": "Lo más popular en Kallos Store",
+        "collection": "destacados",
+        "title": "Lo más destacado de Kallos",
         "title_weight": "700",
         "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
         "subtitle_weight": "400",
