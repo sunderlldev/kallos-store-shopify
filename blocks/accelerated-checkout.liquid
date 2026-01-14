@@ -57,10 +57,11 @@
 
   .shopify-payment-button__button--unbranded {
     font-size: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
   }
 
   .shopify-payment-button__button--unbranded::before {
@@ -68,6 +69,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='white'%3E%3Cpath d='M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
@@ -75,8 +77,9 @@
 
   .shopify-payment-button__button--unbranded::after {
     content: 'PAGAR AHORA CON TARJETA';
-    font-size: 1rem;
+    font-size: var(--font-size-h5, 0.875rem);
     font-weight: 700;
+    line-height: 1;
   }
 
   .shopify-payment-button__more-options[aria-hidden='true'] {
