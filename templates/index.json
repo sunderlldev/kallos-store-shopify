@@ -45,10 +45,10 @@
         "client_text": "clientes Kallos",
         "img_main": "shopify://shop_images/levitating-cream-container-studio-still-life_2fff7484-d5dc-4086-beca-761140a04d69.png",
         "img_secondary": "shopify://shop_images/67419136_9662754.png",
-        "main_img_width_desktop": 40,
-        "secondary_img_width_desktop": 20,
-        "main_img_width_mobile": 50,
-        "secondary_img_width_mobile": 30,
+        "main_img_width_desktop": 95,
+        "secondary_img_width_desktop": 70,
+        "main_img_width_mobile": 100,
+        "secondary_img_width_mobile": 90,
         "title_rich": "<p>Más confianza, Más</p>",
         "description_rich": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel, para potenciar tu mejor versión cada día.</p>"
       }
