@@ -1291,137 +1291,6 @@
         "padding-block-end": 0
       }
     },
-    "section_MRaTQp": {
-      "type": "section",
-      "blocks": {
-        "group_U3zKNx": {
-          "type": "group",
-          "name": "t:names.content",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 0,
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "image_NhTTLT": {
-              "type": "image",
-              "name": "t:names.image",
-              "settings": {
-                "image": "shopify://shop_images/fraseAntesDespues.avif",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_AH39ka": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h4>Cada aplicación te acerca a una versión más fuerte, más presente, más tú.</h4>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1.25rem",
-                "line_height": "loose",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "balance",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "image_NhTTLT",
-            "text_AH39ka"
-          ]
-        }
-      },
-      "block_order": [
-        "group_U3zKNx"
-      ],
-      "name": "t:names.image_compare",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "center",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
-        "section_width": "page-width",
-        "section_height": "small",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 50,
-        "padding-block-end": 0
-      }
-    },
     "176781003830b16789": {
       "type": "_blocks",
       "blocks": {
@@ -1466,88 +1335,6 @@
         "padding-block-end": 30
       }
     },
-    "kallo_innovation_CLBw7b": {
-      "type": "kallo-innovation",
-      "blocks": {
-        "item_fHMRQH": {
-          "type": "item",
-          "settings": {
-            "heading": "Envío",
-            "text": "<h5>Queremos que tu experiencia sea impecable desde el primer momento. Por eso,<strong> todos nuestros envíos son gratuitos</strong> y se realizan con operadores logísticos de confianza: <strong>Olva Courier o Shalom</strong>.</h5><h5>En <strong>Lima</strong>, realizamos entregas el <strong>mismo día</strong>.</h5><h5>Para envíos a <strong>provincia</strong>, solicitamos un <strong>adelanto de S/ 20</strong>, junto con tu número de tracking para que puedas seguir tu pedido en todo momento.</h5><h5>El tiempo estimado de entrega a provincia es de <strong>2 a 5 días hábiles.</strong></h5>"
-          }
-        },
-        "item_miqpdz": {
-          "type": "item",
-          "settings": {
-            "heading": "Métodos de Pago",
-            "text": "<h5>Pensamos en tu comodidad y seguridad. Puedes pagar <strong>al recibir tu pedido en la puerta de tu casa</strong> o directamente en la agencia de courier (<strong>Olva</strong> o <strong>Shalom</strong>) que prefieras.</h5><h5>Actualmente aceptamos pagos de forma rápida y segura a través de <strong>Yape</strong> o <strong>Plin</strong>.</h5>"
-          }
-        }
-      },
-      "block_order": [
-        "item_fHMRQH",
-        "item_miqpdz"
-      ],
-      "name": "Kallos · Innovación",
-      "settings": {
-        "title": "Sobre tu Pedido",
-        "image": "shopify://shop_images/jgfcvbnn.png",
-        "image_position": "left"
-      }
-    },
-    "kallo_innovation_iW4Cgj": {
-      "type": "kallo-innovation",
-      "blocks": {
-        "item_LMM3tx": {
-          "type": "item",
-          "settings": {
-            "heading": "01. Mi piel es sensible, ¿Aún así lo puedo usar?",
-            "text": "<h5>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</h5><h5>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</h5>"
-          }
-        },
-        "item_dVfmKT": {
-          "type": "item",
-          "settings": {
-            "heading": "02. ¿En cuánto tiempo veré resultados?",
-            "text": "<h5>La mayoría de nuestras clientas nota los primeros cambios a partir de la <strong>3ª semana de uso constante:</strong> pequeños vellos nuevos y mayor densidad en las zonas más finas.</h5><h5>Para un resultado completo y visible, recomendamos mantener el tratamiento entre <strong>3 y 6 meses,</strong> según tu tipo de piel y la constancia en la aplicación.</h5><h5>✨ <strong>La constancia es clave:</strong> el crecimiento es progresivo y natural, respaldado por ciencia dermatológica.</h5>"
-          }
-        },
-        "item_ETNdQ3": {
-          "type": "item",
-          "settings": {
-            "heading": "03. ¿Debo depilarme o puedo dejar crecer mis cejas?",
-            "text": "<h5>No es necesario depilarlas completamente, pero es importante que la crema tenga <strong>contacto directo con la piel </strong>en la zona donde deseas estimular el crecimiento.</h5><h5>Si usas pinzas o cera, te recomendamos <strong>evitar retirar los vellos finos nuevos</strong>, ya que son señal de que el producto está actuando.</h5><h5>✨ Deja que tus cejas crezcan de forma natural para obtener mejores resultados.</h5>"
-          }
-        },
-        "item_QJzQNr": {
-          "type": "item",
-          "settings": {
-            "heading": "04. ¿Proporcionan número de rastreo?",
-            "text": "<h5>Claro. Todos nuestros envíos incluyen un <strong>código</strong> <strong>de  seguimiento</strong> que recibirás por correo electrónico o WhatsApp una vez que tu pedido sea despachado.</h5><h5>Podrás rastrear tu pedido en tiempo real y recibir notificaciones sobre su ubicación hasta la entrega final.</h5>"
-          }
-        },
-        "item_jdrDw8": {
-          "type": "item",
-          "settings": {
-            "heading": "05. ¿Cuál es su política de devoluciones?",
-            "text": "<p>Sabemos que la confianza se construye desde el primer contacto. Por eso, si tu experiencia no cumple tus expectativas, te ofrecemos una política de devolución clara y transparente:</p><p>Puedes solicitar una devolución <strong>dentro de los 7 días posteriores a la entrega</strong>.</p><p>El producto debe estar <strong>sin uso, en perfecto estado y en su empaque original y sellado</strong>.</p><p>Para iniciar el proceso, <strong>contáctanos directamente</strong> a través del <strong>WhatsApp (+51 924 084 922).</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_LMM3tx",
-        "item_dVfmKT",
-        "item_ETNdQ3",
-        "item_QJzQNr",
-        "item_jdrDw8"
-      ],
-      "name": "Kallos · Innovación",
-      "settings": {
-        "title": "Preguntas Frecuentes",
-        "image": "shopify://shop_images/mock_up.png",
-        "image_position": "right"
-      }
-    },
     "featured_editorial_UzPViK": {
       "type": "featured-editorial",
       "name": "Destacados editorial",
@@ -1555,6 +1342,8 @@
         "collection": "destacados",
         "title": "Más de nuestro productos",
         "title_weight": "700",
+        "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
+        "subtitle_weight": "400",
         "price_weight": "400",
         "card_bg": "#ac9651"
       }
@@ -1562,10 +1351,7 @@
   },
   "order": [
     "main",
-    "section_MRaTQp",
     "176781003830b16789",
-    "kallo_innovation_CLBw7b",
-    "kallo_innovation_iW4Cgj",
     "featured_editorial_UzPViK"
   ]
 }
