@@ -11,6 +11,31 @@
   "sections": {
     "kallos_hero_dYKyTP": {
       "type": "kallos-hero",
+      "blocks": {
+        "word_YrD8Vw": {
+          "type": "word",
+          "settings": {
+            "word": "cejas"
+          }
+        },
+        "word_qJ68DF": {
+          "type": "word",
+          "settings": {
+            "word": "barba"
+          }
+        },
+        "word_eMP6rk": {
+          "type": "word",
+          "settings": {
+            "word": "hola"
+          }
+        }
+      },
+      "block_order": [
+        "word_YrD8Vw",
+        "word_qJ68DF",
+        "word_eMP6rk"
+      ],
       "name": "Kallos · Hero",
       "settings": {
         "max_width": 1000,
