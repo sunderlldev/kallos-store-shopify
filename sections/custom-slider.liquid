@@ -2,26 +2,33 @@
   assign slider_id = 'slider-' | append: section.id
 -%}
 
-<div class="banner-wrapper-{{ section.id }}" style="--desktop-height: {{ section.settings.desktop_height }}px; --mobile-height: {{ section.settings.mobile_height }}px;">
+<div
+  class="banner-wrapper-{{ section.id }}"
+  style="--desktop-height: {{ section.settings.desktop_height }}px; --mobile-height: {{ section.settings.mobile_height }}px;"
+>
   <div class="banner-container">
     <div class="slider-track" id="{{ slider_id }}">
       {% for block in section.blocks %}
         <div class="slide-item" {{ block.shopify_attributes }}>
           {% if block.settings.image_desktop != blank %}
-            <img src="{{ block.settings.image_desktop | image_url: width: 2000 }}" 
-                 class="img-desktop" 
-                 alt="{{ block.settings.image_desktop.alt }}" 
-                 loading="lazy">
+            <img
+              src="{{ block.settings.image_desktop | image_url: width: 2000 }}"
+              class="img-desktop"
+              alt="{{ block.settings.image_desktop.alt }}"
+              loading="lazy"
+            >
           {% endif %}
-          
+
           {% if block.settings.image_mobile != blank %}
-            <img src="{{ block.settings.image_mobile | image_url: width: 800 }}" 
-                 class="img-mobile" 
-                 alt="{{ block.settings.image_mobile.alt }}" 
-                 loading="lazy">
+            <img
+              src="{{ block.settings.image_mobile | image_url: width: 800 }}"
+              class="img-mobile"
+              alt="{{ block.settings.image_mobile.alt }}"
+              loading="lazy"
+            >
           {% else %}
-             {% comment %} Fallback si no hay imagen móvil {% endcomment %}
-             <img src="{{ block.settings.image_desktop | image_url: width: 800 }}" class="img-mobile" alt="Slide">
+            {% comment %} Fallback si no hay imagen móvil {% endcomment %}
+            <img src="{{ block.settings.image_desktop | image_url: width: 800 }}" class="img-mobile" alt="Slide">
           {% endif %}
         </div>
       {% endfor %}
@@ -61,7 +68,7 @@
     object-fit: cover; /* Esto asegura que la imagen llene el alto definido */
     display: block;
   }
-  
+
   .img-mobile { display: none; }
   .img-desktop { display: block; }
 
@@ -97,7 +104,7 @@
     const slides = track.querySelectorAll('.slide-item');
     const nextBtn = track.parentElement.querySelector('.next');
     const prevBtn = track.parentElement.querySelector('.prev');
-    
+
     if (!track || slides.length <= 1) return;
 
     let index = 0;
@@ -160,7 +167,7 @@
   ],
   "presets": [
     {
-      "name": "Slider Responsive Pro"
+      "name": "Kallos · Custom Slider"
     }
   ]
 }
