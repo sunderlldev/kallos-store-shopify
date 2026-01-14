@@ -45,7 +45,7 @@
         "client_text": "clientes Kallos",
         "img_main": "shopify://shop_images/levitating-cream-container-studio-still-life_2fff7484-d5dc-4086-beca-761140a04d69.png",
         "img_secondary": "shopify://shop_images/67419136_9662754.png",
-        "title_rich": "<p>Más confianza, Más</p>",
+        "title_rich": "<p>Más <strong>confianza</strong>, Más</p>",
         "description_rich": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel, para potenciar tu mejor versión cada día.</p>"
       }
     },
@@ -59,7 +59,7 @@
         "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
         "subtitle_weight": "400",
         "price_weight": "700",
-        "card_bg": "#AC9651"
+        "card_bg": "#ac9651"
       }
     },
     "kallos_benefits_XUHpeJ": {
