@@ -543,90 +543,7 @@
                 "group_hNbhHd"
               ]
             },
-            "group_bnkkqt": {
-              "type": "group",
-              "name": "t:names.group",
-              "settings": {
-                "content_direction": "row",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "center",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": false,
-                "color_scheme": "scheme-5",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 12,
-                "toggle_overlay": true,
-                "overlay_color": "#000000",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "https://wa.me/51941914527",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 15,
-                "padding-block-end": 15,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "icon_qEUTLH": {
-                  "type": "icon",
-                  "name": "t:names.icon",
-                  "settings": {
-                    "icon": "whatsapp",
-                    "width": 24,
-                    "link": "",
-                    "open_in_new_tab": false
-                  },
-                  "blocks": {}
-                },
-                "text_jc6NPz": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<h5><strong>PAGAR CONTRA ENTREGA</strong></h5>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "icon_qEUTLH",
-                "text_jc6NPz"
-              ]
-            },
-            "group_3mh4tc": {
+            "group_GYDAzn": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -635,7 +552,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "fill",
@@ -666,7 +583,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_kdPNBh": {
+                "group_KnzyfL": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -678,11 +595,94 @@
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
-                    "width": "custom",
+                    "width": "fill",
                     "custom_width": 100,
-                    "width_mobile": "fit-content",
+                    "width_mobile": "fill",
                     "custom_width_mobile": 100,
-                    "height": "custom",
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": false,
+                    "color_scheme": "scheme-5",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 12,
+                    "toggle_overlay": true,
+                    "overlay_color": "#000000",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "https://wa.me/51941914527",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 15,
+                    "padding-block-end": 15,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "icon_qEUTLH": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "whatsapp",
+                        "width": 24,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_jc6NPz": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<h5><strong>PAGAR CONTRA ENTREGA</strong></h5>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_qEUTLH",
+                    "text_jc6NPz"
+                  ]
+                },
+                "group_WEP6GT": {
+                  "type": "group",
+                  "name": "t:names.group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": true,
                     "color_scheme": "",
@@ -706,23 +706,23 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_bbNeiV": {
+                    "group_kdPNBh": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
                         "content_direction": "row",
-                        "vertical_on_mobile": false,
+                        "vertical_on_mobile": true,
                         "horizontal_alignment": "center",
                         "vertical_alignment": "center",
                         "align_baseline": false,
                         "horizontal_alignment_flex_direction_column": "flex-start",
                         "vertical_alignment_flex_direction_column": "center",
                         "gap": 12,
-                        "width": "fit-content",
-                        "custom_width": 0,
-                        "width_mobile": "fill",
+                        "width": "custom",
+                        "custom_width": 100,
+                        "width_mobile": "fit-content",
                         "custom_width_mobile": 100,
-                        "height": "fit",
+                        "height": "custom",
                         "custom_height": 100,
                         "inherit_color_scheme": true,
                         "color_scheme": "",
@@ -746,142 +746,188 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_xThipk": {
-                          "type": "icon",
-                          "name": "t:names.icon",
+                        "group_bbNeiV": {
+                          "type": "group",
+                          "name": "t:names.group",
                           "settings": {
-                            "icon": "whatsapp",
-                            "image_upload": "shopify://shop_images/whatsapp.png",
-                            "width": 24,
-                            "link": "",
-                            "open_in_new_tab": false
-                          },
-                          "blocks": {}
-                        },
-                        "text_bacTYX": {
-                          "type": "text",
-                          "name": "t:names.text",
-                          "settings": {
-                            "text": "<h5><strong>WhatsApp: 924 084 922</strong></h5>",
+                            "content_direction": "row",
+                            "vertical_on_mobile": false,
+                            "horizontal_alignment": "center",
+                            "vertical_alignment": "center",
+                            "align_baseline": false,
+                            "horizontal_alignment_flex_direction_column": "flex-start",
+                            "vertical_alignment_flex_direction_column": "center",
+                            "gap": 12,
                             "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 3,
+                            "custom_width": 0,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fit",
+                            "custom_height": 100,
+                            "inherit_color_scheme": true,
+                            "color_scheme": "",
+                            "background_media": "none",
+                            "video_position": "cover",
+                            "background_image_position": "cover",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 0,
+                            "toggle_overlay": false,
+                            "overlay_color": "#00000026",
+                            "overlay_style": "solid",
+                            "gradient_direction": "to top",
+                            "link": "",
+                            "open_in_new_tab": false,
+                            "placeholder": "",
+                            "padding-block-start": 0,
                             "padding-block-end": 0,
                             "padding-inline-start": 0,
                             "padding-inline-end": 0
                           },
-                          "blocks": {}
+                          "blocks": {
+                            "icon_xThipk": {
+                              "type": "icon",
+                              "name": "t:names.icon",
+                              "settings": {
+                                "icon": "whatsapp",
+                                "image_upload": "shopify://shop_images/greenPoint.png",
+                                "width": 12,
+                                "link": "",
+                                "open_in_new_tab": false
+                              },
+                              "blocks": {}
+                            },
+                            "text_bacTYX": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<h5><strong>WhatsApp: 924 084 922</strong></h5>",
+                                "width": "fit-content",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 3,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "icon_xThipk",
+                            "text_bacTYX"
+                          ]
+                        },
+                        "group_hDbdPc": {
+                          "type": "group",
+                          "name": "t:names.group",
+                          "settings": {
+                            "content_direction": "row",
+                            "vertical_on_mobile": false,
+                            "horizontal_alignment": "center",
+                            "vertical_alignment": "center",
+                            "align_baseline": false,
+                            "horizontal_alignment_flex_direction_column": "flex-start",
+                            "vertical_alignment_flex_direction_column": "center",
+                            "gap": 12,
+                            "width": "fit-content",
+                            "custom_width": 50,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fill",
+                            "custom_height": 100,
+                            "inherit_color_scheme": true,
+                            "color_scheme": "",
+                            "background_media": "none",
+                            "video_position": "cover",
+                            "background_image_position": "cover",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 0,
+                            "toggle_overlay": false,
+                            "overlay_color": "#00000026",
+                            "overlay_style": "solid",
+                            "gradient_direction": "to top",
+                            "link": "",
+                            "open_in_new_tab": false,
+                            "placeholder": "",
+                            "padding-block-start": 0,
+                            "padding-block-end": 5,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 8
+                          },
+                          "blocks": {
+                            "icon_rnBJLf": {
+                              "type": "icon",
+                              "name": "t:names.icon",
+                              "settings": {
+                                "icon": "price_tag",
+                                "image_upload": "shopify://shop_images/yape.png",
+                                "width": 46,
+                                "link": "",
+                                "open_in_new_tab": false
+                              },
+                              "blocks": {}
+                            },
+                            "icon_eTANxy": {
+                              "type": "icon",
+                              "name": "t:names.icon",
+                              "settings": {
+                                "icon": "price_tag",
+                                "image_upload": "shopify://shop_images/plin.png",
+                                "width": 46,
+                                "link": "",
+                                "open_in_new_tab": false
+                              },
+                              "blocks": {}
+                            },
+                            "icon_je7kJz": {
+                              "type": "icon",
+                              "name": "t:names.icon",
+                              "settings": {
+                                "icon": "price_tag",
+                                "image_upload": "shopify://shop_images/banco.png",
+                                "width": 46,
+                                "link": "",
+                                "open_in_new_tab": false
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "icon_rnBJLf",
+                            "icon_eTANxy",
+                            "icon_je7kJz"
+                          ]
                         }
                       },
                       "block_order": [
-                        "icon_xThipk",
-                        "text_bacTYX"
-                      ]
-                    },
-                    "group_hDbdPc": {
-                      "type": "group",
-                      "name": "t:names.group",
-                      "settings": {
-                        "content_direction": "row",
-                        "vertical_on_mobile": false,
-                        "horizontal_alignment": "center",
-                        "vertical_alignment": "center",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "flex-start",
-                        "vertical_alignment_flex_direction_column": "center",
-                        "gap": 12,
-                        "width": "fit-content",
-                        "custom_width": 50,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fill",
-                        "custom_height": 100,
-                        "inherit_color_scheme": true,
-                        "color_scheme": "",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
-                        "border": "none",
-                        "border_width": 1,
-                        "border_opacity": 100,
-                        "border_radius": 0,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "placeholder": "",
-                        "padding-block-start": 0,
-                        "padding-block-end": 5,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 8
-                      },
-                      "blocks": {
-                        "icon_rnBJLf": {
-                          "type": "icon",
-                          "name": "t:names.icon",
-                          "settings": {
-                            "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/yape.png",
-                            "width": 46,
-                            "link": "",
-                            "open_in_new_tab": false
-                          },
-                          "blocks": {}
-                        },
-                        "icon_eTANxy": {
-                          "type": "icon",
-                          "name": "t:names.icon",
-                          "settings": {
-                            "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/plin.png",
-                            "width": 46,
-                            "link": "",
-                            "open_in_new_tab": false
-                          },
-                          "blocks": {}
-                        },
-                        "icon_je7kJz": {
-                          "type": "icon",
-                          "name": "t:names.icon",
-                          "settings": {
-                            "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/banco.png",
-                            "width": 46,
-                            "link": "",
-                            "open_in_new_tab": false
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "icon_rnBJLf",
-                        "icon_eTANxy",
-                        "icon_je7kJz"
+                        "group_bbNeiV",
+                        "group_hDbdPc"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_bbNeiV",
-                    "group_hDbdPc"
+                    "group_kdPNBh"
                   ]
                 }
               },
               "block_order": [
-                "group_kdPNBh"
+                "group_KnzyfL",
+                "group_WEP6GT"
               ]
             },
             "group_Vc4C7B": {
@@ -1499,8 +1545,7 @@
             "group_icgrde",
             "divider_VJhene",
             "group_zfLtqk",
-            "group_bnkkqt",
-            "group_3mh4tc",
+            "group_GYDAzn",
             "group_Vc4C7B",
             "group_J43EMe"
           ]
