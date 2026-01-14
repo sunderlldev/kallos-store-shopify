@@ -9,9 +9,22 @@
  */
 {
   "sections": {
+    "kallos_hero_dYKyTP": {
+      "type": "kallos-hero",
+      "name": "Kallos · Hero",
+      "settings": {
+        "bg_color": "#000000",
+        "mobile_gradient": "#AC9651",
+        "accent_color": "#AC9651",
+        "client_count": "10.000",
+        "client_text": "clientes Kallos",
+        "title_rich": "<p>Más confianza,<br>Más</p>",
+        "description_rich": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel, para potenciar tu mejor versión cada día.</p>"
+      }
+    },
     "featured_editorial_AmL6qw": {
       "type": "featured-editorial",
-      "name": "Destacados editorial",
+      "name": "Kallos · Productos Destacados",
       "settings": {
         "collection": "destacados",
         "title": "Lo más destacado de Kallos",
@@ -98,7 +111,7 @@
         "feature_DWwfC6",
         "feature_wXcqjk"
       ],
-      "name": "Lash Plus Hero",
+      "name": "Kallos · Lash+ Hero",
       "settings": {
         "bg_color": "#f9f9f9",
         "icon_color": "#ac9651",
@@ -112,6 +125,7 @@
     }
   },
   "order": [
+    "kallos_hero_dYKyTP",
     "featured_editorial_AmL6qw",
     "kallos_benefits_XUHpeJ",
     "lash_hero_BBMn3n"
