@@ -46,210 +46,49 @@
 </section>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-  #kallos-hero-{{ section.id }}{
-    --grad: {{ section.settings.gradient_color }};
-    --text: {{ section.settings.text_color }};
-    --star: {{ section.settings.star_color }};
-    color: var(--text);
-    position: relative;
-    overflow: hidden;
-  }
-
-  #kallos-hero-{{ section.id }}::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
-    z-index:0;
-  }
-
-  .kallos-hero__inner{
-    max-width:1100px;
-    margin:0 auto;
-    padding:80px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:40px;
-    position:relative;
-    z-index:1;
-  }
-
-  .kallos-hero__text{
-    width:45%;
-  }
-
   .kallos-hero__media{
-    width:55%;
-    height:585px;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width:50%;
+  height:480px;
+  position:relative;
+}
+
+.kallos-img{
+  position:absolute;
+  animation: float 6s ease-in-out infinite;
+}
+
+.kallos-img--main{
+  width:68%;
+  right:0;
+  bottom:0;
+  z-index:2;
+}
+
+.kallos-img--secondary{
+  width:42%;
+  right:25%;
+  top:0;
+  z-index:1;
+}
+
+@media(max-width:768px){
+  .kallos-hero__media{
+    width:100%;
+    height:360px;
   }
 
   .kallos-img{
-    position:absolute;
-    animation: float 6s ease-in-out infinite;
-    object-fit: contain;
-    height: auto;
-    transition: all 0.3s ease;
-  }
-
-  .kallos-img--main{
-    z-index: 2;
-    width: 380px;
-    top: 10%;
-    right: 0;
+    position:relative;
+    animation:none;
+    display:block;
+    margin:0 auto;
   }
 
   .kallos-img--secondary{
-    z-index: 1;
-    width: 320px;
-    bottom: 10%;
-    left: 0;
-    opacity: 0.9;
+    display:none;
   }
+}
 
-  @keyframes float{
-    0%,100%{ transform: translateY(0); }
-    50%{ transform: translateY(-20px); }
-  }
-
-  .kallos-hero__proof{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-    font-size:18px;
-  }
-
-  .kallos-hero__stars{
-    color:var(--star);
-    display:flex;
-    gap:4px;
-  }
-
-  .kallos-hero__stars svg{
-    width:18px;
-    height:18px;
-  }
-
-  .kallos-hero__title{
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-    font-size:52px;
-    line-height:1.1;
-    margin-top:12px;
-  }
-
-  .kallos-title-static p{
-    display:inline;
-    margin:0;
-  }
-
-  .kallos-title-inline{
-    display:inline-block;
-    white-space: nowrap;
-  }
-
-  #kallos-typed-{{ section.id }}{
-    display: inline-block;
-    min-height: 1em;
-  }
-
-  .kallos-caret{
-    display: inline-block;
-    border-right: 3px solid currentColor;
-    height: 1em;
-    margin-left: 2px;
-    animation: blink 1s step-start infinite;
-    vertical-align: middle;
-  }
-
-  @keyframes blink{
-    50%{ border-color:transparent; }
-  }
-
-  .kallos-hero__desc{
-    margin-top:14px;
-    font-family:'Poppins',sans-serif;
-    font-size:18px;
-    line-height:1.6;
-  }
-
-  @media(max-width:768px){
-    #kallos-hero-{{ section.id }}{
-      height: 692px;
-    }
-
-    #kallos-hero-{{ section.id }}::before{
-      background: linear-gradient(0deg, var(--grad) 45%, transparent 100%);
-    }
-
-    .kallos-hero__inner{
-      flex-direction:column;
-      padding:20px;
-      text-align:center;
-      height: 100%;
-      justify-content: flex-end;
-    }
-
-    .kallos-hero__media{
-      width:100%;
-      height:335px;
-      order:1;
-      position: absolute;
-      top: 20px;
-      display: block;
-    }
-
-    .kallos-img{
-      width: 280px;
-      max-width: 80%;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 0;
-    }
-
-    .kallos-img--main{
-      top: 20px;
-      z-index: 3;
-      margin-left: 20px;
-    }
-
-    .kallos-img--secondary{
-      top: 60px;
-      bottom: auto;
-      z-index: 2;
-      margin-left: -20px;
-    }
-
-    .kallos-hero__text{
-      width:100%;
-      order:2;
-      padding-bottom: 30px;
-      position: relative;
-      z-index: 10;
-    }
-
-    .kallos-hero__title{
-      font-size:34px;
-      display: block;
-    }
-    
-    .kallos-title-static, .kallos-title-inline {
-      display: inline;
-    }
-
-    .kallos-hero__desc{
-      font-size:14px;
-      padding: 0 10px;
-    }
-  }
 </style>
 
 <script>
