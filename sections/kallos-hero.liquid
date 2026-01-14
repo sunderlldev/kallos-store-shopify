@@ -46,7 +46,7 @@
 </section>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
   #kallos-hero-{{ section.id }}{
     --grad: {{ section.settings.gradient_color }};
@@ -55,6 +55,7 @@
     color: var(--text);
     position: relative;
     overflow: hidden;
+    background-color: #fff;
   }
 
   #kallos-hero-{{ section.id }}::before{
@@ -66,13 +67,13 @@
   }
 
   .kallos-hero__inner{
-    max-width:980px;
+    max-width: 1100px;
     margin:0 auto;
     padding:80px 20px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:60px;
+    gap:40px;
     position:relative;
     z-index:1;
   }
@@ -83,34 +84,44 @@
 
   .kallos-hero__media{
     width:50%;
-    height:455px;
+    height:450px;
     position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .kallos-img{
     position:absolute;
     animation: float 6s ease-in-out infinite;
+    object-fit: contain;
   }
 
   .kallos-img--main{
-    width:335px;
-    top:80px;
-    right:0;
-    z-index:2;
+    width: 280px;
+    z-index: 2;
+    transform: rotate(5deg);
+    bottom: 20px;
+    right: 20px;
   }
 
   .kallos-img--secondary{
-    width:260px;
-    top:0;
-    right:200px;
-    z-index:1;
-    opacity:0.95;
+    width: 240px;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-10deg);
+    opacity: 0.9;
+    animation-delay: -3s;
   }
 
   @keyframes float{
-    0%,100%{ transform:translateY(0); }
-    50%{ transform:translateY(-15px); }
+    0%,100%{ transform: translateY(0) rotate(var(--rot, 5deg)); }
+    50%{ transform: translateY(-20px) rotate(var(--rot, 5deg)); }
   }
+
+  .kallos-img--main { --rot: 5deg; }
+  .kallos-img--secondary { --rot: -10deg; }
 
   .kallos-hero__proof{
     display:flex;
@@ -136,7 +147,7 @@
     font-family:'Poppins',sans-serif;
     font-weight:700;
     font-size:52px;
-    line-height:1.12;
+    line-height:1.1;
     margin-top:12px;
   }
 
@@ -148,18 +159,12 @@
   .kallos-title-inline{
     display:inline-flex;
     align-items:flex-end;
-    margin-left:6px;
-  }
-
-  .kallos-title-inline span:first-child{
-    min-width:4ch;
-    display:inline-block;
   }
 
   .kallos-caret{
-    border-left:2px solid currentColor;
+    border-left:3px solid currentColor;
     height:1em;
-    margin-left:2px;
+    margin-left:4px;
     animation: blink 1s step-start infinite;
   }
 
@@ -168,50 +173,36 @@
   }
 
   .kallos-hero__desc{
-    margin-top:14px;
+    margin-top:20px;
     font-family:'Poppins',sans-serif;
     font-size:18px;
     line-height:1.6;
+    max-width: 90%;
   }
 
   @media(max-width:768px){
     #kallos-hero-{{ section.id }}{
-      height:692px;
+      height: auto;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
     }
 
     #kallos-hero-{{ section.id }}::before{
-      background: linear-gradient(0deg, var(--grad) 0%, transparent 100%);
+      background: linear-gradient(0deg, var(--grad) 20%, transparent 100%);
     }
 
     .kallos-hero__inner{
       flex-direction:column;
-      padding:32px 20px;
+      padding:60px 20px;
       text-align:center;
+      gap: 30px;
     }
 
     .kallos-hero__media{
       width:100%;
-      height:335px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      height:350px;
       order:1;
-    }
-
-    .kallos-img{
-      position:relative;
-      animation:none;
-      transform:none;
-    }
-
-    .kallos-img--main{
-      width:335px;
-      right:auto;
-      top:auto;
-    }
-
-    .kallos-img--secondary{
-      display:none;
     }
 
     .kallos-hero__text{
@@ -219,16 +210,34 @@
       order:2;
     }
 
+    .kallos-img{
+      position: absolute;
+    }
+
+    .kallos-img--main{
+      width: 200px;
+      right: 15%;
+      bottom: 10%;
+    }
+
+    .kallos-img--secondary{
+      display: block;
+      width: 160px;
+      left: 15%;
+      top: 10%;
+    }
+
     .kallos-hero__proof{
       justify-content:center;
     }
 
     .kallos-hero__title{
-      font-size:38px;
+      font-size:36px;
     }
 
     .kallos-hero__desc{
-      font-size:15px;
+      font-size:16px;
+      margin: 15px auto 0;
     }
   }
 </style>
