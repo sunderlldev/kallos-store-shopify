@@ -77,10 +77,9 @@
     z-index:1;
   }
 
-  .kallos-hero__text{
-    width:45%;
-  }
+  .kallos-hero__text{ width:45%; }
 
+  /* --- DESKTOP MEDIA (Restaurado) --- */
   .kallos-hero__media{
     width:55%;
     height:585px;
@@ -94,19 +93,17 @@
     position:absolute;
     animation: float 6s ease-in-out infinite;
     object-fit: contain;
-    height: auto;
-    transition: all 0.3s ease;
   }
 
   .kallos-img--main{
-    z-index: 2;
+    z-index: 3;
     width: 380px;
     top: 10%;
     right: 0;
   }
 
   .kallos-img--secondary{
-    z-index: 1;
+    z-index: 2;
     width: 320px;
     bottom: 10%;
     left: 0;
@@ -115,76 +112,23 @@
 
   @keyframes float{
     0%,100%{ transform: translateY(0); }
-    50%{ transform: translateY(-20px); }
+    50%{ transform: translateY(-15px); }
   }
 
-  .kallos-hero__proof{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-    font-size:18px;
-  }
-
-  .kallos-hero__stars{
-    color:var(--star);
-    display:flex;
-    gap:4px;
-  }
-
-  .kallos-hero__stars svg{
-    width:18px;
-    height:18px;
-  }
-
+  /* --- TYPOGRAPHY --- */
   .kallos-hero__title{
     font-family:'Poppins',sans-serif;
     font-weight:700;
     font-size:52px;
-    line-height:1.1;
-    margin-top:12px;
+    line-height:1.2;
   }
 
-  .kallos-title-static p{
-    display:inline;
-    margin:0;
-  }
+  .kallos-title-static p { display: inline; margin: 0; }
+  .kallos-title-inline { display: inline-block; white-space: nowrap; }
 
-  .kallos-title-inline{
-    display:inline-block;
-    white-space: nowrap;
-  }
-
-  #kallos-typed-{{ section.id }}{
-    display: inline-block;
-    min-height: 1em;
-  }
-
-  .kallos-caret{
-    display: inline-block;
-    border-right: 3px solid currentColor;
-    height: 1em;
-    margin-left: 2px;
-    animation: blink 1s step-start infinite;
-    vertical-align: middle;
-  }
-
-  @keyframes blink{
-    50%{ border-color:transparent; }
-  }
-
-  .kallos-hero__desc{
-    margin-top:14px;
-    font-family:'Poppins',sans-serif;
-    font-size:18px;
-    line-height:1.6;
-  }
-
+  /* --- MOBILE RESPONSIVE --- */
   @media(max-width:768px){
-    #kallos-hero-{{ section.id }}{
-      height: 692px;
-    }
+    #kallos-hero-{{ section.id }}{ height: auto; }
 
     #kallos-hero-{{ section.id }}::before{
       background: linear-gradient(0deg, var(--grad) 45%, transparent 100%);
@@ -192,62 +136,65 @@
 
     .kallos-hero__inner{
       flex-direction:column;
-      padding:20px;
+      padding:40px 20px;
       text-align:center;
-      height: 100%;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
 
+    /* Contenedor de imágenes estilo Wayra */
     .kallos-hero__media{
       width:100%;
-      height:335px;
-      order:1;
-      position: absolute;
-      top: 20px;
-      display: block;
+      height: auto;
+      min-height: 300px;
+      order: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      position: relative;
     }
 
     .kallos-img{
-      width: 280px;
-      max-width: 80%;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 0;
+      position: relative; /* Cambiado de absolute para que fluyan */
+      width: 65vw;
+      max-width: 280px;
+      height: auto;
+      transform: none;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
     }
 
+    /* Solapamiento central sin cortes */
     .kallos-img--main{
-      top: 20px;
-      z-index: 3;
-      margin-left: 20px;
+      z-index: 10;
+      margin-left: -100px; /* Se mete sobre la otra */
+      margin-top: 20px;
     }
 
     .kallos-img--secondary{
-      top: 60px;
-      bottom: auto;
-      z-index: 2;
-      margin-left: -20px; /* Desfase opuesto */
+      z-index: 5;
+      margin-right: -100px; /* Se mete tras la otra */
+      opacity: 1;
     }
 
     .kallos-hero__text{
       width:100%;
       order:2;
-      padding-bottom: 30px;
-      position: relative;
-      z-index: 10;
+      padding-top: 10px;
     }
 
+    /* CORRECCIÓN TEXTO: Baja el "Más..." */
     .kallos-hero__title{
       font-size:34px;
-      display: block;
-    }
-    
-    .kallos-title-static, .kallos-title-inline {
-      display: inline;
     }
 
-    .kallos-hero__desc{
-      font-size:14px;
-      padding: 0 10px;
+    .kallos-title-inline {
+      display: block; /* Fuerza el salto de línea solo en mobile */
+      width: 100%;
+      margin-top: 4px;
     }
   }
 </style>
