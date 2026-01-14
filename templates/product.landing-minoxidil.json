@@ -1494,8 +1494,8 @@
                     "placeholder": "",
                     "padding-block-start": 25,
                     "padding-block-end": 0,
-                    "padding-inline-start": 15,
-                    "padding-inline-end": 0
+                    "padding-inline-start": 20,
+                    "padding-inline-end": 20
                   },
                   "blocks": {
                     "group_PgqyiD": {
@@ -1708,7 +1708,7 @@
                     "placeholder": "",
                     "padding-block-start": 25,
                     "padding-block-end": 0,
-                    "padding-inline-start": 15,
+                    "padding-inline-start": 20,
                     "padding-inline-end": 15
                   },
                   "blocks": {
