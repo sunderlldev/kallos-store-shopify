@@ -99,14 +99,14 @@
   }
 
   .kallos-img--main{
-    z-index: 2;
+    z-index: 3;
     width: 380px;
     top: 10%;
     right: 0;
   }
 
   .kallos-img--secondary{
-    z-index: 1;
+    z-index: 2;
     width: 320px;
     bottom: 10%;
     left: 0;
@@ -183,7 +183,7 @@
 
   @media(max-width:768px){
     #kallos-hero-{{ section.id }}{
-      height: 692px;
+      height: auto;
     }
 
     #kallos-hero-{{ section.id }}::before{
@@ -192,40 +192,44 @@
 
     .kallos-hero__inner{
       flex-direction:column;
-      padding:20px;
+      padding:40px 20px;
       text-align:center;
-      height: 100%;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
 
     .kallos-hero__media{
       width:100%;
-      height:335px;
+      height: auto;
+      min-height: 320px;
       order:1;
-      position: absolute;
-      top: 20px;
-      display: block;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
     }
 
     .kallos-img{
-      width: 280px;
-      max-width: 80%;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 0;
+      position: relative;
+      width: 78vw;
+      max-width: 260px;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      transform: none;
     }
 
     .kallos-img--main{
-      top: 20px;
-      z-index: 3;
-      margin-left: 20px;
+      z-index: 10;
+      margin-left: -78px;
+      margin-top: 20px;
     }
 
     .kallos-img--secondary{
-      top: 60px;
-      bottom: auto;
-      z-index: 2;
-      margin-left: -20px; /* Desfase opuesto */
+      z-index: 5;
+      margin-right: -78px;
+      opacity: 1;
     }
 
     .kallos-hero__text{
@@ -242,7 +246,8 @@
     }
     
     .kallos-title-static, .kallos-title-inline {
-      display: inline;
+      display: block;
+      width: 100%;
     }
 
     .kallos-hero__desc{
