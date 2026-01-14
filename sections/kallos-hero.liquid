@@ -16,7 +16,7 @@
 
       <h1 class="kallos-hero__title">
         {{ section.settings.title_rich }}
-        <span class="kallos-title-typing">
+        <span class="kallos-title-inline">
           <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
         </span>
       </h1>
@@ -48,171 +48,223 @@
 </section>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-  #kallos-hero-{{ section.id }}{
-    --grad: {{ section.settings.gradient_color }};
-    --text: {{ section.settings.text_color }};
-    --star: {{ section.settings.star_color }};
-    color: var(--text);
-    position: relative;
-    overflow: hidden;
-  }
-
-  #kallos-hero-{{ section.id }}::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
-    z-index:0;
-  }
-
-  @media(max-width:768px){
-    #kallos-hero-{{ section.id }}::before{
-      background: linear-gradient(0deg, var(--grad) 0%, transparent 100%);
-    }
-  }
-
-  .kallos-hero__inner{
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 80px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    position:relative;
-    z-index:1;
-  }
-
-  .kallos-hero__text{
-    width:50%;
-  }
-
-  .kallos-hero__media{
-    width:50%;
-    height:480px;
-    position:relative;
-  }
-
-  .kallos-img{
-    position:absolute;
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .kallos-img--main{
-    width:68%;
-    left:0;
-    top:0;
-    z-index:2;
-  }
-
-  .kallos-img--secondary{
-    width:42%;
-    right:0;
-    top:18%;
-    z-index:1;
-  }
-
-  @keyframes float{
-    0%,100%{ transform:translateY(0); }
-    50%{ transform:translateY(-15px); }
-  }
-
-  .kallos-hero__proof{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-    font-size:18px;
-  }
-
-  .kallos-hero__stars{
-    display:flex;
-    gap:4px;
-    color:var(--star);
-  }
-
-  .kallos-hero__stars svg{
-    width:18px;
-    height:18px;
-  }
-
-  .kallos-hero__title{
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-    font-size:52px;
-    line-height:1.12;
-    margin-top:12px;
-  }
-
-  .kallos-title-typing{
-    display:inline-flex;
-    align-items:flex-end;
-  }
-
-  .kallos-caret{
-    border-left:2px solid currentColor;
-    height:1em;
-    margin-left:2px;
-    animation:blink 1s step-start infinite;
-  }
-
-  @keyframes blink{50%{border-color:transparent;}}
-
-  .kallos-hero__desc{
-    margin-top:14px;
-    font-family:'Poppins',sans-serif;
-    font-size:18px;
-    line-height:1.6;
-  }
-
-  @media(max-width:768px){
     #kallos-hero-{{ section.id }}{
-      height:692px;
+      --grad: {{ section.settings.gradient_color }};
+      --text: {{ section.settings.text_color }};
+      --star: {{ section.settings.star_color }};
+      color: var(--text);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #kallos-hero-{{ section.id }}::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
+      z-index:0;
+    }
+
+    @media(max-width:768px){
+      #kallos-hero-{{ section.id }}::before{
+        background: linear-gradient(0deg, var(--grad) 0%, transparent 100%);
+      }
     }
 
     .kallos-hero__inner{
-      flex-direction:column;
-      text-align:center;
-      padding:40px 20px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 80px 20px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:60px;
+        position:relative;
+        z-index:1;
     }
 
+    /* TEXTO IZQUIERDA */
+    .kallos-hero__text{
+      width:50%;
+    }
+
+    /* IMÁGENES DERECHA */
     .kallos-hero__media{
-      width:100%;
-      height:360px;
-      order:1;
+        width:50%;
+        height:455px; /* CLAVE */
+        position:relative;
+        display:flex;
+        align-items:flex-start;
+        justify-content:center;
     }
 
+    /* IMÁGENES */
     .kallos-img{
-      position:relative;
-      display:block;
-      margin:0 auto;
+        position:absolute;
+        animation: float 6s ease-in-out infinite;
     }
 
     .kallos-img--main{
-      width:70%;
+        width:335px;
+        height:auto;
+        top:0;
+        left:50%;
+        transform:translateX(-50%);
+        z-index:2;
     }
 
     .kallos-img--secondary{
-      width:45%;
-      margin-top:-16px;
+        width:260px;
+        height:auto;
+        top:200px;
+        right:0;
+        z-index:1;
     }
 
-    .kallos-hero__text{
-      width:100%;
-      order:2;
+    .kallos-title-inline{
+        display:inline-flex;
+        align-items:flex-end;
+        margin-left:8px;
+    }
+
+    .kallos-title-inline span:first-child{
+      min-width: 4ch;
+      display:inline-block;
+    }
+
+    @keyframes float{
+      0%,100%{ transform:translateY(0); }
+      50%{ transform:translateY(-15px); }
     }
 
     .kallos-hero__proof{
-      justify-content:center;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-family:'Poppins',sans-serif;
+      font-weight:700;
+      font-size:18px;
     }
 
-    .kallos-hero__title{ font-size:38px; }
-    .kallos-hero__desc{ font-size:15px; }
+    .kallos-hero__stars{
+      display:flex;
+      gap:4px;
+      color:var(--star);
+    }
+
+    .kallos-hero__stars svg{
+      width:18px;
+      height:18px;
+    }
+
+    .kallos-hero__title{
+      font-family:'Poppins',sans-serif;
+      font-weight:700;
+      font-size:52px;
+      line-height:1.12;
+      margin-top:12px;
+    }
+
+    .kallos-title-typing{
+      display:inline-flex;
+      align-items:flex-end;
+    }
+
+    .kallos-caret{
+      border-left:2px solid currentColor;
+      height:1em;
+      margin-left:2px;
+      animation:blink 1s step-start infinite;
+    }
+
+    @keyframes blink{50%{border-color:transparent;}}
+
+    .kallos-hero__desc{
+      margin-top:14px;
+      font-family:'Poppins',sans-serif;
+      font-size:18px;
+      line-height:1.6;
+    }
+
+    @media(max-width:768px){
+    #kallos-hero-{{ section.id }}{
+        height:692px;
+    }
+
+    .kallos-hero__inner{
+        flex-direction:column;
+        padding:32px 20px;
+        text-align:center;
+    }
+
+    .kallos-hero__media{
+        overflow:hidden;
+        width:100%;
+        height:335px;
+        order:1;
+    }
+
+    .kallos-img{
+        position:relative;
+        animation:none;
+        transform:none;
+        margin:0 auto;
+    }
+
+    .kallos-img--main{
+        width:335px;
+        top:0;
+        left:auto;
+    }
+
+    .kallos-img--secondary{
+        display:none;
+    }
+
+    .kallos-hero__text{
+        width:100%;
+        order:2;
+    }
+
+    .kallos-hero__proof{
+        justify-content:center;
+    }
   }
 </style>
+
+<script>
+  (function(){
+    var el = document.getElementById("kallos-typed-{{ section.id }}");
+    if(!el) return;
+
+    var words = [
+      {% for block in section.blocks %}
+        {{ block.settings.word | json }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+    if(!words.length) words=["cejas"];
+
+    var i=0, j=0, deleting=false;
+
+    function tick(){
+      var word = words[i];
+      el.textContent = deleting ? word.slice(0, --j) : word.slice(0, ++j);
+
+      if(!deleting && j === word.length){
+        setTimeout(() => deleting = true, 2000);
+      }
+      else if(deleting && j === 0){
+        deleting = false;
+        i = (i + 1) % words.length;
+      }
+
+      setTimeout(tick, deleting ? 70 : 140);
+    }
+    tick();
+  })();
+</script>
 
 {% schema %}
 {
