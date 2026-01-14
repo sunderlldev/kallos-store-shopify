@@ -1,52 +1,122 @@
-prop: lower section with marquee and responsive layout
+<section class="kallos-offer-section" id="kallos-offer-{{ section.id }}">
+  <div class="kallos-offer-container">
+    <div class="offer-left">
+      <div class="offer-badge">
+        {{ section.settings.badge_text }}
+      </div>
 
-<section class="kallos-footer-info" id="info-{{ section.id }}">
-  <div class="kallos-marquee-mobile">
-    <div class="marquee-track">
-      <div class="marquee-content">{{ section.settings.marquee_rich_text }}</div>
-      <div class="marquee-content">{{ section.settings.marquee_rich_text }}</div>
+      <div class="offer-title">
+        {{ section.settings.title_rich }}
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="info-grid">
-      <div class="info-col desktop-only">
-        {{ section.settings.desktop_left_text }}
+    <div class="offer-image">
+      {% if section.settings.offer_img %}
+        <img
+          src="{{ section.settings.offer_img | image_url: width: 400 }}"
+          alt="Kallos Offer"
+        >
+      {% endif %}
+    </div>
+
+    <div class="offer-right">
+      <div class="offer-desc">
+        {{ section.settings.desc_rich }}
       </div>
 
-      <div class="info-col">
-        <img src="{{ section.settings.info_img | image_url: width: 300 }}" class="img-responsive">
-      </div>
-
-      <div class="info-col">
-        <div class="rich-desc">{{ section.settings.info_right_text }}</div>
-        <a href="{{ section.settings.info_btn_link }}" class="btn-info">{{ section.settings.info_btn_label }}</a>
-      </div>
+      {% if section.settings.btn_label != blank %}
+        <a href="{{ section.settings.btn_link }}" class="offer-btn">
+          {{ section.settings.btn_label }}
+        </a>
+      {% endif %}
     </div>
   </div>
 </section>
 
 <style>
-  #info-{{ section.id }} { background: #f9f9f9; padding: 40px 0; }
+  #kallos-offer-{{ section.id }} {
+    background: #f9f9f9;
+    padding: 60px 20px;
+  }
 
-  .kallos-marquee-mobile { display: none; overflow: hidden; background: #000; color: #fff; padding: 10px 0; }
+  .kallos-offer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .offer-badge {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #121212;
+  }
+
+  .offer-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #121212;
+  }
+
+  .offer-image img {
+    max-width: 220px;
+    height: auto;
+    display: block;
+  }
+
+  .offer-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .offer-desc strong {
+    font-weight: 700;
+  }
+
+  .offer-btn {
+    display: inline-block;
+    background: #121212;
+    color: #fff;
+    padding: 14px 36px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .offer-btn:hover {
+    background: #AC9651;
+    transform: translateY(-2px);
+  }
 
   @media (max-width: 768px) {
-    .kallos-marquee-mobile { display: block; }
-    .desktop-only { display: none; }
-    .marquee-track { display: flex; width: 200%; animation: scrollMarquee 20s linear infinite; }
-    .marquee-content { width: 50%; display: flex; justify-content: space-around; font-weight: bold; }
+    .kallos-offer-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .offer-left,
+    .offer-right {
+      order: unset;
+    }
+
+    .offer-image {
+      order: -1;
+      margin-bottom: 20px;
+    }
+
+    .offer-btn {
+      width: 100%;
+      text-align: center;
+    }
   }
-
-  @keyframes scrollMarquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  .info-grid { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-  @media (max-width: 768px) { .info-grid { flex-direction: column; text-align: center; } }
-
-  .img-responsive { max-width: 100%; height: auto; }
 </style>
 
 {% schema %}
@@ -55,26 +125,43 @@ prop: lower section with marquee and responsive layout
   "settings": [
     {
       "type": "richtext",
-      "id": "marquee_rich_text",
-      "label": "Texto Marquesina (Móvil)",
-      "default": "<p>ENVÍOS GRATIS - GARANTÍA KALLOS - LÍDERES</p>"
+      "id": "badge_text",
+      "label": "Texto Superior",
+      "default": "<p>TIEMPO LIMITADO</p>"
     },
     {
       "type": "richtext",
-      "id": "desktop_left_text",
-      "label": "Texto Izquierda (Desktop)",
-      "default": "<p>Confianza total en cada aplicación.</p>"
+      "id": "title_rich",
+      "label": "Título",
+      "default": "<p><strong>Pack de prueba gratis</strong></p>"
     },
-    { "type": "image_picker", "id": "info_img", "label": "Imagen Central" },
+    {
+      "type": "image_picker",
+      "id": "offer_img",
+      "label": "Imagen del producto"
+    },
     {
       "type": "richtext",
-      "id": "info_right_text",
-      "label": "Texto Derecha",
-      "default": "<p>Resultados probados en 30 días.</p>"
+      "id": "desc_rich",
+      "label": "Descripción",
+      "default": "<p>Te <strong>REGALAMOS 2 eBooks premium</strong><br>Glow Up integral & Guía para potenciar el crecimiento del vello.</p>"
     },
-    { "type": "text", "id": "info_btn_label", "label": "Botón", "default": "Comprar" },
-    { "type": "url", "id": "info_btn_link", "label": "Link" }
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Texto Botón",
+      "default": "¡QUIERO EL MÍO!"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Link Botón"
+    }
   ],
-  "presets": [{ "name": "Kallos Info Dinámica" }]
+  "presets": [
+    {
+      "name": "Kallos – Oferta Inferior"
+    }
+  ]
 }
 {% endschema %}
