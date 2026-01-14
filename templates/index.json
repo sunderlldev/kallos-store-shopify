@@ -9,70 +9,6 @@
  */
 {
   "sections": {
-    "kallos_hero_dYKyTP": {
-      "type": "kallos-hero",
-      "blocks": {
-        "word_YrD8Vw": {
-          "type": "word",
-          "settings": {
-            "word": "cejas"
-          }
-        },
-        "word_qJ68DF": {
-          "type": "word",
-          "settings": {
-            "word": "barba"
-          }
-        },
-        "word_eMP6rk": {
-          "type": "word",
-          "settings": {
-            "word": "hola"
-          }
-        }
-      },
-      "block_order": [
-        "word_YrD8Vw",
-        "word_qJ68DF",
-        "word_eMP6rk"
-      ],
-      "name": "Kallos · Hero",
-      "settings": {
-        "max_width": 1000,
-        "gradient_color": "#ac9651",
-        "text_color": "#ffffff",
-        "star_color": "#ac9651",
-        "heading_font": "poppins_n7",
-        "body_font": "poppins_n4",
-        "heading_size_desktop": 52,
-        "heading_size_mobile": 38,
-        "heading_weight": 700,
-        "body_size_desktop": 18,
-        "body_size_mobile": 15,
-        "desc_max_width": 520,
-        "desc_top_margin": 15,
-        "pad_y_desktop": 40,
-        "pad_y_mobile": 30,
-        "col_gap": 20,
-        "mobile_gap": 22,
-        "media_height_desktop": 440,
-        "media_min_height_mobile": 220,
-        "main_img_width_desktop": 70,
-        "secondary_img_width_desktop": 45,
-        "main_img_width_mobile": 50,
-        "secondary_img_width_mobile": 30,
-        "client_count": "10.000",
-        "client_text": "clientes Kallos",
-        "proof_size": 14,
-        "img_main": "shopify://shop_images/levitating-cream-container-studio-still-life_2fff7484-d5dc-4086-beca-761140a04d69.png",
-        "img_secondary": "shopify://shop_images/67419136_9662754.png",
-        "title_rich": "<p>Más confianza,<br/>Más </p>",
-        "typed_suffix": "",
-        "description_rich": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel, para potenciar tu mejor versión cada día.</p>",
-        "typing_speed": 140,
-        "pause_time": 2500
-      }
-    },
     "kallos_hero_section_JTePGw": {
       "type": "kallos-hero-section",
       "name": "Kallos · Hero Oferta",
@@ -188,7 +124,6 @@
     }
   },
   "order": [
-    "kallos_hero_dYKyTP",
     "kallos_hero_section_JTePGw",
     "featured_editorial_AmL6qw",
     "kallos_benefits_XUHpeJ",
