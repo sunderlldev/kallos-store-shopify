@@ -453,7 +453,7 @@
                             "open_in_new_tab": false,
                             "placeholder": "",
                             "padding-block-start": 0,
-                            "padding-block-end": 5,
+                            "padding-block-end": 8,
                             "padding-inline-start": 0,
                             "padding-inline-end": 8
                           },
@@ -536,26 +536,11 @@
                   "block_order": [
                     "group_xLNwhp"
                   ]
-                },
-                "spacer_8HybAq": {
-                  "type": "spacer",
-                  "name": "t:names.spacer",
-                  "settings": {
-                    "size": "pixel",
-                    "percent_size": 100,
-                    "pixel_size": 0,
-                    "custom_mobile_size": false,
-                    "size_mobile": "percent",
-                    "percent_size_mobile": 100,
-                    "pixel_size_mobile": 120
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "buy_buttons_cXKamf",
-                "group_hNbhHd",
-                "spacer_8HybAq"
+                "group_hNbhHd"
               ]
             },
             "group_GYDAzn": {
