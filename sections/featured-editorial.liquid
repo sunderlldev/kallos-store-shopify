@@ -1,8 +1,14 @@
 <section class="kallos-editorial">
   <div class="kallos-editorial-wrapper">
-    {% if section.settings.title != blank %}
-      <h2 class="kallos-editorial-title">{{ section.settings.title }}</h2>
-    {% endif %}
+    <div class="kallos-editorial-header">
+      {% if section.settings.title != blank %}
+        <h2 class="kallos-editorial-title">{{ section.settings.title }}</h2>
+      {% endif %}
+
+      {% if section.settings.subtitle != blank %}
+        <p class="kallos-editorial-subtitle">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
 
     {% if section.settings.collection != blank and section.settings.collection.products_count > 0 %}
       <div class="kallos-carousel">
@@ -75,11 +81,33 @@
 <style>
   #shopify-section-{{ section.id }} {
     --kallos-card-bg: {{ section.settings.card_bg }};
+    --title-weight: {{ section.settings.title_weight }};
+    --subtitle-weight: {{ section.settings.subtitle_weight }};
+    --price-weight: {{ section.settings.price_weight }};
   }
 
   .kallos-editorial { padding: 60px 0; overflow: hidden; background: #fff; }
   .kallos-editorial-wrapper { padding: 0 4vw; }
-  .kallos-editorial-title { text-align: center; font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 3rem; color: #000; }
+
+  .kallos-editorial-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .kallos-editorial-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin: 0 0 0.5rem 0;
+    color: #000;
+    font-weight: var(--title-weight);
+    line-height: 1.2;
+  }
+
+  .kallos-editorial-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #666;
+    margin: 0;
+    font-weight: var(--subtitle-weight);
+  }
 
   .kallos-carousel { position: relative; display: flex; align-items: center; width: 100%; }
 
@@ -141,7 +169,7 @@
 
   .kallos-card-price {
     white-space: nowrap;
-    font-weight: {{ section.settings.price_weight }};
+    font-weight: var(--price-weight);
     font-size: 1.1rem;
     flex-shrink: 0;
   }
@@ -149,7 +177,7 @@
   .kallos-card-title {
     margin: 0;
     font-size: 1.05rem;
-    font-weight: {{ section.settings.title_weight }};
+    font-weight: 700;
     line-height: 1.2;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -201,7 +229,7 @@
 
   @media (max-width: 480px) {
     .kallos-card { flex: 0 0 82vw; min-height: 460px; }
-    .kallos-editorial-title { margin-bottom: 2rem; }
+    .kallos-editorial-header { margin-bottom: 2rem; }
   }
 
   .jdgm-star {
@@ -219,14 +247,15 @@
 
     if (!clip) return;
 
-    const getScrollStep = () => clip.querySelector('.kallos-card').offsetWidth + 20;
+    const getScrollStep = () => {
+      const card = clip.querySelector('.kallos-card');
+      return card ? card.offsetWidth + 20 : 300;
+    };
 
     const startAutoScroll = () => {
       return setInterval(() => {
         if (!autoScrollActive) return;
-
         const isAtEnd = clip.scrollLeft >= clip.scrollWidth - clip.clientWidth - 50;
-
         if (isAtEnd) {
           clip.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
@@ -246,15 +275,16 @@
       }, 10000);
     };
 
-    next.addEventListener('click', () => {
-      clip.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
-      stopInterval();
-    });
-
-    prev.addEventListener('click', () => {
-      clip.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
-      stopInterval();
-    });
+    if (next)
+      next.addEventListener('click', () => {
+        clip.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+        stopInterval();
+      });
+    if (prev)
+      prev.addEventListener('click', () => {
+        clip.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+        stopInterval();
+      });
 
     clip.addEventListener('touchstart', stopInterval, { passive: true });
     clip.addEventListener('mousedown', stopInterval);
@@ -263,7 +293,7 @@
 
 {% schema %}
 {
-  "name": "Kallos · Destacados",
+  "name": "Destacados editorial",
   "settings": [
     { "type": "collection", "id": "collection", "label": "Colección" },
     { "type": "text", "id": "title", "label": "Título", "default": "Lo más popular en Kallos Store" },
@@ -273,7 +303,23 @@
       "label": "Grosor título",
       "default": "700",
       "options": [
-        { "value": "500", "label": "Normal" },
+        { "value": "400", "label": "Normal" },
+        { "value": "700", "label": "Bold" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo",
+      "default": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión."
+    },
+    {
+      "type": "select",
+      "id": "subtitle_weight",
+      "label": "Grosor subtítulo",
+      "default": "400",
+      "options": [
+        { "value": "400", "label": "Normal" },
         { "value": "700", "label": "Bold" }
       ]
     },
@@ -281,14 +327,14 @@
       "type": "select",
       "id": "price_weight",
       "label": "Grosor precio",
-      "default": "600",
+      "default": "700",
       "options": [
         { "value": "400", "label": "Normal" },
-        { "value": "600", "label": "Bold" }
+        { "value": "700", "label": "Bold" }
       ]
     },
     { "type": "color", "id": "card_bg", "label": "Fondo Card", "default": "#AC9651" }
   ],
-  "presets": [{ "name": "Kallos · Destacados" }]
+  "presets": [{ "name": "Destacados editorial" }]
 }
 {% endschema %}
