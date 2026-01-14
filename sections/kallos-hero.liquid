@@ -46,111 +46,210 @@
 </section>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-#kallos-hero-{{ section.id }}{
-  --grad: {{ section.settings.gradient_color }};
-  --text: {{ section.settings.text_color }};
-  --star: {{ section.settings.star_color }};
-  color: var(--text);
-  position: relative;
-  overflow: hidden;
-}
-
-#kallos-hero-{{ section.id }}::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
-  z-index:0;
-}
-
-.kallos-hero__inner{
-  max-width:1100px;
-  margin:0 auto;
-  padding:80px 20px;
-  display:flex;
-  align-items:center;
-  gap:60px;
-  position:relative;
-  z-index:1;
-}
-
-.kallos-hero__text{ width:45%; }
-
-.kallos-hero__media{
-  width:55%;
-  height:560px;
-  position:relative;
-}
-
-.kallos-img{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform-origin:center;
-  animation: float 6s ease-in-out infinite;
-}
-
-.kallos-img--main{
-  width:380px;
-  transform: translate(-30%, -10%);
-  z-index:2;
-}
-
-.kallos-img--secondary{
-  width:300px;
-  transform: translate(-65%, 25%);
-  z-index:1;
-}
-
-@keyframes float{
-  0%,100%{ transform: translate(var(--tx), var(--ty)); }
-  50%{ transform: translate(var(--tx), calc(var(--ty) - 15px)); }
-}
-
-.kallos-img--main{ --tx: -30%; --ty: -10%; }
-.kallos-img--secondary{ --tx: -65%; --ty: 25%; }
-
-@media(max-width:768px){
   #kallos-hero-{{ section.id }}{
-    height:692px;
+    --grad: {{ section.settings.gradient_color }};
+    --text: {{ section.settings.text_color }};
+    --star: {{ section.settings.star_color }};
+    color: var(--text);
+    position: relative;
+    overflow: hidden;
   }
 
   #kallos-hero-{{ section.id }}::before{
-    background: linear-gradient(0deg, var(--grad) 45%, transparent 100%);
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
+    z-index:0;
   }
 
   .kallos-hero__inner{
-    flex-direction:column;
-    padding:20px;
-    text-align:center;
-  }
-
-  .kallos-hero__media{
-    width:100%;
-    height:340px;
-    order:1;
-  }
-
-  .kallos-img--main{
-    width:280px;
-    --tx: -50%;
-    --ty: -20%;
-  }
-
-  .kallos-img--secondary{
-    width:220px;
-    --tx: -50%;
-    --ty: 20%;
-    opacity:0.9;
+    max-width:1100px;
+    margin:0 auto;
+    padding:80px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    position:relative;
+    z-index:1;
   }
 
   .kallos-hero__text{
-    width:100%;
-    order:2;
+    width:45%;
   }
-}
+
+  .kallos-hero__media{
+    width:55%;
+    height:585px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kallos-img{
+    position:absolute;
+    animation: float 6s ease-in-out infinite;
+    object-fit: contain;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+
+  .kallos-img--main{
+    z-index: 2;
+    width: 380px;
+    top: 10%;
+    right: 0;
+  }
+
+  .kallos-img--secondary{
+    z-index: 1;
+    width: 320px;
+    bottom: 10%;
+    left: 0;
+    opacity: 0.9;
+  }
+
+  @keyframes float{
+    0%,100%{ transform: translateY(0); }
+    50%{ transform: translateY(-20px); }
+  }
+
+  .kallos-hero__proof{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:18px;
+  }
+
+  .kallos-hero__stars{
+    color:var(--star);
+    display:flex;
+    gap:4px;
+  }
+
+  .kallos-hero__stars svg{
+    width:18px;
+    height:18px;
+  }
+
+  .kallos-hero__title{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:52px;
+    line-height:1.1;
+    margin-top:12px;
+  }
+
+  .kallos-title-static p{
+    display:inline;
+    margin:0;
+  }
+
+  .kallos-title-inline{
+    display:inline-block;
+    white-space: nowrap;
+  }
+
+  #kallos-typed-{{ section.id }}{
+    display: inline-block;
+    min-height: 1em;
+  }
+
+  .kallos-caret{
+    display: inline-block;
+    border-right: 3px solid currentColor;
+    height: 1em;
+    margin-left: 2px;
+    animation: blink 1s step-start infinite;
+    vertical-align: middle;
+  }
+
+  @keyframes blink{
+    50%{ border-color:transparent; }
+  }
+
+  .kallos-hero__desc{
+    margin-top:14px;
+    font-family:'Poppins',sans-serif;
+    font-size:18px;
+    line-height:1.6;
+  }
+
+  @media(max-width:768px){
+    #kallos-hero-{{ section.id }}{
+      height: 692px;
+    }
+
+    #kallos-hero-{{ section.id }}::before{
+      background: linear-gradient(0deg, var(--grad) 45%, transparent 100%);
+    }
+
+    .kallos-hero__inner{
+      flex-direction:column;
+      padding:20px;
+      text-align:center;
+      height: 100%;
+      justify-content: flex-end;
+    }
+
+    .kallos-hero__media{
+      width:100%;
+      height:335px;
+      order:1;
+      position: absolute;
+      top: 20px;
+      display: block;
+    }
+
+    .kallos-img{
+      width: 280px;
+      max-width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+
+    .kallos-img--main{
+      top: 20px;
+      z-index: 3;
+      margin-left: 20px;
+    }
+
+    .kallos-img--secondary{
+      top: 60px;
+      bottom: auto;
+      z-index: 2;
+      margin-left: -20px; /* Desfase opuesto */
+    }
+
+    .kallos-hero__text{
+      width:100%;
+      order:2;
+      padding-bottom: 30px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .kallos-hero__title{
+      font-size:34px;
+      display: block;
+    }
+    
+    .kallos-title-static, .kallos-title-inline {
+      display: inline;
+    }
+
+    .kallos-hero__desc{
+      font-size:14px;
+      padding: 0 10px;
+    }
+  }
 </style>
 
 <script>
@@ -165,14 +264,27 @@
   ];
   if(!words.length) words=["cejas"];
 
-  var i=0,j=0,del=false;
+  var i=0, j=0, del=false;
 
   function tick(){
-    var w=words[i];
-    el.textContent = del ? w.slice(0,--j) : w.slice(0,++j);
-    if(!del && j===w.length){ setTimeout(()=>del=true,2000); }
-    else if(del && j===0){ del=false; i=(i+1)%words.length; }
-    setTimeout(tick, del?70:140);
+    var w = words[i];
+    var current = w.slice(0, j);
+    
+    el.innerHTML = current.length > 0 ? current : "&nbsp;";
+
+    if(!del && j < w.length){
+      j++;
+      setTimeout(tick, 120);
+    } else if(del && j > 0){
+      j--;
+      setTimeout(tick, 60);
+    } else if(!del && j === w.length){
+      setTimeout(() => { del = true; tick(); }, 2000);
+    } else if(del && j === 0){
+      del = false;
+      i = (i + 1) % words.length;
+      setTimeout(tick, 400);
+    }
   }
   tick();
 })();
