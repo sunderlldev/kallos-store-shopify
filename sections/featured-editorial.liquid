@@ -1,256 +1,294 @@
-<section class="kallos-hero" id="kallos-hero-{{ section.id }}">
-  <div class="kallos-hero__inner">
+<section class="kallos-editorial">
+  <div class="kallos-editorial-wrapper">
+    {% if section.settings.title != blank %}
+      <h2 class="kallos-editorial-title">{{ section.settings.title }}</h2>
+    {% endif %}
 
-    <div class="kallos-hero__media">
-      {% if section.settings.img_main %}
-        <img
-          src="{{ section.settings.img_main | image_url: width: 900 }}"
-          class="kallos-img kallos-img--main"
-          loading="lazy"
-        >
-      {% endif %}
-      {% if section.settings.img_secondary %}
-        <img
-          src="{{ section.settings.img_secondary | image_url: width: 700 }}"
-          class="kallos-img kallos-img--secondary"
-          loading="lazy"
-        >
-      {% endif %}
-    </div>
+    {% if section.settings.collection != blank and section.settings.collection.products_count > 0 %}
+      <div class="kallos-carousel">
+        <button class="kallos-chevron kallos-prev" aria-label="Anterior">‹</button>
+        <div class="kallos-carousel-clip">
+          <div class="kallos-editorial-grid">
+            {% for product in section.settings.collection.products limit: 12 %}
+              <a href="{{ product.url }}" class="kallos-card" draggable="false">
+                <div class="kallos-card-media">
+                  {% if product.images.size > 1 %}
+                    {{
+                      product.images[0]
+                      | image_url: width: 600
+                      | image_tag:
+                        class: 'kallos-img kallos-img-main',
+                        loading: 'lazy',
+                        alt: product.title,
+                        draggable: false
+                    }}
+                    {{
+                      product.images[1]
+                      | image_url: width: 600
+                      | image_tag:
+                        class: 'kallos-img kallos-img-hover',
+                        loading: 'lazy',
+                        alt: product.title,
+                        draggable: false
+                    }}
+                  {% else %}
+                    {{
+                      product.featured_image
+                      | image_url: width: 600
+                      | image_tag:
+                        class: 'kallos-img kallos-img-single',
+                        loading: 'lazy',
+                        alt: product.title,
+                        draggable: false
+                    }}
+                  {% endif %}
+                </div>
 
-    <div class="kallos-hero__text">
-      <div class="kallos-hero__proof">
-        <div class="kallos-hero__stars">
-          {% for i in (1..5) %}
-            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <path d="m234.29 114.85-45 38.83L203 211.75a16.4 16.4 0 0 1-24.5 17.82L128 198.49l-50.53 31.08A16.4 16.4 0 0 1 53 211.75l13.76-58.07-45-38.83A16.46 16.46 0 0 1 31.08 86l59-4.76 22.76-55.08a16.36 16.36 0 0 1 30.27 0l22.75 55.08 59 4.76a16.46 16.46 0 0 1 9.37 28.86Z"/>
-            </svg>
-          {% endfor %}
+                <div class="kallos-card-content">
+                  <div class="kallos-card-header">
+                    <p class="kallos-card-title">{{ product.title }}</p>
+                    <span class="kallos-card-price">{{ product.price | money }}</span>
+                  </div>
+
+                  <div class="kallos-card-description">
+                    {{ product.description | strip_html | truncatewords: 15 }}
+                  </div>
+
+                  <div class="jdgm-prev-badge--static">
+                    <span class="jdgm-prev-badge__stars">
+                      {% for i in (1..5) -%}
+                        <span class="jdgm-star"></span>
+                      {%- endfor %}
+                    </span>
+                  </div>
+                </div>
+              </a>
+            {% endfor %}
+          </div>
         </div>
-        <div class="kallos-hero__clients">
-          <strong>+{{ section.settings.client_count }}</strong> {{ section.settings.client_text }}
-        </div>
+        <button class="kallos-chevron kallos-next" aria-label="Siguiente">›</button>
       </div>
-
-      <h1 class="kallos-hero__title">
-        {{ section.settings.title_rich }}
-        <span class="kallos-title-typing">
-          <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
-        </span>
-      </h1>
-
-      <div class="kallos-hero__desc">
-        {{ section.settings.description_rich }}
-      </div>
-    </div>
-
+    {% endif %}
   </div>
 </section>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-#kallos-hero-{{ section.id }}{
-  --grad: {{ section.settings.gradient_color }};
-  --text: {{ section.settings.text_color }};
-  --star: {{ section.settings.star_color }};
-  color: var(--text);
-  position: relative;
-  overflow: hidden;
-}
-
-#kallos-hero-{{ section.id }}::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
-  z-index:0;
-}
-
-@media(max-width:768px){
-  #kallos-hero-{{ section.id }}::before{
-    background: linear-gradient(0deg, var(--grad) 0%, transparent 100%);
+  #shopify-section-{{ section.id }} {
+    --kallos-card-bg: {{ section.settings.card_bg }};
   }
-}
 
-.kallos-hero__inner{
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  display:flex;
-  align-items:center;
-  gap:60px;
-  position:relative;
-  z-index:1;
-}
+  .kallos-editorial { padding: 60px 0; overflow: hidden; background: #fff; }
+  .kallos-editorial-wrapper { padding: 0 4vw; }
+  .kallos-editorial-title { text-align: center; font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 3rem; color: #000; }
 
-.kallos-hero__media{
-  width:50%;
-  height:480px;
-  position:relative;
-}
+  .kallos-carousel { position: relative; display: flex; align-items: center; width: 100%; }
 
-.kallos-img{
-  position:absolute;
-  animation: float 6s ease-in-out infinite;
-}
-
-.kallos-img--main{
-  width:68%;
-  z-index:2;
-}
-
-.kallos-img--secondary{
-  width:42%;
-  right:0;
-  top:18%;
-  animation-delay:-3s;
-}
-
-@keyframes float{
-  0%,100%{ transform:translateY(0); }
-  50%{ transform:translateY(-15px); }
-}
-
-.kallos-hero__text{
-  width:50%;
-}
-
-.kallos-hero__proof{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-family:'Poppins',sans-serif;
-  font-weight:700;
-  font-size:18px;
-}
-
-.kallos-hero__stars{
-  display:flex;
-  gap:4px;
-  color:var(--star);
-}
-
-.kallos-hero__stars svg{
-  width:18px;
-  height:18px;
-}
-
-.kallos-hero__title{
-  font-family:'Poppins',sans-serif;
-  font-weight:700;
-  font-size:52px;
-  line-height:1.12;
-  margin-top:12px;
-}
-
-.kallos-title-typing{
-  display:inline-flex;
-  align-items:flex-end;
-}
-
-.kallos-caret{
-  border-left:2px solid currentColor;
-  height:1em;
-  margin-left:2px;
-  animation:blink 1s step-start infinite;
-}
-
-@keyframes blink{50%{border-color:transparent;}}
-
-.kallos-hero__desc{
-  margin-top:14px;
-  font-family:'Poppins',sans-serif;
-  font-size:18px;
-  line-height:1.6;
-}
-
-@media(max-width:768px){
-  .kallos-hero__inner{
-    flex-direction:column;
-    padding: 40px 20px;
+  .kallos-carousel-clip {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 0 40px;
+    cursor: grab;
   }
-  .kallos-hero__media{
-    height:360px;
-    width:100%;
+  .kallos-carousel-clip::-webkit-scrollbar { display: none; }
+
+  .kallos-editorial-grid {
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
   }
-  .kallos-img{
-    position:relative;
-    margin:0 auto;
-    display:block;
+
+  .kallos-card {
+    flex: 0 0 calc(25% - 15px);
+    scroll-snap-align: start;
+    background: var(--kallos-card-bg);
+    border-radius: 28px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 520px;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    user-select: none;
+    overflow: hidden;
   }
-  .kallos-hero__text{
-    width:100%;
-    text-align:center;
+
+  .kallos-card:hover { transform: translateY(-8px); }
+
+  .kallos-card-media { position: relative; aspect-ratio: 1/1; overflow: hidden; }
+  .kallos-img { width: 100%; height: 100%; object-fit: cover; }
+  .kallos-img-hover { position: absolute; inset: 0; opacity: 0; transition: 0.4s; }
+  .kallos-card:hover .kallos-img-hover { opacity: 1; }
+
+  .kallos-card-content {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .kallos-hero__proof{
-    justify-content:center;
-    font-size:15px;
+
+  .kallos-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
   }
-  .kallos-hero__title{
-    font-size:38px;
+
+  .kallos-card-price {
+    white-space: nowrap;
+    font-weight: {{ section.settings.price_weight }};
+    font-size: 1.1rem;
+    flex-shrink: 0;
   }
-  .kallos-hero__desc{
-    font-size:15px;
+
+  .kallos-card-title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: {{ section.settings.title_weight }};
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
-}
+
+  .kallos-card-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .kallos-chevron {
+    position: absolute;
+    top: 40%;
+    z-index: 20;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+  }
+  .kallos-prev { left: -15px; }
+  .kallos-next { right: -15px; }
+
+  @media (max-width: 1100px) {
+    .kallos-card { flex: 0 0 calc(33.33% - 14px); min-height: 500px; }
+  }
+
+  @media (max-width: 768px) {
+    .kallos-card { flex: 0 0 calc(50% - 10px); min-height: 480px; }
+    .kallos-prev { left: -10px; }
+    .kallos-next { right: -10px; }
+    .kallos-chevron { width: 36px; height: 36px; font-size: 18px; }
+  }
+
+  @media (max-width: 480px) {
+    .kallos-card { flex: 0 0 82vw; min-height: 460px; }
+    .kallos-editorial-title { margin-bottom: 2rem; }
+  }
+
+  .jdgm-star {
+    width: 14px; height: 14px; background: #fff; display: inline-block;
+    mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") no-repeat center;
+  }
 </style>
 
 <script>
-(function(){
-  var el = document.getElementById("kallos-typed-{{ section.id }}");
-  if(!el) return;
+  document.addEventListener('DOMContentLoaded', () => {
+    const clip = document.querySelector('.kallos-carousel-clip');
+    const next = document.querySelector('.kallos-next');
+    const prev = document.querySelector('.kallos-prev');
+    let autoScrollActive = true;
 
-  var words = [
-    {% for block in section.blocks %}
-      {{ block.settings.word | json }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
-  if(!words.length){ words=["cejas","barba","cabello"]; }
+    if (!clip) return;
 
-  var i=0,j=0,del=false;
-  function type(){
-    var w=words[i];
-    el.textContent = del ? w.slice(0,--j) : w.slice(0,++j);
-    if(!del && j===w.length){ del=true; setTimeout(type,2000); return; }
-    if(del && j===0){ del=false; i=(i+1)%words.length; }
-    setTimeout(type, del?70:140);
-  }
-  type();
-})();
+    const getScrollStep = () => clip.querySelector('.kallos-card').offsetWidth + 20;
+
+    const startAutoScroll = () => {
+      return setInterval(() => {
+        if (!autoScrollActive) return;
+
+        const isAtEnd = clip.scrollLeft >= clip.scrollWidth - clip.clientWidth - 50;
+
+        if (isAtEnd) {
+          clip.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          clip.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+        }
+      }, 5000);
+    };
+
+    let scrollInterval = startAutoScroll();
+
+    const stopInterval = () => {
+      autoScrollActive = false;
+      clearInterval(scrollInterval);
+      setTimeout(() => {
+        autoScrollActive = true;
+        scrollInterval = startAutoScroll();
+      }, 10000);
+    };
+
+    next.addEventListener('click', () => {
+      clip.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+      stopInterval();
+    });
+
+    prev.addEventListener('click', () => {
+      clip.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+      stopInterval();
+    });
+
+    clip.addEventListener('touchstart', stopInterval, { passive: true });
+    clip.addEventListener('mousedown', stopInterval);
+  });
 </script>
 
 {% schema %}
 {
-  "name": "Kallos · Hero",
+  "name": "Kallos · Destacados",
   "settings": [
-    { "type": "color", "id": "gradient_color", "label": "Color degradado", "default": "#AC9651" },
-    { "type": "color", "id": "text_color", "label": "Color texto", "default": "#FFFFFF" },
-    { "type": "color", "id": "star_color", "label": "Color estrellas", "default": "#AC9651" },
-    { "type": "text", "id": "client_count", "label": "Número clientes", "default": "10.000" },
-    { "type": "text", "id": "client_text", "label": "Texto clientes", "default": "clientes Kallos" },
-    { "type": "image_picker", "id": "img_main", "label": "Imagen principal" },
-    { "type": "image_picker", "id": "img_secondary", "label": "Imagen secundaria" },
+    { "type": "collection", "id": "collection", "label": "Colección" },
+    { "type": "text", "id": "title", "label": "Título", "default": "Lo más popular en Kallos Store" },
     {
-      "type": "richtext",
-      "id": "title_rich",
-      "label": "Título",
-      "default": "<p>Más confianza, Más</p>"
+      "type": "select",
+      "id": "title_weight",
+      "label": "Grosor título",
+      "default": "700",
+      "options": [
+        { "value": "500", "label": "Normal" },
+        { "value": "700", "label": "Bold" }
+      ]
     },
     {
-      "type": "richtext",
-      "id": "description_rich",
-      "label": "Descripción",
-      "default": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel.</p>"
-    }
+      "type": "select",
+      "id": "price_weight",
+      "label": "Grosor precio",
+      "default": "600",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "600", "label": "Bold" }
+      ]
+    },
+    { "type": "color", "id": "card_bg", "label": "Fondo Card", "default": "#AC9651" }
   ],
-  "blocks": [
-    {
-      "type": "word",
-      "name": "Palabra animada",
-      "settings": [{ "type": "text", "id": "word", "label": "Texto", "default": "cejas" }]
-    }
-  ],
-  "presets": [{ "name": "Kallos · Hero" }]
+  "presets": [{ "name": "Kallos · Destacados" }]
 }
 {% endschema %}
