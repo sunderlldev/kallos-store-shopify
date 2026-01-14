@@ -1,33 +1,5 @@
 <section class="kallos-hero" id="kallos-hero-{{ section.id }}">
   <div class="kallos-hero__inner">
-    <div class="kallos-hero__text">
-      <div class="kallos-hero__proof">
-        <div class="kallos-hero__stars" aria-hidden="true">
-          {% for i in (1..5) %}
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <path d="m234.29 114.85-45 38.83L203 211.75a16.4 16.4 0 0 1-24.5 17.82L128 198.49l-50.53 31.08A16.4 16.4 0 0 1 53 211.75l13.76-58.07-45-38.83A16.46 16.46 0 0 1 31.08 86l59-4.76 22.76-55.08a16.36 16.36 0 0 1 30.27 0l22.75 55.08 59 4.76a16.46 16.46 0 0 1 9.37 28.86Z"/>
-            </svg>
-          {% endfor %}
-        </div>
-        <div class="kallos-hero__clients">
-          <strong>+{{ section.settings.client_count }}</strong> {{ section.settings.client_text }}
-        </div>
-      </div>
-
-      <h1 class="kallos-hero__title">
-        <span class="kallos-title-static">
-          {{ section.settings.title_rich }}
-        </span>
-        <span class="kallos-title-typing">
-          <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
-        </span>
-      </h1>
-
-      <div class="kallos-hero__desc">
-        {{ section.settings.description_rich }}
-      </div>
-    </div>
-
     <div class="kallos-hero__media">
       {% if section.settings.img_main %}
         <img
@@ -43,6 +15,32 @@
           loading="lazy"
         >
       {% endif %}
+    </div>
+
+    <div class="kallos-hero__text">
+      <div class="kallos-hero__proof">
+        <div class="kallos-hero__stars">
+          {% for i in (1..5) %}
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <path d="m234.29 114.85-45 38.83L203 211.75a16.4 16.4 0 0 1-24.5 17.82L128 198.49l-50.53 31.08A16.4 16.4 0 0 1 53 211.75l13.76-58.07-45-38.83A16.46 16.46 0 0 1 31.08 86l59-4.76 22.76-55.08a16.36 16.36 0 0 1 30.27 0l22.75 55.08 59 4.76a16.46 16.46 0 0 1 9.37 28.86Z"/>
+            </svg>
+          {% endfor %}
+        </div>
+        <div class="kallos-hero__clients">
+          <strong>+{{ section.settings.client_count }}</strong> {{ section.settings.client_text }}
+        </div>
+      </div>
+
+      <h1 class="kallos-hero__title">
+        {{ section.settings.title_rich }}
+        <span class="kallos-title-typing">
+          <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
+        </span>
+      </h1>
+
+      <div class="kallos-hero__desc">
+        {{ section.settings.description_rich }}
+      </div>
     </div>
   </div>
 </section>
@@ -79,39 +77,41 @@
     padding: 80px 20px;
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    gap: 60px;
+    gap:60px;
     position:relative;
     z-index:1;
   }
 
-  .kallos-hero__text{
-    width:50%;
-  }
-
   .kallos-hero__media{
     width:50%;
-    height:420px;
+    height:480px;
     position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
   }
 
-  @media(max-width:768px){
-    .kallos-hero__inner{
-      flex-direction:column;
-      text-align:center;
-      padding: 60px 20px;
-    }
-    .kallos-hero__media{
-      order:1;
-      height:692px;
-    }
-    .kallos-hero__text{
-      order:2;
-      width:100%;
-    }
+  .kallos-img{
+    position:absolute;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .kallos-img--main{
+    width:68%;
+    z-index:2;
+  }
+
+  .kallos-img--secondary{
+    width:42%;
+    right:0;
+    top:18%;
+    animation-delay:-3s;
+  }
+
+  @keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-15px); }
+  }
+
+  .kallos-hero__text{
+    width:50%;
   }
 
   .kallos-hero__proof{
@@ -121,11 +121,6 @@
     font-family:'Poppins',sans-serif;
     font-weight:700;
     font-size:18px;
-    margin-bottom:12px;
-  }
-
-  @media(max-width:768px){
-    .kallos-hero__proof{ font-size:15px; }
   }
 
   .kallos-hero__stars{
@@ -133,6 +128,7 @@
     gap:4px;
     color:var(--star);
   }
+
   .kallos-hero__stars svg{
     width:18px;
     height:18px;
@@ -143,10 +139,7 @@
     font-weight:700;
     font-size:52px;
     line-height:1.12;
-  }
-
-  @media(max-width:768px){
-    .kallos-hero__title{ font-size:38px; }
+    margin-top:12px;
   }
 
   .kallos-title-typing{
@@ -161,51 +154,42 @@
     animation:blink 1s step-start infinite;
   }
 
-  @keyframes blink{ 50%{border-color:transparent;} }
+  @keyframes blink{50%{border-color:transparent;}}
 
   .kallos-hero__desc{
     margin-top:14px;
     font-family:'Poppins',sans-serif;
-    font-weight:400;
     font-size:18px;
     line-height:1.6;
   }
-  @media(max-width:768px){
-    .kallos-hero__desc{ font-size:15px; }
-  }
-
-  .kallos-img{
-    position:absolute;
-    animation: float 6s ease-in-out infinite;
-  }
-  .kallos-img--main{
-    width: {{ section.settings.main_img_width_desktop }}%;
-    z-index:2;
-  }
-  .kallos-img--secondary{
-    width: {{ section.settings.secondary_img_width_desktop }}%;
-    right:0;
-    top:18%;
-    animation-delay:-3s;
-  }
-
-  @keyframes float{
-    0%,100%{ transform:translateY(0); }
-    50%{ transform:translateY(-15px); }
-  }
 
   @media(max-width:768px){
+    .kallos-hero__inner{
+      flex-direction:column;
+      padding: 40px 20px;
+    }
+    .kallos-hero__media{
+      height:360px;
+      width:100%;
+    }
     .kallos-img{
       position:relative;
-      display:block;
       margin:0 auto;
+      display:block;
     }
-    .kallos-img--main{
-      width: {{ section.settings.main_img_width_mobile }}%;
+    .kallos-hero__text{
+      width:100%;
+      text-align:center;
     }
-    .kallos-img--secondary{
-      width: {{ section.settings.secondary_img_width_mobile }}%;
-      margin-top:-18px;
+    .kallos-hero__proof{
+      justify-content:center;
+      font-size:15px;
+    }
+    .kallos-hero__title{
+      font-size:38px;
+    }
+    .kallos-hero__desc{
+      font-size:15px;
     }
   }
 </style>
@@ -226,10 +210,9 @@
     function type(){
       var w=words[i];
       el.textContent = del ? w.slice(0,--j) : w.slice(0,++j);
-      var t = del ? 70 : 140;
       if(!del && j===w.length){ del=true; setTimeout(type,2000); return; }
       if(del && j===0){ del=false; i=(i+1)%words.length; }
-      setTimeout(type,t);
+      setTimeout(type, del?70:140);
     }
     type();
   })();
@@ -242,61 +225,21 @@
     { "type": "color", "id": "gradient_color", "label": "Color degradado", "default": "#AC9651" },
     { "type": "color", "id": "text_color", "label": "Color texto", "default": "#FFFFFF" },
     { "type": "color", "id": "star_color", "label": "Color estrellas", "default": "#AC9651" },
-
     { "type": "text", "id": "client_count", "label": "Número clientes", "default": "10.000" },
     { "type": "text", "id": "client_text", "label": "Texto clientes", "default": "clientes Kallos" },
-
     { "type": "image_picker", "id": "img_main", "label": "Imagen principal" },
     { "type": "image_picker", "id": "img_secondary", "label": "Imagen secundaria" },
-
-    {
-      "type": "range",
-      "id": "main_img_width_desktop",
-      "min": 40,
-      "max": 95,
-      "step": 1,
-      "label": "Imagen principal % (desktop)",
-      "default": 70
-    },
-    {
-      "type": "range",
-      "id": "secondary_img_width_desktop",
-      "min": 20,
-      "max": 70,
-      "step": 1,
-      "label": "Imagen secundaria % (desktop)",
-      "default": 40
-    },
-    {
-      "type": "range",
-      "id": "main_img_width_mobile",
-      "min": 50,
-      "max": 100,
-      "step": 1,
-      "label": "Imagen principal % (mobile)",
-      "default": 88
-    },
-    {
-      "type": "range",
-      "id": "secondary_img_width_mobile",
-      "min": 30,
-      "max": 90,
-      "step": 1,
-      "label": "Imagen secundaria % (mobile)",
-      "default": 62
-    },
-
     {
       "type": "richtext",
       "id": "title_rich",
-      "label": "Título (parte fija)",
+      "label": "Título",
       "default": "<p>Más confianza, Más</p>"
     },
     {
       "type": "richtext",
       "id": "description_rich",
       "label": "Descripción",
-      "default": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel, para potenciar tu mejor versión cada día.</p>"
+      "default": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel.</p>"
     }
   ],
   "blocks": [
@@ -306,15 +249,6 @@
       "settings": [{ "type": "text", "id": "word", "label": "Texto", "default": "cejas" }]
     }
   ],
-  "presets": [
-    {
-      "name": "Kallos · Hero",
-      "blocks": [
-        { "type": "word", "settings": { "word": "cejas" } },
-        { "type": "word", "settings": { "word": "barba" } },
-        { "type": "word", "settings": { "word": "cabellos" } }
-      ]
-    }
-  ]
+  "presets": [{ "name": "Kallos · Hero" }]
 }
 {% endschema %}
