@@ -1494,7 +1494,7 @@
                     "placeholder": "",
                     "padding-block-start": 25,
                     "padding-block-end": 0,
-                    "padding-inline-start": 0,
+                    "padding-inline-start": 15,
                     "padding-inline-end": 0
                   },
                   "blocks": {
@@ -1708,8 +1708,8 @@
                     "placeholder": "",
                     "padding-block-start": 25,
                     "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "padding-inline-start": 15,
+                    "padding-inline-end": 15
                   },
                   "blocks": {
                     "group_p6XkXr": {
