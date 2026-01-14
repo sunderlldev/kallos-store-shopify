@@ -46,165 +46,191 @@
 </section>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-#kallos-hero-{{ section.id }}{
-  --grad: {{ section.settings.gradient_color }};
-  --text: {{ section.settings.text_color }};
-  --star: {{ section.settings.star_color }};
-  color: var(--text);
-  position: relative;
-  overflow-x: hidden;
-}
-
-#kallos-hero-{{ section.id }}::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
-  z-index:0;
-}
-
-.kallos-hero__inner{
-  max-width:980px;
-  margin:0 auto;
-  padding:80px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:60px;
-  position:relative;
-  z-index:1;
-}
-
-.kallos-hero__text{ width:50%; }
-
-.kallos-hero__media{
-  width:50%;
-  height:455px;
-  position:relative;
-  overflow:hidden;
-}
-
-.kallos-img{
-  position:absolute;
-  animation: float 6s ease-in-out infinite;
-}
-
-.kallos-img--main{
-  width:335px;
-  top:0;
-  right:0;
-  z-index:2;
-}
-
-.kallos-img--secondary{
-  width:260px;
-  bottom:0;
-  right:120px;
-  z-index:1;
-}
-
-@keyframes float{
-  0%,100%{ transform:translateY(0); }
-  50%{ transform:translateY(-15px); }
-}
-
-.kallos-hero__proof{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-family:'Poppins',sans-serif;
-  font-weight:700;
-  font-size:18px;
-}
-
-.kallos-hero__stars{ color:var(--star); display:flex; gap:4px; }
-.kallos-hero__stars svg{ width:18px; height:18px; }
-
-.kallos-hero__title{
-  font-family:'Poppins',sans-serif;
-  font-weight:700;
-  font-size:52px;
-  line-height:1.12;
-  margin-top:12px;
-}
-
-.kallos-title-static p{ display:inline; margin:0; }
-
-.kallos-title-inline{
-  display:inline-flex;
-  align-items:flex-end;
-  margin-left:6px;
-}
-
-.kallos-title-inline span:first-child{
-  min-width:4ch;
-  display:inline-block;
-}
-
-.kallos-caret{
-  border-left:2px solid currentColor;
-  height:1em;
-  margin-left:2px;
-  animation: blink 1s step-start infinite;
-}
-
-@keyframes blink{50%{border-color:transparent;}}
-
-.kallos-hero__desc{
-  margin-top:14px;
-  font-family:'Poppins',sans-serif;
-  font-size:18px;
-  line-height:1.6;
-}
-
-@media(max-width:768px){
   #kallos-hero-{{ section.id }}{
-    height:692px;
+    --grad: {{ section.settings.gradient_color }};
+    --text: {{ section.settings.text_color }};
+    --star: {{ section.settings.star_color }};
+    color: var(--text);
+    position: relative;
+    overflow: hidden;
   }
 
   #kallos-hero-{{ section.id }}::before{
-    background: linear-gradient(0deg, var(--grad) 0%, transparent 100%);
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
+    z-index:0;
   }
 
   .kallos-hero__inner{
-    flex-direction:column;
-    padding:32px 20px;
-    text-align:center;
+    max-width:980px;
+    margin:0 auto;
+    padding:80px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    position:relative;
+    z-index:1;
+  }
+
+  .kallos-hero__text{
+    width:50%;
   }
 
   .kallos-hero__media{
-    width:100%;
-    height:335px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    order:1;
-    overflow:hidden;
+    width:50%;
+    height:455px;
+    position:relative;
   }
 
   .kallos-img{
-    position:relative;
-    animation:none;
-    transform:none;
+    position:absolute;
+    animation: float 6s ease-in-out infinite;
   }
 
   .kallos-img--main{
     width:335px;
+    top:80px;
+    right:0;
+    z-index:2;
   }
 
   .kallos-img--secondary{
-    display:none;
+    width:260px;
+    top:0;
+    right:200px;
+    z-index:1;
+    opacity:0.95;
   }
 
-  .kallos-hero__text{ width:100%; order:2; }
+  @keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-15px); }
+  }
 
-  .kallos-hero__proof{ justify-content:center; }
+  .kallos-hero__proof{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:18px;
+  }
 
-  .kallos-hero__title{ font-size:38px; }
-  .kallos-hero__desc{ font-size:15px; }
-}
+  .kallos-hero__stars{
+    color:var(--star);
+    display:flex;
+    gap:4px;
+  }
+
+  .kallos-hero__stars svg{
+    width:18px;
+    height:18px;
+  }
+
+  .kallos-hero__title{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:52px;
+    line-height:1.12;
+    margin-top:12px;
+  }
+
+  .kallos-title-static p{
+    display:inline;
+    margin:0;
+  }
+
+  .kallos-title-inline{
+    display:inline-flex;
+    align-items:flex-end;
+    margin-left:6px;
+  }
+
+  .kallos-title-inline span:first-child{
+    min-width:4ch;
+    display:inline-block;
+  }
+
+  .kallos-caret{
+    border-left:2px solid currentColor;
+    height:1em;
+    margin-left:2px;
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink{
+    50%{ border-color:transparent; }
+  }
+
+  .kallos-hero__desc{
+    margin-top:14px;
+    font-family:'Poppins',sans-serif;
+    font-size:18px;
+    line-height:1.6;
+  }
+
+  @media(max-width:768px){
+    #kallos-hero-{{ section.id }}{
+      height:692px;
+    }
+
+    #kallos-hero-{{ section.id }}::before{
+      background: linear-gradient(0deg, var(--grad) 0%, transparent 100%);
+    }
+
+    .kallos-hero__inner{
+      flex-direction:column;
+      padding:32px 20px;
+      text-align:center;
+    }
+
+    .kallos-hero__media{
+      width:100%;
+      height:335px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      order:1;
+    }
+
+    .kallos-img{
+      position:relative;
+      animation:none;
+      transform:none;
+    }
+
+    .kallos-img--main{
+      width:335px;
+      right:auto;
+      top:auto;
+    }
+
+    .kallos-img--secondary{
+      display:none;
+    }
+
+    .kallos-hero__text{
+      width:100%;
+      order:2;
+    }
+
+    .kallos-hero__proof{
+      justify-content:center;
+    }
+
+    .kallos-hero__title{
+      font-size:38px;
+    }
+
+    .kallos-hero__desc{
+      font-size:15px;
+    }
+  }
 </style>
 
 <script>
