@@ -78,11 +78,11 @@
   }
 
   .kallos-hero__text{
-    width:50%;
+    width:45%;
   }
 
   .kallos-hero__media{
-    width:50%;
+    width:55%;
     height:585px;
     position:relative;
     display: flex;
@@ -94,19 +94,21 @@
     position:absolute;
     animation: float 6s ease-in-out infinite;
     object-fit: contain;
-    width: 350px;
-    height: 350px;
+    height: auto;
+    transition: all 0.3s ease;
   }
 
   .kallos-img--main{
     z-index: 2;
-    top: 50px;
+    width: 380px;
+    top: 10%;
     right: 0;
   }
 
   .kallos-img--secondary{
     z-index: 1;
-    bottom: 50px;
+    width: 320px;
+    bottom: 10%;
     left: 0;
     opacity: 0.9;
   }
@@ -185,7 +187,7 @@
     }
 
     #kallos-hero-{{ section.id }}::before{
-      background: linear-gradient(0deg, var(--grad) 40%, transparent 100%);
+      background: linear-gradient(0deg, var(--grad) 45%, transparent 100%);
     }
 
     .kallos-hero__inner{
@@ -201,32 +203,41 @@
       height:335px;
       order:1;
       position: absolute;
-      top: 40px;
+      top: 20px;
+      display: block;
     }
 
     .kallos-img{
-      width: 240px;
-      height: 240px;
+      width: 280px;
+      max-width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
     }
 
     .kallos-img--main{
-      top: 0;
-      right: 10%;
+      top: 20px;
+      z-index: 3;
+      margin-left: 20px;
     }
 
     .kallos-img--secondary{
-      bottom: 0;
-      left: 10%;
+      top: 60px;
+      bottom: auto;
+      z-index: 2;
+      margin-left: -20px;
     }
 
     .kallos-hero__text{
       width:100%;
       order:2;
-      padding-bottom: 40px;
+      padding-bottom: 30px;
+      position: relative;
+      z-index: 10;
     }
 
     .kallos-hero__title{
-      font-size:36px;
+      font-size:34px;
       display: block;
     }
     
@@ -235,7 +246,8 @@
     }
 
     .kallos-hero__desc{
-      font-size:15px;
+      font-size:14px;
+      padding: 0 10px;
     }
   }
 </style>
