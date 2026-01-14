@@ -1968,6 +1968,27 @@
     "kallo_innovation_GLC4m8": {
       "type": "kallo-innovation",
       "blocks": {
+        "item_3tVBGb": {
+          "type": "item",
+          "settings": {
+            "heading": "Activos",
+            "text": "<p>Contenido</p>"
+          }
+        },
+        "item_abpUGh": {
+          "type": "item",
+          "settings": {
+            "heading": "Activos",
+            "text": "<p>Contenido</p>"
+          }
+        },
+        "item_h3P3kU": {
+          "type": "item",
+          "settings": {
+            "heading": "Activos",
+            "text": "<p>Contenido</p>"
+          }
+        },
         "item_GT8zk3": {
           "type": "item",
           "settings": {
@@ -1977,6 +1998,9 @@
         }
       },
       "block_order": [
+        "item_3tVBGb",
+        "item_abpUGh",
+        "item_h3P3kU",
         "item_GT8zk3"
       ],
       "name": "Kallos · Innovación",
