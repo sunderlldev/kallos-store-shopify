@@ -13,7 +13,7 @@
       "type": "kallos-hero",
       "name": "Kallos · Hero",
       "settings": {
-        "max_width": 900,
+        "max_width": 1000,
         "gradient_color": "#ac9651",
         "text_color": "#ffffff",
         "star_color": "#ac9651",
