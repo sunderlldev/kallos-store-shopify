@@ -1,0 +1,80 @@
+prop: lower section with marquee and responsive layout
+
+<section class="kallos-footer-info" id="info-{{ section.id }}">
+  <div class="kallos-marquee-mobile">
+    <div class="marquee-track">
+      <div class="marquee-content">{{ section.settings.marquee_rich_text }}</div>
+      <div class="marquee-content">{{ section.settings.marquee_rich_text }}</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-col desktop-only">
+        {{ section.settings.desktop_left_text }}
+      </div>
+
+      <div class="info-col">
+        <img src="{{ section.settings.info_img | image_url: width: 300 }}" class="img-responsive">
+      </div>
+
+      <div class="info-col">
+        <div class="rich-desc">{{ section.settings.info_right_text }}</div>
+        <a href="{{ section.settings.info_btn_link }}" class="btn-info">{{ section.settings.info_btn_label }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #info-{{ section.id }} { background: #f9f9f9; padding: 40px 0; }
+
+  .kallos-marquee-mobile { display: none; overflow: hidden; background: #000; color: #fff; padding: 10px 0; }
+
+  @media (max-width: 768px) {
+    .kallos-marquee-mobile { display: block; }
+    .desktop-only { display: none; }
+    .marquee-track { display: flex; width: 200%; animation: scrollMarquee 20s linear infinite; }
+    .marquee-content { width: 50%; display: flex; justify-content: space-around; font-weight: bold; }
+  }
+
+  @keyframes scrollMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .info-grid { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  @media (max-width: 768px) { .info-grid { flex-direction: column; text-align: center; } }
+
+  .img-responsive { max-width: 100%; height: auto; }
+</style>
+
+{% schema %}
+{
+  "name": "Kallos Hero Section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "marquee_rich_text",
+      "label": "Texto Marquesina (Móvil)",
+      "default": "<p>ENVÍOS GRATIS - GARANTÍA KALLOS - LÍDERES</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "desktop_left_text",
+      "label": "Texto Izquierda (Desktop)",
+      "default": "<p>Confianza total en cada aplicación.</p>"
+    },
+    { "type": "image_picker", "id": "info_img", "label": "Imagen Central" },
+    {
+      "type": "richtext",
+      "id": "info_right_text",
+      "label": "Texto Derecha",
+      "default": "<p>Resultados probados en 30 días.</p>"
+    },
+    { "type": "text", "id": "info_btn_label", "label": "Botón", "default": "Comprar" },
+    { "type": "url", "id": "info_btn_link", "label": "Link" }
+  ],
+  "presets": [{ "name": "Kallos Info Dinámica" }]
+}
+{% endschema %}
