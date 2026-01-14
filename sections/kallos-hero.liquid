@@ -83,35 +83,39 @@
 
   .kallos-hero__media{
     width:50%;
-    height:450px;
+    height:500px;
     position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .kallos-img{
     position:absolute;
     animation: float 6s ease-in-out infinite;
     object-fit: contain;
-    max-height: 100%;
+    max-height: 380px;
+    width: auto;
   }
 
   .kallos-img--main{
-    width: 280px;
-    top: 20px;
-    right: 0;
     z-index: 2;
+    top: 0;
+    right: -20px;
+    transform: rotate(5deg);
   }
 
   .kallos-img--secondary{
-    width: 220px;
-    bottom: 20px;
-    left: 0;
     z-index: 1;
-    opacity: 0.9;
+    bottom: 0;
+    left: -20px;
+    opacity: 0.85;
+    transform: rotate(-5deg);
   }
 
   @keyframes float{
-    0%,100%{ transform:translateY(0); }
-    50%{ transform:translateY(-20px); }
+    0%,100%{ translateY(0); }
+    50%{ transform: translateY(-15px); }
   }
 
   .kallos-hero__proof{
@@ -150,13 +154,18 @@
   .kallos-title-inline{
     display:inline-flex;
     align-items: center;
-    margin-left:4px;
+    height: 1.2em;
+  }
+
+  #kallos-typed-{{ section.id }}{
+    display: inline-block;
+    min-height: 1em;
   }
 
   .kallos-caret{
     display: inline-block;
     border-right: 3px solid currentColor;
-    height: 1.1em;
+    height: 1em;
     margin-left: 2px;
     animation: blink 1s step-start infinite;
     vertical-align: middle;
@@ -184,29 +193,32 @@
 
     .kallos-hero__inner{
       flex-direction:column;
-      padding:40px 20px;
+      padding:20px;
       text-align:center;
       height: 100%;
-      justify-content: center;
+      justify-content: space-evenly;
     }
 
     .kallos-hero__media{
       width:100%;
-      height:300px;
+      height:320px;
       order:1;
-      margin-bottom: 20px;
+      margin: 0;
+    }
+
+    .kallos-img{
+      max-height: 240px;
     }
 
     .kallos-img--main{
-      width: 200px;
-      top: 0;
-      right: 10%;
+      top: 10px;
+      right: 5%;
     }
 
     .kallos-img--secondary{
-      width: 160px;
-      bottom: 0;
-      left: 10%;
+      bottom: 10px;
+      left: 5%;
+      display: block;
     }
 
     .kallos-hero__text{
@@ -214,16 +226,12 @@
       order:2;
     }
 
-    .kallos-hero__proof{
-      justify-content:center;
-    }
-
     .kallos-hero__title{
-      font-size:34px;
+      font-size:32px;
     }
 
     .kallos-hero__desc{
-      font-size:15px;
+      font-size:14px;
     }
   }
 </style>
@@ -244,20 +252,22 @@
 
   function tick(){
     var w = words[i];
-    el.textContent = w.slice(0, j);
+    var current = w.slice(0, j);
+    
+    el.innerHTML = current.length > 0 ? current : "&nbsp;";
 
     if(!del && j < w.length){
       j++;
-      setTimeout(tick, 140);
+      setTimeout(tick, 120);
     } else if(del && j > 0){
       j--;
-      setTimeout(tick, 70);
+      setTimeout(tick, 60);
     } else if(!del && j === w.length){
       setTimeout(() => { del = true; tick(); }, 2000);
     } else if(del && j === 0){
       del = false;
       i = (i + 1) % words.length;
-      setTimeout(tick, 200);
+      setTimeout(tick, 300);
     }
   }
   tick();
