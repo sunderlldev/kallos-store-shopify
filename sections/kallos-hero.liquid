@@ -4,39 +4,24 @@
       <div class="kallos-hero__proof">
         <div class="kallos-hero__stars" aria-hidden="true">
           {% for i in (1..5) %}
-            <span class="kallos-star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                data-id="508414815326568800"
-                viewBox="0 0 256 256"
-              >
-                <path d="m234.29 114.85-45 38.83L203 211.75a16.4 16.4 0 0 1-24.5 17.82L128 198.49l-50.53 31.08A16.4 16.4 0 0 1 53 211.75l13.76-58.07-45-38.83A16.46 16.46 0 0 1 31.08 86l59-4.76 22.76-55.08a16.36 16.36 0 0 1 30.27 0l22.75 55.08 59 4.76a16.46 16.46 0 0 1 9.37 28.86Z"></path>
-              </svg>
-            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <path d="m234.29 114.85-45 38.83L203 211.75a16.4 16.4 0 0 1-24.5 17.82L128 198.49l-50.53 31.08A16.4 16.4 0 0 1 53 211.75l13.76-58.07-45-38.83A16.46 16.46 0 0 1 31.08 86l59-4.76 22.76-55.08a16.36 16.36 0 0 1 30.27 0l22.75 55.08 59 4.76a16.46 16.46 0 0 1 9.37 28.86Z"/>
+            </svg>
           {% endfor %}
         </div>
-
         <div class="kallos-hero__clients">
           <strong>+{{ section.settings.client_count }}</strong> {{ section.settings.client_text }}
         </div>
       </div>
 
-      <div class="kallos-hero__title">
-        <div class="kallos-hero__title-static">
+      <h1 class="kallos-hero__title">
+        <span class="kallos-title-static">
           {{ section.settings.title_rich }}
-        </div>
-
-        <div class="kallos-hero__title-typing">
-          <span class="kallos-typed" id="kallos-typed-{{ section.id }}">
-            {{- section.blocks.first.settings.word | default: 'cejas' -}}
-          </span>
-          <span class="kallos-caret" aria-hidden="true"></span>&nbsp;
-          <span class="kallos-typed-suffix">{{ section.settings.typed_suffix }}</span>
-        </div>
-      </div>
+        </span>
+        <span class="kallos-title-typing">
+          <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
+        </span>
+      </h1>
 
       <div class="kallos-hero__desc">
         {{ section.settings.description_rich }}
@@ -47,17 +32,14 @@
       {% if section.settings.img_main %}
         <img
           src="{{ section.settings.img_main | image_url: width: 900 }}"
-          class="kallos-float-img kallos-float-img--main"
-          alt="Kallos product"
+          class="kallos-img kallos-img--main"
           loading="lazy"
         >
       {% endif %}
-
       {% if section.settings.img_secondary %}
         <img
           src="{{ section.settings.img_secondary | image_url: width: 700 }}"
-          class="kallos-float-img kallos-float-img--secondary"
-          alt="Kallos product secondary"
+          class="kallos-img kallos-img--secondary"
           loading="lazy"
         >
       {% endif %}
@@ -66,280 +48,190 @@
 </section>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
   #kallos-hero-{{ section.id }}{
-    --kallos-grad: {{ section.settings.gradient_color }};
-    --kallos-text: {{ section.settings.text_color }};
-    --kallos-star: {{ section.settings.star_color }};
-    --kallos-max: {{ section.settings.max_width }}px;
-
-    --heading-font: {{ section.settings.heading_font.family | json }}, {{ section.settings.heading_font.fallback_families | json }};
-    --body-font: {{ section.settings.body_font.family | json }}, {{ section.settings.body_font.fallback_families | json }};
-
-    color: var(--kallos-text);
+    --grad: {{ section.settings.gradient_color }};
+    --text: {{ section.settings.text_color }};
+    --star: {{ section.settings.star_color }};
+    color: var(--text);
     position: relative;
     overflow: hidden;
-    padding: {{ section.settings.pad_y_desktop }}px 20px;
   }
 
   #kallos-hero-{{ section.id }}::before{
     content:"";
     position:absolute;
     inset:0;
+    background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
     z-index:0;
-    pointer-events:none;
-    background: linear-gradient(90deg, transparent 0%, var(--kallos-grad) 100%);
   }
 
-  @media (max-width: 768px){
-    #kallos-hero-{{ section.id }}{
-      padding: {{ section.settings.pad_y_mobile }}px 20px;
-    }
+  @media(max-width:768px){
     #kallos-hero-{{ section.id }}::before{
-      background: linear-gradient(0deg, var(--kallos-grad) 0%, transparent 100%);
+      background: linear-gradient(0deg, var(--grad) 0%, transparent 100%);
     }
   }
 
   .kallos-hero__inner{
-    position:relative;
-    z-index:1;
-    max-width: var(--kallos-max);
+    max-width: 980px;
     margin: 0 auto;
+    padding: 80px 20px;
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap: {{ section.settings.col_gap }}px;
+    justify-content:space-between;
+    gap: 60px;
+    position:relative;
+    z-index:1;
   }
 
   .kallos-hero__text{
-    width: 50%;
-    text-align:left;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
+    width:50%;
   }
 
   .kallos-hero__media{
-    width: 50%;
+    width:50%;
+    height:420px;
     position:relative;
-    height: {{ section.settings.media_height_desktop }}px;
     display:flex;
     align-items:center;
     justify-content:center;
   }
 
-  @media (max-width: 768px){
+  @media(max-width:768px){
     .kallos-hero__inner{
       flex-direction:column;
       text-align:center;
-      gap: {{ section.settings.mobile_gap }}px;
+      padding: 60px 20px;
     }
-
     .kallos-hero__media{
-      width:100%;
-      order: 1;
-      height: auto;
-      min-height: {{ section.settings.media_min_height_mobile }}px;
-      margin: 0;
+      order:1;
+      height:692px;
     }
-
     .kallos-hero__text{
+      order:2;
       width:100%;
-      order: 2;
-      align-items:center;
-      text-align:center;
     }
   }
 
   .kallos-hero__proof{
     display:flex;
     align-items:center;
-    gap: 10px;
-    margin-bottom: 12px;
-    font-family: var(--body-font);
-    font-size: {{ section.settings.proof_size }}px;
-    line-height: 1;
+    gap:10px;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:18px;
+    margin-bottom:12px;
+  }
+
+  @media(max-width:768px){
+    .kallos-hero__proof{ font-size:15px; }
   }
 
   .kallos-hero__stars{
-    display:inline-flex;
-    align-items:center;
-    gap: 4px;
-    color: var(--kallos-star);
+    display:flex;
+    gap:4px;
+    color:var(--star);
   }
-
-  .kallos-hero__clients{
-    opacity: 0.95;
-    font-weight: 500;
+  .kallos-hero__stars svg{
+    width:18px;
+    height:18px;
   }
 
   .kallos-hero__title{
-    font-family: var(--heading-font);
-    font-weight: {{ section.settings.heading_weight }};
-    line-height: 1.12;
-    margin: 0;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:52px;
+    line-height:1.12;
   }
 
-  .kallos-hero__title-static,
-  .kallos-hero__title-static p{
-    margin:0;
-    font-size: {{ section.settings.heading_size_desktop }}px;
+  @media(max-width:768px){
+    .kallos-hero__title{ font-size:38px; }
   }
 
-  .kallos-hero__title-typing{
+  .kallos-title-typing{
     display:inline-flex;
     align-items:flex-end;
-    font-size: {{ section.settings.heading_size_desktop }}px;
-  }
-
-  @media (max-width: 768px){
-    .kallos-hero__title-static,
-    .kallos-hero__title-static p,
-    .kallos-hero__title-typing{
-      font-size: {{ section.settings.heading_size_mobile }}px;
-    }
-  }
-
-  .kallos-typed{
-    display:inline-block;
-    min-width: 3ch;
-  }
-
-  .kallos-typed-suffix{
-    display:inline-block;
   }
 
   .kallos-caret{
-    display:inline-block;
-    border-left: 2px solid currentColor;
-    height: 1.05em;
-    margin-left: 2px;
-    animation: kallosBlink 1s step-start infinite;
-    transform: translateY(1px);
+    border-left:2px solid currentColor;
+    height:1em;
+    margin-left:2px;
+    animation:blink 1s step-start infinite;
   }
 
-  @keyframes kallosBlink{
-    50%{ border-color: transparent; }
-  }
+  @keyframes blink{ 50%{border-color:transparent;} }
 
   .kallos-hero__desc{
-    margin-top: {{ section.settings.desc_top_margin }}px;
-    font-family: var(--body-font);
-    font-size: {{ section.settings.body_size_desktop }}px;
-    line-height: 1.6;
-    max-width: {{ section.settings.desc_max_width }}px;
-    opacity: 0.95;
+    margin-top:14px;
+    font-family:'Poppins',sans-serif;
+    font-weight:400;
+    font-size:18px;
+    line-height:1.6;
   }
-  .kallos-hero__desc p{ margin:0; }
-
-  @media (max-width: 768px){
-    .kallos-hero__desc{
-      font-size: {{ section.settings.body_size_mobile }}px;
-      max-width: 520px;
-    }
+  @media(max-width:768px){
+    .kallos-hero__desc{ font-size:15px; }
   }
 
-  .kallos-float-img{
+  .kallos-img{
     position:absolute;
-    animation: kallosFloat 6s ease-in-out infinite;
-    will-change: transform;
-    max-width: 100%;
-    height: auto;
+    animation: float 6s ease-in-out infinite;
   }
-
-  .kallos-float-img--main{
+  .kallos-img--main{
     width: {{ section.settings.main_img_width_desktop }}%;
-    z-index: 2;
+    z-index:2;
   }
-
-  .kallos-float-img--secondary{
+  .kallos-img--secondary{
     width: {{ section.settings.secondary_img_width_desktop }}%;
-    right: 0;
-    top: 18%;
-    animation-delay: -3s;
-    z-index: 1;
+    right:0;
+    top:18%;
+    animation-delay:-3s;
   }
 
-  @keyframes kallosFloat{
-    0%,100%{ transform: translateY(0); }
-    50%{ transform: translateY(-15px); }
+  @keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-15px); }
   }
 
-  @media (max-width: 768px){
-    .kallos-float-img{
-      position: relative;
+  @media(max-width:768px){
+    .kallos-img{
+      position:relative;
       display:block;
-      margin: 0 auto;
+      margin:0 auto;
     }
-
-    .kallos-float-img--secondary{
-      right:auto;
-      top:auto;
-      margin-top: -18px;
-    }
-
-    .kallos-float-img--main{
+    .kallos-img--main{
       width: {{ section.settings.main_img_width_mobile }}%;
     }
-
-    .kallos-float-img--secondary{
+    .kallos-img--secondary{
       width: {{ section.settings.secondary_img_width_mobile }}%;
+      margin-top:-18px;
     }
   }
 </style>
 
 <script>
   (function(){
-    var rootId = "kallos-hero-{{ section.id }}";
-    var typedId = "kallos-typed-{{ section.id }}";
-    var el = document.getElementById(typedId);
+    var el = document.getElementById("kallos-typed-{{ section.id }}");
     if(!el) return;
 
     var words = [
       {% for block in section.blocks %}
-        {% if block.type == 'word' and block.settings.word != blank %}
-          {{ block.settings.word | strip | json }}{% unless forloop.last %},{% endunless %}
-        {% endif %}
+        {{ block.settings.word | json }}{% unless forloop.last %},{% endunless %}
       {% endfor %}
-    ].filter(Boolean);
+    ];
+    if(!words.length){ words=["cejas","barba","cabello"]; }
 
-    if(!words.length){
-      words = ["cejas", "barba", "cabello"];
+    var i=0,j=0,del=false;
+    function type(){
+      var w=words[i];
+      el.textContent = del ? w.slice(0,--j) : w.slice(0,++j);
+      var t = del ? 70 : 140;
+      if(!del && j===w.length){ del=true; setTimeout(type,2000); return; }
+      if(del && j===0){ del=false; i=(i+1)%words.length; }
+      setTimeout(type,t);
     }
-
-    var i = 0;
-    var j = 0;
-    var current = "";
-    var deleting = false;
-
-    var typingSpeed = {{ section.settings.typing_speed }};
-    var pauseTime = {{ section.settings.pause_time }};
-
-    function tick(){
-      var full = words[i];
-
-      if(deleting){
-        current = full.substring(0, j--);
-      } else {
-        current = full.substring(0, j++);
-      }
-
-      el.textContent = current || "\u200B";
-
-      var delay = deleting ? Math.max(30, typingSpeed/2) : typingSpeed;
-
-      if(!deleting && current === full){
-        delay = pauseTime;
-        deleting = true;
-      } else if(deleting && current === ""){
-        deleting = false;
-        i = (i + 1) % words.length;
-        delay = 450;
-      }
-
-      setTimeout(tick, delay);
-    }
-
-    setTimeout(tick, 120);
+    type();
   })();
 </script>
 
@@ -347,144 +239,15 @@
 {
   "name": "Kallos · Hero",
   "settings": [
-    {
-      "type": "range",
-      "id": "max_width",
-      "min": 900,
-      "max": 1400,
-      "step": 20,
-      "label": "Ancho máximo",
-      "default": 1200
-    },
-
-    { "type": "color", "id": "gradient_color", "label": "Color del degradado", "default": "#AC9651" },
-    { "type": "color", "id": "text_color", "label": "Color del texto", "default": "#FFFFFF" },
+    { "type": "color", "id": "gradient_color", "label": "Color degradado", "default": "#AC9651" },
+    { "type": "color", "id": "text_color", "label": "Color texto", "default": "#FFFFFF" },
     { "type": "color", "id": "star_color", "label": "Color estrellas", "default": "#AC9651" },
 
-    { "type": "font_picker", "id": "heading_font", "label": "Tipografía título", "default": "poppins_n7" },
-    { "type": "font_picker", "id": "body_font", "label": "Tipografía texto", "default": "poppins_n4" },
+    { "type": "text", "id": "client_count", "label": "Número clientes", "default": "10.000" },
+    { "type": "text", "id": "client_text", "label": "Texto clientes", "default": "clientes Kallos" },
 
-    {
-      "type": "range",
-      "id": "heading_size_desktop",
-      "min": 28,
-      "max": 64,
-      "step": 1,
-      "label": "Tamaño título (desktop)",
-      "default": 52
-    },
-    {
-      "type": "range",
-      "id": "heading_size_mobile",
-      "min": 24,
-      "max": 50,
-      "step": 1,
-      "label": "Tamaño título (mobile)",
-      "default": 38
-    },
-    {
-      "type": "range",
-      "id": "heading_weight",
-      "min": 400,
-      "max": 800,
-      "step": 100,
-      "label": "Peso título",
-      "default": 700
-    },
-
-    {
-      "type": "range",
-      "id": "body_size_desktop",
-      "min": 14,
-      "max": 22,
-      "step": 1,
-      "label": "Tamaño descripción (desktop)",
-      "default": 18
-    },
-    {
-      "type": "range",
-      "id": "body_size_mobile",
-      "min": 12,
-      "max": 20,
-      "step": 1,
-      "label": "Tamaño descripción (mobile)",
-      "default": 15
-    },
-    {
-      "type": "range",
-      "id": "desc_max_width",
-      "min": 360,
-      "max": 720,
-      "step": 20,
-      "label": "Ancho máx descripción",
-      "default": 520
-    },
-    {
-      "type": "range",
-      "id": "desc_top_margin",
-      "min": 6,
-      "max": 30,
-      "step": 1,
-      "label": "Separación título/desc",
-      "default": 14
-    },
-
-    {
-      "type": "range",
-      "id": "pad_y_desktop",
-      "min": 40,
-      "max": 140,
-      "step": 5,
-      "label": "Padding vertical desktop",
-      "default": 80
-    },
-    {
-      "type": "range",
-      "id": "pad_y_mobile",
-      "min": 30,
-      "max": 120,
-      "step": 5,
-      "label": "Padding vertical mobile",
-      "default": 60
-    },
-
-    {
-      "type": "range",
-      "id": "col_gap",
-      "min": 20,
-      "max": 100,
-      "step": 5,
-      "label": "Separación columnas (desktop)",
-      "default": 60
-    },
-    {
-      "type": "range",
-      "id": "mobile_gap",
-      "min": 10,
-      "max": 60,
-      "step": 2,
-      "label": "Separación bloques (mobile)",
-      "default": 22
-    },
-
-    {
-      "type": "range",
-      "id": "media_height_desktop",
-      "min": 320,
-      "max": 700,
-      "step": 10,
-      "label": "Altura media (desktop)",
-      "default": 420
-    },
-    {
-      "type": "range",
-      "id": "media_min_height_mobile",
-      "min": 220,
-      "max": 520,
-      "step": 10,
-      "label": "Alto mínimo media (mobile)",
-      "default": 280
-    },
+    { "type": "image_picker", "id": "img_main", "label": "Imagen principal" },
+    { "type": "image_picker", "id": "img_secondary", "label": "Imagen secundaria" },
 
     {
       "type": "range",
@@ -523,51 +286,23 @@
       "default": 62
     },
 
-    { "type": "text", "id": "client_count", "label": "Número clientes", "default": "10.000" },
-    { "type": "text", "id": "client_text", "label": "Texto clientes", "default": "clientes Kallos" },
-    { "type": "range", "id": "proof_size", "min": 12, "max": 20, "step": 1, "label": "Tamaño proof", "default": 14 },
-
-    { "type": "image_picker", "id": "img_main", "label": "Imagen principal" },
-    { "type": "image_picker", "id": "img_secondary", "label": "Imagen secundaria" },
-
     {
       "type": "richtext",
       "id": "title_rich",
       "label": "Título (parte fija)",
-      "default": "<p>Más confianza,<br>Más</p>"
+      "default": "<span>Más confianza, Más</span>"
     },
-    { "type": "text", "id": "typed_suffix", "label": "Texto después de la palabra animada", "default": "." },
     {
       "type": "richtext",
       "id": "description_rich",
       "label": "Descripción",
       "default": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel, para potenciar tu mejor versión cada día.</p>"
-    },
-
-    {
-      "type": "range",
-      "id": "typing_speed",
-      "min": 60,
-      "max": 220,
-      "step": 10,
-      "label": "Velocidad tipeo (ms)",
-      "default": 140
-    },
-    {
-      "type": "range",
-      "id": "pause_time",
-      "min": 800,
-      "max": 4000,
-      "step": 100,
-      "label": "Pausa por palabra (ms)",
-      "default": 2500
     }
   ],
   "blocks": [
     {
       "type": "word",
       "name": "Palabra animada",
-      "limit": 6,
       "settings": [{ "type": "text", "id": "word", "label": "Texto", "default": "cejas" }]
     }
   ],
