@@ -9,6 +9,48 @@
  */
 {
   "sections": {
+    "kallos_hero_PNGPjA": {
+      "type": "kallos-hero",
+      "blocks": {
+        "word_3nGHiw": {
+          "type": "word",
+          "settings": {
+            "word": "cejas"
+          }
+        },
+        "word_tMbgG6": {
+          "type": "word",
+          "settings": {
+            "word": "barba"
+          }
+        },
+        "word_q7j6ky": {
+          "type": "word",
+          "settings": {
+            "word": "cabellos"
+          }
+        }
+      },
+      "block_order": [
+        "word_3nGHiw",
+        "word_tMbgG6",
+        "word_q7j6ky"
+      ],
+      "name": "Kallos · Hero",
+      "settings": {
+        "gradient_color": "#AC9651",
+        "text_color": "#FFFFFF",
+        "star_color": "#AC9651",
+        "client_count": "10.000",
+        "client_text": "clientes Kallos",
+        "main_img_width_desktop": 70,
+        "secondary_img_width_desktop": 40,
+        "main_img_width_mobile": 88,
+        "secondary_img_width_mobile": 62,
+        "title_rich": "<p>Más confianza, Más</p>",
+        "description_rich": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel, para potenciar tu mejor versión cada día.</p>"
+      }
+    },
     "kallos_hero_section_JTePGw": {
       "type": "kallos-hero-section",
       "name": "Kallos · Hero Oferta",
@@ -124,6 +166,7 @@
     }
   },
   "order": [
+    "kallos_hero_PNGPjA",
     "kallos_hero_section_JTePGw",
     "featured_editorial_AmL6qw",
     "kallos_benefits_XUHpeJ",
