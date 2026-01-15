@@ -2260,7 +2260,7 @@
                               "settings": {
                                 "text": "<h5>Ayuda a mantener limpia la línea de las pestañas, eliminando impurezas y preparando la zona para una mejor absorción de los activos del serum.</h5>",
                                 "width": "100%",
-                                "max_width": "normal",
+                                "max_width": "none",
                                 "alignment": "left",
                                 "type_preset": "paragraph",
                                 "font": "var(--font-body--family)",
@@ -2323,7 +2323,7 @@
                               "settings": {
                                 "text": "<h5>Contribuye a nutrir las pestañas y mejorar su apariencia, ayudando a que luzcan más densas, saludables y revitalizadas.</h5>",
                                 "width": "100%",
-                                "max_width": "normal",
+                                "max_width": "none",
                                 "alignment": "left",
                                 "type_preset": "paragraph",
                                 "font": "var(--font-body--family)",
