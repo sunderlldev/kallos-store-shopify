@@ -188,6 +188,18 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
+                        "icon_3WykCT": {
+                          "type": "icon",
+                          "name": "t:names.icon",
+                          "settings": {
+                            "icon": "fire",
+                            "image_upload": "shopify://shop_images/fireWithBorder_6fec87f0-1d86-44ee-a3e5-e9cf9b441d7b.png",
+                            "width": 24,
+                            "link": "",
+                            "open_in_new_tab": false
+                          },
+                          "blocks": {}
+                        },
                         "group_LT99Wt": {
                           "type": "group",
                           "name": "t:names.group",
@@ -200,13 +212,13 @@
                             "horizontal_alignment_flex_direction_column": "center",
                             "vertical_alignment_flex_direction_column": "center",
                             "gap": 0,
-                            "width": "fill",
+                            "width": "fit-content",
                             "custom_width": 100,
-                            "width_mobile": "fill",
+                            "width_mobile": "fit-content",
                             "custom_width_mobile": 100,
                             "height": "fit",
                             "custom_height": 100,
-                            "inherit_color_scheme": false,
+                            "inherit_color_scheme": true,
                             "color_scheme": "scheme-4ae1e9cf-7035-4835-92d5-ed6378fa7925",
                             "background_media": "none",
                             "video_position": "cover",
@@ -228,53 +240,41 @@
                             "padding-inline-end": 2
                           },
                           "blocks": {
-                            "icon_Nr9mHX": {
-                              "type": "icon",
-                              "name": "t:names.icon",
+                            "text_rehPbT": {
+                              "type": "text",
+                              "name": "t:names.text",
                               "settings": {
-                                "icon": "fire",
-                                "image_upload": "shopify://shop_images/fireWithBorder_6fec87f0-1d86-44ee-a3e5-e9cf9b441d7b.png",
-                                "width": 24,
-                                "link": "",
-                                "open_in_new_tab": false
+                                "text": "<h6>+10.000 clientes KALLOS<strong> · </strong></h6>",
+                                "width": "fit-content",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
                               },
                               "blocks": {}
                             }
                           },
                           "block_order": [
-                            "icon_Nr9mHX"
+                            "text_rehPbT"
                           ]
-                        },
-                        "text_Q4HXMd": {
-                          "type": "text",
-                          "name": "t:names.text",
-                          "settings": {
-                            "text": "<h6>+10.000 clientes KALLOS<strong> · </strong></h6>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
                         }
                       },
                       "block_order": [
-                        "group_LT99Wt",
-                        "text_Q4HXMd"
+                        "icon_3WykCT",
+                        "group_LT99Wt"
                       ]
                     },
                     "judge_me_reviews_preview_badge_pY4mdd": {
