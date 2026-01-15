@@ -235,12 +235,12 @@
       "name": "Kallos · Destacados",
       "settings": {
         "collection": "destacados",
-        "title": "Producos destacados de Kallos Store",
+        "title": "Productos de Kallos Store",
         "title_weight": "700",
         "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
         "subtitle_weight": "400",
         "price_weight": "700",
-        "card_bg": "#AC9651"
+        "card_bg": "#ac9651"
       }
     }
   },
