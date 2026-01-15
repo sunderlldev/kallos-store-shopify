@@ -100,9 +100,13 @@
         "feature_bUPFpR",
         "feature_L9DDUc"
       ],
+      "custom_css": [
+        "@media (max-width: 900px) {.kallos-science-features {grid-template-columns: repeat(2, 1fr) !important; gap: 30px 20px !important; }.kallos-science-feature {display: flex; flex-direction: column; align-items: center;}}",
+        "@media (max-width: 520px) {.kallos-science-features {grid-template-columns: repeat(2, 1fr) !important; gap: 25px 15px !important;}.kallos-science-label {font-size: 0.8rem !important; margin-top: 8px !important;}.kallos-science-icon {width: 42px !important; height: 42px !important;}}"
+      ],
       "name": "Kallos · Beneficios",
       "settings": {
-        "image": "shopify://shop_images/imagen_2026-01-13_173828893.jpg",
+        "image": "shopify://shop_images/cremaRef.png",
         "title": "Kallos es ciencia & cuidado",
         "text": "<p>Cada producto Kallos nace del estudio preciso de ingredientes activos, pensados para cuidar la piel y el vello de forma consciente y efectiva.</p><p>Desarrollados por especialistas en dermocosmética, nuestras fórmulas equilibran eficacia, tolerancia y experiencia sensorial para integrarse naturalmente a tu rutina diaria.</p>",
         "image_position": "left"
