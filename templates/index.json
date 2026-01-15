@@ -293,7 +293,7 @@
                   },
                   "blocks": {}
                 },
-                "custom_liquid_MPtRQX": {
+                "custom_liquid_RtytwR": {
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
                   "settings": {
@@ -304,7 +304,7 @@
               },
               "block_order": [
                 "text_H9dha9",
-                "custom_liquid_MPtRQX"
+                "custom_liquid_RtytwR"
               ]
             }
           },
