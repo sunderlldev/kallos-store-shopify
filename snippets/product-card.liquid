@@ -111,7 +111,46 @@
       {% if block_settings.padding-block-end > 0 %}--zoom-out-padding-block-end: min(var(--padding-xs), {{ block_settings.padding-block-end | times: 0.7}}px);{% endif %}
     "
   >
-    {{ children }}
+    {%- if product.featured_media -%}
+      <div class="kallos-card-media" style="position: relative; aspect-ratio: 1/1; overflow: hidden;">
+         <img class="kallos-img kallos-img-main" 
+              src="{{ product.featured_media | image_url: width: 600 }}" 
+              loading="lazy" alt="{{ product.title }}"
+              style="width: 100%; height: 100%; object-fit: cover;">
+         
+         {%- if product.media[1] -%}
+           <img class="kallos-img-hover" 
+                src="{{ product.media[1] | image_url: width: 600 }}" 
+                loading="lazy" alt="{{ product.title }}"
+                style="position: absolute; inset: 0; opacity: 0; transition: 0.4s; width: 100%; height: 100%; object-fit: cover;">
+         {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="kallos-card-content-wrapper" style="padding: 20px; color: #fff;">
+      <div class="kallos-card-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+        <p class="kallos-card-title" style="margin: 0; font-weight: 700;">{{ product.title }}</p>
+        <span class="kallos-card-price" style="font-weight: 700;">{{ product.price | money }}</span>
+      </div>
+
+      <div class="kallos-card-description" style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+        {{ product.description | strip_html | truncatewords: 15 }}
+      </div>
+
+      <div class="kallos-static-stars" style="display: flex; gap: 2px;">
+        {% for i in (1..5) %}
+          <svg class="kallos-star-svg" viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: #fff;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        {% endfor %}
+      </div>
+    </div>
+
+    {%- comment -%} 
+      Mantenemos esto al final por si activas botones de "Comprar" 
+      o "Elegir opciones" desde el personalizador de Shopify 
+    {%- endcomment -%}
+    <div class="product-card__footer">
+       {{ children }}
+    </div>
   </div>
 </product-card>
 {%- if settings.transition_to_main_product -%}
