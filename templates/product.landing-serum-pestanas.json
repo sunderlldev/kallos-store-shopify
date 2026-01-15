@@ -2196,9 +2196,9 @@
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
+                    "gap": 20,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -2227,404 +2227,268 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_9VPVxg": {
-                      "type": "group",
-                      "name": "t:names.group",
+                    "accordion_wqE6JB": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
                       "settings": {
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
-                        "vertical_alignment": "center",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "flex-start",
-                        "vertical_alignment_flex_direction_column": "center",
-                        "gap": 12,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fit",
-                        "custom_height": 100,
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
                         "inherit_color_scheme": true,
                         "color_scheme": "",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
                         "border": "none",
                         "border_width": 1,
                         "border_opacity": 100,
                         "border_radius": 0,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "placeholder": "",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_YdFwbz": {
-                          "type": "text",
-                          "name": "t:names.heading",
+                        "accordion_row_HzUMei": {
+                          "type": "_accordion-row",
                           "settings": {
-                            "text": "<h3>Extracto de Romero</h3>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                            "heading": "Extracto de Romero",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "width": 20
                           },
-                          "blocks": {}
-                        },
-                        "text_QPdEc7": {
-                          "type": "text",
-                          "name": "t:names.text",
-                          "settings": {
-                            "text": "<h5>Ayuda a mantener limpia la línea de las pestañas, eliminando impurezas y preparando la zona para una mejor absorción de los activos del serum.</h5>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                          "blocks": {
+                            "text_AUTeWb": {
+                              "type": "text",
+                              "settings": {
+                                "text": "<h5>Ayuda a mantener limpia la línea de las pestañas, eliminando impurezas y preparando la zona para una mejor absorción de los activos del serum.</h5>",
+                                "width": "100%",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "paragraph",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
                           },
-                          "blocks": {}
+                          "block_order": [
+                            "text_AUTeWb"
+                          ]
                         }
                       },
                       "block_order": [
-                        "text_YdFwbz",
-                        "text_QPdEc7"
+                        "accordion_row_HzUMei"
                       ]
                     },
-                    "group_EaKH3y": {
-                      "type": "group",
-                      "name": "t:names.group",
+                    "accordion_agnYTB": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
                       "settings": {
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
-                        "vertical_alignment": "center",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "flex-start",
-                        "vertical_alignment_flex_direction_column": "center",
-                        "gap": 12,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fit",
-                        "custom_height": 100,
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
                         "inherit_color_scheme": true,
                         "color_scheme": "",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
                         "border": "none",
                         "border_width": 1,
                         "border_opacity": 100,
                         "border_radius": 0,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "placeholder": "",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_bAXzhN": {
-                          "type": "text",
-                          "name": "t:names.heading",
+                        "accordion_row_mQW8w9": {
+                          "type": "_accordion-row",
                           "settings": {
-                            "text": "<h3>Ginseng</h3>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                            "heading": "Ginseng",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "width": 20
                           },
-                          "blocks": {}
-                        },
-                        "text_RkXxyy": {
-                          "type": "text",
-                          "name": "t:names.text",
-                          "settings": {
-                            "text": "<h5>Contribuye a nutrir las pestañas y mejorar su apariencia, ayudando a que luzcan más densas, saludables y revitalizadas.</h5>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                          "blocks": {
+                            "text_bzRKBJ": {
+                              "type": "text",
+                              "settings": {
+                                "text": "<h5>Contribuye a nutrir las pestañas y mejorar su apariencia, ayudando a que luzcan más densas, saludables y revitalizadas.</h5>",
+                                "width": "100%",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "paragraph",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
                           },
-                          "blocks": {}
+                          "block_order": [
+                            "text_bzRKBJ"
+                          ]
                         }
                       },
                       "block_order": [
-                        "text_bAXzhN",
-                        "text_RkXxyy"
+                        "accordion_row_mQW8w9"
                       ]
                     },
-                    "group_UwkFKT": {
-                      "type": "group",
-                      "name": "t:names.group",
+                    "accordion_3QyUBG": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
                       "settings": {
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
-                        "vertical_alignment": "center",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "flex-start",
-                        "vertical_alignment_flex_direction_column": "center",
-                        "gap": 12,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fit",
-                        "custom_height": 100,
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
                         "inherit_color_scheme": true,
                         "color_scheme": "",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
                         "border": "none",
                         "border_width": 1,
                         "border_opacity": 100,
                         "border_radius": 0,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "placeholder": "",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_erCGfh": {
-                          "type": "text",
-                          "name": "t:names.heading",
+                        "accordion_row_PgYYVi": {
+                          "type": "_accordion-row",
+                          "name": "t:names.accordion_row",
                           "settings": {
-                            "text": "<h3>Extracto de Magnolia</h3>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                            "heading": "Extracto de Magnolia",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "width": 20
                           },
-                          "blocks": {}
-                        },
-                        "text_ziN6YQ": {
-                          "type": "text",
-                          "name": "t:names.text",
-                          "settings": {
-                            "text": "<h5>Aporta nutrientes esenciales que acompañan el ciclo natural de crecimiento, favoreciendo pestañas con aspecto más largo y lleno con el uso constante.</h5>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                          "blocks": {
+                            "text_h3f73M": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<p>Aporta nutrientes esenciales que acompañan el ciclo natural de crecimiento, favoreciendo pestañas con aspecto más largo y lleno con el uso constante.</p>",
+                                "width": "100%",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "paragraph",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
                           },
-                          "blocks": {}
+                          "block_order": [
+                            "text_h3f73M"
+                          ]
                         }
                       },
                       "block_order": [
-                        "text_erCGfh",
-                        "text_ziN6YQ"
+                        "accordion_row_PgYYVi"
                       ]
                     },
-                    "group_7FVAVL": {
-                      "type": "group",
-                      "name": "t:names.group",
+                    "accordion_bNpE9N": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
                       "settings": {
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
-                        "vertical_alignment": "center",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "flex-start",
-                        "vertical_alignment_flex_direction_column": "center",
-                        "gap": 12,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fit",
-                        "custom_height": 100,
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
                         "inherit_color_scheme": true,
                         "color_scheme": "",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
                         "border": "none",
                         "border_width": 1,
                         "border_opacity": 100,
                         "border_radius": 0,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "placeholder": "",
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_A8N4FL": {
-                          "type": "text",
-                          "name": "t:names.heading",
+                        "accordion_row_fcnnGN": {
+                          "type": "_accordion-row",
+                          "name": "t:names.accordion_row",
                           "settings": {
-                            "text": "<h3>Biotina</h3>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                            "heading": "Biotina",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "width": 20
                           },
-                          "blocks": {}
-                        },
-                        "text_cCDCyb": {
-                          "type": "text",
-                          "name": "t:names.text",
-                          "settings": {
-                            "text": "<h5>Ingrediente clave que ayuda a fortalecer las fibras de las pestañas, reduciendo el quiebre y mejorando su resistencia y apariencia general.</h5>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
+                          "blocks": {
+                            "text_fbR6kP": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<p>Ingrediente clave que ayuda a fortalecer las fibras de las pestañas, reduciendo el quiebre y mejorando su resistencia y apariencia general.</p>",
+                                "width": "100%",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "paragraph",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
                           },
-                          "blocks": {}
+                          "block_order": [
+                            "text_fbR6kP"
+                          ]
                         }
                       },
                       "block_order": [
-                        "text_A8N4FL",
-                        "text_cCDCyb"
+                        "accordion_row_fcnnGN"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_9VPVxg",
-                    "group_EaKH3y",
-                    "group_UwkFKT",
-                    "group_7FVAVL"
+                    "accordion_wqE6JB",
+                    "accordion_agnYTB",
+                    "accordion_3QyUBG",
+                    "accordion_bNpE9N"
                   ]
                 }
               },
@@ -2670,6 +2534,68 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "section_N99wmj": {
+      "type": "section",
+      "blocks": {
+        "text_pgPWQL": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3>Preguntas frecuentes</h3>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_pgPWQL"
+      ],
+      "name": "t:names.faq_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "176781003830b16789": {
@@ -3177,6 +3103,7 @@
     "main",
     "divider_cJ99T7",
     "section_dUgb8n",
+    "section_N99wmj",
     "176781003830b16789",
     "kallo_innovation_GLC4m8",
     "section_aNfTUn",
