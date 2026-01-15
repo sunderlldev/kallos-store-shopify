@@ -68,6 +68,14 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_mUMib6": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "{%- liquid\n  assign rating_value = product.metafields.reviews.rating.value.rating | default: 5.0\n  assign rating_count = product.metafields.reviews.rating_count | default: 0\n-%}\n\n<div class=\"kallos-custom-block\">\n  <div class=\"kallos-rating-pill\">\n    <div class=\"kallos-stars-group\">\n      {%- for i in (1..5) -%}\n        {%- assign fraction = rating_value | minus: i | plus: 1 -%}\n        <svg class=\"kallos-star-icon\" viewBox=\"0 0 24 24\" style=\"fill: {% if fraction >= 1 %}#b29a53{% elsif fraction > 0 %}url(#half-gold-pill){% else %}#d1d1d1{% endif %};\">\n          <path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/>\n        </svg>\n      {%- endfor %}\n    </div>\n    \n    <span class=\"kallos-rating-text\">\n      {{ rating_value | round: 1 }}/5\n    </span>\n  </div>\n</div>\n\n{%- comment -%} SVG Gradiente para medias estrellas {%- endcomment -%}\n<svg width=\"0\" height=\"0\" style=\"display:none;\">\n  <defs>\n    <linearGradient id=\"half-gold-pill\">\n      <stop offset=\"50%\" stop-color=\"#b29a53\"/>\n      <stop offset=\"50%\" stop-color=\"#d1d1d1\"/>\n    </linearGradient>\n  </defs>\n</svg>\n\n<style>\n  .kallos-custom-block {\n    margin: 15px 0;\n    display: block;\n  }\n\n  .kallos-rating-pill {\n    display: inline-flex;\n    align-items: center;\n    gap: 12px;\n    background: #f4f1e9; /* Color crema exacto de tu imagen */\n    padding: 8px 20px;\n    border-radius: 100px;\n    border: 1px solid rgba(178, 154, 83, 0.1); /* Sutil borde dorado */\n  }\n\n  .kallos-stars-group {\n    display: flex;\n    gap: 3px;\n  }\n\n  .kallos-star-icon {\n    width: 15px;\n    height: 15px;\n  }\n\n  .kallos-rating-text {\n    font-size: 14px;\n    font-weight: 700;\n    color: #4a4a4a;\n    font-family: inherit;\n    letter-spacing: 0.5px;\n  }\n</style>"
+              },
+              "blocks": {}
+            },
             "group_icgrde": {
               "type": "group",
               "name": "Header",
@@ -2069,6 +2077,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_mUMib6",
             "group_icgrde",
             "divider_VJhene",
             "group_zfLtqk",
