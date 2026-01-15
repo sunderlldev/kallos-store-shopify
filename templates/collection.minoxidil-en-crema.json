@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<h1>Minoxidil en Crema</h1>",
+            "text": "<h1>{{ closest.collection.title }}</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -94,8 +94,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 40,
+        "padding-block-end": 0
       }
     },
     "main": {
@@ -131,7 +131,7 @@
             "product_card_gap": 4,
             "inherit_color_scheme": true,
             "color_scheme": "",
-            "border": "solid",
+            "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
@@ -211,6 +211,7 @@
           ]
         }
       },
+      "disabled": true,
       "settings": {
         "layout_type": "grid",
         "product_card_size": "medium",
@@ -233,9 +234,9 @@
       "name": "Kallos · Destacados",
       "settings": {
         "collection": "minoxidil-en-crema",
-        "title": "Minoxidil en Crema",
+        "title": "",
         "title_weight": "700",
-        "subtitle": "Nuestro bestseller",
+        "subtitle": "",
         "subtitle_weight": "400",
         "price_weight": "700",
         "card_bg": "#ac9651"
