@@ -1983,7 +1983,7 @@
           "type": "item",
           "settings": {
             "heading": "¿En cuánto tiempo veré resultados?",
-            "text": "<p>{{ product.metafields.custom.faq_2_respuesta | metafield_tag }}</p>"
+            "text": "<h5>{{ product.metafields.custom.faq_2_respuesta | metafield_tag }}</h5>"
           }
         },
         "item_h3P3kU": {
