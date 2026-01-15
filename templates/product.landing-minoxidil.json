@@ -1983,14 +1983,14 @@
           "type": "item",
           "settings": {
             "heading": "¿En cuánto tiempo veré resultados?",
-            "text": "<p>Contenido</p>"
+            "text": "<p>{{ product.metafields.custom.faq_2_respuesta | metafield_tag }}</p>"
           }
         },
         "item_h3P3kU": {
           "type": "item",
           "settings": {
-            "heading": "Activos",
-            "text": "<p>Contenido</p>"
+            "heading": "{{ product.metafields.custom.faq_3.value }}",
+            "text": "<p>{{ product.metafields.custom.faq_3_respuesta | metafield_tag }}</p>"
           }
         },
         "item_GT8zk3": {
