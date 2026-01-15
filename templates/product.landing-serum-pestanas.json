@@ -2388,7 +2388,7 @@
                               "settings": {
                                 "text": "<p>Aporta nutrientes esenciales que acompañan el ciclo natural de crecimiento, favoreciendo pestañas con aspecto más largo y lleno con el uso constante.</p>",
                                 "width": "100%",
-                                "max_width": "normal",
+                                "max_width": "none",
                                 "alignment": "left",
                                 "type_preset": "paragraph",
                                 "font": "var(--font-body--family)",
@@ -2453,7 +2453,7 @@
                               "settings": {
                                 "text": "<p>Ingrediente clave que ayuda a fortalecer las fibras de las pestañas, reduciendo el quiebre y mejorando su resistencia y apariencia general.</p>",
                                 "width": "100%",
-                                "max_width": "normal",
+                                "max_width": "none",
                                 "alignment": "left",
                                 "type_preset": "paragraph",
                                 "font": "var(--font-body--family)",
