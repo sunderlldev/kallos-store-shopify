@@ -60,12 +60,10 @@
                     {{ product.description | strip_html | truncatewords: 15 }}
                   </div>
 
-                  <div class="jdgm-prev-badge--static">
-                    <span class="jdgm-prev-badge__stars">
-                      {% for i in (1..5) -%}
-                        <span class="jdgm-star"></span>
-                      {%- endfor %}
-                    </span>
+                  <div class="kallos-card-stars">
+                    {% for i in (1..5) %}
+                      <span class="kallos-star-fixed"></span>
+                    {% endfor %}
                   </div>
                 </div>
               </a>
