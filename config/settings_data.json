@@ -628,7 +628,7 @@
           "primary_button_hover_border": "rgba(0,0,0,0)",
           "secondary_button_background": "rgba(0,0,0,0)",
           "secondary_button_text": "#000000",
-          "secondary_button_border": "#000000",
+          "secondary_button_border": "#e14949",
           "secondary_button_hover_background": "#fafafa",
           "secondary_button_hover_text": "#333333",
           "secondary_button_hover_border": "rgba(0,0,0,0)",
