@@ -141,14 +141,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "custom_liquid_8JxxgN": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
-              "settings": {
-                "custom_liquid": "<a href=\"{{ product.url }}\" class=\"kallos-card\" draggable=\"false\">\n  <div class=\"kallos-card-media\">\n    {% if product.images.size > 1 %}\n      {{\n        product.images[0]\n        | image_url: width: 600\n        | image_tag:\n          class: 'kallos-img kallos-img-main',\n          loading: 'lazy',\n          alt: product.title,\n          draggable: false\n      }}\n      {{\n        product.images[1]\n        | image_url: width: 600\n        | image_tag:\n          class: 'kallos-img kallos-img-hover',\n          loading: 'lazy',\n          alt: product.title,\n          draggable: false\n      }}\n    {% else %}\n      {{\n        product.featured_image\n        | image_url: width: 600\n        | image_tag:\n          class: 'kallos-img kallos-img-single',\n          loading: 'lazy',\n          alt: product.title,\n          draggable: false\n      }}\n    {% endif %}\n  </div>\n\n  <div class=\"kallos-card-content\">\n    <div class=\"kallos-card-header\">\n      <p class=\"kallos-card-title\">{{ product.title }}</p>\n      <span class=\"kallos-card-price\">{{ product.price | money }}</span>\n    </div>\n\n    <div class=\"kallos-card-description\">\n      {{ product.description | strip_html | truncatewords: 15 }}\n    </div>\n\n    <div class=\"jdgm-prev-badge--static\">\n      <span class=\"jdgm-prev-badge__stars\">\n        {% for i in (1..5) -%}\n          <span class=\"jdgm-star\"></span>\n        {%- endfor %}\n      </span>\n    </div>\n  </div>\n</a>"
-              },
-              "blocks": {}
-            },
             "card-gallery": {
               "type": "_product-card-gallery",
               "settings": {
@@ -213,7 +205,6 @@
             }
           },
           "block_order": [
-            "custom_liquid_8JxxgN",
             "card-gallery",
             "product_title_4nY4eT",
             "price_EzJzMm"
