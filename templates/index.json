@@ -848,7 +848,7 @@
         "group_NgaHpE"
       ],
       "custom_css": [
-        "@media screen and (max-width: 821px) {h5 {font-size: 18px !important; line-height: 1.2 !important; display: block !important; }}",
+        "@media screen and (max-width: 821px) {h5 {font-size: 18px !important; line-height: 1.2 !important; display: block !important; } h6 {font-size: 20px !important; }}",
         "@media screen and (max-width: 480px) {h5 {font-size: 15px !important; } h6 {font-size: 20px !important; }}"
       ],
       "name": "t:names.custom_section",
