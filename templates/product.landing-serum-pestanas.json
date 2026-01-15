@@ -2593,21 +2593,21 @@
           "type": "item",
           "settings": {
             "heading": "¿Puedo usarlo con rímel?",
-            "text": "<p>Contenido</p>"
+            "text": "<h5>¡Sí! Puedes aplicar primero tu suero para pestañas y dejar que se seque; luego, utiliza tu rímel favorito para lograr un aspecto definido y llamativo.</h5>"
           }
         },
         "item_abpUGh": {
           "type": "item",
           "settings": {
             "heading": "¿Puedo usarlo si tengo extensiones de pestañas?",
-            "text": "<p>Contenido</p>"
+            "text": "<h5>Sí, puedes usar el serum de crecimiento de pestañas con extensiones. Ayudará a nutrir y fortalecer tus pestañas naturales, lo que puede mejorar la salud de tus extensiones.</h5>"
           }
         },
         "item_h3P3kU": {
           "type": "item",
           "settings": {
             "heading": "¿El serum de pestañas Kallos es seguro para ojos sensibles?",
-            "text": "<p>Contenido</p>"
+            "text": "<h5>Nuestro serum de pestañas está formulado con ingredientes suaves, pero si tienes ojos particularmente sensibles, recomendamos realizar una prueba de parche antes de usarlo.</h5>"
           }
         },
         "item_GT8zk3": {
