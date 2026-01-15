@@ -1127,7 +1127,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>Prueba el nuevo Serum de pestañas</strong></h5>",
+                        "text": "<h5><strong>Prueba nuestro bestseller</strong></h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1206,7 +1206,7 @@
                         "overlay_color": "#000000",
                         "overlay_style": "solid",
                         "gradient_direction": "to top",
-                        "link": "shopify://products/serum-de-pestanas",
+                        "link": "shopify://collections/destacados",
                         "open_in_new_tab": false,
                         "placeholder": "",
                         "padding-block-start": 10,
@@ -1219,7 +1219,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p><strong>Ver Serum</strong></p>",
+                            "text": "<p><strong>Ver Cremas</strong></p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
