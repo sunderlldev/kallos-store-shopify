@@ -2254,7 +2254,7 @@
                             "open_by_default": false,
                             "icon": "none",
                             "image_upload": "shopify://shop_images/romero.png",
-                            "width": 26
+                            "width": 30
                           },
                           "blocks": {
                             "text_AUTeWb": {
@@ -2317,8 +2317,8 @@
                             "heading": "Ginseng",
                             "open_by_default": false,
                             "icon": "none",
-                            "image_upload": "shopify://shop_images/ginseng.png",
-                            "width": 26
+                            "image_upload": "shopify://shop_images/ginseng_239339de-f510-4a00-ac98-0002f9b43299.png",
+                            "width": 30
                           },
                           "blocks": {
                             "text_bzRKBJ": {
@@ -2382,7 +2382,8 @@
                             "heading": "Extracto de Magnolia",
                             "open_by_default": false,
                             "icon": "none",
-                            "width": 20
+                            "image_upload": "shopify://shop_images/magnolia_792d99fa-e731-4c66-99c7-4872501cfe15.png",
+                            "width": 30
                           },
                           "blocks": {
                             "text_h3f73M": {
@@ -2447,7 +2448,8 @@
                             "heading": "Biotina",
                             "open_by_default": false,
                             "icon": "none",
-                            "width": 20
+                            "image_upload": "shopify://shop_images/biotina.png",
+                            "width": 30
                           },
                           "blocks": {
                             "text_fbR6kP": {
