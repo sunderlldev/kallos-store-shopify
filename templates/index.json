@@ -107,6 +107,9 @@
         "text_gjj8iT",
         "text_8ThUhD"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 990px) {marquee-component {display: none !important; }}"
+      ],
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "normal",
