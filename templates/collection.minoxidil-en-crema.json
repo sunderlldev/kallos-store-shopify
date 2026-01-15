@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<h1>Nuestro productos</h1>",
+            "text": "<h1>Minoxidil en Crema</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -131,7 +131,7 @@
             "product_card_gap": 4,
             "inherit_color_scheme": true,
             "color_scheme": "",
-            "border": "none",
+            "border": "solid",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
@@ -148,7 +148,7 @@
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_radius": 0,
+                "border_radius": 32,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -163,8 +163,8 @@
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -187,7 +187,7 @@
                 "show_sale_price_first": true,
                 "show_installments": false,
                 "show_tax_info": false,
-                "type_preset": "h6",
+                "type_preset": "h5",
                 "width": "100%",
                 "alignment": "left",
                 "font": "var(--font-body--family)",
@@ -227,10 +227,24 @@
         "padding-block-start": 0,
         "padding-block-end": 32
       }
+    },
+    "featured_editorial_VMwGVR": {
+      "type": "featured-editorial",
+      "name": "Kallos · Destacados",
+      "settings": {
+        "collection": "minoxidil-en-crema",
+        "title": "Minoxidil en Crema",
+        "title_weight": "700",
+        "subtitle": "Nuestro bestseller",
+        "subtitle_weight": "400",
+        "price_weight": "700",
+        "card_bg": "#AC9651"
+      }
     }
   },
   "order": [
     "section",
-    "main"
+    "main",
+    "featured_editorial_VMwGVR"
   ]
 }
