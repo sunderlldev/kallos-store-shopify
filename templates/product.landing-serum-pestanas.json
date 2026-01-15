@@ -2014,7 +2014,7 @@
                 "text": "<p>Creamos cosas que funcionan mejor y duran más. Nuestros productos resuelven problemas reales con un diseño limpio y materiales honestos.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -2028,8 +2028,8 @@
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 15,
+                "padding-inline-end": 15
               },
               "blocks": {}
             }
@@ -2165,11 +2165,11 @@
                       "settings": {
                         "source": "uploaded",
                         "video": "shopify://files/videos/videoForchics.mp4",
-                        "video_autoplay": false,
+                        "video_autoplay": true,
                         "video_loop": true,
                         "alt": "",
-                        "custom_width": 100,
-                        "custom_width_mobile": 100,
+                        "custom_width": 85,
+                        "custom_width_mobile": 90,
                         "aspect_ratio": "auto",
                         "border": "none",
                         "border_width": 1,
@@ -2201,8 +2201,8 @@
                     "gap": 20,
                     "width": "fill",
                     "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
+                    "width_mobile": "custom",
+                    "custom_width_mobile": 90,
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": true,
