@@ -14,7 +14,7 @@
       "blocks": {
         "text_tqQTNE": {
           "type": "text",
-          "name": "Title",
+          "name": "Titulo",
           "settings": {
             "text": "<h1>{{ closest.collection.title }}</h1>",
             "width": "fit-content",
@@ -40,20 +40,20 @@
         },
         "text_twGGkJ": {
           "type": "text",
-          "name": "Description",
+          "name": "Descripcion",
           "settings": {
             "text": "{{ closest.collection.description }}",
             "width": "fit-content",
             "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-primary--family)",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-accent--family)",
             "font_size": "",
             "line_height": "normal",
-            "letter_spacing": "normal",
+            "letter_spacing": "loose",
             "case": "none",
             "wrap": "pretty",
-            "color": "",
+            "color": "var(--color-foreground)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -76,7 +76,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
@@ -95,7 +95,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 40,
-        "padding-block-end": 0
+        "padding-block-end": 40
       }
     },
     "main": {
@@ -211,7 +211,6 @@
           ]
         }
       },
-      "disabled": true,
       "settings": {
         "layout_type": "grid",
         "product_card_size": "medium",
@@ -228,24 +227,10 @@
         "padding-block-start": 0,
         "padding-block-end": 32
       }
-    },
-    "featured_editorial_VMwGVR": {
-      "type": "featured-editorial",
-      "name": "Kallos · Destacados",
-      "settings": {
-        "collection": "minoxidil-en-crema",
-        "title": "",
-        "title_weight": "700",
-        "subtitle": "",
-        "subtitle_weight": "400",
-        "price_weight": "700",
-        "card_bg": "#ac9651"
-      }
     }
   },
   "order": [
     "section",
-    "main",
-    "featured_editorial_VMwGVR"
+    "main"
   ]
 }
