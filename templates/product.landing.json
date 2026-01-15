@@ -1092,6 +1092,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_NaUJcP"
       ],
+      "name": "Reseñas del Producto",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1122,7 +1123,7 @@
     },
     "featured_editorial_UzPViK": {
       "type": "featured-editorial",
-      "name": "Destacados editorial",
+      "name": "Kallos · Destacados",
       "settings": {
         "collection": "destacados",
         "title": "Más de nuestro productos",
