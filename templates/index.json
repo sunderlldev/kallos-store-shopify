@@ -108,7 +108,8 @@
         "text_8ThUhD"
       ],
       "custom_css": [
-        "@media screen and (min-width: 990px) {marquee-component {display: none !important; }}"
+        "@media screen and (min-width: 990px) {.section-background, marquee-component {display: none !important; }}",
+        "@media screen and (max-width: 989px) {marquee-component {display: block !important; }}"
       ],
       "name": "t:names.marquee_section",
       "settings": {
