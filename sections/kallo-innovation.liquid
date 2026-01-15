@@ -1,5 +1,5 @@
 <section class="kallos-innovation">
-  <div class="kallos-innovation-wrapper">
+  <div class="kallos-innovation-wrapper {% if section.settings.image == blank %}no-image-centered{% endif %}">
     {% if section.settings.image_position == 'left' %}
       <div class="kallos-innovation-image">
         {% if section.settings.image != blank %}
