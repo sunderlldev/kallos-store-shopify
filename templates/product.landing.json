@@ -237,32 +237,6 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "text_YFTTJq": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<h6>{{ closest.product.metafields.custom.impuestos.value }}</h6>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "custom",
-                    "font": "var(--font-body--family)",
-                    "font_size": "0.75rem",
-                    "line_height": "tight",
-                    "letter_spacing": "loose",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 6,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
@@ -271,8 +245,7 @@
                 "text_MRPCLT",
                 "judge_me_reviews_preview_badge_mWFLMf",
                 "text_Ktzpxb",
-                "price_tVjtKg",
-                "text_YFTTJq"
+                "price_tVjtKg"
               ]
             },
             "buy_buttons_hLh4wx": {
