@@ -62,6 +62,19 @@
         "card_bg": "#ac9651"
       }
     },
+    "featured_editorial_MhVr8f": {
+      "type": "featured-editorial",
+      "name": "Kallos · Destacados",
+      "settings": {
+        "collection": "destacados",
+        "title": "Lo más destacado de Kallos",
+        "title_weight": "700",
+        "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
+        "subtitle_weight": "400",
+        "price_weight": "700",
+        "card_bg": "#ac9651"
+      }
+    },
     "kallos_benefits_XUHpeJ": {
       "type": "kallos-benefits",
       "blocks": {
@@ -155,6 +168,7 @@
     "kallos_hero_PNGPjA",
     "featured_editorial_xRmh4A",
     "kallos_benefits_XUHpeJ",
-    "lash_hero_BBMn3n"
+    "lash_hero_BBMn3n",
+    "featured_editorial_MhVr8f"
   ]
 }
