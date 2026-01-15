@@ -134,18 +134,18 @@
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
+                    "border_radius": 32,
+                    "toggle_overlay": true,
+                    "overlay_color": "#ac96512c",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
                     "link": "",
                     "open_in_new_tab": false,
                     "placeholder": "",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "padding-block-start": 5,
+                    "padding-block-end": 5,
+                    "padding-inline-start": 15,
+                    "padding-inline-end": 15
                   },
                   "blocks": {
                     "group_xjwxq7": {
@@ -211,7 +211,7 @@
                             "background_media": "none",
                             "video_position": "cover",
                             "background_image_position": "cover",
-                            "border": "solid",
+                            "border": "none",
                             "border_width": 1,
                             "border_opacity": 100,
                             "border_radius": 100,
@@ -233,7 +233,8 @@
                               "name": "t:names.icon",
                               "settings": {
                                 "icon": "fire",
-                                "width": 16,
+                                "image_upload": "shopify://shop_images/fireWithBorder_6fec87f0-1d86-44ee-a3e5-e9cf9b441d7b.png",
+                                "width": 24,
                                 "link": "",
                                 "open_in_new_tab": false
                               },
@@ -248,7 +249,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>+10.000 clientes KALLOS<strong> · </strong></h5>",
+                            "text": "<h6>+10.000 clientes KALLOS<strong> · </strong></h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
