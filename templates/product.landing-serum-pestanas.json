@@ -2253,7 +2253,8 @@
                             "heading": "Extracto de Romero",
                             "open_by_default": false,
                             "icon": "none",
-                            "width": 20
+                            "image_upload": "shopify://shop_images/romero.png",
+                            "width": 26
                           },
                           "blocks": {
                             "text_AUTeWb": {
@@ -2316,7 +2317,8 @@
                             "heading": "Ginseng",
                             "open_by_default": false,
                             "icon": "none",
-                            "width": 20
+                            "image_upload": "shopify://shop_images/ginseng.png",
+                            "width": 26
                           },
                           "blocks": {
                             "text_bzRKBJ": {
