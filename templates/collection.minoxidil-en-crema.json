@@ -126,7 +126,6 @@
         },
         "product-card": {
           "type": "_product-card",
-          "disabled": true,
           "static": true,
           "settings": {
             "product_card_gap": 4,
@@ -248,7 +247,7 @@
         "subtitle": "Nuestro bestseller",
         "subtitle_weight": "400",
         "price_weight": "700",
-        "card_bg": "#AC9651"
+        "card_bg": "#ac9651"
       }
     }
   },
