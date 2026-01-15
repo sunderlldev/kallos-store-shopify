@@ -2627,7 +2627,8 @@
       "custom_css": [
         ".kallos-innovation-wrapper.no-image-centered {grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: center;}",
         ".no-image-centered .kallos-accordion-trigger {text-align: left;}",
-        ".no-image-centered .kallos-innovation-text h2 {text-align: center;}"
+        ".no-image-centered .kallos-innovation-text h2 {text-align: center;}",
+        ".kallos-innovation-wrapper h5 {text-align: left;}"
       ],
       "name": "Kallos · Preguntas Frecuentes",
       "settings": {
