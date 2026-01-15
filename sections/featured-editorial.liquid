@@ -230,9 +230,18 @@
     .kallos-editorial-header { margin-bottom: 2rem; }
   }
 
-  .jdgm-star {
-    width: 14px; height: 14px; background: #fff; display: inline-block;
-    mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") no-repeat center;
+  .kallos-card-stars {
+    margin-top: 10px;
+    display: flex;
+    gap: 4px;
+  }
+
+  .kallos-star-fixed {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    display: inline-block;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   }
 </style>
 
