@@ -1976,7 +1976,7 @@
           "type": "item",
           "settings": {
             "heading": "Mi piel es sensible, ¿Aún así lo puedo usar?",
-            "text": "<h5>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</h5><h5>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</h5>"
+            "text": "<p>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</p><p>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</p>"
           }
         },
         "item_abpUGh": {
@@ -1997,7 +1997,7 @@
           "type": "item",
           "settings": {
             "heading": "¿Cómo lo uso?",
-            "text": "<h5>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</h5><h5>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</h5>"
+            "text": "<p>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</p><p>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</p>"
           }
         }
       },
