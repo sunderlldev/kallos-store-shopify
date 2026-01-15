@@ -2592,29 +2592,29 @@
         "item_3tVBGb": {
           "type": "item",
           "settings": {
-            "heading": "Activos",
+            "heading": "¿Puedo usarlo con rímel?",
             "text": "<p>Contenido</p>"
           }
         },
         "item_abpUGh": {
           "type": "item",
           "settings": {
-            "heading": "Activos",
+            "heading": "¿Puedo usarlo si tengo extensiones de pestañas?",
             "text": "<p>Contenido</p>"
           }
         },
         "item_h3P3kU": {
           "type": "item",
           "settings": {
-            "heading": "Activos",
+            "heading": "¿El serum de pestañas Kallos es seguro para ojos sensibles?",
             "text": "<p>Contenido</p>"
           }
         },
         "item_GT8zk3": {
           "type": "item",
           "settings": {
-            "heading": "¿Cómo lo uso?",
-            "text": "<h5>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</h5><h5>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</h5>"
+            "heading": "¿Cómo se usa?",
+            "text": "<h5>Aplica una línea fina del serum en la base de las pestañas superiores, sobre la piel limpia y seca, como si fuera un delineador.</h5><h5>Úsalo una vez al día, preferiblemente por la noche, y deja que se absorba antes de aplicar otros productos.</h5><h5>Evita el contacto directo con los ojos y no es necesario aplicarlo en las pestañas inferiores.</h5><h5>La constancia es clave para notar resultados progresivos.</h5>"
           }
         }
       },
