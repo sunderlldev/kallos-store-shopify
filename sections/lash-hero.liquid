@@ -140,13 +140,20 @@
   .lash-img-animate {
     width: 400px;
     max-width: 100%;
-    animation: lashFloat 4.5s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
+    will-change: transform;
+    animation: lashFloat 4s ease-in-out infinite;
     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));
   }
 
   @keyframes lashFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    0%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -25px, 0);
+    }
   }
 
   .lash-features {
