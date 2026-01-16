@@ -2841,6 +2841,20 @@
             "group_YCyWpU"
           ]
         },
+        "spacer_TaHwhQ": {
+          "type": "spacer",
+          "name": "t:names.spacer",
+          "settings": {
+            "size": "percent",
+            "percent_size": 100,
+            "pixel_size": 120,
+            "custom_mobile_size": true,
+            "size_mobile": "pixel",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 40
+          },
+          "blocks": {}
+        },
         "group_3qqFQV": {
           "type": "group",
           "name": "PROGRESO 5-8",
@@ -3605,6 +3619,7 @@
         "group_q4rHFR",
         "spacer_8nFYcE",
         "group_yY3MHa",
+        "spacer_TaHwhQ",
         "group_3qqFQV"
       ],
       "name": "t:names.custom_section",
