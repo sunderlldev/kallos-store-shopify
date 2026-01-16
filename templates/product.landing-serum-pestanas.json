@@ -2562,7 +2562,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Progreso real en 8 semanas</h2>",
+            "text": "<h3>Obtén Resultados Visibles en Menos de 4 Semanas</h3>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -2628,7 +2628,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h5>El crecimiento del vello es un proceso gradual. Con constancia y uso diario, Follics acompaña cada etapa del cuidado y fortalecimiento del vello.</h5><p><em><strong>Los resultados varían según cada persona. La constancia es clave.</strong></em></p>",
+                "text": "<h5>Experimenta cómo tus pestañas naturales alcanzan su máximo potencial de crecimiento al comprometerte con nuestro tratamiento de 3 meses con el suero de crecimiento Kallos, mientras notas los resultados desde el primer momento.</h5>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -2711,7 +2711,7 @@
           "blocks": {
             "group_L9VneK": {
               "type": "group",
-              "name": "SEMANA 1-2",
+              "name": "SEMANA 1",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -2793,33 +2793,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>SEMANA</strong></h5>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_tYQ47E": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<h5><strong>1-2</strong></h5>",
+                        "text": "<h5><strong>SEMANA 1</strong></h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -2843,15 +2817,14 @@
                     }
                   },
                   "block_order": [
-                    "text_Xx7QjM",
-                    "text_tYQ47E"
+                    "text_Xx7QjM"
                   ]
                 },
                 "image_RUkCYq": {
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek1.png",
+                    "image": "shopify://shop_images/week1.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
@@ -3067,7 +3040,7 @@
             },
             "group_LkmGFk": {
               "type": "group",
-              "name": "SEMANA 3-4",
+              "name": "SEMANA 4",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -3149,33 +3122,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>SEMANA</strong></h5>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_Tma9dw": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<h5><strong>3-4</strong></h5>",
+                        "text": "<h5><strong>SEMANA 4</strong></h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3199,15 +3146,14 @@
                     }
                   },
                   "block_order": [
-                    "text_pmAcNp",
-                    "text_Tma9dw"
+                    "text_pmAcNp"
                   ]
                 },
                 "image_6JF7AW": {
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek2.png",
+                    "image": "shopify://shop_images/week4.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
@@ -3443,7 +3389,7 @@
         },
         "group_bXjknj": {
           "type": "group",
-          "name": "PROGRESO 5-8",
+          "name": "PROGRESO 8-12",
           "settings": {
             "content_direction": "row",
             "vertical_on_mobile": false,
@@ -3483,7 +3429,7 @@
           "blocks": {
             "group_tHxCyN": {
               "type": "group",
-              "name": "SEMANA 5-6",
+              "name": "SEMANA 8",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -3565,33 +3511,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>SEMANA</strong></h5>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_ywbAqL": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<h5><strong>5-6</strong></h5>",
+                        "text": "<h5><strong>SEMANA 8</strong></h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3615,15 +3535,14 @@
                     }
                   },
                   "block_order": [
-                    "text_DPj3hM",
-                    "text_ywbAqL"
+                    "text_DPj3hM"
                   ]
                 },
                 "image_DfTNak": {
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek3.png",
+                    "image": "shopify://shop_images/week8.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
@@ -3839,7 +3758,7 @@
             },
             "group_AGVcL7": {
               "type": "group",
-              "name": "SEMANA 7-8",
+              "name": "SEMANA 8-12",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -3921,33 +3840,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>SEMANA</strong></h5>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "text_hCVYgk": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<h5><strong>7-8</strong></h5>",
+                        "text": "<h5><strong>SEMANA 12</strong></h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3971,15 +3864,14 @@
                     }
                   },
                   "block_order": [
-                    "text_NE7ey3",
-                    "text_hCVYgk"
+                    "text_NE7ey3"
                   ]
                 },
                 "image_PybcNJ": {
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek4.png",
+                    "image": "shopify://shop_images/week12.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
