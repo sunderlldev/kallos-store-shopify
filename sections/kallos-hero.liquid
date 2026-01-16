@@ -15,9 +15,11 @@
       </div>
 
       <h1 class="kallos-hero__title">
-        <span class="kallos-title-static">{{ section.settings.title_rich }}</span>
-        <span class="kallos-title-inline">
-          <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
+        <span class="kallos-title-wrapper">
+          <span class="kallos-title-static">{{ section.settings.title_rich }}</span>
+          <span class="kallos-title-inline">
+            <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
+          </span>
         </span>
       </h1>
 
@@ -68,9 +70,9 @@
   .kallos-hero__inner{
     max-width:1100px;
     margin:0 auto;
-    padding:80px 20px; /* Aquí controlas el tope del texto */
+    padding:80px 20px;
     display:flex;
-    align-items: flex-start; /* TEXTO ARRIBA EN DESKTOP */
+    align-items: flex-start;
     justify-content:space-between;
     gap:40px;
     position:relative;
@@ -100,12 +102,11 @@
     transition: all 0.3s ease;
   }
 
-  /* Posiciones Desktop */
   .kallos-img-fixed--main {
     z-index: 3;
     width: 380px;
     left: 0;
-    top: 10%; /* Subida un poco para acompañar al texto */
+    top: 10%;
   }
 
   .kallos-img-fixed--secondary {
@@ -124,10 +125,15 @@
   .kallos-hero__proof{ display:flex; align-items:center; gap:10px; font-family:'Poppins',sans-serif; font-weight:700; font-size:18px; }
   .kallos-hero__stars{ color:var(--star); display:flex; gap:4px; }
   .kallos-hero__stars svg{ width:18px; height:18px; }
+
+  /* Arreglo para el título unido */
   .kallos-hero__title{ font-family:'Poppins',sans-serif; font-weight:700; font-size:52px; line-height:1.1; margin-top:12px; }
-  .kallos-title-static p{ display:inline; margin:0; }
-  .kallos-title-inline{ display:inline-block; white-space: nowrap; }
-  #kallos-typed-{{ section.id }}{ display: inline-block; min-height: 1em; }
+  .kallos-title-wrapper { display: block; }
+  .kallos-title-static { display: inline; }
+  .kallos-title-static p { display: inline; margin: 0; }
+  .kallos-title-inline { display: inline; white-space: nowrap; }
+
+  #kallos-typed-{{ section.id }}{ display: inline; min-height: 1em; }
   .kallos-caret{ display: inline-block; border-right: 3px solid currentColor; height: 1em; margin-left: 2px; animation: blink 1s step-start infinite; vertical-align: middle; }
   @keyframes blink{ 50%{ border-color:transparent; } }
   .kallos-hero__desc{ margin-top:14px; font-family:'Poppins',sans-serif; font-size:18px; line-height:1.6; }
@@ -174,6 +180,10 @@
     .kallos-hero__text{ width:100%; order:2; position: relative; z-index: 10; margin-top: 0; padding-top: 0; }
     .kallos-hero__proof{ justify-content: center; margin-bottom: 8px; }
     .kallos-hero__title{ font-size:32px; }
+
+    /* Forzar que el texto y la animación se mantengan juntos en la misma línea */
+    .kallos-title-static, .kallos-title-inline { display: inline; white-space: normal; }
+
     .kallos-hero__desc{ font-size:15px; }
   }
 </style>
