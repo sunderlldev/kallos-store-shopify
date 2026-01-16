@@ -1,189 +1,180 @@
-<section class="kh-section" id="kh-hero-{{ section.id }}">
-  <div class="kh-container">
-    <div class="kh-media-col">
-      <div class="kh-composite-wrapper">
-        {% if section.settings.img_main %}
-          <div class="kh-main-wrapper">
-            {{
-              section.settings.img_main
-              | image_url: width: 900
-              | image_tag: class: 'kh-img kh-img--main', loading: 'lazy'
-            }}
-          </div>
-        {% endif %}
-
-        {% if section.settings.img_secondary %}
-          <div class="kh-secondary-wrapper">
-            {{
-              section.settings.img_secondary
-              | image_url: width: 700
-              | image_tag: class: 'kh-img kh-img--secondary', loading: 'lazy'
-            }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-
-    <div class="kh-text-col">
-      <div class="kh-proof-badge">
-        <div class="kh-stars">
+<section class="kallos-hero" id="kallos-hero-{{ section.id }}">
+  <div class="kallos-hero__inner">
+    <div class="kallos-hero__text">
+      <div class="kallos-hero__proof">
+        <div class="kallos-hero__stars">
           {% for i in (1..5) %}
-            <svg fill="currentColor" viewBox="0 0 256 256">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
               <path d="m234.29 114.85-45 38.83L203 211.75a16.4 16.4 0 0 1-24.5 17.82L128 198.49l-50.53 31.08A16.4 16.4 0 0 1 53 211.75l13.76-58.07-45-38.83A16.46 16.46 0 0 1 31.08 86l59-4.76 22.76-55.08a16.36 16.36 0 0 1 30.27 0l22.75 55.08 59 4.76a16.46 16.46 0 0 1 9.37 28.86Z"/>
             </svg>
           {% endfor %}
         </div>
-        <div class="kh-clients-count">
+        <div class="kallos-hero__clients">
           <strong>+{{ section.settings.client_count }}</strong> {{ section.settings.client_text }}
         </div>
       </div>
 
-      <h1 class="kh-hero-title">
-        <span class="kh-static-text">{{ section.settings.title_rich }}</span>
-        <span class="kh-dynamic-wrapper">
-          <span id="kh-typed-{{ section.id }}"></span><span class="kh-caret"></span>.
+      <h1 class="kallos-hero__title">
+        <span class="kallos-title-static">{{ section.settings.title_rich }}</span>
+        <span class="kallos-title-inline">
+          <span id="kallos-typed-{{ section.id }}"></span><span class="kallos-caret"></span>.
         </span>
       </h1>
 
-      <div class="kh-hero-desc">
+      <div class="kallos-hero__desc">
         {{ section.settings.description_rich }}
       </div>
+    </div>
+
+    <div class="kallos-hero__media">
+      {% if section.settings.img_main %}
+        <img
+          src="{{ section.settings.img_main | image_url: width: 900 }}"
+          class="kallos-img-fixed kallos-img-fixed--main"
+          loading="lazy"
+        >
+      {% endif %}
+      {% if section.settings.img_secondary %}
+        <img
+          src="{{ section.settings.img_secondary | image_url: width: 700 }}"
+          class="kallos-img-fixed kallos-img-fixed--secondary"
+          loading="lazy"
+        >
+      {% endif %}
     </div>
   </div>
 </section>
 
 <style>
-  #kh-hero-{{ section.id }} {
-    --bg-grad: {{ section.settings.gradient_color }};
-    --text-color: {{ section.settings.text_color }};
-    --star-color: {{ section.settings.star_color }};
-    background-color: #f4f4f4; /* Fallback */
-    color: var(--text-color);
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  #kallos-hero-{{ section.id }}{
+    --grad: {{ section.settings.gradient_color }};
+    --text: {{ section.settings.text_color }};
+    --star: {{ section.settings.star_color }};
+    color: var(--text);
     position: relative;
-    overflow: hidden; /* Evita desborde en mobile */
-    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Clave para que en mobile no se vea 'oculto a la derecha' */
   }
 
-  /* El degradado ahora va de izquierda a derecha para favorecer el texto */
-  #kh-hero-{{ section.id }}::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, var(--bg-grad) 0%, transparent 100%);
-    z-index: 0;
+  #kallos-hero-{{ section.id }}::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(270deg, transparent 0%, var(--grad) 100%);
+    z-index:0;
   }
 
-  .kh-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 20px;
+  .kallos-hero__inner{
+    max-width:1100px;
+    margin:0 auto;
+    padding:80px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    position:relative;
+    z-index:1;
+  }
+
+  .kallos-hero__text{ width:45%; }
+
+  .kallos-hero__media{
+    width:55%;
+    height:585px;
+    position:relative;
     display: flex;
-    flex-direction: row-reverse; /* Imagen Izquierda, Texto Derecha */
     align-items: center;
-    gap: 40px;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* COLUMNA IMAGEN */
-  .kh-media-col {
-    width: 55%;
-    position: relative;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 500px;
   }
 
-  .kh-composite-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-  .kh-img {
+  /* NUEVAS CLASES PARA LAS IMÁGENES */
+  .kallos-img-fixed {
     position: absolute;
-    height: auto;
+    animation: float-kallos 6s ease-in-out infinite;
     object-fit: contain;
-    animation: kh-float 6s ease-in-out infinite;
+    height: auto;
+    transition: all 0.3s ease;
   }
 
-  /* PRINCIPAL: A la IZQUIERDA según tu corrección */
-  .kh-main-wrapper {
-    position: relative;
-    z-index: 10;
-  }
-  .kh-img--main {
-    width: 400px;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+  /* IMAGEN PRINCIPAL: AHORA A LA IZQUIERDA */
+  .kallos-img-fixed--main {
+    z-index: 3;
+    width: 380px;
+    left: 0; /* Posición izquierda en desktop */
+    top: 15%;
   }
 
-  /* SECUNDARIA: A la DERECHA */
-  .kh-secondary-wrapper {
-    position: absolute;
-    right: 0;
-    top: 10%;
-    z-index: 5;
-  }
-  .kh-img--secondary {
-    width: 320px;
-    opacity: 0.85;
-    animation-delay: 1s;
+  /* IMAGEN SECUNDARIA: AHORA A LA DERECHA */
+  .kallos-img-fixed--secondary {
+    z-index: 2;
+    width: 300px;
+    right: 0; /* Posición derecha en desktop */
+    bottom: 15%;
+    opacity: 0.9;
   }
 
-  /* COLUMNA TEXTO */
-  .kh-text-col { width: 45%; }
-  .kh-proof-badge { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-  .kh-stars { color: var(--star-color); display: flex; gap: 4px; }
-  .kh-stars svg { width: 18px; height: 18px; }
-  .kh-hero-title { font-size: 52px; font-weight: 700; line-height: 1.1; margin: 0; }
-  .kh-static-text p { display: inline; margin: 0; }
-  .kh-dynamic-wrapper { display: inline-block; }
-  .kh-caret { border-right: 3px solid currentColor; animation: kh-blink 1s step-start infinite; }
-
-  @keyframes kh-float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+  @keyframes float-kallos {
+    0%,100%{ transform: translateY(0); }
+    50%{ transform: translateY(-20px); }
   }
-  @keyframes kh-blink { 50% { border-color: transparent; } }
 
-  /* RESPONSIVE */
-  @media (max-width: 990px) {
-    .kh-container { flex-direction: column; padding: 40px 20px; text-align: center; }
-    .kh-media-col { width: 100%; min-height: 350px; }
-    .kh-text-col { width: 100%; }
-    .kh-img--main { width: 280px; left: 50%; transform: translateX(-70%); } /* Ajuste para que no se oculte */
-    .kh-img--secondary { width: 200px; right: 50%; transform: translateX(70%); top: 0; }
-    .kh-hero-title { font-size: 34px; }
-    #kh-hero-{{ section.id }}::before {
-      background: linear-gradient(0deg, var(--bg-grad) 40%, transparent 100%);
+  /* TUS ESTILOS DE TEXTO ORIGINALES (SIN CAMBIOS) */
+  .kallos-hero__proof{ display:flex; align-items:center; gap:10px; font-family:'Poppins',sans-serif; font-weight:700; font-size:18px; }
+  .kallos-hero__stars{ color:var(--star); display:flex; gap:4px; }
+  .kallos-hero__stars svg{ width:18px; height:18px; }
+  .kallos-hero__title{ font-family:'Poppins',sans-serif; font-weight:700; font-size:52px; line-height:1.1; margin-top:12px; }
+  .kallos-title-static p{ display:inline; margin:0; }
+  .kallos-title-inline{ display:inline-block; white-space: nowrap; }
+  #kallos-typed-{{ section.id }}{ display: inline-block; min-height: 1em; }
+  .kallos-caret{ display: inline-block; border-right: 3px solid currentColor; height: 1em; margin-left: 2px; animation: blink 1s step-start infinite; vertical-align: middle; }
+  @keyframes blink{ 50%{ border-color:transparent; } }
+  .kallos-hero__desc{ margin-top:14px; font-family:'Poppins',sans-serif; font-size:18px; line-height:1.6; }
+
+  @media(max-width:768px){
+    #kallos-hero-{{ section.id }}{ height: auto; padding-bottom: 40px; }
+    #kallos-hero-{{ section.id }}::before{ background: linear-gradient(0deg, var(--grad) 50%, transparent 100%); }
+    .kallos-hero__inner{ flex-direction:column; padding:20px; text-align:center; gap: 20px; }
+    .kallos-hero__media{ width:100%; height:380px; order:1; position: relative; top: 0; }
+
+    /* REAJUSTE PARA MOBILE: Centradas y sin desbordar */
+    .kallos-img-fixed {
+      left: 50% !important;
+      right: auto !important;
+      max-width: 80%;
     }
-  }
+    .kallos-img-fixed--main {
+      width: 260px;
+      transform: translateX(-65%) translateY(0); /* Ligeramente a la izquierda del centro */
+      top: 20px;
+    }
+    .kallos-img-fixed--secondary {
+      width: 220px;
+      transform: translateX(-35%) translateY(0); /* Ligeramente a la derecha del centro */
+      top: 80px;
+    }
 
-  @media (max-width: 480px) {
-    .kh-img--main { width: 220px; transform: translateX(-60%); }
-    .kh-img--secondary { width: 160px; transform: translateX(60%); }
-    .kh-media-col { min-height: 280px; }
+    .kallos-hero__text{ width:100%; order:2; padding-bottom: 20px; }
+    .kallos-hero__title{ font-size:34px; }
+    .kallos-hero__desc{ font-size:15px; }
   }
 </style>
 
 <script>
   (function(){
-    const el = document.getElementById("kh-typed-{{ section.id }}");
+    var el = document.getElementById("kallos-typed-{{ section.id }}");
     if(!el) return;
-    const words = [{% for block in section.blocks %}{{ block.settings.word | json }}{% unless forloop.last %},{% endunless %}{% endfor %}];
-    if(!words.length) words=["natural"];
-    let i=0, j=0, del=false;
+    var words = [{% for block in section.blocks %}{{ block.settings.word | json }}{% unless forloop.last %},{% endunless %}{% endfor %}];
+    if(!words.length) words=["cejas"];
+    var i=0, j=0, del=false;
     function tick(){
-      let w = words[i];
-      el.innerHTML = w.slice(0, j) || "&nbsp;";
-      if(!del && j < w.length) { j++; setTimeout(tick, 120); }
-      else if(del && j > 0) { j--; setTimeout(tick, 60); }
-      else if(!del && j === w.length) { setTimeout(() => { del = true; tick(); }, 2000); }
-      else { del = false; i = (i + 1) % words.length; setTimeout(tick, 400); }
+      var w = words[i];
+      var current = w.slice(0, j);
+      el.innerHTML = current.length > 0 ? current : "&nbsp;";
+      if(!del && j < w.length){ j++; setTimeout(tick, 120); }
+      else if(del && j > 0){ j--; setTimeout(tick, 60); }
+      else if(!del && j === w.length){ setTimeout(() => { del = true; tick(); }, 2000); }
+      else if(del && j === 0){ del = false; i = (i + 1) % words.length; setTimeout(tick, 400); }
     }
     tick();
   })();
@@ -191,25 +182,35 @@
 
 {% schema %}
 {
-  "name": "Kallos · Hero Fixed",
+  "name": "Kallos · Hero",
   "settings": [
-    { "type": "color", "id": "gradient_color", "label": "Color Principal", "default": "#AC9651" },
-    { "type": "color", "id": "text_color", "label": "Color Texto", "default": "#FFFFFF" },
-    { "type": "color", "id": "star_color", "label": "Color Estrellas", "default": "#AC9651" },
-    { "type": "text", "id": "client_count", "label": "Clientes", "default": "10.000" },
-    { "type": "text", "id": "client_text", "label": "Subtexto Clientes", "default": "clientes Kallos" },
-    { "type": "image_picker", "id": "img_main", "label": "Imagen Principal (Izquierda)" },
-    { "type": "image_picker", "id": "img_secondary", "label": "Imagen Secundaria (Derecha)" },
-    { "type": "richtext", "id": "title_rich", "label": "Título Estático", "default": "<p>Más confianza, Más</p>" },
-    { "type": "richtext", "id": "description_rich", "label": "Descripción" }
+    { "type": "color", "id": "gradient_color", "label": "Color degradado", "default": "#AC9651" },
+    { "type": "color", "id": "text_color", "label": "Color texto", "default": "#FFFFFF" },
+    { "type": "color", "id": "star_color", "label": "Color estrellas", "default": "#AC9651" },
+    { "type": "text", "id": "client_count", "label": "Número clientes", "default": "10.000" },
+    { "type": "text", "id": "client_text", "label": "Texto clientes", "default": "clientes Kallos" },
+    { "type": "image_picker", "id": "img_main", "label": "Imagen principal (Izquierda)" },
+    { "type": "image_picker", "id": "img_secondary", "label": "Imagen secundaria (Derecha)" },
+    {
+      "type": "richtext",
+      "id": "title_rich",
+      "label": "Título",
+      "default": "<p>Más confianza, Más</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "description_rich",
+      "label": "Descripción",
+      "default": "<p>Kallos. Líder en crecimiento capilar y cuidado de la piel.</p>"
+    }
   ],
   "blocks": [
     {
       "type": "word",
-      "name": "Palabra Animada",
+      "name": "Palabra animada",
       "settings": [{ "type": "text", "id": "word", "label": "Texto", "default": "cejas" }]
     }
   ],
-  "presets": [{ "name": "Kallos · Hero Fixed" }]
+  "presets": [{ "name": "Kallos · Hero" }]
 }
 {% endschema %}
