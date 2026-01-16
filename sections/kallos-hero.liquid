@@ -128,15 +128,16 @@
   .kallos-hero__desc{ margin-top:14px; font-family:'Poppins',sans-serif; font-size:18px; line-height:1.6; }
 
   @media(max-width:768px){
-    #kallos-hero-{{ section.id }}{ padding-bottom: 20px; }
+    #kallos-hero-{{ section.id }}{ padding-bottom: 40px; }
     #kallos-hero-{{ section.id }}::before{ background: linear-gradient(0deg, var(--grad) 65%, transparent 100%); }
-    .kallos-hero__inner{ flex-direction:column; padding:20px; text-align:center; gap: 0px; }
+    .kallos-hero__inner{ flex-direction:column; padding:10px 20px 40px; text-align:center; gap: 0px; }
 
     .kallos-hero__media{
       width:100%;
-      height:440px;
+      height:380px; /* Reducido para dar aire abajo */
       order:1;
-      margin-bottom: -20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       display: block;
     }
 
@@ -147,32 +148,29 @@
     }
 
     .kallos-img-fixed--main {
-      width: 250px;
-      top: 20px;
+      width: 240px;
+      top: 10px;
       animation: float-mobile-main 6s ease-in-out infinite;
     }
 
     .kallos-img-fixed--secondary {
-      width: 200px;
-      top: 150px;
+      width: 190px;
+      top: 130px;
       animation: float-mobile-sec 6s ease-in-out infinite;
     }
 
     @keyframes float-mobile-main {
-      0%,100%{ transform: translateX(-80%) translateY(0); }
-      50%{ transform: translateX(-80%) translateY(-15px); }
+      0%,100%{ transform: translateX(-85%) translateY(0); } /* Un poco más a la izquierda */
+      50%{ transform: translateX(-85%) translateY(-15px); }
     }
 
     @keyframes float-mobile-sec {
-      0%,100%{ transform: translateX(-20%) translateY(0); }
-      50%{ transform: translateX(-20%) translateY(-15px); }
+      0%,100%{ transform: translateX(-10%) translateY(0); } /* Más a la derecha para aprovechar espacio */
+      50%{ transform: translateX(-10%) translateY(-15px); }
     }
 
-    .kallos-hero__text{ width:100%; order:2; position: relative; z-index: 10; }
-
-    /* CENTRADO DE PRUEBA SOCIAL EN MOBILE */
-    .kallos-hero__proof{ justify-content: center; }
-
+    .kallos-hero__text{ width:100%; order:2; position: relative; z-index: 10; margin-top: 10px; }
+    .kallos-hero__proof{ justify-content: center; margin-bottom: 8px; }
     .kallos-hero__title{ font-size:32px; }
     .kallos-hero__desc{ font-size:15px; }
   }
