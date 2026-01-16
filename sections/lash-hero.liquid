@@ -1,67 +1,64 @@
-<section class="lp-hero-section" id="lp-{{ section.id }}">
-  <div class="lp-container">
-    <div class="lp-grid">
-      <div class="lp-col-image">
+<section class="lash-custom-hero" id="lash-{{ section.id }}">
+  <div class="lash-container">
+    <div class="lash-grid-wrapper">
+      <div class="lash-image-column">
         {% if section.settings.top_title != blank %}
-          <div class="lp-badge lp-badge--mobile">
+          <div class="lash-badge lash-badge--mobile">
             {{ section.settings.top_title }}
           </div>
         {% endif %}
 
-        <div class="lp-image-composite">
-          {% if section.settings.floating_image != blank %}
-            <div class="lp-main-img-wrapper">
-              {{
-                section.settings.floating_image
-                | image_url: width: 800
-                | image_tag: class: 'lp-img-main animate-float', loading: 'lazy', alt: section.settings.title
-              }}
-            </div>
-          {% endif %}
-
-          {% if section.settings.secondary_image != blank %}
-            <div class="lp-secondary-img-wrapper">
-              {{
-                section.settings.secondary_image
-                | image_url: width: 400
-                | image_tag: class: 'lp-img-secondary animate-float-delayed', loading: 'lazy', alt: 'Secondary detail'
-              }}
-            </div>
-          {% endif %}
-        </div>
+        {% if section.settings.floating_image != blank %}
+          <div class="lash-floating-wrapper">
+            <img
+              src="{{ section.settings.floating_image | image_url: width: 800 }}"
+              alt="{{ section.settings.title }}"
+              class="lash-img-animate"
+              loading="lazy"
+            >
+          </div>
+        {% endif %}
       </div>
 
-      <div class="lp-col-text">
+      <div class="lash-text-column">
         {% if section.settings.top_title != blank %}
-          <div class="lp-badge lp-badge--desktop">
+          <div class="lash-badge lash-badge--desktop">
             {{ section.settings.top_title }}
           </div>
         {% endif %}
 
-        <h2 class="lp-title">{{ section.settings.title }}</h2>
+        <h2 class="lash-main-title">{{ section.settings.title }}</h2>
 
-        <div class="lp-desc">
+        <div class="lash-description">
           {{ section.settings.description }}
         </div>
 
-        <div class="lp-features-list">
+        <div class="lash-features">
           {% for block in section.blocks %}
-            <div class="lp-feature-item" {{ block.shopify_attributes }}>
-              <span class="lp-icon-box">
-                {% if block.settings.custom_icon != blank %}
-                  <img src="{{ block.settings.custom_icon | image_url: width: 50 }}" class="lp-feature-icon" alt="Icon">
-                {% else %}
-                  <span class="lp-dot" style="background-color: {{ section.settings.icon_color }};"></span>
-                {% endif %}
-              </span>
-              <div class="lp-feature-content">{{ block.settings.text }}</div>
-            </div>
+            {% if block.type == 'feature' %}
+              <div class="feature-item" {{ block.shopify_attributes }}>
+                <span class="icon-wrapper">
+                  {% if block.settings.custom_icon != blank %}
+                    <img
+                      src="{{ block.settings.custom_icon | image_url: width: 50 }}"
+                      alt="Icon"
+                      class="custom-icon-img"
+                    >
+                  {% else %}
+                    <span class="dot-placeholder" style="background-color: {{ section.settings.icon_color }};"></span>
+                  {% endif %}
+                </span>
+                <div class="feature-text">
+                  {{ block.settings.text }}
+                </div>
+              </div>
+            {% endif %}
           {% endfor %}
         </div>
 
         {% if section.settings.btn_label != blank %}
-          <div class="lp-action">
-            <a href="{{ section.settings.btn_link }}" class="lp-primary-btn">
+          <div class="lash-btn-wrapper">
+            <a href="{{ section.settings.btn_link }}" class="lash-btn">
               {{ section.settings.btn_label }}
               <svg width="20" height="20" viewBox="0 0 256 256">
                 <path fill="currentColor" d="m224.49 136.49l-72 72a12 12 0 0 1-17-17L187 140H40a12 12 0 0 1 0-24h147l-51.49-51.52a12 12 0 0 1 17-17l72 72a12 12 0 0 1 0 17.03Z"/>
@@ -75,119 +72,240 @@
 </section>
 
 <style>
-  #lp-{{ section.id }} {
+  #lash-{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
-    padding: 60px 20px;
+    padding: 80px 20px;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden; /* Evita scroll horizontal por imágenes voladoras */
-    position: relative;
+    overflow: hidden;
   }
 
-  .lp-container { max-width: 1200px; margin: 0 auto; position: relative; }
-  .lp-grid { display: flex; flex-direction: column; gap: 40px; }
+  .lash-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-  /* Contenedor de imágenes para que la secundaria flote respecto a la principal */
-  .lp-image-composite {
-    position: relative;
+  .lash-grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .lash-image-column,
+  .lash-text-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lash-badge {
+    font-size: 16px;
+    color: #151515;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .lash-badge p {
+    margin: 0;
+  }
+
+  .lash-badge--desktop {
+    display: none;
+  }
+
+  .lash-main-title {
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 600;
+    margin: 0;
+    color: #121212;
+    line-height: 1.1;
+  }
+
+  .lash-description {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: #3D3D3D;
+    line-height: 1.6;
+    margin: 20px 0;
+    max-width: 550px;
+  }
+
+  .lash-description strong {
+    font-weight: 700;
+  }
+
+  .lash-img-animate {
+    width: 400px;
+    max-width: 100%;
+    animation: lashFloat 4.5s ease-in-out infinite;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));
+  }
+
+  @keyframes lashFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .lash-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .icon-wrapper {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .custom-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .dot-placeholder {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .feature-text,
+  .feature-text p {
+    margin: 0;
+    font-size: 16px;
+    color: #121212;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .lash-btn-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .lash-btn {
+    background: #1D1D1B;
+    color: #fff;
+    padding: 15px 45px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-flex;
     align-items: center;
-    min-height: 400px;
+    gap: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   }
 
-  .lp-main-img-wrapper { z-index: 2; position: relative; }
-  .lp-img-main {
-    width: 450px;
-    max-width: 85vw;
-    height: auto;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
+  .lash-btn:hover {
+    background: #AC9651;
+    transform: translateY(-3px);
   }
 
-  /* IMAGEN SECUNDARIA: Posicionada a la derecha */
-  .lp-secondary-img-wrapper {
-    position: absolute;
-    right: -10%; /* Ajusta esto para moverla más a la derecha */
-    top: 0;
-    z-index: 1;
-    width: 250px;
-  }
-  .lp-img-secondary { width: 100%; height: auto; }
-
-  /* Animaciones */
-  .animate-float { animation: lpFloat 5s ease-in-out infinite; }
-  .animate-float-delayed { animation: lpFloat 6s ease-in-out infinite 1s; }
-
-  @keyframes lpFloat {
-    0%, 100% { transform: translateY(0) rotate(0); }
-    50% { transform: translateY(-20px) rotate(2deg); }
-  }
-
-  /* Textos */
-  .lp-col-text { display: flex; flex-direction: column; align-items: center; text-align: center; }
-  .lp-title { font-size: clamp(32px, 5vw, 48px); font-weight: 700; line-height: 1.1; margin: 15px 0; }
-  .lp-desc { font-size: 18px; color: #444; margin-bottom: 25px; max-width: 500px; }
-
-  .lp-features-list { display: flex; flex-direction: column; gap: 15px; width: 100%; margin-bottom: 30px; }
-  .lp-feature-item { display: flex; align-items: center; gap: 12px; justify-content: center; }
-  .lp-icon-box { width: 24px; display: flex; flex-shrink: 0; }
-  .lp-dot { width: 10px; height: 10px; border-radius: 50%; }
-  .lp-feature-content, .lp-feature-content p { margin: 0; font-size: 16px; text-align: left; }
-
-  .lp-primary-btn {
-    background: #1D1D1B; color: #fff; padding: 15px 40px; border-radius: 50px;
-    text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 10px;
-    transition: 0.3s;
-  }
-
-  /* Desktop */
   @media screen and (min-width: 769px) {
-    .lp-grid { flex-direction: row; align-items: center; text-align: left; }
-    .lp-col-image, .lp-col-text { width: 50%; align-items: flex-start; text-align: left; }
-    .lp-feature-item { justify-content: flex-start; }
-    .lp-badge--mobile { display: none; }
-    .lp-badge--desktop { display: block; }
-    /* Ajuste imagen secundaria en desktop */
-    .lp-secondary-img-wrapper { right: 0; top: -10%; width: 280px; }
+
+    .lash-grid-wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+
+    .lash-image-column {
+      width: 50%;
+      align-items: center;
+    }
+
+    .lash-text-column {
+      width: 50%;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .lash-description {
+      margin: 20px 0;
+      max-width: 100%;
+    }
+
+    .lash-btn-wrapper {
+      justify-content: flex-start;
+    }
+
+    .lash-badge--mobile {
+      display: none;
+    }
+
+    .lash-badge--desktop {
+      display: block;
+    }
   }
 
-  /* Mobile Fix */
-  @media screen and (max-width: 768px) {
-    .lp-secondary-img-wrapper {
-      width: 150px;
-      right: 5%; /* Evita que se salga de la pantalla */
-      top: -20px;
-      opacity: 0.8;
+  @media (max-width: 768px) {
+    .lash-img-animate {
+      max-width: 300px;
     }
-    .lp-image-composite { min-height: 320px; }
-    .lp-img-main { width: 300px; }
   }
 </style>
 
 {% schema %}
 {
-  "name": "Kallos · Lash+ Hero",
+  "name": "Lash Plus Hero",
   "settings": [
-    { "type": "color", "id": "bg_color", "label": "Fondo", "default": "#F8F5F4" },
-    { "type": "color", "id": "icon_color", "label": "Color Iconos", "default": "#AC9651" },
-    { "type": "image_picker", "id": "floating_image", "label": "Imagen Principal (Izquierda)" },
-    { "type": "image_picker", "id": "secondary_image", "label": "Imagen Secundaria (Derecha/Fondo)" },
-    { "type": "richtext", "id": "top_title", "label": "Badge Superior", "default": "<p>+10.000 clientes Kallos</p>" },
-    { "type": "text", "id": "title", "label": "Título", "default": "Más confianza, Más LASH." },
-    { "type": "richtext", "id": "description", "label": "Descripción" },
-    { "type": "text", "id": "btn_label", "label": "Botón", "default": "¡QUIERO EL MÍO!" },
+    { "type": "color", "id": "bg_color", "label": "Color de Fondo", "default": "#F8F5F4" },
+    { "type": "color", "id": "icon_color", "label": "Color de Iconos/Puntos", "default": "#AC9651" },
+    { "type": "image_picker", "id": "floating_image", "label": "Imagen Principal" },
+    {
+      "type": "richtext",
+      "id": "top_title",
+      "label": "Título Superior (Enriquecido)",
+      "default": "<p><strong>¡NUEVO LANZAMIENTO!</strong></p>"
+    },
+    { "type": "text", "id": "title", "label": "Título Principal", "default": "LASH+ by Kallos" },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Descripción",
+      "default": "<p>El serum de pestañas que transforma tu mirada con cuidado y ciencia.</p>"
+    },
+    { "type": "text", "id": "btn_label", "label": "Texto Botón", "default": "Ver más sobre LASH+" },
     { "type": "url", "id": "btn_link", "label": "Link Botón" }
   ],
   "blocks": [
     {
       "type": "feature",
       "name": "Característica",
+      "limit": 5,
       "settings": [
-        { "type": "image_picker", "id": "custom_icon", "label": "Icono" },
-        { "type": "richtext", "id": "text", "label": "Texto" }
+        { "type": "image_picker", "id": "custom_icon", "label": "Icono Personalizado" },
+        { "type": "richtext", "id": "text", "label": "Texto Enriquecido" }
       ]
     }
   ],
-  "presets": [{ "name": "Kallos · Lash+ Hero" }]
+  "presets": [
+    {
+      "name": "Kallos · Lash+ Hero",
+      "blocks": [
+        { "type": "feature", "settings": { "text": "<p>Ayuda a fortalecer y alargar las pestañas</p>" } },
+        { "type": "feature", "settings": { "text": "<p>Mejora visiblemente su apariencia</p>" } },
+        { "type": "feature", "settings": { "text": "<p>Fórmula suave para uso diario</p>" } }
+      ]
+    }
+  ]
 }
 {% endschema %}
