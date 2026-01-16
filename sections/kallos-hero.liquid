@@ -60,7 +60,6 @@
     overflow: hidden;
   }
 
-  /* Degradado Desktop: Lateral */
   #kallos-hero-{{ section.id }}::before{
     content:"";
     position:absolute;
@@ -119,14 +118,17 @@
   .kallos-hero__stars svg{ width:18px; height:18px; }
 
   @media(max-width:768px){
-    /* CORRECCIÓN: Degradado Vertical para Mobile */
+    /* Degradado Mobile: Empieza desde más arriba (40%) para que sea más visible */
     #kallos-hero-{{ section.id }}::before{
-      background: linear-gradient(0deg, var(--grad) 65%, transparent 100%);
+      background: linear-gradient(0deg, var(--grad) 40%, transparent 100%);
     }
 
     .kallos-hero__inner{ flex-direction:column; padding:10px 20px 40px; text-align:center; min-height: auto; align-items: center; gap: 0; }
-    .kallos-hero__media{ width:100%; height:360px; order:1; margin-bottom: 20px; position: relative; display: block; }
 
+    /* Centrar bloque de estrellas en mobile */
+    .kallos-hero__proof { justify-content: center; margin-bottom: 8px; }
+
+    .kallos-hero__media{ width:100%; height:360px; order:1; margin-bottom: 20px; position: relative; display: block; }
     .kallos-img-fixed { left: 50% !important; right: auto !important; top: 0 !important; }
     .kallos-img-fixed--main { width: 230px; transform: translateX(-85%); animation: float-mobile-main 6s ease-in-out infinite; }
     .kallos-img-fixed--secondary { width: 180px; transform: translateX(-10%) translateY(120px); animation: float-mobile-sec 6s ease-in-out infinite; }
