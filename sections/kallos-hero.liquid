@@ -126,7 +126,6 @@
   .kallos-hero__stars{ color:var(--star); display:flex; gap:4px; }
   .kallos-hero__stars svg{ width:18px; height:18px; }
 
-  /* Arreglo para el título unido */
   .kallos-hero__title{ font-family:'Poppins',sans-serif; font-weight:700; font-size:52px; line-height:1.1; margin-top:12px; }
   .kallos-title-wrapper { display: block; }
   .kallos-title-static { display: inline; }
@@ -179,10 +178,12 @@
 
     .kallos-hero__text{ width:100%; order:2; position: relative; z-index: 10; margin-top: 0; padding-top: 0; }
     .kallos-hero__proof{ justify-content: center; margin-bottom: 8px; }
+
     .kallos-hero__title{ font-size:32px; }
 
-    /* Forzar que el texto y la animación se mantengan juntos en la misma línea */
-    .kallos-title-static, .kallos-title-inline { display: inline; white-space: normal; }
+    /* Forzar el salto de línea en mobile */
+    .kallos-title-static { display: block; }
+    .kallos-title-inline { display: block; margin-top: 4px; }
 
     .kallos-hero__desc{ font-size:15px; }
   }
