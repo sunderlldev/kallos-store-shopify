@@ -3622,7 +3622,7 @@
         "spacer_TaHwhQ",
         "group_3qqFQV"
       ],
-      "name": "t:names.custom_section",
+      "name": "Kallos · Progreso Real",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -3648,7 +3648,150 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 45,
-        "padding-block-end": 25
+        "padding-block-end": 45
+      }
+    },
+    "section_bbADrC": {
+      "type": "section",
+      "blocks": {
+        "group_c9VEYx": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 20,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_mgBLjC": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2> ¿Qué hace a Follics especial?</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_HYCBFG": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h5>Nuestra fórmula dermocosmética con minoxidil 5% está diseñada para estimular el crecimiento del vello cuidando la piel, gracias a una base en crema ligera y activos complementarios.</h5>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_mgBLjC",
+            "text_HYCBFG"
+          ]
+        },
+        "custom_liquid_YcFpiU": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_c9VEYx",
+        "custom_liquid_YcFpiU"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": true,
+        "overlay_color": "#ac965131",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 35,
+        "padding-block-end": 35
       }
     },
     "176781003830b16789": {
@@ -4162,6 +4305,7 @@
     "main",
     "kallo_innovation_gpFHqn",
     "section_aHRkYA",
+    "section_bbADrC",
     "176781003830b16789",
     "kallo_innovation_GLC4m8",
     "section_aNfTUn",
