@@ -3824,7 +3824,7 @@
         "group_c9VEYx",
         "custom_liquid_YcFpiU"
       ],
-      "name": "t:names.custom_section",
+      "name": "Kallos · Diferencias",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -3846,7 +3846,7 @@
         "border_opacity": 100,
         "border_radius": 0,
         "toggle_overlay": true,
-        "overlay_color": "#ac965131",
+        "overlay_color": "#ac965130",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 35,
