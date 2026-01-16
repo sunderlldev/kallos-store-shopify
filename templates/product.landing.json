@@ -1129,7 +1129,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>Prueba el nuevo Serum de pestañas</strong></h5>",
+                        "text": "<h5><strong>Prueba nuestro bestseller</strong></h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1155,7 +1155,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5>Minoxidil en crema. Nuestra fórmula más elegida, diseñada para estimular el crecimiento del vello e integrarse fácilmente a tu rutina.</h5>",
+                        "text": "<h6>Minoxidil en crema. Nuestra fórmula más elegida, diseñada para estimular el crecimiento del vello e integrarse fácilmente a tu rutina.</h6>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1221,7 +1221,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p><strong>Ver Serum</strong></p>",
+                            "text": "<p><strong>Ver Cremas</strong></p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
