@@ -1924,6 +1924,51 @@
         "padding-block-end": 0
       }
     },
+    "kallo_innovation_gpFHqn": {
+      "type": "kallo-innovation",
+      "blocks": {
+        "item_CLnqK7": {
+          "type": "item",
+          "settings": {
+            "heading": "Minoxidil 5%",
+            "text": "<h5>Activo principal de la fórmula, reconocido por estimular el crecimiento del vello y favorecer un desarrollo progresivo con el uso constante.</h5>"
+          }
+        },
+        "item_ED3dyj": {
+          "type": "item",
+          "settings": {
+            "heading": "Biotina, aminoácidos y queratina",
+            "text": "<h5>Complejo fortalecedor que ayuda a mejorar la estructura y resistencia del vello, contribuyendo a una apariencia más uniforme y cuidada.</h5>"
+          }
+        },
+        "item_J4tKjw": {
+          "type": "item",
+          "settings": {
+            "heading": "Cafeína y extractos botánicos",
+            "text": "<h5>Combinación de cafeína con extractos de bergamota y romero que estimula el folículo y cuida la piel, aportando frescura y confort durante la aplicación.</h5>"
+          }
+        },
+        "item_EJxy4h": {
+          "type": "item",
+          "settings": {
+            "heading": "Vitamina E",
+            "text": "<h5>Activo antioxidante que protege y nutre la piel, ayudando a mantenerla en buenas condiciones para el uso diario del producto.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "item_CLnqK7",
+        "item_ED3dyj",
+        "item_J4tKjw",
+        "item_EJxy4h"
+      ],
+      "name": "Kallos · Innovación",
+      "settings": {
+        "title": "Activos principales",
+        "image": "shopify://shop_images/logoBenefits.png",
+        "image_position": "right"
+      }
+    },
     "176781003830b16789": {
       "type": "_blocks",
       "blocks": {
@@ -2433,6 +2478,7 @@
   },
   "order": [
     "main",
+    "kallo_innovation_gpFHqn",
     "176781003830b16789",
     "kallo_innovation_GLC4m8",
     "section_aNfTUn",
