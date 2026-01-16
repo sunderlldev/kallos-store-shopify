@@ -3849,7 +3849,7 @@
         "overlay_color": "#ac965130",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 35,
+        "padding-block-start": 55,
         "padding-block-end": 35
       }
     },
