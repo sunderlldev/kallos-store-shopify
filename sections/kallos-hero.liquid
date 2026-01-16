@@ -79,7 +79,6 @@
 
   .kallos-hero__text{
     width:45%;
-    justify-content: center;
   }
 
   .kallos-hero__media{
@@ -133,26 +132,26 @@
   @media(max-width:768px){
     #kallos-hero-{{ section.id }}{ height: auto; padding-bottom: 40px; }
     #kallos-hero-{{ section.id }}::before{ background: linear-gradient(0deg, var(--grad) 50%, transparent 100%); }
-    .kallos-hero__inner{ flex-direction:column; padding:20px; text-align:center; gap: 20px; }
-    .kallos-hero__media{ width:100%; height:380px; order:1; position: relative; top: 0; }
+    .kallos-hero__inner{ flex-direction:column; padding:20px; text-align:center; gap: 0px; }
+    .kallos-hero__media{ width:100%; height:420px; order:1; position: relative; top: 0; margin-bottom: -40px; }
 
     .kallos-img-fixed {
       left: 50% !important;
       right: auto !important;
-      max-width: 80%;
+      max-width: 75%;
     }
     .kallos-img-fixed--main {
-      width: 260px;
-      transform: translateX(-65%) translateY(0);
-      top: 20px;
+      width: 250px;
+      transform: translateX(-60%) translateY(0);
+      top: 10px; /* Sube la imagen principal */
     }
     .kallos-img-fixed--secondary {
-      width: 220px;
-      transform: translateX(-35%) translateY(0);
-      top: 80px;
+      width: 210px;
+      transform: translateX(-30%) translateY(0);
+      top: 140px; /* Baja la secundaria para que no choquen */
     }
 
-    .kallos-hero__text{ width:100%; order:2; padding-bottom: 20px; }
+    .kallos-hero__text{ width:100%; order:2; padding-bottom: 20px; position: relative; z-index: 5; }
     .kallos-hero__title{ font-size:34px; }
     .kallos-hero__desc{ font-size:15px; }
   }
