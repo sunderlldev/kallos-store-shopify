@@ -81,7 +81,10 @@
     min-height: 600px;
   }
 
-  .kallos-hero__text{ width:45%; padding-top: 60px; }
+  .kallos-hero__text{
+    width:45%;
+    padding-top: 60px;
+  }
 
   .kallos-hero__title{
     font-family:'Poppins',sans-serif;
@@ -93,52 +96,184 @@
     flex-direction: column;
   }
 
-  .kallos-title-line-1 { display: block; }
-  .kallos-title-line-2 { display: block; }
-  .kallos-title-inline { display: inline-block; white-space: nowrap; }
+  .kallos-title-line-1 {
+    display: block;
+  }
 
-  #kallos-typed-{{ section.id }}{ display: inline; min-height: 1em; }
-  .kallos-caret{ display: inline-block; border-right: 3px solid currentColor; height: 0.9em; margin-left: 2px; animation: blink 1s step-start infinite; vertical-align: middle; }
-  @keyframes blink{ 50%{ border-color:transparent; } }
+  .kallos-title-line-2 {
+    display: block;
+  }
 
-  .kallos-hero__desc{ margin-top:14px; font-family:'Poppins',sans-serif; font-size:18px; line-height:1.6; }
+  .kallos-title-inline {
+    display: inline-block;
+    white-space: nowrap;
+  }
 
-  .kallos-hero__media{ width:55%; height:550px; position:relative; display: flex; align-items: center; justify-content: center; }
-  .kallos-img-fixed { position: absolute; animation: float-kallos 6s ease-in-out infinite; object-fit: contain; height: auto; transition: all 0.3s ease; }
-  .kallos-img-fixed--main { z-index: 3; width: 380px; left: 0; top: 10%; }
-  .kallos-img-fixed--secondary { z-index: 2; width: 280px; right: -10%; bottom: 10%; opacity: 0.9; }
+  #kallos-typed-{{ section.id }} {
+    display: inline;
+    min-height: 1em;
+  }
+
+  .kallos-caret{
+    display: inline-block;
+    border-right: 3px solid currentColor;
+    height: 0.9em;
+    margin-left: 2px;
+    animation: blink 1s step-start infinite;
+    vertical-align: middle;
+  }
+
+  @keyframes blink {
+    50% {
+      border-color:transparent;
+    }
+  }
+
+  .kallos-hero__desc{
+    margin-top:14px;
+    font-family:'Poppins', sans-serif;
+    font-size:18px;
+    line-height:1.6;
+  }
+
+  .kallos-hero__media {
+    width:55%;
+    height:550px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .kallos-img-fixed {
+    position: absolute;
+    animation: float-kallos 6s ease-in-out infinite;
+    object-fit: contain;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+
+  .kallos-img-fixed--main {
+    z-index: 3;
+    width: 380px;
+    left: 0; top:
+    10%;
+  }
+
+  .kallos-img-fixed--secondary {
+    z-index: 2;
+    width: 280px;
+    right: -10%;
+    bottom: 10%;
+    opacity: 0.9;
+  }
 
   @keyframes float-kallos {
     0%,100%{ transform: translateY(0); }
     50%{ transform: translateY(-20px); }
   }
 
-  .kallos-hero__proof{ display:flex; align-items:center; gap:10px; font-family:'Poppins',sans-serif; font-weight:700; font-size:18px; }
-  .kallos-hero__stars{ color:var(--star); display:flex; gap:4px; }
-  .kallos-hero__stars svg{ width:18px; height:18px; }
+  .kallos-hero__proof {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    font-size:18px;
+  }
+
+  .kallos-hero__stars {
+    color:var(--star);
+    display:flex;
+    gap:4px;
+  }
+
+  .kallos-hero__stars svg {
+    width:18px;
+    height:18px;
+  }
 
   @media(max-width:768px){
-    /* Degradado Mobile: Empieza desde más arriba (40%) para que sea más visible */
     #kallos-hero-{{ section.id }}::before{
       background: linear-gradient(0deg, var(--grad) 40%, transparent 100%);
     }
 
-    .kallos-hero__inner{ flex-direction:column; padding:10px 20px 40px; text-align:center; min-height: auto; align-items: center; gap: 0; }
+    .kallos-hero__inner {
+      flex-direction:column;
+      padding:10px 20px 40px;
+      text-align:center;
+      min-height: auto;
+      align-items: center;
+      gap: 0;
+    }
 
-    /* Centrar bloque de estrellas en mobile */
-    .kallos-hero__proof { justify-content: center; margin-bottom: 8px; }
+    .kallos-hero__proof {
+      justify-content: center;
+      margin-bottom: 8px;
+      font-size:14px;
+    }
 
-    .kallos-hero__media{ width:100%; height:360px; order:1; margin-bottom: 20px; position: relative; display: block; }
-    .kallos-img-fixed { left: 50% !important; right: auto !important; top: 0 !important; }
-    .kallos-img-fixed--main { width: 230px; transform: translateX(-85%); animation: float-mobile-main 6s ease-in-out infinite; }
-    .kallos-img-fixed--secondary { width: 180px; transform: translateX(-10%) translateY(120px); animation: float-mobile-sec 6s ease-in-out infinite; }
+    .kallos-hero__media {
+      width:100%;
+      height:360px;
+      order:1;
+      margin-bottom: 20px;
+      position: relative;
+      display: block;
+    }
+    .kallos-img-fixed {
+      left: 50% !important;
+      right: auto !important;
+      top: 0 !important;
+    }
 
-    .kallos-hero__text{ width:100%; order:2; padding-top: 0; position: relative; z-index: 10; }
-    .kallos-hero__title{ font-size:32px; align-items: center; }
-    .kallos-hero__desc{ font-size:15px; }
+    .kallos-img-fixed--main {
+      width: 230px;
+      transform: translateX(-85%);
+      animation: float-mobile-main 6s ease-in-out infinite;
+    }
 
-    @keyframes float-mobile-main { 0%,100%{ transform: translateX(-85%) translateY(10px); } 50%{ transform: translateX(-85%) translateY(-5px); } }
-    @keyframes float-mobile-sec { 0%,100%{ transform: translateX(-10%) translateY(120px); } 50%{ transform: translateX(-10%) translateY(105px); } }
+    .kallos-img-fixed--secondary {
+      width: 180px;
+      transform: translateX(-10%) translateY(120px);
+      animation: float-mobile-sec 6s ease-in-out infinite;
+    }
+
+    .kallos-hero__text {
+      width:100%;
+      order:2;
+      padding-top: 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .kallos-hero__title {
+      font-size:32px;
+      align-items: center;
+    }
+
+    .kallos-hero__desc {
+      font-size:15px;
+    }
+
+    @keyframes float-mobile-main {
+      0%,100%{
+        transform: translateX(-85%) translateY(10px);
+      }
+
+      50% {
+        transform: translateX(-85%) translateY(-5px);
+      }
+    }
+
+    @keyframes float-mobile-sec {
+      0%,100% {
+        transform: translateX(-10%) translateY(120px);
+      }
+
+      50% {
+        transform: translateX(-10%) translateY(105px);
+      }
+    }
   }
 </style>
 
