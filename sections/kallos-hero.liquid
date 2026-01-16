@@ -129,40 +129,46 @@
 
   @media(max-width:768px){
     #kallos-hero-{{ section.id }}{ padding-bottom: 20px; }
-    #kallos-hero-{{ section.id }}::before{ background: linear-gradient(0deg, var(--grad) 60%, transparent 100%); }
+    #kallos-hero-{{ section.id }}::before{ background: linear-gradient(0deg, var(--grad) 65%, transparent 100%); }
     .kallos-hero__inner{ flex-direction:column; padding:20px; text-align:center; gap: 0px; }
 
-    /* Contenedor media centrado */
     .kallos-hero__media{
       width:100%;
-      height:450px;
+      height:440px;
       order:1;
-      margin-bottom: -30px;
-      overflow: visible;
+      margin-bottom: -20px;
+      display: block; /* Cambiado para control absoluto */
     }
 
     .kallos-img-fixed {
       left: 50% !important;
       right: auto !important;
+      margin: 0 !important;
     }
 
-    /* Imagen Principal: Centrada y arriba */
     .kallos-img-fixed--main {
-      width: 240px;
+      width: 250px;
       top: 20px;
-      transform: translateX(-80%) translateY(0); /* Desplazada a la izquierda del centro */
-      z-index: 4;
+      animation: float-mobile-main 6s ease-in-out infinite;
     }
 
-    /* Imagen Secundaria: Centrada y abajo */
     .kallos-img-fixed--secondary {
       width: 200px;
-      top: 160px;
-      transform: translateX(-20%) translateY(0); /* Desplazada a la derecha del centro */
-      z-index: 3;
+      top: 150px;
+      animation: float-mobile-sec 6s ease-in-out infinite;
     }
 
-    .kallos-hero__text{ width:100%; order:2; padding-top: 0; position: relative; z-index: 10; }
+    @keyframes float-mobile-main {
+      0%,100%{ transform: translateX(-80%) translateY(0); }
+      50%{ transform: translateX(-80%) translateY(-15px); }
+    }
+
+    @keyframes float-mobile-sec {
+      0%,100%{ transform: translateX(-20%) translateY(0); }
+      50%{ transform: translateX(-20%) translateY(-15px); }
+    }
+
+    .kallos-hero__text{ width:100%; order:2; position: relative; z-index: 10; }
     .kallos-hero__title{ font-size:32px; }
     .kallos-hero__desc{ font-size:15px; }
   }
