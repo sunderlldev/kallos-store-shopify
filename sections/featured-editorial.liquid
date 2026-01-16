@@ -23,7 +23,7 @@
                       product.images[0]
                       | image_url: width: 600
                       | image_tag:
-                        class: 'kallos-img kallos-img-main',
+                        class: 'kallos-product-img kallos-img-main',
                         loading: 'lazy',
                         alt: product.title,
                         draggable: false
@@ -32,7 +32,7 @@
                       product.images[1]
                       | image_url: width: 600
                       | image_tag:
-                        class: 'kallos-img kallos-img-hover',
+                        class: 'kallos-product-img kallos-img-hover',
                         loading: 'lazy',
                         alt: product.title,
                         draggable: false
@@ -42,7 +42,7 @@
                       product.featured_image
                       | image_url: width: 600
                       | image_tag:
-                        class: 'kallos-img kallos-img-single',
+                        class: 'kallos-product-img kallos-img-single',
                         loading: 'lazy',
                         alt: product.title,
                         draggable: false
@@ -142,12 +142,13 @@
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     user-select: none;
     overflow: hidden;
+    transform: none
   }
 
   .kallos-card:hover { transform: translateY(-8px); }
 
   .kallos-card-media { position: relative; aspect-ratio: 1/1; overflow: hidden; }
-  .kallos-img { width: 100%; height: 100%; object-fit: cover; }
+  .kallos-product-img { width: 100%; height: 100%; object-fit: cover; }
   .kallos-img-hover { position: absolute; inset: 0; opacity: 0; transition: 0.4s; }
   .kallos-card:hover .kallos-img-hover { opacity: 1; }
 
