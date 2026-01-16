@@ -2541,6 +2541,20 @@
         "padding-block-end": 0
       }
     },
+    "divider_BLPM9T": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
+        "section_width": "page-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
     "section_gWGTrU": {
       "type": "section",
       "blocks": {
@@ -4219,7 +4233,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 45,
+        "padding-block-start": 65,
         "padding-block-end": 45
       }
     },
@@ -4734,6 +4748,7 @@
     "main",
     "divider_cJ99T7",
     "section_dUgb8n",
+    "divider_BLPM9T",
     "section_gWGTrU",
     "176781003830b16789",
     "kallo_innovation_GLC4m8",
