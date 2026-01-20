@@ -75,7 +75,7 @@
   #lash-{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
     padding: 80px 20px;
-    font-family: var(--font-body-family), sans-serif;
+    font-family: var(--font-body-family);
     overflow: hidden;
   }
 
@@ -100,7 +100,7 @@
   }
 
   .lash-badge {
-    font-family: var(--font-body-family), sans-serif;
+    font-family: var(--font-body-family);
     font-size: 16px;
     color: #151515;
     letter-spacing: 1px;
@@ -117,7 +117,7 @@
   }
 
   .lash-main-title {
-    font-family: var(--font-heading-family), serif;
+    font-family: var(--font-heading-family);
     font-size: clamp(34px, 5vw, 52px);
     font-weight: 600;
     margin: 0;
@@ -126,7 +126,7 @@
   }
 
   .lash-description {
-    font-family: var(--font-body-family), sans-serif;
+    font-family: var(--font-body-family);
     font-size: 18px;
     font-weight: 300;
     font-style: italic;
@@ -196,7 +196,7 @@
 
   .feature-text,
   .feature-text p {
-    font-family: var(--font-body-family), sans-serif;
+    font-family: var(--font-body-family);
     margin: 0;
     font-size: 16px;
     color: #121212;
@@ -211,24 +211,24 @@
   }
 
   .lash-btn {
-    font-family: var(--font-body-family), sans-serif;
+    font-family: var(--font-body-family);
     background: #1D1D1B;
     color: #fff;
-    padding: 20px 40px;
-    font-size: 22px;
+    padding: 20px 40px; 
+    font-size: 22px;    
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    transition: 0.3s ease;
+    transition: all var(--hover-transition-duration) var(--hover-transition-timing);
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   }
 
   .lash-btn:hover {
     background: #AC9651;
-    transform: translateY(-3px);
+    transform: translateY(calc(-1 * var(--hover-lift-amount)));
   }
 
   @media screen and (min-width: 769px) {
