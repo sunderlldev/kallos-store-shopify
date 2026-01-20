@@ -77,7 +77,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "👉 Quiero vender Kallos",
+            "label": "Quiero vender Kallos",
             "link": "https://wa.me/51941914527",
             "open_in_new_tab": true,
             "style_class": "button",
