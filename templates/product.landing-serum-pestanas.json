@@ -1924,20 +1924,6 @@
         "padding-block-end": 0
       }
     },
-    "divider_cJ99T7": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "",
-        "section_width": "page-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 42,
-        "padding-block-end": 42
-      }
-    },
     "section_dUgb8n": {
       "type": "section",
       "blocks": {
@@ -1975,7 +1961,7 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 0,
+            "padding-block-start": 75,
             "padding-block-end": 15,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -2538,21 +2524,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "divider_BLPM9T": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
-        "section_width": "page-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 43,
-        "padding-block-end": 16
+        "padding-block-end": 50
       }
     },
     "section_gWGTrU": {
@@ -4355,7 +4327,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
-            "inherit_color_scheme": true,
+            "inherit_color_scheme": false,
             "color_scheme": "",
             "background_media": "none",
             "video_position": "cover",
@@ -4365,7 +4337,7 @@
             "border_opacity": 100,
             "border_radius": 32,
             "toggle_overlay": true,
-            "overlay_color": "#f5f5f5",
+            "overlay_color": "#ac965130",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "link": "",
@@ -4748,9 +4720,7 @@
   },
   "order": [
     "main",
-    "divider_cJ99T7",
     "section_dUgb8n",
-    "divider_BLPM9T",
     "section_gWGTrU",
     "section_wzbqGn",
     "176781003830b16789",
