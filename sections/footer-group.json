@@ -56,7 +56,7 @@
             "text_LWt8Pz": {
               "type": "text",
               "settings": {
-                "text": "<h2>Enterate de las novedades!</h2>",
+                "text": "<h2>Entérate de las novedades!</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -81,7 +81,7 @@
             "text_f9CFLH": {
               "type": "text",
               "settings": {
-                "text": "<h5>Sucribete para saber lo nuevo de nosotros. </h5>",
+                "text": "<h5>Sucríbete para saber lo nuevo de nosotros. </h5>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
