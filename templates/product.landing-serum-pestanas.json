@@ -2837,7 +2837,7 @@
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "custom",
-                            "custom_width": 60,
+                            "custom_width": 65,
                             "width_mobile": "custom",
                             "custom_width_mobile": 80,
                             "height": "fit",
