@@ -56,7 +56,7 @@
             "text_LWt8Pz": {
               "type": "text",
               "settings": {
-                "text": "<h2>Entérate de las novedades!</h2>",
+                "text": "<h2>¡Entérate de las novedades!</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -193,20 +193,6 @@
         "gap": 20,
         "color_scheme": "scheme-5",
         "padding-block-start": 30,
-        "padding-block-end": 0
-      }
-    },
-    "divider_CDV3Nn": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "scheme-5",
-        "section_width": "full-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 0,
         "padding-block-end": 0
       }
     },
@@ -730,20 +716,6 @@
         "padding-block-end": 0
       }
     },
-    "divider_7TmgLE": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "scheme-5",
-        "section_width": "full-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "footer_utilities_jLGE8U": {
       "type": "footer-utilities",
       "blocks": {
@@ -773,9 +745,7 @@
   },
   "order": [
     "footer_m9NzUG",
-    "divider_CDV3Nn",
     "section_gL3D9k",
-    "divider_7TmgLE",
     "footer_utilities_jLGE8U"
   ]
 }
