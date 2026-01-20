@@ -776,7 +776,7 @@
         },
         "group_4ctW4x": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Grupo",
           "settings": {
             "content_direction": "row",
             "vertical_on_mobile": false,
@@ -842,9 +842,9 @@
             },
             "image_EH3NCq": {
               "type": "image",
-              "name": "t:names.image",
+              "name": "Logo MarketingVip",
               "settings": {
-                "image": "shopify://shop_images/Logo_blanco_2x_68415b29-f610-4379-adbc-31ceff4220fe.png",
+                "image": "shopify://shop_images/Logo_colores_2x_0f0121c7-413e-4e74-bd5f-a284d9c6d249.png",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "custom",
