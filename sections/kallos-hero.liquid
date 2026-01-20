@@ -49,8 +49,6 @@
 </section>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
   #kallos-hero-{{ section.id }}{
     --grad: {{ section.settings.gradient_color }};
     --text: {{ section.settings.text_color }};
@@ -87,7 +85,7 @@
   }
 
   .kallos-hero__title{
-    font-family:'Poppins',sans-serif;
+    font-family: var(--font-body-family);
     font-weight:700;
     font-size:52px;
     line-height:1.1;
@@ -131,7 +129,7 @@
 
   .kallos-hero__desc{
     margin-top:14px;
-    font-family:'Poppins', sans-serif;
+    font-family: var(--font-body-family);
     font-size:18px;
     line-height:1.6;
   }
@@ -176,7 +174,7 @@
     display:flex;
     align-items:center;
     gap:10px;
-    font-family:'Poppins', sans-serif;
+    font-family: var(--font-body-family);
     font-weight:700;
     font-size:18px;
   }
