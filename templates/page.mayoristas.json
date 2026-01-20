@@ -97,7 +97,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/jgfcvbnn.png",
+        "image_1": "shopify://shop_images/BANNER_MAYORISTAS.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -118,13 +118,13 @@
         "section_height_custom": 50,
         "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
         "toggle_overlay": true,
-        "overlay_color": "#000000e8",
+        "overlay_color": "#000000f5",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 40,
-        "padding-block-end": 66
+        "padding-block-end": 60
       }
     },
     "section_34WEf4": {
@@ -331,7 +331,7 @@
           "name": "Diapositiva",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/imagen_2026-01-13_132235853.png",
+            "image_1": "shopify://shop_images/MAYORISTAS_1.png",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -354,7 +354,8 @@
           "blocks": {
             "text_xz3Lhk": {
               "type": "text",
-              "name": "t:names.heading",
+              "name": "Nombre de Empresa",
+              "disabled": true,
               "settings": {
                 "text": "<h2>Empresa 1</h2>",
                 "width": "fit-content",
@@ -380,6 +381,8 @@
             },
             "text_6MCjiF": {
               "type": "text",
+              "name": "Descripción",
+              "disabled": true,
               "settings": {
                 "text": "<p>Te presentamos nuestros productos más recientes, diseñados especialmente para la temporada. ¡Compra tus favoritos antes de que se agoten!</p>",
                 "width": "fit-content",
@@ -413,7 +416,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/imagen_2026-01-13_132244639.png",
+            "image_1": "shopify://shop_images/MAYORISTAS_2.png",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -436,7 +439,8 @@
           "blocks": {
             "text_CfABik": {
               "type": "text",
-              "name": "t:names.heading",
+              "name": "Nombre de Empresa",
+              "disabled": true,
               "settings": {
                 "text": "<h2>Empresa 2</h2>",
                 "width": "fit-content",
@@ -462,6 +466,8 @@
             },
             "text_TpjUiM": {
               "type": "text",
+              "name": "Descripción",
+              "disabled": true,
               "settings": {
                 "text": "<p>Te presentamos nuestros productos más recientes, diseñados especialmente para la temporada. ¡Compra tus favoritos antes de que se agoten!</p>",
                 "width": "fit-content",
@@ -490,94 +496,11 @@
             "text_CfABik",
             "text_TpjUiM"
           ]
-        },
-        "slide_3UbUhY": {
-          "type": "_slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/imagen_2026-01-13_132255780.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
-            "toggle_overlay": true,
-            "overlay_color": "#000000eb",
-            "overlay_style": "gradient",
-            "gradient_direction": "to top",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
-          },
-          "blocks": {
-            "text_nWXz3x": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Empresa 3</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "3rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground-heading)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_exxigC": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Te presentamos nuestros productos más recientes, diseñados especialmente para la temporada. ¡Compra tus favoritos antes de que se agoten!</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "balance",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 20,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_nWXz3x",
-            "text_exxigC"
-          ]
         }
       },
       "block_order": [
         "slide_FJkETj",
-        "slide_nYwM6M",
-        "slide_3UbUhY"
+        "slide_nYwM6M"
       ],
       "name": "NEGOCIOS Y EMPRENDEDORES",
       "settings": {
@@ -833,7 +756,8 @@
                   "type": "icon",
                   "settings": {
                     "icon": "box",
-                    "width": 32,
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_1.png",
+                    "width": 38,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -983,7 +907,8 @@
                   "type": "icon",
                   "settings": {
                     "icon": "truck",
-                    "width": 32,
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_3.png",
+                    "width": 38,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -1133,7 +1058,8 @@
                   "type": "icon",
                   "settings": {
                     "icon": "map_pin",
-                    "width": 32,
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_2.png",
+                    "width": 38,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -1283,8 +1209,8 @@
                   "type": "icon",
                   "settings": {
                     "icon": "star",
-                    "image_upload": "shopify://shop_images/acuerdo_03f7a1d8-35a9-46ae-8c58-29a4483c1836.png",
-                    "width": 32,
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_4.png",
+                    "width": 38,
                     "link": "",
                     "open_in_new_tab": false
                   },
