@@ -1965,7 +1965,7 @@
       "name": "Kallos · Innovación",
       "settings": {
         "title": "Activos principales",
-        "image": "shopify://shop_images/logoBenefits.png",
+        "image": "shopify://shop_images/BEST_SELLER_FOLLICS_VERANO.png",
         "image_position": "right"
       }
     },
@@ -2196,7 +2196,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-ecccb1b5-f94b-424f-aabb-08a8d3f32ac2",
+                    "color_scheme": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -2279,7 +2279,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek1.png",
+                    "image": "shopify://shop_images/ICONO_CEJAS_1.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
@@ -2552,7 +2552,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-ecccb1b5-f94b-424f-aabb-08a8d3f32ac2",
+                    "color_scheme": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -2635,7 +2635,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek2.png",
+                    "image": "shopify://shop_images/ICONO_CEJAS_2.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
@@ -2968,7 +2968,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-ecccb1b5-f94b-424f-aabb-08a8d3f32ac2",
+                    "color_scheme": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3051,7 +3051,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek3.png",
+                    "image": "shopify://shop_images/ICONO_CEJAS_3.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
@@ -3324,7 +3324,7 @@
                     "height": "fit",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-ecccb1b5-f94b-424f-aabb-08a8d3f32ac2",
+                    "color_scheme": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
@@ -3407,7 +3407,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/cejasWeek4.png",
+                    "image": "shopify://shop_images/ICONO_CEJAS_4.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
