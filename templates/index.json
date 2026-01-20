@@ -553,7 +553,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/follics_0528dfee-d44d-47de-a98f-7543d5f83cc9.png",
+                    "image": "shopify://shop_images/banner_follics_de_verano_2.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "custom",
@@ -888,37 +888,37 @@
         "feature_E49knF": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/dermLogo.png",
+            "icon": "shopify://shop_images/ICONO_DERMATOLOGICAMENTE_APROBADO.png",
             "label": "Dermatológicamente aprobado"
-          }
-        },
-        "feature_hwageP": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/molecule.png",
-            "label": "Activos funcionales"
-          }
-        },
-        "feature_bUPFpR": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/skincare.png",
-            "label": "Texturas inteligentes"
           }
         },
         "feature_L9DDUc": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/sensory.png",
-            "label": "Experiencia sensorial"
+            "icon": "shopify://shop_images/ICONO_FORMULA_AMIGABLE.png",
+            "label": "Fórmula amigable"
+          }
+        },
+        "feature_bUPFpR": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/ICONO_Texturas_inteligentes_5479059c-5df5-4d38-a86b-e6abe8a54294.png",
+            "label": "Texturas inteligentes"
+          }
+        },
+        "feature_hwageP": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/ICONO_RECOMENDADO_POR_DERMATOLOGOS.png",
+            "label": "Recomendado por Dermatólogos"
           }
         }
       },
       "block_order": [
         "feature_E49knF",
-        "feature_hwageP",
+        "feature_L9DDUc",
         "feature_bUPFpR",
-        "feature_L9DDUc"
+        "feature_hwageP"
       ],
       "custom_css": [
         "@media (max-width: 900px) {.kallos-science-features {grid-template-columns: repeat(2, 1fr) !important; gap: 30px 20px !important; } .kallos-science-feature {display: flex; flex-direction: column; align-items: center; }}",
@@ -926,7 +926,7 @@
       ],
       "name": "Kallos · Beneficios",
       "settings": {
-        "image": "shopify://shop_images/cremaRef.png",
+        "image": "shopify://shop_images/Banner_Kallos_es_ciencia_cuidado.png",
         "title": "Kallos es ciencia & cuidado",
         "text": "<p>Cada producto Kallos nace del estudio preciso de ingredientes activos, pensados para cuidar la piel y el vello de forma consciente y efectiva.</p><p>Desarrollados por especialistas en dermocosmética, nuestras fórmulas equilibran eficacia, tolerancia y experiencia sensorial para integrarse naturalmente a tu rutina diaria.</p>",
         "image_position": "right"
