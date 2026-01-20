@@ -2833,7 +2833,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/week1.png",
+                            "image": "shopify://shop_images/PROGRESO_SEMANA1.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "custom",
@@ -3135,7 +3135,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/week4.png",
+                            "image": "shopify://shop_images/PROGRESO_SEMANA4.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "custom",
@@ -3483,7 +3483,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/week8.png",
+                            "image": "shopify://shop_images/PROGRESO_SEMANA8.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "custom",
@@ -3785,7 +3785,7 @@
                           "type": "image",
                           "name": "t:names.image",
                           "settings": {
-                            "image": "shopify://shop_images/week12.png",
+                            "image": "shopify://shop_images/PROGRESO_SEMANA12.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "custom",
