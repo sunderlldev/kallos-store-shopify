@@ -75,7 +75,7 @@
   #lash-{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
     padding: 80px 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-body-family), sans-serif;
     overflow: hidden;
   }
 
@@ -100,6 +100,7 @@
   }
 
   .lash-badge {
+    font-family: var(--font-body-family), sans-serif;
     font-size: 16px;
     color: #151515;
     letter-spacing: 1px;
@@ -116,6 +117,7 @@
   }
 
   .lash-main-title {
+    font-family: var(--font-heading-family), serif;
     font-size: clamp(34px, 5vw, 52px);
     font-weight: 600;
     margin: 0;
@@ -124,6 +126,7 @@
   }
 
   .lash-description {
+    font-family: var(--font-body-family), sans-serif;
     font-size: 18px;
     font-weight: 300;
     font-style: italic;
@@ -193,6 +196,7 @@
 
   .feature-text,
   .feature-text p {
+    font-family: var(--font-body-family), sans-serif;
     margin: 0;
     font-size: 16px;
     color: #121212;
@@ -207,9 +211,11 @@
   }
 
   .lash-btn {
+    font-family: var(--font-body-family), sans-serif;
     background: #1D1D1B;
     color: #fff;
-    padding: 15px 45px;
+    padding: 20px 40px;
+    font-size: 22px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
@@ -226,7 +232,6 @@
   }
 
   @media screen and (min-width: 769px) {
-
     .lash-grid-wrapper {
       flex-direction: row;
       align-items: center;
@@ -266,6 +271,13 @@
   @media (max-width: 768px) {
     .lash-img-animate {
       max-width: 300px;
+    }
+    
+    .lash-btn {
+      font-size: 18px;
+      padding: 15px 30px;
+      width: 100%;
+      justify-content: center;
     }
   }
 </style>
