@@ -1547,7 +1547,7 @@
                           "name": "t:names.icon",
                           "settings": {
                             "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/molecule.png",
+                            "image_upload": "shopify://shop_images/ICONO_Activos_funcionales.png",
                             "width": 48,
                             "link": "",
                             "open_in_new_tab": false
@@ -1631,7 +1631,7 @@
                           "name": "t:names.icon",
                           "settings": {
                             "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/skincare.png",
+                            "image_upload": "shopify://shop_images/ICONO_Texturas_inteligentes_5479059c-5df5-4d38-a86b-e6abe8a54294.png",
                             "width": 48,
                             "link": "",
                             "open_in_new_tab": false
@@ -1761,7 +1761,7 @@
                           "name": "t:names.icon",
                           "settings": {
                             "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/clock.png",
+                            "image_upload": "shopify://shop_images/ICONO_Accion_prolongada.png",
                             "width": 48,
                             "link": "",
                             "open_in_new_tab": false
@@ -1845,7 +1845,7 @@
                           "name": "t:names.icon",
                           "settings": {
                             "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/sensory.png",
+                            "image_upload": "shopify://shop_images/ICONO_experiencia_sensorial.png",
                             "width": 48,
                             "link": "",
                             "open_in_new_tab": false
