@@ -97,7 +97,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/smiley-people-high-fiving-each-other-group-therapy-session.jpg",
+        "image_1": "shopify://shop_images/BANNER_EMBAJADORES.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -261,13 +261,164 @@
         "padding-block-end": 15
       }
     },
+    "slideshow_98QVrg": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_H4xG9d": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/EMBAJADOR_1.png",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {}
+        },
+        "slide_By3qyE": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/EMBAJADOR_2.png",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "slide_H4xG9d",
+        "slide_By3qyE"
+      ],
+      "name": "t:names.slideshow_inset",
+      "settings": {
+        "display_mode": "with_hints",
+        "section_width": "full-width",
+        "full_frame_on_mobile": false,
+        "slideshow_gap": 18,
+        "corner_radius": 20,
+        "slide_height": "medium",
+        "content_position": "below-media",
+        "color_scheme": "",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "none",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "layered_slideshow_83yLiA": {
+      "type": "layered-slideshow",
+      "blocks": {
+        "layered_slide_tj6ChH": {
+          "type": "_layered-slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/EMBAJADOR_1.png",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 32,
+            "padding-block-end": 32,
+            "padding-inline-start": 32,
+            "padding-inline-end": 32
+          },
+          "blocks": {}
+        },
+        "layered_slide_dyzigh": {
+          "type": "_layered-slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/EMBAJADOR_2.png",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 32,
+            "padding-block-end": 32,
+            "padding-inline-start": 32,
+            "padding-inline-end": 32
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "layered_slide_tj6ChH",
+        "layered_slide_dyzigh"
+      ],
+      "name": "t:names.layered_slideshow",
+      "settings": {
+        "section_width": "page-width",
+        "height": "medium",
+        "corner_radius": 0,
+        "border_width": 1,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
     "slideshow_VAVbWh": {
       "type": "slideshow",
       "blocks": {
         "slide_NYtrrf": {
           "type": "_slide",
           "settings": {
-            "media_type_1": "video",
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/EMBAJADOR_1.png",
             "video_1": "shopify://files/videos/8071_Chinese_Parade_3840x2160.mp4",
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -288,37 +439,7 @@
             "padding-inline-start": 48,
             "padding-inline-end": 48
           },
-          "blocks": {
-            "text_8xHziT": {
-              "type": "text",
-              "disabled": true,
-              "settings": {
-                "text": "<p><strong>No necesitas millones de seguidores</strong></p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#00000082",
-                "corner_radius": 20,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 15,
-                "padding-inline-end": 15
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_8xHziT"
-          ]
+          "blocks": {}
         },
         "slide_4AUTDe": {
           "type": "_slide",
@@ -574,8 +695,8 @@
                   "type": "icon",
                   "settings": {
                     "icon": "facebook",
-                    "image_upload": "shopify://shop_images/gift_16774126.png",
-                    "width": 38,
+                    "image_upload": "shopify://shop_images/EMBAJADORES_ICONO_1.png",
+                    "width": 42,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -725,8 +846,8 @@
                   "type": "icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/usd-circle_7661489.png",
-                    "width": 38,
+                    "image_upload": "shopify://shop_images/EMBAJADORES_ICONO_3.png",
+                    "width": 42,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -876,8 +997,8 @@
                   "type": "icon",
                   "settings": {
                     "icon": "map_pin",
-                    "image_upload": "shopify://shop_images/chat-arrow-grow_5528023.png",
-                    "width": 38,
+                    "image_upload": "shopify://shop_images/EMBAJADORES_ICONO_2.png",
+                    "width": 42,
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -1424,6 +1545,8 @@
     "main",
     "hero_yVtfyJ",
     "section_iYn9QA",
+    "slideshow_98QVrg",
+    "layered_slideshow_83yLiA",
     "slideshow_VAVbWh",
     "section_ae8eMt",
     "section_WrxbQ4",
