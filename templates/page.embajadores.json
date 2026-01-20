@@ -261,156 +261,6 @@
         "padding-block-end": 15
       }
     },
-    "slideshow_98QVrg": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_H4xG9d": {
-          "type": "_slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/EMBAJADOR_1.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
-          },
-          "blocks": {}
-        },
-        "slide_By3qyE": {
-          "type": "_slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/EMBAJADOR_2.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "slide_H4xG9d",
-        "slide_By3qyE"
-      ],
-      "name": "t:names.slideshow_inset",
-      "settings": {
-        "display_mode": "with_hints",
-        "section_width": "full-width",
-        "full_frame_on_mobile": false,
-        "slideshow_gap": 18,
-        "corner_radius": 20,
-        "slide_height": "medium",
-        "content_position": "below-media",
-        "color_scheme": "",
-        "icons_style": "arrows_large",
-        "icons_shape": "none",
-        "slideshow_controls_style": "none",
-        "autoplay": false,
-        "autoplay_speed": 4,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "layered_slideshow_83yLiA": {
-      "type": "layered-slideshow",
-      "blocks": {
-        "layered_slide_tj6ChH": {
-          "type": "_layered-slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/EMBAJADOR_1.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {}
-        },
-        "layered_slide_dyzigh": {
-          "type": "_layered-slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/EMBAJADOR_2.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "layered_slide_tj6ChH",
-        "layered_slide_dyzigh"
-      ],
-      "name": "t:names.layered_slideshow",
-      "settings": {
-        "section_width": "page-width",
-        "height": "medium",
-        "corner_radius": 0,
-        "border_width": 1,
-        "color_scheme": "",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
     "slideshow_VAVbWh": {
       "type": "slideshow",
       "blocks": {
@@ -441,20 +291,21 @@
           },
           "blocks": {}
         },
-        "slide_4AUTDe": {
+        "slide_CHRfcY": {
           "type": "_slide",
+          "name": "t:names.slide",
           "settings": {
-            "media_type_1": "video",
-            "video_1": "shopify://files/videos/5948162_Gen_Z_Generation_Z_3840x2160.mp4",
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/EMBAJADOR_2.png",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "inherit_color_scheme": true,
+            "inherit_color_scheme": false,
             "color_scheme": "scheme-6",
             "toggle_overlay": false,
             "overlay_color": "#00000026",
@@ -465,42 +316,12 @@
             "padding-inline-start": 48,
             "padding-inline-end": 48
           },
-          "blocks": {
-            "text_GCAjTE": {
-              "type": "text",
-              "disabled": true,
-              "settings": {
-                "text": "<p><strong>No necesitas millones de seguidores</strong></p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#00000082",
-                "corner_radius": 20,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 15,
-                "padding-inline-end": 15
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_GCAjTE"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
         "slide_NYtrrf",
-        "slide_4AUTDe"
+        "slide_CHRfcY"
       ],
       "name": "PRUEBA SOCIAL",
       "settings": {
@@ -1545,8 +1366,6 @@
     "main",
     "hero_yVtfyJ",
     "section_iYn9QA",
-    "slideshow_98QVrg",
-    "layered_slideshow_83yLiA",
     "slideshow_VAVbWh",
     "section_ae8eMt",
     "section_WrxbQ4",
