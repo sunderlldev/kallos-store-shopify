@@ -632,20 +632,6 @@
         "mobile_height": 350
       }
     },
-    "divider_3dMBa7": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "",
-        "section_width": "page-width",
-        "thickness": 2,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 30,
-        "padding-block-end": 16
-      }
-    },
     "section_LfaJ78": {
       "type": "section",
       "blocks": {
@@ -679,7 +665,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h5><strong>✔️ Alta demanda y recompra constante</strong></h5><h5><strong>✔️ Marca enfocada en cuidado personal y dermocosmética</strong></h5><h5><strong>✔️ Precios mayoristas pensados para crecer contigo</strong></h5><h5><strong>✔️ Productos que se explican y se venden fácil</strong></h5>",
+            "text": "<h5><strong>· </strong>Alta demanda y recompra constante</h5><h5><strong>·</strong> Marca enfocada en cuidado personal y dermocosmética</h5><h5><strong>·</strong> Precios mayoristas pensados para crecer contigo</h5><h5><strong>·</strong> Productos que se explican y se venden fácil</h5>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -687,7 +673,7 @@
             "font": "var(--font-heading--family)",
             "font_size": "1rem",
             "line_height": "normal",
-            "letter_spacing": "loose",
+            "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
             "color": "var(--color-foreground)",
@@ -731,22 +717,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 52,
+        "padding-block-start": 80,
         "padding-block-end": 52
-      }
-    },
-    "divider_dCamxW": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "",
-        "section_width": "page-width",
-        "thickness": 2,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 16,
-        "padding-block-end": 16
       }
     },
     "section_RM9QKw": {
@@ -1640,7 +1612,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h5><strong>⚠️ No disponible para compra personal.</strong></h5>",
+                "text": "<h5><strong>No disponible para compra personal.</strong></h5>",
                 "width": "fit-content",
                 "max_width": "none",
                 "alignment": "left",
@@ -1846,9 +1818,7 @@
     "section_4aUfJY",
     "slideshow_H9PELV",
     "custom_slider_ehyfyE",
-    "divider_3dMBa7",
     "section_LfaJ78",
-    "divider_dCamxW",
     "section_RM9QKw",
     "divider_yHNn4Y",
     "section_TnFBmN",
