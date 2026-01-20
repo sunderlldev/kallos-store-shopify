@@ -1969,20 +1969,6 @@
         "image_position": "right"
       }
     },
-    "divider_At9ULd": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "scheme-c431fdf8-5120-4332-bcc6-bde42577f26b",
-        "section_width": "page-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 16,
-        "padding-block-end": 16
-      }
-    },
     "section_aHRkYA": {
       "type": "section",
       "blocks": {
@@ -4363,7 +4349,6 @@
   "order": [
     "main",
     "kallo_innovation_gpFHqn",
-    "divider_At9ULd",
     "section_aHRkYA",
     "section_bbADrC",
     "176781003830b16789",
