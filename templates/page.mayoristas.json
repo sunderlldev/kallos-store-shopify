@@ -190,7 +190,7 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 20,
+                "padding-block-end": 15,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -245,7 +245,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-0137353e-3189-4ab1-bc20-e801710b2b92",
+        "color_scheme": "scheme-3d3cdf29-9eb3-4aa2-84c6-9357ddf1a970",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -253,12 +253,12 @@
         "border_width": 1,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": true,
+        "toggle_overlay": false,
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 15,
-        "padding-block-end": 15
+        "padding-block-start": 20,
+        "padding-block-end": 20
       }
     },
     "section_4aUfJY": {
