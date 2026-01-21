@@ -235,7 +235,7 @@
             "placeholder": "",
             "padding-block-start": 5,
             "padding-block-end": 15,
-            "padding-inline-start": 40,
+            "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
