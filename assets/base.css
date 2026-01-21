@@ -36,6 +36,13 @@ h5, h6,
   font-family: var(--font-body-family) !important;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
 body, p, span, a, li {
   font-family: var(--font-body-family) !important;
 }
