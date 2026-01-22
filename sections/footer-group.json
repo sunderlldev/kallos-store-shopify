@@ -16,6 +16,7 @@
       "blocks": {
         "group_H6VpwJ": {
           "type": "group",
+          "name": "Contenedor Izquierdo",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -111,7 +112,7 @@
         },
         "group_7GTdJh": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Contenedor Derecho",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -187,7 +188,7 @@
       "custom_css": [
         "@media screen and (max-width: 749px) {.email-signup__input::placeholder {font-size: 14px; }}"
       ],
-      "name": "t:names.footer",
+      "name": "Footer · Encabezado",
       "settings": {
         "section_width": "page-width",
         "gap": 20,
@@ -201,7 +202,7 @@
       "blocks": {
         "group_DC9WFw": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Contenedor Izquierdo",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -415,7 +416,7 @@
         },
         "group_rTNgmX": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Contenedor Derecho",
           "settings": {
             "content_direction": "row",
             "vertical_on_mobile": false,
@@ -497,7 +498,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h5><strong>Atención al consumidor</strong></h5>",
+                    "text": "<h6><strong>Atención al consumidor</strong></h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -622,7 +623,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h5><strong>Sobre nosotros</strong></h5>",
+                    "text": "<h6><strong>Sobre nosotros</strong></h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -687,7 +688,7 @@
         "group_DC9WFw",
         "group_rTNgmX"
       ],
-      "name": "t:names.custom_section",
+      "name": "Footer · Sección Principal",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -946,7 +947,7 @@
         "group_PtfXza",
         "group_4ctW4x"
       ],
-      "name": "t:names.custom_section",
+      "name": "Footer · Sección Final",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
