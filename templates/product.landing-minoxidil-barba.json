@@ -2163,7 +2163,7 @@
                   "type": "text",
                   "name": "Frase Final",
                   "settings": {
-                    "text": "<h5><em><strong>Los resultados varían según cada persona. La constancia es clave.</strong></em></h5>",
+                    "text": "<h4><em><strong>Los resultados varían según cada persona. La constancia es clave.</strong></em></h4>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "center",
@@ -3868,7 +3868,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2> ¿Qué hace a Follics especial?</h2>",
+                    "text": "<h1> ¿Qué hace a Follics especial?</h1>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -3898,7 +3898,7 @@
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1.125rem",
                     "line_height": "normal",
@@ -3939,6 +3939,9 @@
       "block_order": [
         "group_c9VEYx",
         "custom_liquid_YcFpiU"
+      ],
+      "custom_css": [
+        "h5 {line-height: 1.5;}"
       ],
       "name": "Kallos · Diferencias",
       "settings": {
