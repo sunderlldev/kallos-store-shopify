@@ -984,7 +984,7 @@
               "name": "t:names.group",
               "settings": {
                 "content_direction": "row",
-                "vertical_on_mobile": false,
+                "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
@@ -1065,7 +1065,7 @@
                       "settings": {
                         "image": "shopify://shop_images/BEST_SELLER_LASH.png",
                         "link": "",
-                        "image_ratio": "square",
+                        "image_ratio": "landscape",
                         "width": "fill",
                         "custom_width": 100,
                         "width_mobile": "fill",
