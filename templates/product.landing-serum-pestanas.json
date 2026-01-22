@@ -120,13 +120,13 @@
                   "type": "text",
                   "name": "Product title",
                   "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "text": "<h3><strong>{{ closest.product.title }}</strong></h3>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "h3",
+                    "type_preset": "custom",
                     "font": "var(--font-primary--family)",
-                    "font_size": "",
+                    "font_size": "2.5rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -204,7 +204,7 @@
                     "alignment": "left",
                     "type_preset": "custom",
                     "font": "var(--font-heading--family)",
-                    "font_size": "0.875rem",
+                    "font_size": "1rem",
                     "line_height": "loose",
                     "letter_spacing": "loose",
                     "case": "none",
@@ -4184,12 +4184,12 @@
       ],
       "name": "Kallos · Diferencias",
       "settings": {
-        "content_direction": "row",
+        "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
@@ -4675,7 +4675,7 @@
       "block_order": [
         "group_enkTbD"
       ],
-      "name": "Kallos · WhatsApp",
+      "name": "Kallos · Dudas y Consultas",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": false,
@@ -4706,7 +4706,7 @@
     },
     "featured_editorial_UzPViK": {
       "type": "featured-editorial",
-      "name": "Kallos · Destacados",
+      "name": "Kallos · Productos Destacados",
       "settings": {
         "collection": "destacados",
         "title": "Lo más destacado de Kallos",
