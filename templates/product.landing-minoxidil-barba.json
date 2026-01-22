@@ -2496,7 +2496,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h4><em><strong>Inicio de la rutina</strong></em></h4>",
+                            "text": "<h3><em><strong>Inicio de la rutina</strong></em></h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -2852,7 +2852,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h4><em><strong>Vello más saludable</strong></em></h4>",
+                            "text": "<h3><em><strong>Vello más saludable</strong></em></h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -3268,7 +3268,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h4><em><strong>Primeros cambios visibles</strong></em></h4>",
+                            "text": "<h3><em><strong>Primeros cambios visibles</strong></em></h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -3624,7 +3624,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h4><em><strong>Resultado progresivo</strong></em></h4>",
+                            "text": "<h3><em><strong>Resultado progresivo</strong></em></h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
