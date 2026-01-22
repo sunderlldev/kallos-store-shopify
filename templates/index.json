@@ -356,7 +356,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h3><em><strong>Misma calidad.</strong></em></h3>",
+                        "text": "<h1><em><strong>Misma calidad.</strong></em></h1>",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -427,7 +427,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h3><em><strong>Misma efecto.</strong></em></h3>",
+                        "text": "<h1><em><strong>Misma efecto.</strong></em></h1>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -498,7 +498,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h3><em><strong>Edición Verano.</strong></em></h3>",
+                        "text": "<h1><em><strong>Edición Verano.</strong></em></h1>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -544,8 +544,8 @@
         "group_NgaHpE"
       ],
       "custom_css": [
-        "@media screen and (max-width: 821px) {h3 {font-size: 40px !important; line-height: 1.2 !important; display: block !important; }}",
-        "@media screen and (max-width: 480px) {h3 {font-size: 22px !important; }}"
+        "@media screen and (max-width: 821px) {h1 {font-size: 4px !important; line-height: 1.2 !important; display: block !important; }}",
+        "@media screen and (max-width: 821px) {h1 {font-size: 22px !important; }}"
       ],
       "name": "Kallos · Edición Verano",
       "settings": {
