@@ -27,7 +27,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Políticas de Cambios y Devoluciones</h2>",
+            "text": "<h1>Políticas de Cambios y Devoluciones</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -113,7 +113,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h5><strong>Última actualización: 08 / 01 / 2026</strong></h5>",
+                "text": "<h3><strong>Última actualización: 08 / 01 / 2026</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -224,11 +224,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>1. Plazo para solicitar devolución</strong></p>",
+                "text": "<h3><strong>1. Plazo para solicitar devolución</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1.5rem",
                 "line_height": "normal",
@@ -334,11 +334,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>2. Casos en los que SÍ se acepta devolución</strong></p>",
+                "text": "<h3><strong>2. Casos en los que SÍ se acepta devolución</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1.5rem",
                 "line_height": "normal",
@@ -360,7 +360,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Solo se aceptarán devoluciones en los siguientes casos:</p><ul><li>Producto recibido <strong>dañado</strong>.</li><li>Producto <strong>perdido durante el envío</strong>.</li><li>Producto incorrecto enviado por error de KALLOS.</li></ul>",
+                "text": "<h5>Solo se aceptarán devoluciones en los siguientes casos:</h5><ul><li><h5>Producto recibido <strong>dañado</strong>.</h5></li><li><h5>Producto <strong>perdido durante el envío</strong>.</h5></li><li><h5>Producto incorrecto enviado por error de KALLOS.</h5></li></ul>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -444,11 +444,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>3. Condiciones obligatorias</strong></p>",
+                "text": "<h3><strong>3. Condiciones obligatorias</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1.5rem",
                 "line_height": "normal",
@@ -554,11 +554,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>4. Casos en los que NO se acepta devolución</strong></p>",
+                "text": "<h3><strong>4. Casos en los que NO se acepta devolución</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1.5rem",
                 "line_height": "normal",
@@ -580,7 +580,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>No se aceptan devoluciones por:</p><ul><li>Cambio de opinión.</li><li>Expectativas de resultados personales.</li><li>Productos abiertos, usados o manipulados.</li><li>Reacciones adversas por sensibilidad individual.</li><li>Promociones, descuentos u ofertas especiales.</li></ul>",
+                "text": "<h5>No se aceptan devoluciones por:</h5><ul><li><h5>Cambio de opinión.</h5></li><li><h5>Expectativas de resultados personales.</h5></li><li><h5>Productos abiertos, usados o manipulados.</h5></li><li><h5>Reacciones adversas por sensibilidad individual.</h5></li><li><h5>Promociones, descuentos u ofertas especiales.</h5></li></ul>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -664,11 +664,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>5. Resolución del reclamo</strong></p>",
+                "text": "<h3><strong>5. Resolución del reclamo</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1.5rem",
                 "line_height": "normal",
@@ -774,11 +774,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>6. Costos de envío</strong></p>",
+                "text": "<h3><strong>6. Costos de envío</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1.5rem",
                 "line_height": "normal",
@@ -884,11 +884,11 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>7. Canal de atención</strong></p>",
+                "text": "<h3><strong>7. Canal de atención</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1.5rem",
                 "line_height": "normal",
@@ -910,7 +910,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Toda solicitud de cambio o devolución deberá realizarse escribiendo al correo:</p><p>📩 <a href=\"mailto:admin@kallos.store\" title=\"mailto:admin@kallos.store\"><strong>admin@kallos.store</strong></a></p><p>Incluyendo:</p><ul><li>Nombre completo</li><li>Número de pedido</li><li>Motivo del reclamo</li><li>Evidencia correspondiente</li></ul>",
+                "text": "<h5>Toda solicitud de cambio o devolución deberá realizarse escribiendo al correo:</h5><h5>Correo: <a href=\"mailto:admin@kallos.store\" title=\"mailto:admin@kallos.store\"><strong>admin@kallos.store</strong></a></h5><h5>Incluyendo:</h5><ul><li><h5>Nombre completo</h5></li><li><h5>Número de pedido</h5></li><li><h5>Motivo del reclamo</h5></li><li><h5>Evidencia correspondiente</h5></li></ul>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -937,18 +937,6 @@
             "text_Vta6EC",
             "text_zGxwkF"
           ]
-        },
-        "divider_aeLJK9": {
-          "type": "_divider",
-          "name": "t:names.divider",
-          "settings": {
-            "thickness": 2,
-            "corner_radius": "square",
-            "width_percent": 100,
-            "padding-block-start": 30,
-            "padding-block-end": 30
-          },
-          "blocks": {}
         }
       },
       "block_order": [
@@ -967,8 +955,7 @@
         "divider_TY8zBV",
         "group_nqRHY4",
         "divider_9wNgeC",
-        "group_h6JtwT",
-        "divider_aeLJK9"
+        "group_h6JtwT"
       ],
       "name": "t:names.custom_section",
       "settings": {
