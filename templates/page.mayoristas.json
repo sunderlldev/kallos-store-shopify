@@ -94,7 +94,7 @@
         "text_NPLtdt",
         "button_zEtJWB"
       ],
-      "name": "t:names.hero",
+      "name": "Kallos · Hero Principal",
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/BANNER_MAYORISTAS.png",
@@ -232,7 +232,7 @@
       "block_order": [
         "group_TydJND"
       ],
-      "name": "t:names.custom_section",
+      "name": "Kallos · Hero Footer",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -289,12 +289,36 @@
             "padding-inline-end": 20
           },
           "blocks": {}
+        },
+        "image_dNXXAW": {
+          "type": "image",
+          "name": "Imagen Referencial",
+          "settings": {
+            "image": "shopify://shop_images/MAYORISTAS_2.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 18,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_R3TJtG"
+        "text_R3TJtG",
+        "image_dNXXAW"
       ],
-      "name": "t:names.custom_section",
+      "name": "Kallos · Negocios y Emprendedores",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -323,277 +347,19 @@
         "padding-block-end": 0
       }
     },
-    "slideshow_H9PELV": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_FJkETj": {
-          "type": "_slide",
-          "name": "Diapositiva",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/MAYORISTAS_1.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
-            "toggle_overlay": true,
-            "overlay_color": "#000000eb",
-            "overlay_style": "gradient",
-            "gradient_direction": "to top",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
-          },
-          "blocks": {
-            "text_xz3Lhk": {
-              "type": "text",
-              "name": "Nombre de Empresa",
-              "disabled": true,
-              "settings": {
-                "text": "<h2>Empresa 1</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "3rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground-heading)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_6MCjiF": {
-              "type": "text",
-              "name": "Descripción",
-              "disabled": true,
-              "settings": {
-                "text": "<p>Te presentamos nuestros productos más recientes, diseñados especialmente para la temporada. ¡Compra tus favoritos antes de que se agoten!</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "balance",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 20,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_xz3Lhk",
-            "text_6MCjiF"
-          ]
-        },
-        "slide_nYwM6M": {
-          "type": "_slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/MAYORISTAS_2.png",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
-            "toggle_overlay": true,
-            "overlay_color": "#000000eb",
-            "overlay_style": "gradient",
-            "gradient_direction": "to top",
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
-          },
-          "blocks": {
-            "text_CfABik": {
-              "type": "text",
-              "name": "Nombre de Empresa",
-              "disabled": true,
-              "settings": {
-                "text": "<h2>Empresa 2</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-heading--family)",
-                "font_size": "3rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground-heading)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_TpjUiM": {
-              "type": "text",
-              "name": "Descripción",
-              "disabled": true,
-              "settings": {
-                "text": "<p>Te presentamos nuestros productos más recientes, diseñados especialmente para la temporada. ¡Compra tus favoritos antes de que se agoten!</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "balance",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 20,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_CfABik",
-            "text_TpjUiM"
-          ]
-        }
-      },
-      "block_order": [
-        "slide_FJkETj",
-        "slide_nYwM6M"
-      ],
-      "name": "NEGOCIOS Y EMPRENDEDORES",
-      "settings": {
-        "display_mode": "full_frame",
-        "section_width": "page-width",
-        "full_frame_on_mobile": false,
-        "slideshow_gap": 12,
-        "corner_radius": 18,
-        "slide_height": "medium",
-        "content_position": "on-media",
-        "color_scheme": "scheme-0137353e-3189-4ab1-bc20-e801710b2b92",
-        "icons_style": "chevron_large",
-        "icons_shape": "none",
-        "slideshow_controls_style": "dots",
-        "autoplay": false,
-        "autoplay_speed": 4,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "custom_slider_ehyfyE": {
-      "type": "custom-slider",
-      "blocks": {
-        "banner_wrKN7w": {
-          "type": "banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/1768069055Rapi-Bundles-variante2.jpg"
-          }
-        },
-        "banner_QqgfVT": {
-          "type": "banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/minoxidilBarbaBeneficios.jpg"
-          }
-        },
-        "banner_r6Yeyp": {
-          "type": "banner",
-          "settings": {
-            "image_desktop": "shopify://shop_images/minoxidilBarbaValoraciones.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "banner_wrKN7w",
-        "banner_QqgfVT",
-        "banner_r6Yeyp"
-      ],
-      "disabled": true,
-      "name": "Slider Responsive",
-      "settings": {
-        "desktop_height": 300,
-        "mobile_height": 350
-      }
-    },
-    "section_LfaJ78": {
+    "section_Pmnp4B": {
       "type": "section",
       "blocks": {
-        "text_8FPyV7": {
+        "text_znMifF": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
             "text": "<h2>¿Por qué sumar Kallos a tu portafolio?</h2>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 15,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_fgKtRL": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<h5><strong>· </strong>Alta demanda y recompra constante</h5><h5><strong>·</strong> Marca enfocada en cuidado personal y dermocosmética</h5><h5><strong>·</strong> Precios mayoristas pensados para crecer contigo</h5><h5><strong>·</strong> Productos que se explican y se venden fácil</h5>",
-            "width": "100%",
+            "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-heading--family)",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
@@ -609,13 +375,165 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "group_RXfVmq": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 15,
+            "width": "custom",
+            "custom_width": 55,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_nanMHa": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h5><strong>• </strong>Alta demanda y recompra constante</h5>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "loose",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_YT7gBq": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h5><strong>• </strong>Marca enfocada en cuidado personal y dermocosmética</h5>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "loose",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_KrbKLQ": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h5><strong>• </strong>Precios mayoristas pensados para crecer contigo</h5>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "loose",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_nWbAFJ": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h5><strong>• </strong>Productos que se explican y se venden fácil</h5>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "loose",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_nanMHa",
+            "text_YT7gBq",
+            "text_KrbKLQ",
+            "text_nWbAFJ"
+          ]
         }
       },
       "block_order": [
-        "text_8FPyV7",
-        "text_fgKtRL"
+        "text_znMifF",
+        "group_RXfVmq"
       ],
-      "name": "PROPUESTA DE VALOR",
+      "name": "Kallos · Propuesta de Valor",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -624,7 +542,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "gap": 30,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -640,8 +558,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 80,
-        "padding-block-end": 52
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "section_RM9QKw": {
@@ -1330,7 +1248,7 @@
         "text_xz74xM",
         "group_DgPeMN"
       ],
-      "name": "QUÉ OFRECEMOS A MAYORISTAS",
+      "name": "Kallos · Beneficios para Mayoristas",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1560,7 +1478,7 @@
         "text_AzRq9G",
         "group_A6Gbay"
       ],
-      "name": "FILTRO DE CALIDAD",
+      "name": "Kallos · Filtro de Calidad",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1714,9 +1632,7 @@
     "hero_F8d9WU",
     "section_34WEf4",
     "section_4aUfJY",
-    "slideshow_H9PELV",
-    "custom_slider_ehyfyE",
-    "section_LfaJ78",
+    "section_Pmnp4B",
     "section_RM9QKw",
     "section_TnFBmN",
     "section_T4p6CW"
