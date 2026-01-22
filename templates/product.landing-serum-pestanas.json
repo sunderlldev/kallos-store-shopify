@@ -2546,7 +2546,9 @@
         "group_DH846V",
         "group_wBUXp3"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h5 {line-height: 1.5;}"
+      ],
       "name": "Kallos · Transparencia",
       "settings": {
         "content_direction": "column",
@@ -4043,6 +4045,9 @@
         "spacer_UdnGEr",
         "group_bwanjJ"
       ],
+      "custom_css": [
+        "h4 {line-height: 1.2;}"
+      ],
       "name": "Kallos · Progreso Real",
       "settings": {
         "content_direction": "column",
@@ -4231,6 +4236,9 @@
         "group_eELWw8",
         "custom_liquid_44HtaV"
       ],
+      "custom_css": [
+        "h4 {line-height: 1.5;}"
+      ],
       "name": "Kallos · Diferencias",
       "settings": {
         "content_direction": "column",
@@ -4355,7 +4363,8 @@
         ".kallos-innovation-wrapper.no-image-centered {grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: center;}",
         ".no-image-centered .kallos-accordion-trigger {text-align: left;}",
         ".no-image-centered .kallos-innovation-text h2 {text-align: center;}",
-        ".kallos-innovation-wrapper h5 {text-align: left;}"
+        ".kallos-innovation-wrapper h5 {text-align: left;}",
+        "h5 {line-height: 1.5;}"
       ],
       "name": "Kallos · Preguntas Frecuentes",
       "settings": {
