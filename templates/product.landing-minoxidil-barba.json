@@ -3751,7 +3751,7 @@
         "group_gUTrcz"
       ],
       "custom_css": [
-        "h4 {line-height: 1.2;}"
+        "h4 {line-height: 1.3;}"
       ],
       "name": "Kallos · Progreso Real",
       "settings": {
@@ -4060,7 +4060,8 @@
         ".kallos-innovation-wrapper.no-image-centered {grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: center;}",
         ".no-image-centered .kallos-accordion-trigger {text-align: left;}",
         ".no-image-centered .kallos-innovation-text h2 {text-align: center;}",
-        ".kallos-innovation-wrapper p {text-align: left;}"
+        ".kallos-innovation-wrapper p {text-align: left;}",
+        "h5 {line-height: 1.5;}"
       ],
       "name": "Kallos · Preguntas Frecuentes",
       "settings": {
