@@ -2,11 +2,11 @@
   <div class="kallos-editorial-wrapper">
     <div class="kallos-editorial-header">
       {% if section.settings.title != blank %}
-        <h2 class="kallos-editorial-title">{{ section.settings.title }}</h2>
+        <h1 class="kallos-editorial-title">{{ section.settings.title }}</h1>
       {% endif %}
 
       {% if section.settings.subtitle != blank %}
-        <p class="kallos-editorial-subtitle">{{ section.settings.subtitle }}</p>
+        <h4 class="kallos-editorial-subtitle">{{ section.settings.subtitle }}</h4>
       {% endif %}
     </div>
 
@@ -95,7 +95,6 @@
   }
 
   .kallos-editorial-title {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
     margin: 0 0 0.5rem 0;
     color: #000;
     font-weight: var(--title-weight);
