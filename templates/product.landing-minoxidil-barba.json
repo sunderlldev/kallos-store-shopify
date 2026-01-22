@@ -2293,7 +2293,7 @@
               "blocks": {
                 "group_wte4KL": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Semana",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -2414,7 +2414,7 @@
                 },
                 "group_grGCCW": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Resultados",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -2649,7 +2649,7 @@
               "blocks": {
                 "group_d3VMcU": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Semana",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -2770,7 +2770,7 @@
                 },
                 "group_YjenXH": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Resultados",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -3065,7 +3065,7 @@
               "blocks": {
                 "group_hTc43K": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Semana",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -3186,7 +3186,7 @@
                 },
                 "group_EQVqeD": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Resultados",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -3421,7 +3421,7 @@
               "blocks": {
                 "group_ky3z4L": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Semana",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -3542,7 +3542,7 @@
                 },
                 "group_JJDiJh": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Resultados",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -3786,7 +3786,7 @@
       "blocks": {
         "group_c9VEYx": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Header",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -3826,7 +3826,7 @@
           "blocks": {
             "group_jWpGGD": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Principal",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -3892,7 +3892,7 @@
                 },
                 "text_MngYLz": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Descripción",
                   "settings": {
                     "text": "<h5>Nuestra fórmula dermocosmética con minoxidil 5% está diseñada para estimular el crecimiento del vello cuidando la piel, gracias a una base en crema ligera y activos complementarios</h5>",
                     "width": "fit-content",
@@ -4024,28 +4024,28 @@
           "type": "item",
           "settings": {
             "heading": "Mi piel es sensible, ¿Aún así lo puedo usar?",
-            "text": "<p>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</p><p>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</p>"
+            "text": "<h5>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</h5><h5>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</h5>"
           }
         },
         "item_abpUGh": {
           "type": "item",
           "settings": {
             "heading": "¿En cuánto tiempo veré resultados?",
-            "text": "<p>{{ product.metafields.custom.faq_2_respuesta | metafield_tag }}</p>"
+            "text": "<h5>{{ product.metafields.custom.faq_2_respuesta | metafield_tag }}</h5>"
           }
         },
         "item_h3P3kU": {
           "type": "item",
           "settings": {
             "heading": "{{ product.metafields.custom.faq_3.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_3_respuesta | metafield_tag }}</p>"
+            "text": "<h5>{{ product.metafields.custom.faq_3_respuesta | metafield_tag }}</h5>"
           }
         },
         "item_GT8zk3": {
           "type": "item",
           "settings": {
             "heading": "¿Cómo lo uso?",
-            "text": "<p>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</p><p>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</p>"
+            "text": "<h5>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</h5><h5>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</h5>"
           }
         }
       },
