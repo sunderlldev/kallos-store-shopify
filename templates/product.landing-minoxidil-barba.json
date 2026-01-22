@@ -1312,7 +1312,7 @@
             },
             "accordion_yMFMtB": {
               "type": "accordion",
-              "name": "t:names.accordion",
+              "name": "Preguntas Frecuentes",
               "settings": {
                 "icon": "caret",
                 "dividers": true,
@@ -1471,7 +1471,7 @@
             },
             "group_J43EMe": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Features de Crema",
               "settings": {
                 "content_direction": "row",
                 "vertical_on_mobile": true,
@@ -1511,7 +1511,7 @@
               "blocks": {
                 "group_grXReU": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Izquierdo",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -1551,7 +1551,7 @@
                   "blocks": {
                     "group_PgqyiD": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 1",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1635,7 +1635,7 @@
                     },
                     "group_e8tjWz": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 2",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1725,7 +1725,7 @@
                 },
                 "group_i3M7DW": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Derecho",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -1765,7 +1765,7 @@
                   "blocks": {
                     "group_p6XkXr": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 3",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": false,
@@ -1849,7 +1849,7 @@
                     },
                     "group_thEHPf": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 4",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1976,6 +1976,7 @@
       "blocks": {
         "item_CLnqK7": {
           "type": "item",
+          "name": "Ítem 1",
           "settings": {
             "heading": "Minoxidil 5%",
             "text": "<h5>Activo principal de la fórmula, reconocido por estimular el crecimiento del vello y favorecer un desarrollo progresivo con el uso constante.</h5>"
@@ -1983,6 +1984,7 @@
         },
         "item_ED3dyj": {
           "type": "item",
+          "name": "Ítem 2",
           "settings": {
             "heading": "Biotina, aminoácidos y queratina",
             "text": "<h5>Complejo fortalecedor que ayuda a mejorar la estructura y resistencia del vello, contribuyendo a una apariencia más uniforme y cuidada.</h5>"
@@ -1990,6 +1992,7 @@
         },
         "item_J4tKjw": {
           "type": "item",
+          "name": "Ítem 3",
           "settings": {
             "heading": "Cafeína y extractos botánicos",
             "text": "<h5>Combinación de cafeína con extractos de bergamota y romero que estimula el folículo y cuida la piel, aportando frescura y confort durante la aplicación.</h5>"
@@ -1997,6 +2000,7 @@
         },
         "item_EJxy4h": {
           "type": "item",
+          "name": "Ítem 4",
           "settings": {
             "heading": "Vitamina E",
             "text": "<h5>Activo antioxidante que protege y nutre la piel, ayudando a mantenerla en buenas condiciones para el uso diario del producto.</h5>"
