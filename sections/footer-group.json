@@ -296,7 +296,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h6><strong>+51  941 914 527</strong><br/><br/></h6>",
+                    "text": "<h6>+51  941 914 527<br/><br/></h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -380,7 +380,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h6><strong>admin@kallos.store</strong></h6>",
+                    "text": "<h6>admin@kallos.store</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
