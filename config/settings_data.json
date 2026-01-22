@@ -54,6 +54,7 @@
     "badge_text_transform": "none",
     "primary_button_border_width": 0,
     "button_border_radius_primary": 14,
+    "type_font_button_primary": "body",
     "secondary_button_border_width": 1,
     "button_border_radius_secondary": 14,
     "cart_type": "page",
@@ -1049,6 +1050,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      "@media screen and (max-width: 768px) {h1 {font-size: 38px; } h2 {font-size: 34px; } h3 {font-size: 30px; } h4 {font-size: 18px; } h5 {font-size: 16px; } h6 {font-size: 14px; }}"
+    ]
   }
 }
