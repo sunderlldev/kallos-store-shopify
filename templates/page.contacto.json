@@ -27,7 +27,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>Contacto</h1>",
+            "text": "<h1>Contáctanos</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
