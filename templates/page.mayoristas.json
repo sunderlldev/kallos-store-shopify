@@ -572,11 +572,11 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2><strong>Beneficios para tu negocio</strong></h2>",
+            "text": "<h1><strong>Beneficios para tu negocio</strong></h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "custom",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "3rem",
             "line_height": "normal",
@@ -694,7 +694,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 8,
+                    "gap": 16,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -726,11 +726,11 @@
                     "text_4U9fET": {
                       "type": "text",
                       "settings": {
-                        "text": "<h4>Precios mayoristas escalonados</h4>",
+                        "text": "<h3>Precios mayoristas escalonados</h3>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-body--family)",
                         "font_size": "1.5rem",
                         "line_height": "tight",
@@ -751,7 +751,7 @@
                     "text_ceFNji": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>A mayor volumen, mejores condiciones.</p>",
+                        "text": "<h5>A mayor volumen, mejores condiciones.</h5>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -819,7 +819,7 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 25,
-                "padding-block-end": 25,
+                "padding-block-end": 50,
                 "padding-inline-start": 25,
                 "padding-inline-end": 25
               },
@@ -845,7 +845,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 8,
+                    "gap": 16,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -877,11 +877,11 @@
                     "text_YcjGAy": {
                       "type": "text",
                       "settings": {
-                        "text": "<h4>Despachos a Lima y provincia</h4>",
+                        "text": "<h3>Despachos a Lima y provincia</h3>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-body--family)",
                         "font_size": "1.5rem",
                         "line_height": "tight",
@@ -902,7 +902,7 @@
                     "text_RjGNY9": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Logística clara y seguimiento de pedidos.</p>",
+                        "text": "<h5>Logística clara y seguimiento de pedidos.</h5>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -996,7 +996,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 8,
+                    "gap": 16,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -1028,11 +1028,11 @@
                     "text_MMgdUP": {
                       "type": "text",
                       "settings": {
-                        "text": "<h4>Visibilidad para tu negocio</h4>",
+                        "text": "<h3>Visibilidad para tu negocio</h3>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-body--family)",
                         "font_size": "1.5rem",
                         "line_height": "tight",
@@ -1053,7 +1053,7 @@
                     "text_GamXtF": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Promocionamos tu local como punto de venta de Kallos dentro de nuestra comunidad.</p>",
+                        "text": "<h5>Promocionamos tu local como punto de venta de Kallos dentro de nuestra comunidad.</h5>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -1147,7 +1147,7 @@
                     "align_baseline": false,
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 8,
+                    "gap": 16,
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -1179,11 +1179,11 @@
                     "text_wzPPDE": {
                       "type": "text",
                       "settings": {
-                        "text": "<h4>Relación a largo plazo</h4>",
+                        "text": "<h3>Relación a largo plazo</h3>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-body--family)",
                         "font_size": "1.5rem",
                         "line_height": "tight",
@@ -1204,7 +1204,7 @@
                     "text_K636LE": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Buscamos socios, no ventas únicas.</p>",
+                        "text": "<h5>Buscamos socios, no ventas únicas.</h5>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
