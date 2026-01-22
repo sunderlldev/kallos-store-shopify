@@ -984,7 +984,7 @@
             },
             "group_FqgeJd": {
               "type": "group",
-              "name": "Promoción Slash+",
+              "name": "Promoción Minoxidil",
               "settings": {
                 "content_direction": "row",
                 "vertical_on_mobile": true,
@@ -1311,9 +1311,9 @@
                 "group_rCwAdH"
               ]
             },
-            "accordion_yMFMtB": {
+            "accordion_zNiaf4": {
               "type": "accordion",
-              "name": "t:names.accordion",
+              "name": "Preguntas Frecuentes",
               "settings": {
                 "icon": "caret",
                 "dividers": true,
@@ -1330,7 +1330,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "accordion_row_hTQymW": {
+                "accordion_row_m6KqKx": {
                   "type": "_accordion-row",
                   "settings": {
                     "heading": "Opciones de envío:",
@@ -1339,10 +1339,10 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_fkywBi": {
+                    "text_PKXQTw": {
                       "type": "text",
                       "settings": {
-                        "text": "<h5><strong>- Lima</strong></h5><h6>Realizamos envíos en <strong>24 a 48 horas hábiles.</strong></h6><h6>Si deseas recibir tu pedido <strong>el mismo día</strong>, puedes solicitar <strong>envío express por S/10 adicionales.</strong></h6><h1></h1><h5><strong>- Provincia</strong></h5><h6>Enviamos a provincia a través de las agencias <strong>Olva Courier y Shalom.</strong></h6><ul><li><h6><strong>Envío express a agencia: </strong>S/10 adicionales</h6></li><li><h6><strong>Envío a domicilio: </strong>S/20 adicionales</h6></li></ul><p></p><h6>En todos los casos, brindamos<strong> seguimiento del pedido</strong> hasta la entrega.</h6>",
+                        "text": "<h6><strong>- Lima</strong></h6><h6>Realizamos envíos en <strong>24 a 48 horas hábiles.</strong></h6><h6>Si deseas recibir tu pedido <strong>el mismo día</strong>, puedes solicitar <strong>envío express por S/10 adicionales.</strong></h6><h6></h6><h6><strong>- Provincia</strong></h6><h6>Enviamos a provincia a través de las agencias <strong>Olva Courier y Shalom.</strong></h6><ul><li><h6><strong>Envío express a agencia: </strong>S/10 adicionales</h6></li><li><h6><strong>Envío a domicilio: </strong>S/20 adicionales</h6></li></ul><h6></h6><h6>En todos los casos, brindamos<strong> seguimiento del pedido</strong> hasta la entrega.</h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1366,10 +1366,10 @@
                     }
                   },
                   "block_order": [
-                    "text_fkywBi"
+                    "text_PKXQTw"
                   ]
                 },
-                "accordion_row_NWP6fK": {
+                "accordion_row_HtzDjy": {
                   "type": "_accordion-row",
                   "name": "t:names.accordion_row",
                   "settings": {
@@ -1379,11 +1379,11 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_wa89KJ": {
+                    "text_6rX8rd": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h6>Trabajamos con la modalidad de<strong> pago contra entrega con adelanto de confirmación.</strong></h6><h1></h1><h5><strong>- Lima</strong></h5><h6>Para confirmar tu pedido solicitamos un <strong>adelanto de S/20.</strong></h6><h6>El monto restante puede pagarse al recibir el pedido mediante:</h6><ul><li><h6>Yape</h6></li><li><h6>Plin</h6></li><li><h6>Tarjetas</h6></li><li><h6>Efectivo</h6></li></ul><h1></h1><h5><strong>- Provincia</strong></h5><h6>Se solicita un <strong>adelanto de S/20 para confirmar el envío.</strong></h6><h6>El saldo restante puede pagarse <strong>al momento de recoger el pedido en la agencia Shalom.</strong></h6>",
+                        "text": "<h6>Trabajamos con la modalidad de<strong> pago contra entrega con adelanto de confirmación.</strong></h6><h6></h6><h6><strong>- Lima</strong></h6><h6>Para confirmar tu pedido solicitamos un <strong>adelanto de S/20.</strong></h6><h6>El monto restante puede pagarse al recibir el pedido mediante:</h6><ul><li><h6>Yape</h6></li><li><h6>Plin</h6></li><li><h6>Tarjetas</h6></li><li><h6>Efectivo</h6></li></ul><h6></h6><h6><strong>- Provincia</strong></h6><h6>Se solicita un <strong>adelanto de S/20 para confirmar el envío.</strong></h6><h6>El saldo restante puede pagarse <strong>al momento de recoger el pedido en la agencia Shalom.</strong></h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1407,10 +1407,10 @@
                     }
                   },
                   "block_order": [
-                    "text_wa89KJ"
+                    "text_6rX8rd"
                   ]
                 },
-                "accordion_row_4xiFdA": {
+                "accordion_row_rbBiUP": {
                   "type": "_accordion-row",
                   "name": "t:names.accordion_row",
                   "settings": {
@@ -1420,7 +1420,7 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_aTETF3": {
+                    "text_4cydEJ": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -1448,14 +1448,14 @@
                     }
                   },
                   "block_order": [
-                    "text_aTETF3"
+                    "text_4cydEJ"
                   ]
                 }
               },
               "block_order": [
-                "accordion_row_hTQymW",
-                "accordion_row_NWP6fK",
-                "accordion_row_4xiFdA"
+                "accordion_row_m6KqKx",
+                "accordion_row_HtzDjy",
+                "accordion_row_rbBiUP"
               ]
             },
             "divider_AYPACc": {
@@ -1470,9 +1470,9 @@
               },
               "blocks": {}
             },
-            "group_J43EMe": {
+            "group_jmCY6j": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Features de Crema",
               "settings": {
                 "content_direction": "row",
                 "vertical_on_mobile": true,
@@ -1510,9 +1510,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_grXReU": {
+                "group_CCNQQC": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Izquierdo",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -1547,12 +1547,12 @@
                     "padding-block-start": 25,
                     "padding-block-end": 0,
                     "padding-inline-start": 20,
-                    "padding-inline-end": 20
+                    "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_PgqyiD": {
+                    "group_hyLxtB": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 1",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1590,7 +1590,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_6XVdrz": {
+                        "icon_YNEfzB": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
@@ -1602,11 +1602,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_VX389y": {
+                        "text_MCPbDy": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Activos funcionales</h5>",
+                            "text": "<h6>Activos funcionales</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1630,13 +1630,13 @@
                         }
                       },
                       "block_order": [
-                        "icon_6XVdrz",
-                        "text_VX389y"
+                        "icon_YNEfzB",
+                        "text_MCPbDy"
                       ]
                     },
-                    "group_e8tjWz": {
+                    "group_3ikwYW": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 2",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1674,23 +1674,23 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_naAyjL": {
+                        "icon_XkVCyM": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
                             "icon": "price_tag",
-                            "image_upload": "shopify://shop_images/ICONO_Texturas_inteligentes_5479059c-5df5-4d38-a86b-e6abe8a54294.png",
+                            "image_upload": "shopify://shop_images/ICONO_Texturas_inteligentes.png",
                             "width": 48,
                             "link": "",
                             "open_in_new_tab": false
                           },
                           "blocks": {}
                         },
-                        "text_NWX9A3": {
+                        "text_78raab": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Texturas inteligentes</h5>",
+                            "text": "<h6>Texturas inteligentes</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1714,19 +1714,19 @@
                         }
                       },
                       "block_order": [
-                        "icon_naAyjL",
-                        "text_NWX9A3"
+                        "icon_XkVCyM",
+                        "text_78raab"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_PgqyiD",
-                    "group_e8tjWz"
+                    "group_hyLxtB",
+                    "group_3ikwYW"
                   ]
                 },
-                "group_i3M7DW": {
+                "group_j9RcQN": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Derecho",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -1761,12 +1761,12 @@
                     "padding-block-start": 25,
                     "padding-block-end": 0,
                     "padding-inline-start": 20,
-                    "padding-inline-end": 20
+                    "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_p6XkXr": {
+                    "group_Hr3jcf": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 3",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": false,
@@ -1804,7 +1804,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_M67UEX": {
+                        "icon_X3XrJh": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
@@ -1816,11 +1816,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_bLpiLy": {
+                        "text_xd3VVW": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Acción prolongada</h5>",
+                            "text": "<h6>Acción prolongada</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1844,13 +1844,13 @@
                         }
                       },
                       "block_order": [
-                        "icon_M67UEX",
-                        "text_bLpiLy"
+                        "icon_X3XrJh",
+                        "text_xd3VVW"
                       ]
                     },
-                    "group_thEHPf": {
+                    "group_G9fTrq": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 4",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1888,7 +1888,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_xLVwDh": {
+                        "icon_xfTDqR": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
@@ -1900,11 +1900,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_8ydgKE": {
+                        "text_7Rb9JP": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Experiencia sensorial</h5>",
+                            "text": "<h6>Experiencia sensorial</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1928,20 +1928,20 @@
                         }
                       },
                       "block_order": [
-                        "icon_xLVwDh",
-                        "text_8ydgKE"
+                        "icon_xfTDqR",
+                        "text_7Rb9JP"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_p6XkXr",
-                    "group_thEHPf"
+                    "group_Hr3jcf",
+                    "group_G9fTrq"
                   ]
                 }
               },
               "block_order": [
-                "group_grXReU",
-                "group_i3M7DW"
+                "group_CCNQQC",
+                "group_j9RcQN"
               ]
             }
           },
@@ -1951,9 +1951,9 @@
             "group_i4DcQU",
             "group_MbBXXF",
             "group_FqgeJd",
-            "accordion_yMFMtB",
+            "accordion_zNiaf4",
             "divider_AYPACc",
-            "group_J43EMe"
+            "group_jmCY6j"
           ]
         }
       },
@@ -1977,7 +1977,7 @@
       "blocks": {
         "group_DH846V": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Header",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -2009,8 +2009,8 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 75,
-            "padding-block-end": 15,
+            "padding-block-start": 100,
+            "padding-block-end": 25,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -2019,9 +2019,9 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>Científicamente Probado, Dermatológicamente Testado y Seguro</h3>",
+                "text": "<h1>Científicamente Probado, Dermatológicamente Testado y Seguro</h1>",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "narrow",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
@@ -2045,7 +2045,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h5>El Serum de pestañas de Kallos está impulsado por ingredientes 100% naturales.</h5>",
+                "text": "<h4>El Serum de pestañas de Kallos está impulsado por ingredientes 100% naturales.</h4>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -2075,7 +2075,7 @@
         },
         "group_wBUXp3": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Contenedor Principal",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -2115,7 +2115,7 @@
           "blocks": {
             "group_7qxDBf": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Bloque Centrado",
               "settings": {
                 "content_direction": "row",
                 "vertical_on_mobile": true,
@@ -2155,7 +2155,7 @@
               "blocks": {
                 "group_k3ptby": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Bloque Izquierdo",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -2224,7 +2224,7 @@
                 },
                 "group_g4p99q": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Bloque Derecho",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -2298,7 +2298,7 @@
                                 "width": "100%",
                                 "max_width": "none",
                                 "alignment": "left",
-                                "type_preset": "paragraph",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1rem",
                                 "line_height": "normal",
@@ -2362,7 +2362,7 @@
                                 "width": "100%",
                                 "max_width": "none",
                                 "alignment": "left",
-                                "type_preset": "paragraph",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1rem",
                                 "line_height": "normal",
@@ -2424,11 +2424,11 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Aporta nutrientes esenciales que acompañan el ciclo natural de crecimiento, favoreciendo pestañas con aspecto más largo y lleno con el uso constante.</p>",
+                                "text": "<h5>Aporta nutrientes esenciales que acompañan el ciclo natural de crecimiento, favoreciendo pestañas con aspecto más largo y lleno con el uso constante.</h5>",
                                 "width": "100%",
                                 "max_width": "none",
                                 "alignment": "left",
-                                "type_preset": "paragraph",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1rem",
                                 "line_height": "normal",
@@ -2480,7 +2480,7 @@
                           "name": "t:names.accordion_row",
                           "settings": {
                             "heading": "Biotina",
-                            "open_by_default": false,
+                            "open_by_default": true,
                             "icon": "none",
                             "image_upload": "shopify://shop_images/biotina.png",
                             "width": 30
@@ -2490,11 +2490,11 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p>Ingrediente clave que ayuda a fortalecer las fibras de las pestañas, reduciendo el quiebre y mejorando su resistencia y apariencia general.</p>",
+                                "text": "<h5>Ingrediente clave que ayuda a fortalecer las fibras de las pestañas, reduciendo el quiebre y mejorando su resistencia y apariencia general.</h5>",
                                 "width": "100%",
                                 "max_width": "none",
                                 "alignment": "left",
-                                "type_preset": "paragraph",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1rem",
                                 "line_height": "normal",
@@ -2545,6 +2545,9 @@
       "block_order": [
         "group_DH846V",
         "group_wBUXp3"
+      ],
+      "custom_css": [
+        "h5 {line-height: 1.5px;}"
       ],
       "name": "Kallos · Transparencia",
       "settings": {
