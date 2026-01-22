@@ -43,6 +43,7 @@
         },
         "product-details": {
           "type": "_product-details",
+          "name": "Detalles generales del Producto",
           "static": true,
           "settings": {
             "width": "fill",

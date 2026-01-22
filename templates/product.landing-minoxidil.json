@@ -43,6 +43,7 @@
         },
         "product-details": {
           "type": "_product-details",
+          "name": "Detalles generales del Producto",
           "static": true,
           "settings": {
             "width": "fill",
@@ -68,7 +69,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_icgrde": {
+            "group_dUjnUc": {
               "type": "group",
               "name": "Header",
               "settings": {
@@ -108,7 +109,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "custom_liquid_6A9x4D": {
+                "custom_liquid_cpcyTG": {
                   "type": "custom-liquid",
                   "name": "Globo de valoraciones",
                   "settings": {
@@ -116,17 +117,17 @@
                   },
                   "blocks": {}
                 },
-                "text_xrnftG": {
+                "text_aHVAY8": {
                   "type": "text",
-                  "name": "Product title",
+                  "name": "Título del Producto",
                   "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "text": "<h2>{{ closest.product.title }}</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "h3",
+                    "type_preset": "rte",
                     "font": "var(--font-primary--family)",
-                    "font_size": "",
+                    "font_size": "2.5rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -142,15 +143,15 @@
                   },
                   "blocks": {}
                 },
-                "text_b6hhpL": {
+                "text_6E6TnT": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Detalle del Producto",
                   "settings": {
-                    "text": "<p>{{ closest.product.metafields.custom.detalle.value }}</p>",
+                    "text": "<h6>{{ closest.product.metafields.custom.detalle.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "0.875rem",
                     "line_height": "tight",
@@ -168,9 +169,9 @@
                   },
                   "blocks": {}
                 },
-                "text_MRPCLT": {
+                "text_Pk3xeh": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Descripción del Producto",
                   "settings": {
                     "text": "{{ closest.product.description }}",
                     "width": "fit-content",
@@ -178,7 +179,7 @@
                     "alignment": "left",
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font_size": "1.125rem",
                     "line_height": "normal",
                     "letter_spacing": "loose",
                     "case": "none",
@@ -194,15 +195,15 @@
                   },
                   "blocks": {}
                 },
-                "text_Ktzpxb": {
+                "text_77JQ9h": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Contenido del Producto",
                   "settings": {
-                    "text": "<p>Contenido por unidad: 100 grs</p>",
+                    "text": "<h6><strong>Contenido:</strong> {{ closest.product.metafields.custom.contenido.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-heading--family)",
                     "font_size": "0.875rem",
                     "line_height": "loose",
@@ -220,8 +221,9 @@
                   },
                   "blocks": {}
                 },
-                "price_tVjtKg": {
+                "price_ehMJEy": {
                   "type": "price",
+                  "name": "Precio del Producto",
                   "disabled": true,
                   "settings": {
                     "show_sale_price_first": true,
@@ -245,12 +247,12 @@
                 }
               },
               "block_order": [
-                "custom_liquid_6A9x4D",
-                "text_xrnftG",
-                "text_b6hhpL",
-                "text_MRPCLT",
-                "text_Ktzpxb",
-                "price_tVjtKg"
+                "custom_liquid_cpcyTG",
+                "text_aHVAY8",
+                "text_6E6TnT",
+                "text_Pk3xeh",
+                "text_77JQ9h",
+                "price_ehMJEy"
               ]
             },
             "divider_VJhene": {
@@ -265,9 +267,9 @@
               },
               "blocks": {}
             },
-            "group_zfLtqk": {
+            "group_rfPkpf": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Pagar con Tarjeta",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -305,8 +307,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "buy_buttons_cXKamf": {
+                "buy_buttons_rQnpkE": {
                   "type": "buy-buttons",
+                  "name": "Botón ·  Pagar Ahora con Tarjeta",
                   "settings": {
                     "stacking": true,
                     "show_pickup_availability": false,
@@ -342,9 +345,9 @@
                   },
                   "block_order": []
                 },
-                "group_hNbhHd": {
+                "group_nqGMTc": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Tarjetas Admitidas",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -382,9 +385,9 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_xLNwhp": {
+                    "group_y7dD9K": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
                         "content_direction": "row",
                         "vertical_on_mobile": true,
@@ -422,9 +425,9 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "group_jdq6NY": {
+                        "group_fRrrm9": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor de Tarjetas",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -462,9 +465,9 @@
                             "padding-inline-end": 8
                           },
                           "blocks": {
-                            "icon_y4kRBD": {
+                            "icon_NmnNPc": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 1",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/visa.png",
@@ -474,9 +477,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_QCWAJL": {
+                            "icon_W38Hjc": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 2",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/md.png",
@@ -486,9 +489,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_cTddkM": {
+                            "icon_Waxieh": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 3",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/dci.png",
@@ -498,9 +501,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_q84R4V": {
+                            "icon_kfLKwN": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 4",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/discover.png",
@@ -510,9 +513,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_9xRYpH": {
+                            "icon_TKePUL": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 5",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/amex.png",
@@ -524,32 +527,32 @@
                             }
                           },
                           "block_order": [
-                            "icon_y4kRBD",
-                            "icon_QCWAJL",
-                            "icon_cTddkM",
-                            "icon_q84R4V",
-                            "icon_9xRYpH"
+                            "icon_NmnNPc",
+                            "icon_W38Hjc",
+                            "icon_Waxieh",
+                            "icon_kfLKwN",
+                            "icon_TKePUL"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_jdq6NY"
+                        "group_fRrrm9"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_xLNwhp"
+                    "group_y7dD9K"
                   ]
                 }
               },
               "block_order": [
-                "buy_buttons_cXKamf",
-                "group_hNbhHd"
+                "buy_buttons_rQnpkE",
+                "group_nqGMTc"
               ]
             },
-            "group_GYDAzn": {
+            "group_mjDQ7a": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Pagar Contra Entrega",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -587,9 +590,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_KnzyfL": {
+                "group_XDbeCQ": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Botón de Pago",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -627,34 +630,23 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "icon_qEUTLH": {
-                      "type": "icon",
-                      "name": "t:names.icon",
-                      "settings": {
-                        "icon": "whatsapp",
-                        "width": 24,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "group_cUizkp": {
+                    "group_qTmhPz": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
+                        "content_direction": "row",
+                        "vertical_on_mobile": false,
+                        "horizontal_alignment": "center",
                         "vertical_alignment": "center",
                         "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "center",
+                        "horizontal_alignment_flex_direction_column": "flex-start",
                         "vertical_alignment_flex_direction_column": "center",
                         "gap": 12,
                         "width": "fit-content",
                         "custom_width": 100,
                         "width_mobile": "fit-content",
                         "custom_width_mobile": 100,
-                        "height": "fit",
+                        "height": "fill",
                         "custom_height": 100,
                         "inherit_color_scheme": true,
                         "color_scheme": "",
@@ -678,7 +670,18 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_nzFk7g": {
+                        "icon_ndHLyP": {
+                          "type": "icon",
+                          "name": "Ícono WhatsApp",
+                          "settings": {
+                            "icon": "whatsapp",
+                            "width": 24,
+                            "link": "",
+                            "open_in_new_tab": false
+                          },
+                          "blocks": {}
+                        },
+                        "text_CeMrUq": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -706,18 +709,18 @@
                         }
                       },
                       "block_order": [
-                        "text_nzFk7g"
+                        "icon_ndHLyP",
+                        "text_CeMrUq"
                       ]
                     }
                   },
                   "block_order": [
-                    "icon_qEUTLH",
-                    "group_cUizkp"
+                    "group_qTmhPz"
                   ]
                 },
-                "group_WEP6GT": {
+                "group_xt8kak": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Formas de Pago",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -755,9 +758,9 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_kdPNBh": {
+                    "group_tDXNUD": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
                         "content_direction": "row",
                         "vertical_on_mobile": true,
@@ -795,9 +798,9 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "group_bbNeiV": {
+                        "group_rdNCAC": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor Izquierdo",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -835,7 +838,7 @@
                             "padding-inline-end": 0
                           },
                           "blocks": {
-                            "icon_xThipk": {
+                            "icon_VBJPXY": {
                               "type": "icon",
                               "name": "t:names.icon",
                               "settings": {
@@ -847,7 +850,7 @@
                               },
                               "blocks": {}
                             },
-                            "text_bacTYX": {
+                            "text_dVGa3a": {
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
@@ -875,13 +878,13 @@
                             }
                           },
                           "block_order": [
-                            "icon_xThipk",
-                            "text_bacTYX"
+                            "icon_VBJPXY",
+                            "text_dVGa3a"
                           ]
                         },
-                        "group_hDbdPc": {
+                        "group_hFyTmg": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor Derecho",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -919,9 +922,9 @@
                             "padding-inline-end": 8
                           },
                           "blocks": {
-                            "icon_rnBJLf": {
+                            "icon_86iL9G": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 1",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/yape.png",
@@ -931,9 +934,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_eTANxy": {
+                            "icon_rXwWC4": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 2",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/plin.png",
@@ -943,9 +946,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_je7kJz": {
+                            "icon_LPJ3n3": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 3",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/banco.png",
@@ -957,35 +960,35 @@
                             }
                           },
                           "block_order": [
-                            "icon_rnBJLf",
-                            "icon_eTANxy",
-                            "icon_je7kJz"
+                            "icon_86iL9G",
+                            "icon_rXwWC4",
+                            "icon_LPJ3n3"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_bbNeiV",
-                        "group_hDbdPc"
+                        "group_rdNCAC",
+                        "group_hFyTmg"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_kdPNBh"
+                    "group_tDXNUD"
                   ]
                 }
               },
               "block_order": [
-                "group_KnzyfL",
-                "group_WEP6GT"
+                "group_XDbeCQ",
+                "group_xt8kak"
               ]
             },
-            "group_Vc4C7B": {
+            "group_VyUMNB": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Promoción Slash+",
               "settings": {
                 "content_direction": "row",
-                "vertical_on_mobile": false,
-                "horizontal_alignment": "flex-start",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
@@ -996,9 +999,9 @@
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "scheme-3d3cdf29-9eb3-4aa2-84c6-9357ddf1a970",
+                "custom_height": 43,
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-1",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -1019,21 +1022,21 @@
                 "padding-inline-end": 20
               },
               "blocks": {
-                "group_39VFKX": {
+                "group_kXkdbF": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Izquierdo",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
+                    "width": "custom",
+                    "custom_width": 40,
+                    "width_mobile": "custom",
                     "custom_width_mobile": 100,
                     "height": "fit",
                     "custom_height": 100,
@@ -1059,7 +1062,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "image_znmMAN": {
+                    "image_JcrHq3": {
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
@@ -1084,12 +1087,12 @@
                     }
                   },
                   "block_order": [
-                    "image_znmMAN"
+                    "image_JcrHq3"
                   ]
                 },
-                "group_D3EBCb": {
+                "group_UBkhxR": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Derecho",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -1100,7 +1103,7 @@
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
                     "width": "fill",
-                    "custom_width": 100,
+                    "custom_width": 55,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
                     "height": "fit",
@@ -1127,21 +1130,21 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "text_EWztmL": {
+                    "text_7FtXTM": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>Prueba el nuevo Serum Slash+</strong></h5>",
+                        "text": "<h2><strong>Prueba el nuevo Serum Slash+</strong></h2>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
+                        "font_size": "1.5rem",
+                        "line_height": "tight",
                         "letter_spacing": "normal",
                         "case": "none",
-                        "wrap": "balance",
+                        "wrap": "pretty",
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
@@ -1153,7 +1156,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_KiiFbD": {
+                    "text_p63PXN": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -1163,7 +1166,7 @@
                         "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
-                        "font_size": "0.625rem",
+                        "font_size": "1rem",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -1179,9 +1182,9 @@
                       },
                       "blocks": {}
                     },
-                    "group_BCxjnm": {
+                    "group_6ACk6N": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor de Botón",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1197,75 +1200,120 @@
                         "custom_width_mobile": 100,
                         "height": "fit",
                         "custom_height": 100,
-                        "inherit_color_scheme": false,
-                        "color_scheme": "scheme-6",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
                         "background_media": "none",
                         "video_position": "cover",
                         "background_image_position": "cover",
                         "border": "none",
                         "border_width": 1,
                         "border_opacity": 100,
-                        "border_radius": 5,
-                        "toggle_overlay": true,
-                        "overlay_color": "#000000",
+                        "border_radius": 0,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
                         "overlay_style": "solid",
                         "gradient_direction": "to top",
-                        "link": "shopify://products/serum-de-pestanas",
+                        "link": "",
                         "open_in_new_tab": false,
                         "placeholder": "",
-                        "padding-block-start": 10,
-                        "padding-block-end": 10,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_ANFe6q": {
-                          "type": "text",
-                          "name": "t:names.text",
+                        "group_AY6Cig": {
+                          "type": "group",
+                          "name": "Botón - Ver Serum",
                           "settings": {
-                            "text": "<p><strong>Ver Serum</strong></p>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
+                            "content_direction": "column",
+                            "vertical_on_mobile": true,
+                            "horizontal_alignment": "flex-start",
+                            "vertical_alignment": "center",
+                            "align_baseline": false,
+                            "horizontal_alignment_flex_direction_column": "center",
+                            "vertical_alignment_flex_direction_column": "center",
+                            "gap": 12,
+                            "width": "fill",
+                            "custom_width": 70,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fit",
+                            "custom_height": 100,
+                            "inherit_color_scheme": false,
+                            "color_scheme": "scheme-6",
+                            "background_media": "none",
+                            "video_position": "cover",
+                            "background_image_position": "cover",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 5,
+                            "toggle_overlay": true,
+                            "overlay_color": "#000000",
+                            "overlay_style": "solid",
+                            "gradient_direction": "to top",
+                            "link": "shopify://products/serum-de-pestanas",
+                            "open_in_new_tab": false,
+                            "placeholder": "",
+                            "padding-block-start": 10,
+                            "padding-block-end": 10,
                             "padding-inline-start": 0,
                             "padding-inline-end": 0
                           },
-                          "blocks": {}
+                          "blocks": {
+                            "text_K9AQ9x": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<p><strong>Ver Serum</strong></p>",
+                                "width": "fit-content",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "text_K9AQ9x"
+                          ]
                         }
                       },
                       "block_order": [
-                        "text_ANFe6q"
+                        "group_AY6Cig"
                       ]
                     }
                   },
                   "block_order": [
-                    "text_EWztmL",
-                    "text_KiiFbD",
-                    "group_BCxjnm"
+                    "text_7FtXTM",
+                    "text_p63PXN",
+                    "group_6ACk6N"
                   ]
                 }
               },
               "block_order": [
-                "group_39VFKX",
-                "group_D3EBCb"
+                "group_kXkdbF",
+                "group_UBkhxR"
               ]
             },
-            "accordion_yMFMtB": {
+            "accordion_Aak9pe": {
               "type": "accordion",
-              "name": "t:names.accordion",
+              "name": "Preguntas Frecuentes",
               "settings": {
                 "icon": "caret",
                 "dividers": true,
@@ -1282,7 +1330,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "accordion_row_hTQymW": {
+                "accordion_row_pDtfdN": {
                   "type": "_accordion-row",
                   "settings": {
                     "heading": "Opciones de envío:",
@@ -1291,10 +1339,10 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_fkywBi": {
+                    "text_rzCapa": {
                       "type": "text",
                       "settings": {
-                        "text": "<h5><strong>- Lima</strong></h5><h6>Realizamos envíos en <strong>24 a 48 horas hábiles.</strong></h6><h6>Si deseas recibir tu pedido <strong>el mismo día</strong>, puedes solicitar <strong>envío express por S/10 adicionales.</strong></h6><h1></h1><h5><strong>- Provincia</strong></h5><h6>Enviamos a provincia a través de las agencias <strong>Olva Courier y Shalom.</strong></h6><ul><li><h6><strong>Envío express a agencia: </strong>S/10 adicionales</h6></li><li><h6><strong>Envío a domicilio: </strong>S/20 adicionales</h6></li></ul><p></p><h6>En todos los casos, brindamos<strong> seguimiento del pedido</strong> hasta la entrega.</h6>",
+                        "text": "<h6><strong>- Lima</strong></h6><h6>Realizamos envíos en <strong>24 a 48 horas hábiles.</strong></h6><h6>Si deseas recibir tu pedido <strong>el mismo día</strong>, puedes solicitar <strong>envío express por S/10 adicionales.</strong></h6><h6></h6><h6><strong>- Provincia</strong></h6><h6>Enviamos a provincia a través de las agencias <strong>Olva Courier y Shalom.</strong></h6><ul><li><h6><strong>Envío express a agencia: </strong>S/10 adicionales</h6></li><li><h6><strong>Envío a domicilio: </strong>S/20 adicionales</h6></li></ul><h6></h6><h6>En todos los casos, brindamos<strong> seguimiento del pedido</strong> hasta la entrega.</h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1318,10 +1366,10 @@
                     }
                   },
                   "block_order": [
-                    "text_fkywBi"
+                    "text_rzCapa"
                   ]
                 },
-                "accordion_row_NWP6fK": {
+                "accordion_row_8Gn89q": {
                   "type": "_accordion-row",
                   "name": "t:names.accordion_row",
                   "settings": {
@@ -1331,11 +1379,11 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_wa89KJ": {
+                    "text_J3wBnm": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h6>Trabajamos con la modalidad de<strong> pago contra entrega con adelanto de confirmación.</strong></h6><h1></h1><h5><strong>- Lima</strong></h5><h6>Para confirmar tu pedido solicitamos un <strong>adelanto de S/20.</strong></h6><h6>El monto restante puede pagarse al recibir el pedido mediante:</h6><ul><li><h6>Yape</h6></li><li><h6>Plin</h6></li><li><h6>Tarjetas</h6></li><li><h6>Efectivo</h6></li></ul><h1></h1><h5><strong>- Provincia</strong></h5><h6>Se solicita un <strong>adelanto de S/20 para confirmar el envío.</strong></h6><h6>El saldo restante puede pagarse <strong>al momento de recoger el pedido en la agencia Shalom.</strong></h6>",
+                        "text": "<h6>Trabajamos con la modalidad de<strong> pago contra entrega con adelanto de confirmación.</strong></h6><h6></h6><h6><strong>- Lima</strong></h6><h6>Para confirmar tu pedido solicitamos un <strong>adelanto de S/20.</strong></h6><h6>El monto restante puede pagarse al recibir el pedido mediante:</h6><ul><li><h6>Yape</h6></li><li><h6>Plin</h6></li><li><h6>Tarjetas</h6></li><li><h6>Efectivo</h6></li></ul><h6></h6><h6><strong>- Provincia</strong></h6><h6>Se solicita un <strong>adelanto de S/20 para confirmar el envío.</strong></h6><h6>El saldo restante puede pagarse <strong>al momento de recoger el pedido en la agencia Shalom.</strong></h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1359,10 +1407,10 @@
                     }
                   },
                   "block_order": [
-                    "text_wa89KJ"
+                    "text_J3wBnm"
                   ]
                 },
-                "accordion_row_4xiFdA": {
+                "accordion_row_WTrJmN": {
                   "type": "_accordion-row",
                   "name": "t:names.accordion_row",
                   "settings": {
@@ -1372,7 +1420,7 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_aTETF3": {
+                    "text_bjaBft": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -1400,14 +1448,14 @@
                     }
                   },
                   "block_order": [
-                    "text_aTETF3"
+                    "text_bjaBft"
                   ]
                 }
               },
               "block_order": [
-                "accordion_row_hTQymW",
-                "accordion_row_NWP6fK",
-                "accordion_row_4xiFdA"
+                "accordion_row_pDtfdN",
+                "accordion_row_8Gn89q",
+                "accordion_row_WTrJmN"
               ]
             },
             "divider_AYPACc": {
@@ -1422,9 +1470,9 @@
               },
               "blocks": {}
             },
-            "group_J43EMe": {
+            "group_BBzDGH": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Features de Crema",
               "settings": {
                 "content_direction": "row",
                 "vertical_on_mobile": true,
@@ -1462,9 +1510,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_grXReU": {
+                "group_3cKpdJ": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Izquierdo",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -1499,12 +1547,12 @@
                     "padding-block-start": 25,
                     "padding-block-end": 0,
                     "padding-inline-start": 20,
-                    "padding-inline-end": 20
+                    "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_PgqyiD": {
+                    "group_Qgeec8": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 1",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1542,7 +1590,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_6XVdrz": {
+                        "icon_7VnjPr": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
@@ -1554,11 +1602,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_VX389y": {
+                        "text_4WMkAP": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Activos funcionales</h5>",
+                            "text": "<h6>Activos funcionales</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1582,13 +1630,13 @@
                         }
                       },
                       "block_order": [
-                        "icon_6XVdrz",
-                        "text_VX389y"
+                        "icon_7VnjPr",
+                        "text_4WMkAP"
                       ]
                     },
-                    "group_e8tjWz": {
+                    "group_NgRaiY": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 2",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1626,7 +1674,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_naAyjL": {
+                        "icon_gWBr6g": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
@@ -1638,11 +1686,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_NWX9A3": {
+                        "text_8AJkUy": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Texturas inteligentes</h5>",
+                            "text": "<h6>Texturas inteligentes</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1666,19 +1714,19 @@
                         }
                       },
                       "block_order": [
-                        "icon_naAyjL",
-                        "text_NWX9A3"
+                        "icon_gWBr6g",
+                        "text_8AJkUy"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_PgqyiD",
-                    "group_e8tjWz"
+                    "group_Qgeec8",
+                    "group_NgRaiY"
                   ]
                 },
-                "group_i3M7DW": {
+                "group_a8YBKA": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Derecho",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -1713,12 +1761,12 @@
                     "padding-block-start": 25,
                     "padding-block-end": 0,
                     "padding-inline-start": 20,
-                    "padding-inline-end": 20
+                    "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_p6XkXr": {
+                    "group_hhJxf3": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 3",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": false,
@@ -1756,7 +1804,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_M67UEX": {
+                        "icon_aWMg96": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
@@ -1768,11 +1816,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_bLpiLy": {
+                        "text_HWKRDK": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Acción prolongada</h5>",
+                            "text": "<h6>Acción prolongada</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1796,13 +1844,13 @@
                         }
                       },
                       "block_order": [
-                        "icon_M67UEX",
-                        "text_bLpiLy"
+                        "icon_aWMg96",
+                        "text_HWKRDK"
                       ]
                     },
-                    "group_thEHPf": {
+                    "group_djHEkM": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Bloque 4",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1840,7 +1888,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "icon_xLVwDh": {
+                        "icon_MqYVTn": {
                           "type": "icon",
                           "name": "t:names.icon",
                           "settings": {
@@ -1852,11 +1900,11 @@
                           },
                           "blocks": {}
                         },
-                        "text_8ydgKE": {
+                        "text_B6r3ef": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5>Experiencia sensorial</h5>",
+                            "text": "<h6>Experiencia sensorial</h6>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1880,32 +1928,32 @@
                         }
                       },
                       "block_order": [
-                        "icon_xLVwDh",
-                        "text_8ydgKE"
+                        "icon_MqYVTn",
+                        "text_B6r3ef"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_p6XkXr",
-                    "group_thEHPf"
+                    "group_hhJxf3",
+                    "group_djHEkM"
                   ]
                 }
               },
               "block_order": [
-                "group_grXReU",
-                "group_i3M7DW"
+                "group_3cKpdJ",
+                "group_a8YBKA"
               ]
             }
           },
           "block_order": [
-            "group_icgrde",
+            "group_dUjnUc",
             "divider_VJhene",
-            "group_zfLtqk",
-            "group_GYDAzn",
-            "group_Vc4C7B",
-            "accordion_yMFMtB",
+            "group_rfPkpf",
+            "group_mjDQ7a",
+            "group_VyUMNB",
+            "accordion_Aak9pe",
             "divider_AYPACc",
-            "group_J43EMe"
+            "group_BBzDGH"
           ]
         }
       },
