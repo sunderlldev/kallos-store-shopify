@@ -379,7 +379,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h5><strong>admin@kallos.store</strong></h5>",
+                    "text": "<h6><strong>admin@kallos.store</strong></h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
