@@ -845,11 +845,11 @@
                               },
                               "blocks": {}
                             },
-                            "text_3k77g3": {
+                            "text_r8JVwW": {
                               "type": "text",
-                              "name": "t:names.text",
+                              "name": "Número de WhatsApp",
                               "settings": {
-                                "text": "<h5><strong>WhatsApp: 924 084 922</strong></h5>",
+                                "text": "<h5><strong>WhatsApp: 941 914 527</strong></h5>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -874,7 +874,7 @@
                           },
                           "block_order": [
                             "icon_pVNMjD",
-                            "text_3k77g3"
+                            "text_r8JVwW"
                           ]
                         },
                         "group_LmKwJ3": {
