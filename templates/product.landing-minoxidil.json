@@ -3778,12 +3778,12 @@
         "padding-block-end": 45
       }
     },
-    "section_bbADrC": {
+    "section_AGANkD": {
       "type": "section",
       "blocks": {
-        "group_c9VEYx": {
+        "group_qQJdpM": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Header",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -3816,14 +3816,14 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 65,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_jWpGGD": {
+            "group_RTqVjV": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Principal",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -3861,11 +3861,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_XA8Q8F": {
+                "text_jQCqYA": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2> ¿Qué hace a Follics especial?</h2>",
+                    "text": "<h1> ¿Qué hace a Follics especial?</h1>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -3887,15 +3887,15 @@
                   },
                   "blocks": {}
                 },
-                "text_MngYLz": {
+                "text_i9qmXJ": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Descripción",
                   "settings": {
-                    "text": "<h5>El futuro de las pestañas es más seguro, más accesible y mejor para ti.</h5>",
+                    "text": "<h5>Nuestra fórmula dermocosmética con minoxidil 5% está diseñada para estimular el crecimiento del vello cuidando la piel, gracias a una base en crema ligera y activos complementarios</h5>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1.125rem",
                     "line_height": "normal",
@@ -3915,36 +3915,39 @@
                 }
               },
               "block_order": [
-                "text_XA8Q8F",
-                "text_MngYLz"
+                "text_jQCqYA",
+                "text_i9qmXJ"
               ]
             }
           },
           "block_order": [
-            "group_jWpGGD"
+            "group_RTqVjV"
           ]
         },
-        "custom_liquid_YcFpiU": {
+        "custom_liquid_TU7W7A": {
           "type": "custom-liquid",
           "name": "t:names.custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"kallos-comparison-full\">\n  <div class=\"kallos-table-wrapper\">\n    <table class=\"kallos-table\">\n      <thead>\n        <tr>\n          <th class=\"empty-cell\"></th>\n          <th class=\"col-featured\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container main-img\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0790/9497/2665/files/MOCKUP_FOLLICS_1_PARA_COMPARATIVA.png?v=1768926053\" alt=\"Kallos\">\n              </div>\n              <h5 class=\"table-header-title\">FOLLICS By Kallos</h5>\n            </div>\n          </th>\n          <th class=\"col-others\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0790/9497/2665/files/MOCKUP_FOLLICS_PARA_COMPARATIVA.png?v=1768926052\" alt=\"Others\" class=\"img-others\">\n              </div>\n              <h5 class=\"table-header-title\">OTROS</h5>\n            </div>\n          </th>\n        </tr>\n      </thead>\n      <tbody>\n        {% assign features = \"Minoxidil 5%,Base en crema ligera,Rápida absorción,No deja sensación grasosa,Incluye activos de cuidado (biotina - vitamina E - extractos),Irritación y resequedad\" | split: \",\" %}\n        {% for feature in features %}\n        <tr class=\"comparison-row\">\n          <td class=\"feature-label\"><h5>{{ feature }}</h5></td>\n\n          <td class=\"cell-featured\">\n            <div class=\"icon-container\">\n              <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n            </div>\n          </td>\n\n          <td class=\"cell-others\">\n            <div class=\"icon-container\">\n              {% if forloop.first or forloop.last %}\n                <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n              {% else %}\n                <img src=\"https://forchics.com/cdn/shop/files/cancel_1.webp?v=1707502858\" class=\"status-icon\">\n              {% endif %}\n            </div>\n          </td>\n        </tr>\n        {% endfor %}\n      </tbody>\n    </table>\n  </div>\n</div>\n\n<style>\n.kallos-comparison-full {\n  width: 100%;\n  max-width: 900px;\n  margin: 0 auto;\n  --main-accent: #AC9651;\n  --row-bg: #c0b67c;\n}\n\n.kallos-table-wrapper {\n  width: 100%;\n  padding-top: 110px;\n}\n\n.kallos-table {\n  width: 100%;\n  border-collapse: collapse;\n  table-layout: fixed;\n}\n\n.badge-wrapper {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  min-height: 60px;\n}\n\n.img-container {\n  position: absolute;\n  bottom: 45px;\n  display: flex;\n  justify-content: center;\n  width: 100%;\n  z-index: 10;\n}\n\n.main-img img { width: 86px; height: 82px; }\n.img-others { width: 46px; height: 72px; }\n\n.kallos-table h5 {\n  margin: 0;\n  font-weight: 700;\n  line-height: 1.2;\n  font-size: 14px;\n}\n\n.table-header-title {\n  padding: 12px 0;\n  font-size: 1.05em;\n  font-weight: 800;\n  text-align: center;\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n\n.col-featured {\n  background: var(--main-accent);\n  border-radius: 20px 20px 0 0;\n  color: white;\n}\n\n.col-others {\n  color: black;\n}\n\n.empty-cell { width: 32%; }\n\n.kallos-table td {\n  padding: 15px 10px;\n  border: none;\n}\n\n.comparison-row:first-child .feature-label { border-radius: 15px 0 0 0; }\n.comparison-row:last-child .feature-label { border-radius: 0 0 0 15px; }\n.comparison-row:first-child .cell-others { border-radius: 0 15px 0 0; }\n.comparison-row:last-child .cell-others { border-radius: 0 0 15px 0; }\n\n.feature-label {\n  background: var(--row-bg);\n  color: white;\n  text-align: left;\n  padding-left: 22px;\n  width: 52%;\n}\n\n.cell-featured {\n  background: var(--main-accent);\n  width: 24%;\n}\n\n.cell-others {\n  background: var(--row-bg);\n  width: 24%;\n}\n\n.icon-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.status-icon {\n  width: 16px;\n  height: 16px;\n  filter: brightness(0) invert(1);\n}\n\n@media screen and (min-width: 769px) {\n  .kallos-comparison-full {\n    width: 75%;\n  }\n}\n\n@media screen and (max-width: 768px) {\n  .kallos-comparison-full {\n    width: 100%;\n    padding: 0 10px;\n  }\n  .kallos-table-wrapper { padding-top: 80px; }\n  .main-img img { width: 78px; height: 72px; }\n  .img-others { width: 42px; height: 68px; }\n  .table-header-title { font-size: 13px; }\n  .kallos-table h5 { font-size: 11px; }\n}\n</style>"
+            "custom_liquid": "<div class=\"kallos-comparison-full\">\n  <div class=\"kallos-table-wrapper\">\n    <table class=\"kallos-table\">\n      <thead>\n        <tr>\n          <th class=\"empty-cell\"></th>\n          <th class=\"col-featured\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container main-img\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0790/9497/2665/files/MOCKUP_FOLLICS_1_PARA_COMPARATIVA.png?v=1768926053\" alt=\"Kallos\">\n              </div>\n              <h5 class=\"table-header-title\">FOLLICS By Kallos</h5>\n            </div>\n          </th>\n          <th class=\"col-others\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0790/9497/2665/files/MOCKUP_FOLLICS_PARA_COMPARATIVA.png?v=1768926052\" alt=\"Others\" class=\"img-others\">\n              </div>\n              <h5 class=\"table-header-title\">OTROS</h5>\n            </div>\n          </th>\n        </tr>\n      </thead>\n      <tbody>\n        {% assign features = \"Minoxidil 5%,Base en crema ligera,Rápida absorción,No deja sensación grasosa,Incluye activos naturales de cuidado (biotina - vitamina E - extractos),Irritación y resequedad\" | split: \",\" %}\n        {% for feature in features %}\n        <tr class=\"comparison-row\">\n          <td class=\"feature-label\"><h5>{{ feature }}</h5></td>\n\n          <td class=\"cell-featured\">\n            <div class=\"icon-container\">\n              <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n            </div>\n          </td>\n\n          <td class=\"cell-others\">\n            <div class=\"icon-container\">\n              {% if forloop.first or forloop.last %}\n                <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n              {% else %}\n                <img src=\"https://forchics.com/cdn/shop/files/cancel_1.webp?v=1707502858\" class=\"status-icon\">\n              {% endif %}\n            </div>\n          </td>\n        </tr>\n        {% endfor %}\n      </tbody>\n    </table>\n  </div>\n</div>\n\n<style>\n.kallos-comparison-full {\n  width: 100%;\n  max-width: 900px;\n  margin: 0 auto;\n  --main-accent: #AC9651;\n  --row-bg: #c0b67c;\n}\n\n.kallos-table-wrapper {\n  width: 100%;\n  padding-top: 110px;\n}\n\n.kallos-table {\n  width: 100%;\n  border-collapse: collapse;\n  table-layout: fixed;\n}\n\n.badge-wrapper {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  min-height: 60px;\n}\n\n.img-container {\n  position: absolute;\n  bottom: 45px;\n  display: flex;\n  justify-content: center;\n  width: 100%;\n  z-index: 10;\n}\n\n.main-img img { width: 86px; height: 72px; }\n.img-others { width: 46px; height: 72px; }\n\n.kallos-table h5 {\n  margin: 0;\n  font-weight: 700;\n  line-height: 1.2;\n  font-size: 14px;\n}\n\n.table-header-title {\n  padding: 12px 0;\n  font-size: 1.05em;\n  font-weight: 800;\n  text-align: center;\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n\n.col-featured {\n  background: var(--main-accent);\n  border-radius: 20px 20px 0 0;\n  color: white;\n}\n\n.col-others {\n  color: black;\n}\n\n.empty-cell { width: 32%; }\n\n.kallos-table td {\n  padding: 15px 10px;\n  border: none;\n}\n\n.comparison-row:first-child .feature-label { border-radius: 15px 0 0 0; }\n.comparison-row:last-child .feature-label { border-radius: 0 0 0 15px; }\n.comparison-row:first-child .cell-others { border-radius: 0 15px 0 0; }\n.comparison-row:last-child .cell-others { border-radius: 0 0 15px 0; }\n\n.feature-label {\n  background: var(--row-bg);\n  color: white;\n  text-align: left;\n  padding-left: 22px;\n  width: 52%;\n}\n\n.cell-featured {\n  background: var(--main-accent);\n  width: 24%;\n}\n\n.cell-others {\n  background: var(--row-bg);\n  width: 24%;\n}\n\n.icon-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.status-icon {\n  width: 16px;\n  height: 16px;\n  filter: brightness(0) invert(1);\n}\n\n@media screen and (min-width: 769px) {\n  .kallos-comparison-full {\n    width: 75%;\n  }\n}\n\n@media screen and (max-width: 768px) {\n  .kallos-comparison-full {\n    width: 100%;\n    padding: 0 10px;\n  }\n  .kallos-table-wrapper { padding-top: 80px; }\n  .main-img img { width: 76px; height: 62px; }\n  .img-others { width: 42px; height: 68px; }\n  .table-header-title { font-size: 13px; }\n  .kallos-table h5 { \n  font-size: 11px;\n}\n  .table-header-title {   \n    width: 80%;\n}\n}\n</style>"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "group_c9VEYx",
-        "custom_liquid_YcFpiU"
+        "group_qQJdpM",
+        "custom_liquid_TU7W7A"
+      ],
+      "custom_css": [
+        "h5 {line-height: 1.5;}"
       ],
       "name": "Kallos · Diferencias",
       "settings": {
-        "content_direction": "row",
+        "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
@@ -3963,7 +3966,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 55,
-        "padding-block-end": 35
+        "padding-block-end": 50
       }
     },
     "176781003830b16789": {
@@ -4011,43 +4014,43 @@
         "padding-block-end": 30
       }
     },
-    "kallo_innovation_GLC4m8": {
+    "kallo_innovation_pBYEyP": {
       "type": "kallo-innovation",
       "blocks": {
-        "item_3tVBGb": {
+        "item_yege74": {
           "type": "item",
           "settings": {
             "heading": "Mi piel es sensible, ¿Aún así lo puedo usar?",
-            "text": "<p>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</p><p>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</p>"
+            "text": "<h5>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</h5><h5>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</h5>"
           }
         },
-        "item_abpUGh": {
+        "item_YM6xLU": {
           "type": "item",
           "settings": {
             "heading": "¿En cuánto tiempo veré resultados?",
-            "text": "<p>{{ product.metafields.custom.faq_2_respuesta | metafield_tag }}</p>"
+            "text": "<h5>{{ product.metafields.custom.faq_2_respuesta | metafield_tag }}</h5>"
           }
         },
-        "item_h3P3kU": {
+        "item_ejyatc": {
           "type": "item",
           "settings": {
             "heading": "{{ product.metafields.custom.faq_3.value }}",
-            "text": "<p>{{ product.metafields.custom.faq_3_respuesta | metafield_tag }}</p>"
+            "text": "<h5>{{ product.metafields.custom.faq_3_respuesta | metafield_tag }}</h5>"
           }
         },
-        "item_GT8zk3": {
+        "item_ddnxkh": {
           "type": "item",
           "settings": {
             "heading": "¿Cómo lo uso?",
-            "text": "<p>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</p><p>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</p>"
+            "text": "<h5>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</h5><h5>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</h5>"
           }
         }
       },
       "block_order": [
-        "item_3tVBGb",
-        "item_abpUGh",
-        "item_h3P3kU",
-        "item_GT8zk3"
+        "item_yege74",
+        "item_YM6xLU",
+        "item_ejyatc",
+        "item_ddnxkh"
       ],
       "custom_css": [
         ".kallos-innovation-wrapper.no-image-centered {grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: center;}",
@@ -4061,10 +4064,10 @@
         "image_position": "right"
       }
     },
-    "section_aNfTUn": {
+    "section_L7kdUP": {
       "type": "section",
       "blocks": {
-        "group_enkTbD": {
+        "group_FtVCYX": {
           "type": "group",
           "name": "Contenedor",
           "settings": {
@@ -4104,7 +4107,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_DkRaUk": {
+            "group_8x6cEB": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -4144,7 +4147,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_PkMMfP": {
+                "group_gtqWgx": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -4184,15 +4187,15 @@
                     "padding-inline-end": 15
                   },
                   "blocks": {
-                    "text_HphMcc": {
+                    "text_4i4G7r": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h5>¿Sigues teniendo preguntas?</h5>",
+                        "text": "<h3>¿Sigues teniendo preguntas?</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "center",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-heading--family)",
                         "font_size": "2rem",
                         "line_height": "normal",
@@ -4210,11 +4213,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_pn7RTW": {
+                    "text_piAXdQ": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5>¡Habla con un asesor! Escríbenos por WhatsApp usando el botón. Estamos disponibles 24/7 para resolver cualquier duda o pregunta que tengas.</h5>",
+                        "text": "<h6>¡Habla con un asesor! Escríbenos por WhatsApp usando el botón. Estamos disponibles 24/7 para resolver cualquier duda o pregunta que tengas.</h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -4238,16 +4241,16 @@
                     }
                   },
                   "block_order": [
-                    "text_HphMcc",
-                    "text_pn7RTW"
+                    "text_4i4G7r",
+                    "text_piAXdQ"
                   ]
                 }
               },
               "block_order": [
-                "group_PkMMfP"
+                "group_gtqWgx"
               ]
             },
-            "group_MRdegD": {
+            "group_weamd7": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -4287,7 +4290,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_UNmnRb": {
+                "group_XQRjUC": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -4327,7 +4330,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "icon_MjCinN": {
+                    "icon_wQqXJb": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -4338,7 +4341,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_PRVc97": {
+                    "group_kyXJCC": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -4378,11 +4381,11 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_x8Yhi4": {
+                        "text_CA8NA4": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5><strong>HABLAR CON ASESOR</strong></h5>",
+                            "text": "<h4>Hablar con un asesor</h4>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "center",
@@ -4406,29 +4409,32 @@
                         }
                       },
                       "block_order": [
-                        "text_x8Yhi4"
+                        "text_CA8NA4"
                       ]
                     }
                   },
                   "block_order": [
-                    "icon_MjCinN",
-                    "group_PRVc97"
+                    "icon_wQqXJb",
+                    "group_kyXJCC"
                   ]
                 }
               },
               "block_order": [
-                "group_UNmnRb"
+                "group_XQRjUC"
               ]
             }
           },
           "block_order": [
-            "group_DkRaUk",
-            "group_MRdegD"
+            "group_8x6cEB",
+            "group_weamd7"
           ]
         }
       },
       "block_order": [
-        "group_enkTbD"
+        "group_FtVCYX"
+      ],
+      "custom_css": [
+        "h6 {line-height: 1.3;}"
       ],
       "name": "Kallos · WhatsApp",
       "settings": {
@@ -4456,7 +4462,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 45,
-        "padding-block-end": 0
+        "padding-block-end": 20
       }
     },
     "featured_editorial_UzPViK": {
@@ -4477,10 +4483,10 @@
     "main",
     "kallo_innovation_gpFHqn",
     "section_aHRkYA",
-    "section_bbADrC",
+    "section_AGANkD",
     "176781003830b16789",
-    "kallo_innovation_GLC4m8",
-    "section_aNfTUn",
+    "kallo_innovation_pBYEyP",
+    "section_L7kdUP",
     "featured_editorial_UzPViK"
   ]
 }
