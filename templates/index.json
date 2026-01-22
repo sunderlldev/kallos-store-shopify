@@ -622,7 +622,7 @@
       "settings": {
         "image": "shopify://shop_images/Banner_Kallos_es_ciencia_cuidado.png",
         "title": "Kallos es ciencia & cuidado",
-        "text": "<p>Cada producto Kallos nace del estudio preciso de ingredientes activos, pensados para cuidar la piel y el vello de forma consciente y efectiva.</p><p>Desarrollados por especialistas en dermocosmética, nuestras fórmulas equilibran eficacia, tolerancia y experiencia sensorial para integrarse naturalmente a tu rutina diaria.</p>",
+        "text": "<h4>Cada producto Kallos nace del estudio preciso de ingredientes activos, pensados para cuidar la piel y el vello de forma consciente y efectiva.</h4><h4>Desarrollados por especialistas en dermocosmética, nuestras fórmulas equilibran eficacia, tolerancia y experiencia sensorial para integrarse naturalmente a tu rutina diaria.</h4>",
         "image_position": "right"
       }
     },
@@ -661,9 +661,9 @@
         "bg_color": "#f9f9f9",
         "icon_color": "#ac9651",
         "floating_image": "shopify://shop_images/MOCKUP_LASH_by_Kallos_animacion.png",
-        "top_title": "<h5><strong>¡NUEVO LANZAMIENTO!</strong></h5>",
+        "top_title": "<h3>¡NUEVO LANZAMIENTO!</h3>",
         "title": "LASH+ by Kallos",
-        "description": "<p>El <strong>serum de pestañas</strong> que transforma tu mirada con cuidado y ciencia.</p>",
+        "description": "<h4>El <strong>serum de pestañas</strong> que transforma tu mirada con cuidado y ciencia.</h4>",
         "btn_label": "Ver más sobre LASH+",
         "btn_link": "shopify://products/serum-de-pestanas"
       }
