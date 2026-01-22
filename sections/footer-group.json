@@ -497,7 +497,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h5><strong>Atención al consumidor</strong></h5>",
+                    "text": "<h6><strong>Atención al consumidor</strong></h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -622,7 +622,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h5><strong>Sobre nosotros</strong></h5>",
+                    "text": "<h6><strong>Sobre nosotros</strong></h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",

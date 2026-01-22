@@ -1051,8 +1051,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "h3 {font-size: 26px; }",
-      "@media screen and (max-width: 768px) {h1 {font-size: 38px; } h2 {font-size: 34px; } h3 {font-size: 24px; } h4 {font-size: 18px; } h5 {font-size: 16px; } h6 {font-size: 14px; }}"
+      "h3 {font-size: 26px;}",
+      "@media screen and (max-width: 768px) {h1 {font-size: 38px; } h2 {font-size: 34px; } h3 {font-size: 24px; } h4 {font-size: 18px; } h5 {font-size: 16px; } h6 {font-size: 14px; } p {font-size: 12px; }}"
     ]
   }
 }
