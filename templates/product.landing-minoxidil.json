@@ -2010,6 +2010,10 @@
         "item_J4tKjw",
         "item_EJxy4h"
       ],
+      "custom_css": [
+        ".kallos-innovation {padding: 100px 0;}",
+        "h5 {line-height: 1.5;}"
+      ],
       "name": "Kallos · Innovación",
       "settings": {
         "title": "Activos principales",
