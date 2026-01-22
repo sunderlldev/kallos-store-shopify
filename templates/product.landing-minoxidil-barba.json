@@ -118,7 +118,7 @@
                 },
                 "text_xrnftG": {
                   "type": "text",
-                  "name": "Product title",
+                  "name": "Título del Producto",
                   "settings": {
                     "text": "<h1><strong>{{ closest.product.title }}</strong></h1>",
                     "width": "100%",
@@ -144,7 +144,7 @@
                 },
                 "text_b6hhpL": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Detalle del Producto",
                   "settings": {
                     "text": "<p>{{ closest.product.metafields.custom.detalle.value }}</p>",
                     "width": "fit-content",
@@ -170,7 +170,7 @@
                 },
                 "text_MRPCLT": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Descripción del Producto",
                   "settings": {
                     "text": "{{ closest.product.description }}",
                     "width": "fit-content",
@@ -196,7 +196,7 @@
                 },
                 "text_Ktzpxb": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Contenido del Producto",
                   "settings": {
                     "text": "<p>Contenido: {{ closest.product.metafields.custom.contenido.value }}</p>",
                     "width": "fit-content",
@@ -222,6 +222,7 @@
                 },
                 "price_tVjtKg": {
                   "type": "price",
+                  "name": "Precio del Producto",
                   "disabled": true,
                   "settings": {
                     "show_sale_price_first": true,
@@ -267,7 +268,7 @@
             },
             "group_zfLtqk": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Pagar con Tarjeta",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -307,6 +308,7 @@
               "blocks": {
                 "buy_buttons_cXKamf": {
                   "type": "buy-buttons",
+                  "name": "Botón ·  Pagar Ahora con Tarjeta",
                   "settings": {
                     "stacking": true,
                     "show_pickup_availability": false,
@@ -342,9 +344,9 @@
                   },
                   "block_order": []
                 },
-                "group_hNbhHd": {
+                "group_EA4iTz": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Tarjetas Admitidas",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -382,9 +384,9 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_xLNwhp": {
+                    "group_QMFUki": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
                         "content_direction": "row",
                         "vertical_on_mobile": true,
@@ -422,9 +424,9 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "group_jdq6NY": {
+                        "group_bqTwzQ": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor de Tarjetas",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -462,9 +464,9 @@
                             "padding-inline-end": 8
                           },
                           "blocks": {
-                            "icon_y4kRBD": {
+                            "icon_3gp79w": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 1",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/visa.png",
@@ -474,9 +476,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_QCWAJL": {
+                            "icon_WPEBHa": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 2",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/md.png",
@@ -486,9 +488,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_cTddkM": {
+                            "icon_Wnw3hB": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 3",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/dci.png",
@@ -498,9 +500,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_q84R4V": {
+                            "icon_WmYCnz": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 4",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/discover.png",
@@ -510,9 +512,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_9xRYpH": {
+                            "icon_NqhnL7": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 5",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/amex.png",
@@ -524,32 +526,32 @@
                             }
                           },
                           "block_order": [
-                            "icon_y4kRBD",
-                            "icon_QCWAJL",
-                            "icon_cTddkM",
-                            "icon_q84R4V",
-                            "icon_9xRYpH"
+                            "icon_3gp79w",
+                            "icon_WPEBHa",
+                            "icon_Wnw3hB",
+                            "icon_WmYCnz",
+                            "icon_NqhnL7"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_jdq6NY"
+                        "group_bqTwzQ"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_xLNwhp"
+                    "group_QMFUki"
                   ]
                 }
               },
               "block_order": [
                 "buy_buttons_cXKamf",
-                "group_hNbhHd"
+                "group_EA4iTz"
               ]
             },
-            "group_GYDAzn": {
+            "group_iTLyQH": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Pagar Contra Entrega",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -587,9 +589,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_KnzyfL": {
+                "group_3NaNHA": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Botón de Pago",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -627,34 +629,23 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "icon_qEUTLH": {
-                      "type": "icon",
-                      "name": "t:names.icon",
-                      "settings": {
-                        "icon": "whatsapp",
-                        "width": 24,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "group_cUizkp": {
+                    "group_zF66Pd": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
+                        "content_direction": "row",
+                        "vertical_on_mobile": false,
+                        "horizontal_alignment": "center",
                         "vertical_alignment": "center",
                         "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "center",
+                        "horizontal_alignment_flex_direction_column": "flex-start",
                         "vertical_alignment_flex_direction_column": "center",
                         "gap": 12,
                         "width": "fit-content",
                         "custom_width": 100,
                         "width_mobile": "fit-content",
                         "custom_width_mobile": 100,
-                        "height": "fit",
+                        "height": "fill",
                         "custom_height": 100,
                         "inherit_color_scheme": true,
                         "color_scheme": "",
@@ -678,7 +669,18 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_nzFk7g": {
+                        "icon_MVqgCN": {
+                          "type": "icon",
+                          "name": "Ícono WhatsApp",
+                          "settings": {
+                            "icon": "whatsapp",
+                            "width": 24,
+                            "link": "",
+                            "open_in_new_tab": false
+                          },
+                          "blocks": {}
+                        },
+                        "text_xEChab": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -706,18 +708,18 @@
                         }
                       },
                       "block_order": [
-                        "text_nzFk7g"
+                        "icon_MVqgCN",
+                        "text_xEChab"
                       ]
                     }
                   },
                   "block_order": [
-                    "icon_qEUTLH",
-                    "group_cUizkp"
+                    "group_zF66Pd"
                   ]
                 },
-                "group_WEP6GT": {
+                "group_PM3Pkc": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Formas de Pago",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -755,9 +757,9 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_kdPNBh": {
+                    "group_WbWKTq": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
                         "content_direction": "row",
                         "vertical_on_mobile": true,
@@ -795,9 +797,9 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "group_bbNeiV": {
+                        "group_GcWf64": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor Izquierdo",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -835,7 +837,7 @@
                             "padding-inline-end": 0
                           },
                           "blocks": {
-                            "icon_xThipk": {
+                            "icon_qmYJng": {
                               "type": "icon",
                               "name": "t:names.icon",
                               "settings": {
@@ -847,7 +849,7 @@
                               },
                               "blocks": {}
                             },
-                            "text_bacTYX": {
+                            "text_e9LUkt": {
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
@@ -875,13 +877,13 @@
                             }
                           },
                           "block_order": [
-                            "icon_xThipk",
-                            "text_bacTYX"
+                            "icon_qmYJng",
+                            "text_e9LUkt"
                           ]
                         },
-                        "group_hDbdPc": {
+                        "group_cyaKz6": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor Derecho",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -919,9 +921,9 @@
                             "padding-inline-end": 8
                           },
                           "blocks": {
-                            "icon_rnBJLf": {
+                            "icon_4UjaBK": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 1",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/yape.png",
@@ -931,9 +933,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_eTANxy": {
+                            "icon_jcBPdV": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 2",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/plin.png",
@@ -943,9 +945,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_je7kJz": {
+                            "icon_c3RY9M": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 3",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/banco.png",
@@ -957,26 +959,26 @@
                             }
                           },
                           "block_order": [
-                            "icon_rnBJLf",
-                            "icon_eTANxy",
-                            "icon_je7kJz"
+                            "icon_4UjaBK",
+                            "icon_jcBPdV",
+                            "icon_c3RY9M"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_bbNeiV",
-                        "group_hDbdPc"
+                        "group_GcWf64",
+                        "group_cyaKz6"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_kdPNBh"
+                    "group_WbWKTq"
                   ]
                 }
               },
               "block_order": [
-                "group_KnzyfL",
-                "group_WEP6GT"
+                "group_3NaNHA",
+                "group_PM3Pkc"
               ]
             },
             "group_Vc4C7B": {
@@ -1946,7 +1948,7 @@
             "group_icgrde",
             "divider_VJhene",
             "group_zfLtqk",
-            "group_GYDAzn",
+            "group_iTLyQH",
             "group_Vc4C7B",
             "accordion_yMFMtB",
             "divider_AYPACc",
