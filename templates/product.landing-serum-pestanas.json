@@ -43,6 +43,7 @@
         },
         "product-details": {
           "type": "_product-details",
+          "name": "Detalles generales del Producto",
           "static": true,
           "settings": {
             "width": "fill",
@@ -68,7 +69,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_icgrde": {
+            "group_94G6XE": {
               "type": "group",
               "name": "Header",
               "settings": {
@@ -108,7 +109,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "custom_liquid_jQcmJn": {
+                "custom_liquid_hNFYcF": {
                   "type": "custom-liquid",
                   "name": "Globo de valoraciones",
                   "settings": {
@@ -116,15 +117,15 @@
                   },
                   "blocks": {}
                 },
-                "text_xrnftG": {
+                "text_zzJGLB": {
                   "type": "text",
-                  "name": "Product title",
+                  "name": "Título del Producto",
                   "settings": {
-                    "text": "<h3><strong>{{ closest.product.title }}</strong></h3>",
+                    "text": "<h2>{{ closest.product.title }}</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-primary--family)",
                     "font_size": "2.5rem",
                     "line_height": "normal",
@@ -142,15 +143,15 @@
                   },
                   "blocks": {}
                 },
-                "text_b6hhpL": {
+                "text_YiEpn4": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Detalle del Producto",
                   "settings": {
-                    "text": "<p>{{ closest.product.metafields.custom.detalle.value }}</p>",
+                    "text": "<h6>{{ closest.product.metafields.custom.detalle.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "0.875rem",
                     "line_height": "tight",
@@ -168,9 +169,9 @@
                   },
                   "blocks": {}
                 },
-                "text_MRPCLT": {
+                "text_Gkpmt9": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Descripción del Producto",
                   "settings": {
                     "text": "{{ closest.product.description }}",
                     "width": "fit-content",
@@ -178,7 +179,7 @@
                     "alignment": "left",
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font_size": "1.125rem",
                     "line_height": "normal",
                     "letter_spacing": "loose",
                     "case": "none",
@@ -194,17 +195,17 @@
                   },
                   "blocks": {}
                 },
-                "text_Ktzpxb": {
+                "text_8Bf74m": {
                   "type": "text",
-                  "name": "t:names.text",
+                  "name": "Contenido del Producto",
                   "settings": {
-                    "text": "<p>Contenido por unidad: 100 grs</p>",
+                    "text": "<h6><strong>Contenido:</strong> {{ closest.product.metafields.custom.contenido.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-heading--family)",
-                    "font_size": "1rem",
+                    "font_size": "0.875rem",
                     "line_height": "loose",
                     "letter_spacing": "loose",
                     "case": "none",
@@ -220,8 +221,9 @@
                   },
                   "blocks": {}
                 },
-                "price_tVjtKg": {
+                "price_qrPEbF": {
                   "type": "price",
+                  "name": "Precio del Producto",
                   "disabled": true,
                   "settings": {
                     "show_sale_price_first": true,
@@ -245,12 +247,12 @@
                 }
               },
               "block_order": [
-                "custom_liquid_jQcmJn",
-                "text_xrnftG",
-                "text_b6hhpL",
-                "text_MRPCLT",
-                "text_Ktzpxb",
-                "price_tVjtKg"
+                "custom_liquid_hNFYcF",
+                "text_zzJGLB",
+                "text_YiEpn4",
+                "text_Gkpmt9",
+                "text_8Bf74m",
+                "price_qrPEbF"
               ]
             },
             "divider_VJhene": {
@@ -265,9 +267,9 @@
               },
               "blocks": {}
             },
-            "group_zfLtqk": {
+            "group_i4DcQU": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Pagar con Tarjeta",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -305,8 +307,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "buy_buttons_cXKamf": {
+                "buy_buttons_TKCGLV": {
                   "type": "buy-buttons",
+                  "name": "Botón ·  Pagar Ahora con Tarjeta",
                   "settings": {
                     "stacking": true,
                     "show_pickup_availability": false,
@@ -342,9 +345,9 @@
                   },
                   "block_order": []
                 },
-                "group_hNbhHd": {
+                "group_Cy4gEL": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Tarjetas Admitidas",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -382,9 +385,9 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_xLNwhp": {
+                    "group_jTUeib": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
                         "content_direction": "row",
                         "vertical_on_mobile": true,
@@ -422,9 +425,9 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "group_jdq6NY": {
+                        "group_JgU6GV": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor de Tarjetas",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -462,9 +465,9 @@
                             "padding-inline-end": 8
                           },
                           "blocks": {
-                            "icon_y4kRBD": {
+                            "icon_LHNhRB": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 1",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/visa.png",
@@ -474,9 +477,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_QCWAJL": {
+                            "icon_CeWYGQ": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 2",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/md.png",
@@ -486,9 +489,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_cTddkM": {
+                            "icon_LK3fzR": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 3",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/dci.png",
@@ -498,9 +501,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_q84R4V": {
+                            "icon_TRjMpV": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 4",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/discover.png",
@@ -510,9 +513,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_9xRYpH": {
+                            "icon_mqa6i3": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 5",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/amex.png",
@@ -524,32 +527,32 @@
                             }
                           },
                           "block_order": [
-                            "icon_y4kRBD",
-                            "icon_QCWAJL",
-                            "icon_cTddkM",
-                            "icon_q84R4V",
-                            "icon_9xRYpH"
+                            "icon_LHNhRB",
+                            "icon_CeWYGQ",
+                            "icon_LK3fzR",
+                            "icon_TRjMpV",
+                            "icon_mqa6i3"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_jdq6NY"
+                        "group_JgU6GV"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_xLNwhp"
+                    "group_jTUeib"
                   ]
                 }
               },
               "block_order": [
-                "buy_buttons_cXKamf",
-                "group_hNbhHd"
+                "buy_buttons_TKCGLV",
+                "group_Cy4gEL"
               ]
             },
-            "group_GYDAzn": {
+            "group_MbBXXF": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Contenedor Pagar Contra Entrega",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -587,9 +590,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_KnzyfL": {
+                "group_3XXFq3": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Botón de Pago",
                   "settings": {
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -627,34 +630,23 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "icon_qEUTLH": {
-                      "type": "icon",
-                      "name": "t:names.icon",
-                      "settings": {
-                        "icon": "whatsapp",
-                        "width": 24,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "group_cUizkp": {
+                    "group_NA9BaC": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
+                        "content_direction": "row",
+                        "vertical_on_mobile": false,
+                        "horizontal_alignment": "center",
                         "vertical_alignment": "center",
                         "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "center",
+                        "horizontal_alignment_flex_direction_column": "flex-start",
                         "vertical_alignment_flex_direction_column": "center",
                         "gap": 12,
                         "width": "fit-content",
                         "custom_width": 100,
                         "width_mobile": "fit-content",
                         "custom_width_mobile": 100,
-                        "height": "fit",
+                        "height": "fill",
                         "custom_height": 100,
                         "inherit_color_scheme": true,
                         "color_scheme": "",
@@ -678,7 +670,18 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_nzFk7g": {
+                        "icon_L8wgBr": {
+                          "type": "icon",
+                          "name": "Ícono WhatsApp",
+                          "settings": {
+                            "icon": "whatsapp",
+                            "width": 24,
+                            "link": "",
+                            "open_in_new_tab": false
+                          },
+                          "blocks": {}
+                        },
+                        "text_pirprK": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -706,18 +709,18 @@
                         }
                       },
                       "block_order": [
-                        "text_nzFk7g"
+                        "icon_L8wgBr",
+                        "text_pirprK"
                       ]
                     }
                   },
                   "block_order": [
-                    "icon_qEUTLH",
-                    "group_cUizkp"
+                    "group_NA9BaC"
                   ]
                 },
-                "group_WEP6GT": {
+                "group_x9WP8B": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Formas de Pago",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -755,9 +758,9 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_kdPNBh": {
+                    "group_fVRfLj": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Principal",
                       "settings": {
                         "content_direction": "row",
                         "vertical_on_mobile": true,
@@ -795,9 +798,9 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "group_bbNeiV": {
+                        "group_4iAMgi": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor Izquierdo",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -835,7 +838,7 @@
                             "padding-inline-end": 0
                           },
                           "blocks": {
-                            "icon_xThipk": {
+                            "icon_BMJY4E": {
                               "type": "icon",
                               "name": "t:names.icon",
                               "settings": {
@@ -847,7 +850,7 @@
                               },
                               "blocks": {}
                             },
-                            "text_bacTYX": {
+                            "text_NqRJH7": {
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
@@ -875,13 +878,13 @@
                             }
                           },
                           "block_order": [
-                            "icon_xThipk",
-                            "text_bacTYX"
+                            "icon_BMJY4E",
+                            "text_NqRJH7"
                           ]
                         },
-                        "group_hDbdPc": {
+                        "group_bAbTpk": {
                           "type": "group",
-                          "name": "t:names.group",
+                          "name": "Contenedor Derecho",
                           "settings": {
                             "content_direction": "row",
                             "vertical_on_mobile": false,
@@ -919,9 +922,9 @@
                             "padding-inline-end": 8
                           },
                           "blocks": {
-                            "icon_rnBJLf": {
+                            "icon_bgXPyV": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 1",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/yape.png",
@@ -931,9 +934,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_eTANxy": {
+                            "icon_hgaYXf": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 2",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/plin.png",
@@ -943,9 +946,9 @@
                               },
                               "blocks": {}
                             },
-                            "icon_je7kJz": {
+                            "icon_kbPEc7": {
                               "type": "icon",
-                              "name": "t:names.icon",
+                              "name": "Ícono 3",
                               "settings": {
                                 "icon": "price_tag",
                                 "image_upload": "shopify://shop_images/banco.png",
@@ -957,35 +960,35 @@
                             }
                           },
                           "block_order": [
-                            "icon_rnBJLf",
-                            "icon_eTANxy",
-                            "icon_je7kJz"
+                            "icon_bgXPyV",
+                            "icon_hgaYXf",
+                            "icon_kbPEc7"
                           ]
                         }
                       },
                       "block_order": [
-                        "group_bbNeiV",
-                        "group_hDbdPc"
+                        "group_4iAMgi",
+                        "group_bAbTpk"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_kdPNBh"
+                    "group_fVRfLj"
                   ]
                 }
               },
               "block_order": [
-                "group_KnzyfL",
-                "group_WEP6GT"
+                "group_3XXFq3",
+                "group_x9WP8B"
               ]
             },
-            "group_Vc4C7B": {
+            "group_FqgeJd": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Promoción Slash+",
               "settings": {
                 "content_direction": "row",
-                "vertical_on_mobile": false,
-                "horizontal_alignment": "flex-start",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
@@ -996,9 +999,9 @@
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
-                "custom_height": 100,
+                "custom_height": 43,
                 "inherit_color_scheme": false,
-                "color_scheme": "",
+                "color_scheme": "scheme-1",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -1019,21 +1022,21 @@
                 "padding-inline-end": 20
               },
               "blocks": {
-                "group_39VFKX": {
+                "group_JTQgWy": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Izquierdo",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
+                    "width": "custom",
+                    "custom_width": 40,
+                    "width_mobile": "custom",
                     "custom_width_mobile": 100,
                     "height": "fit",
                     "custom_height": 100,
@@ -1059,7 +1062,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "image_znmMAN": {
+                    "image_XQB4qM": {
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
@@ -1084,12 +1087,12 @@
                     }
                   },
                   "block_order": [
-                    "image_znmMAN"
+                    "image_XQB4qM"
                   ]
                 },
-                "group_D3EBCb": {
+                "group_rCwAdH": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Derecho",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -1100,7 +1103,7 @@
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
                     "width": "fill",
-                    "custom_width": 100,
+                    "custom_width": 55,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
                     "height": "fit",
@@ -1127,21 +1130,21 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "text_EWztmL": {
+                    "text_LwNnAg": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>Prueba nuestro bestseller</strong></h5>",
+                        "text": "<h2><strong>Prueba nuestro bestseller</strong></h2>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
+                        "font_size": "1.5rem",
+                        "line_height": "tight",
                         "letter_spacing": "normal",
                         "case": "none",
-                        "wrap": "balance",
+                        "wrap": "pretty",
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
@@ -1153,7 +1156,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_KiiFbD": {
+                    "text_q77CQE": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -1163,7 +1166,7 @@
                         "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
-                        "font_size": "0.625rem",
+                        "font_size": "1rem",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -1179,9 +1182,9 @@
                       },
                       "blocks": {}
                     },
-                    "group_BCxjnm": {
+                    "group_GPpKeQ": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor de Botón",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1197,70 +1200,115 @@
                         "custom_width_mobile": 100,
                         "height": "fit",
                         "custom_height": 100,
-                        "inherit_color_scheme": false,
-                        "color_scheme": "scheme-6",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
                         "background_media": "none",
                         "video_position": "cover",
                         "background_image_position": "cover",
                         "border": "none",
                         "border_width": 1,
                         "border_opacity": 100,
-                        "border_radius": 5,
-                        "toggle_overlay": true,
-                        "overlay_color": "#000000",
+                        "border_radius": 0,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
                         "overlay_style": "solid",
                         "gradient_direction": "to top",
-                        "link": "shopify://collections/destacados",
+                        "link": "",
                         "open_in_new_tab": false,
                         "placeholder": "",
-                        "padding-block-start": 10,
-                        "padding-block-end": 10,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_ANFe6q": {
-                          "type": "text",
-                          "name": "t:names.text",
+                        "group_hC4nwg": {
+                          "type": "group",
+                          "name": "Botón - Ver Serum",
                           "settings": {
-                            "text": "<p><strong>Ver Cremas</strong></p>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
+                            "content_direction": "column",
+                            "vertical_on_mobile": true,
+                            "horizontal_alignment": "flex-start",
+                            "vertical_alignment": "center",
+                            "align_baseline": false,
+                            "horizontal_alignment_flex_direction_column": "center",
+                            "vertical_alignment_flex_direction_column": "center",
+                            "gap": 12,
+                            "width": "fill",
+                            "custom_width": 70,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fit",
+                            "custom_height": 100,
+                            "inherit_color_scheme": false,
+                            "color_scheme": "scheme-6",
+                            "background_media": "none",
+                            "video_position": "cover",
+                            "background_image_position": "cover",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 5,
+                            "toggle_overlay": true,
+                            "overlay_color": "#000000",
+                            "overlay_style": "solid",
+                            "gradient_direction": "to top",
+                            "link": "shopify://products/serum-de-pestanas",
+                            "open_in_new_tab": false,
+                            "placeholder": "",
+                            "padding-block-start": 10,
+                            "padding-block-end": 10,
                             "padding-inline-start": 0,
                             "padding-inline-end": 0
                           },
-                          "blocks": {}
+                          "blocks": {
+                            "text_m3N4Ey": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<p><strong>Ver Cremas</strong></p>",
+                                "width": "fit-content",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "text_m3N4Ey"
+                          ]
                         }
                       },
                       "block_order": [
-                        "text_ANFe6q"
+                        "group_hC4nwg"
                       ]
                     }
                   },
                   "block_order": [
-                    "text_EWztmL",
-                    "text_KiiFbD",
-                    "group_BCxjnm"
+                    "text_LwNnAg",
+                    "text_q77CQE",
+                    "group_GPpKeQ"
                   ]
                 }
               },
               "block_order": [
-                "group_39VFKX",
-                "group_D3EBCb"
+                "group_JTQgWy",
+                "group_rCwAdH"
               ]
             },
             "accordion_yMFMtB": {
@@ -1898,11 +1946,11 @@
             }
           },
           "block_order": [
-            "group_icgrde",
+            "group_94G6XE",
             "divider_VJhene",
-            "group_zfLtqk",
-            "group_GYDAzn",
-            "group_Vc4C7B",
+            "group_i4DcQU",
+            "group_MbBXXF",
+            "group_FqgeJd",
             "accordion_yMFMtB",
             "divider_AYPACc",
             "group_J43EMe"
