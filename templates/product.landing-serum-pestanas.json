@@ -2480,7 +2480,7 @@
                           "name": "t:names.accordion_row",
                           "settings": {
                             "heading": "Biotina",
-                            "open_by_default": true,
+                            "open_by_default": false,
                             "icon": "none",
                             "image_upload": "shopify://shop_images/biotina.png",
                             "width": 30
@@ -2546,9 +2546,7 @@
         "group_DH846V",
         "group_wBUXp3"
       ],
-      "custom_css": [
-        "h5 {line-height: 1.5px;}"
-      ],
+      "custom_css": [],
       "name": "Kallos · Transparencia",
       "settings": {
         "content_direction": "column",
@@ -2581,32 +2579,6 @@
     "section_gWGTrU": {
       "type": "section",
       "blocks": {
-        "text_iEXqY6": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h3>Obtén Resultados Visibles en Menos de 4 Semanas</h3>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_zLxKwY": {
           "type": "group",
           "name": "t:names.group",
@@ -2618,9 +2590,9 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
+            "gap": 18,
             "width": "custom",
-            "custom_width": 50,
+            "custom_width": 75,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -2647,15 +2619,41 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_trM9Fd": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>Obtén Resultados Visibles en Menos de 4 Semanas</h1>",
+                "width": "100%",
+                "max_width": "narrow",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_QpGT6n": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h5>Experimenta cómo tus pestañas naturales alcanzan su máximo potencial de crecimiento al comprometerte con nuestro tratamiento de 3 meses con el suero de crecimiento Kallos, mientras notas los resultados desde el primer momento.</h5>",
+                "text": "<h4>Experimenta cómo tus pestañas naturales alcanzan su máximo potencial de crecimiento al comprometerte con nuestro tratamiento de 3 meses con el suero de crecimiento Kallos, mientras notas los resultados desde el primer momento.</h4>",
                 "width": "100%",
-                "max_width": "none",
+                "max_width": "normal",
                 "alignment": "center",
-                "type_preset": "custom",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "0.875rem",
                 "line_height": "normal",
@@ -2675,6 +2673,7 @@
             }
           },
           "block_order": [
+            "text_trM9Fd",
             "text_QpGT6n"
           ]
         },
@@ -2814,7 +2813,7 @@
                   "blocks": {
                     "group_bzLtAw": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Izquierdo",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -2882,7 +2881,7 @@
                     },
                     "group_eWp3rp": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Derecho",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -2964,11 +2963,11 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<h5><strong>SEMANA 1</strong></h5>",
+                                "text": "<h4><strong>SEMANA 1</strong></h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
-                                "type_preset": "custom",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1.25rem",
                                 "line_height": "normal",
@@ -3033,9 +3032,9 @@
                           "blocks": {
                             "text_8edVUb": {
                               "type": "text",
-                              "name": "t:names.text",
+                              "name": "Descripción",
                               "settings": {
-                                "text": "<h6>Unas pestañas más largas están en camino.</h6>",
+                                "text": "<h4>Unas pestañas más largas están en camino.</h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -3116,7 +3115,7 @@
                   "blocks": {
                     "group_tybT9X": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Izquierdo",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -3184,7 +3183,7 @@
                     },
                     "group_R9ybG9": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Derecho",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -3266,11 +3265,11 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<h5><strong>SEMANA 4</strong></h5>",
+                                "text": "<h4><strong>SEMANA 4</strong></h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
-                                "type_preset": "custom",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1.25rem",
                                 "line_height": "normal",
@@ -3335,9 +3334,9 @@
                           "blocks": {
                             "text_a8UK6P": {
                               "type": "text",
-                              "name": "t:names.text",
+                              "name": "Descripción",
                               "settings": {
-                                "text": "<h6>Tus pestañas lucen más largas y puedes sentir que están más saludables.</h6>",
+                                "text": "<h4>Tus pestañas lucen más largas y puedes sentir que están más saludables.</h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -3464,7 +3463,7 @@
                   "blocks": {
                     "group_fbEBMt": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Izquierdo",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -3532,7 +3531,7 @@
                     },
                     "group_YrJfhQ": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Derecho",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -3614,11 +3613,11 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<h5><strong>SEMANA 8</strong></h5>",
+                                "text": "<h4><strong>SEMANA 8</strong></h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
-                                "type_preset": "custom",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1.25rem",
                                 "line_height": "normal",
@@ -3685,7 +3684,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<h6>¡La gente lo está notando y ama tus pestañas! No solo están más largas, sino también más gruesas. ¡Continúa así!</h6>",
+                                "text": "<h4>¡La gente lo está notando y ama tus pestañas! No solo están más largas, sino también más gruesas. ¡Continúa así!</h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -3766,7 +3765,7 @@
                   "blocks": {
                     "group_kUDzGP": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Izquierdo",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -3834,7 +3833,7 @@
                     },
                     "group_aPVEem": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor Derecho",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -3916,11 +3915,11 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<h5><strong>SEMANA 12</strong></h5>",
+                                "text": "<h4><strong>SEMANA 12</strong></h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
-                                "type_preset": "custom",
+                                "type_preset": "rte",
                                 "font": "var(--font-body--family)",
                                 "font_size": "1.25rem",
                                 "line_height": "normal",
@@ -3985,9 +3984,9 @@
                           "blocks": {
                             "text_PRjKGm": {
                               "type": "text",
-                              "name": "t:names.text",
+                              "name": "Descripción",
                               "settings": {
-                                "text": "<h6>¡Tus pestañas han alcanzado su máximo potencial y tu mirada ha cambiado por completo!</h6>",
+                                "text": "<h4>¡Tus pestañas han alcanzado su máximo potencial y tu mirada ha cambiado por completo!</h4>",
                                 "width": "100%",
                                 "max_width": "normal",
                                 "alignment": "left",
@@ -4040,7 +4039,6 @@
         }
       },
       "block_order": [
-        "text_iEXqY6",
         "group_zLxKwY",
         "spacer_UdnGEr",
         "group_bwanjJ"
@@ -4161,7 +4159,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Nuestra Comparativa</h2>",
+                    "text": "<h1>Nuestra Comparativa</h1>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -4187,11 +4185,11 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h5>Nuestra fórmula dermocosmética con minoxidil 5% está diseñada para estimular el crecimiento del vello cuidando la piel, gracias a una base en crema ligera y activos complementarios.</h5>",
+                    "text": "<h4>Nuestra fórmula dermocosmética con minoxidil 5% está diseñada para estimular el crecimiento del vello cuidando la piel, gracias a una base en crema ligera y activos complementarios.</h4>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1.125rem",
                     "line_height": "normal",
@@ -4222,7 +4220,7 @@
         },
         "custom_liquid_44HtaV": {
           "type": "custom-liquid",
-          "name": "t:names.custom_liquid",
+          "name": "Comparativa Vs Otros",
           "settings": {
             "custom_liquid": "<div class=\"kallos-comparison-block\">\n  <div class=\"comparison-overflow\">\n    <div class=\"comparison-container\">\n      <div class=\"comp-row header\">\n        <div class=\"comp-cell label empty-header\"></div>\n        <div class=\"comp-cell data main-brand top-left-round\"><h5>KALLOS</h5></div>\n        <div class=\"comp-cell data\"><h5>OTROS SUEROS</h5></div>\n        <div class=\"comp-cell data top-right-round\"><h5>EXTENSIONES</h5></div>\n      </div>\n\n      <div class=\"comp-body\">\n        <div class=\"comp-row\">\n          <div class=\"comp-cell label top-left-round\"><h5>Sin Hormonas</h5></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n        </div>\n\n        <div class=\"comp-row\">\n          <div class=\"comp-cell label\"><h5>Sin Dolor</h5></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n        </div>\n\n        <div class=\"comp-row\">\n          <div class=\"comp-cell label\"><h5>Económico</h5></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n        </div>\n\n        <div class=\"comp-row\">\n          <div class=\"comp-cell label\"><h5>Fortalece Folículos</h5></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n        </div>\n\n        <div class=\"comp-row\">\n          <div class=\"comp-cell label\"><h5>Seguro uso diario</h5></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n        </div>\n\n        <div class=\"comp-row\">\n          <div class=\"comp-cell label bottom-left-round\"><h5>Garantía Crecimiento</h5></div>\n          <div class=\"comp-cell data\"><span class=\"icon check\">✔</span></div>\n          <div class=\"comp-cell data\"><span class=\"icon x\">✖</span></div>\n          <div class=\"comp-cell data bottom-right-round\"><span class=\"icon x\">✖</span></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.kallos-comparison-block {\n  width: 100%;\n  padding: 40px 0;\n  display: flex;\n  justify-content: center;\n  background-color: transparent;\n}\n\n.comparison-overflow {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n}\n\n.comparison-container {\n  display: flex;\n  flex-direction: column;\n  min-width: 650px;\n  margin: 0 auto;\n}\n\n.comp-row {\n  display: flex;\n  width: 100%;\n  margin: 0;\n}\n\n.comp-cell {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  box-sizing: border-box;\n  min-height: 80px;\n}\n\n.comp-cell.label {\n  background-color: #c0b67c;\n  justify-content: flex-start;\n  padding: 18px 25px;\n  color: #ffffff;\n  width: 25%; \n  flex-shrink: 0;\n}\n\n.comp-cell.data {\n  background-color: #ffffff;\n  border-bottom: 1px solid rgba(0,0,0,0.05);\n  width: 25%; \n  flex-grow: 1;\n  padding: 18px 20px; \n}\n\n.comp-cell.label h5 {\n  margin: 0;\n  font-size: 15px;\n  font-weight: 500;\n  line-height: 1.2;\n}\n\n.empty-header { \n  background: transparent !important; \n  border: none !important; \n  width: 25%; \n  flex-shrink: 0;\n}\n\n.comp-row.header .comp-cell { \n  border-bottom: none; \n  padding-bottom: 25px;\n  min-height: auto;\n}\n\n.comp-row.header h5 { \n  font-weight: 700; \n  color: #000; \n  text-align: center;\n  width: 100%;\n  margin: 0;\n  font-size: 16px;\n}\n\n.comp-cell.main-brand {\n  background-color: #AC9651 !important;\n}\n\n.comp-cell.main-brand h5 { color: white !important; }\n\n.top-left-round { border-top-left-radius: 20px; }\n.top-right-round { border-top-right-radius: 20px; }\n.bottom-left-round { border-bottom-left-radius: 20px; }\n.bottom-right-round { border-bottom-right-radius: 20px; }\n\n.icon { \n  font-size: 28px; \n  display: block;\n  margin: 0 auto;\n}\n\n.icon.check { color: #54b000; }\n.icon.x { color: #000; opacity: 0.2; }\n\n@media (max-width: 768px) {\n  .comparison-overflow {\n    overflow-x: hidden;\n  }\n  \n  .comparison-container {\n    width: 100%; \n    min-width: 90vw;\n    padding: 0 10px;\n  }\n\n  .comp-cell.label { \n    width: 34%; \n    padding: 10px 12px; \n  }\n  \n  .empty-header { \n    width: 34%; \n  }\n  \n  .comp-cell.data { \n    width: 22%; \n    padding: 10px 5px; \n  }\n\n  .comp-cell.label h5 { font-size: 11px; }\n  .comp-row.header h5 { font-size: 9px; }\n  .icon { font-size: 18px; }\n  .comp-cell { min-height: 55px; }\n}\n</style>"
           },
@@ -4331,6 +4329,13 @@
             "text": "<h5>Nuestro serum de pestañas está formulado con ingredientes suaves, pero si tienes ojos particularmente sensibles, recomendamos realizar una prueba de parche antes de usarlo.</h5>"
           }
         },
+        "item_rPwC3W": {
+          "type": "item",
+          "settings": {
+            "heading": "Activos",
+            "text": "<p>Contenido</p>"
+          }
+        },
         "item_GT8zk3": {
           "type": "item",
           "settings": {
@@ -4343,6 +4348,7 @@
         "item_3tVBGb",
         "item_abpUGh",
         "item_h3P3kU",
+        "item_rPwC3W",
         "item_GT8zk3"
       ],
       "custom_css": [
@@ -4357,10 +4363,10 @@
         "image_position": "right"
       }
     },
-    "section_aNfTUn": {
+    "section_WQNmEi": {
       "type": "section",
       "blocks": {
-        "group_enkTbD": {
+        "group_6iXdcq": {
           "type": "group",
           "name": "Contenedor",
           "settings": {
@@ -4378,7 +4384,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
-            "inherit_color_scheme": false,
+            "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
             "video_position": "cover",
@@ -4400,7 +4406,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_DkRaUk": {
+            "group_MbaK3V": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -4440,7 +4446,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_PkMMfP": {
+                "group_9t3d6B": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -4480,15 +4486,15 @@
                     "padding-inline-end": 15
                   },
                   "blocks": {
-                    "text_HphMcc": {
+                    "text_tFWPUH": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h5>¿Sigues teniendo preguntas?</h5>",
+                        "text": "<h3>¿Sigues teniendo preguntas?</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "center",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-heading--family)",
                         "font_size": "2rem",
                         "line_height": "normal",
@@ -4506,11 +4512,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_pn7RTW": {
+                    "text_CpGf79": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5>¡Habla con un asesor! Escríbenos por WhatsApp usando el botón. Estamos disponibles 24/7 para resolver cualquier duda o pregunta que tengas.</h5>",
+                        "text": "<h6>¡Habla con un asesor! Escríbenos por WhatsApp usando el botón. Estamos disponibles 24/7 para resolver cualquier duda o pregunta que tengas.</h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -4534,16 +4540,16 @@
                     }
                   },
                   "block_order": [
-                    "text_HphMcc",
-                    "text_pn7RTW"
+                    "text_tFWPUH",
+                    "text_CpGf79"
                   ]
                 }
               },
               "block_order": [
-                "group_PkMMfP"
+                "group_9t3d6B"
               ]
             },
-            "group_MRdegD": {
+            "group_dWcnTD": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -4583,7 +4589,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_UNmnRb": {
+                "group_yzfTgH": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -4623,7 +4629,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "icon_MjCinN": {
+                    "icon_UYBD34": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -4634,7 +4640,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_PRVc97": {
+                    "group_cHCb9M": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -4674,11 +4680,11 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_x8Yhi4": {
+                        "text_fwgRtc": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5><strong>HABLAR CON ASESOR</strong></h5>",
+                            "text": "<h4>Hablar con un asesor</h4>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "center",
@@ -4702,31 +4708,34 @@
                         }
                       },
                       "block_order": [
-                        "text_x8Yhi4"
+                        "text_fwgRtc"
                       ]
                     }
                   },
                   "block_order": [
-                    "icon_MjCinN",
-                    "group_PRVc97"
+                    "icon_UYBD34",
+                    "group_cHCb9M"
                   ]
                 }
               },
               "block_order": [
-                "group_UNmnRb"
+                "group_yzfTgH"
               ]
             }
           },
           "block_order": [
-            "group_DkRaUk",
-            "group_MRdegD"
+            "group_MbaK3V",
+            "group_dWcnTD"
           ]
         }
       },
       "block_order": [
-        "group_enkTbD"
+        "group_6iXdcq"
       ],
-      "name": "Kallos · Dudas y Consultas",
+      "custom_css": [
+        "h6 {line-height: 1.3;}"
+      ],
+      "name": "Kallos · WhatsApp",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": false,
@@ -4752,7 +4761,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 45,
-        "padding-block-end": 0
+        "padding-block-end": 20
       }
     },
     "featured_editorial_UzPViK": {
@@ -4776,7 +4785,7 @@
     "section_wzbqGn",
     "176781003830b16789",
     "kallo_innovation_GLC4m8",
-    "section_aNfTUn",
+    "section_WQNmEi",
     "featured_editorial_UzPViK"
   ]
 }
