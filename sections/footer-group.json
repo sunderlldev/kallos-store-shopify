@@ -922,7 +922,7 @@
                 "width": "custom",
                 "custom_width": 40,
                 "width_mobile": "fill",
-                "custom_width_mobile": 7,
+                "custom_width_mobile": 100,
                 "height": "fit",
                 "border": "none",
                 "border_width": 1,
