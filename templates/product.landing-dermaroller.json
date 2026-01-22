@@ -979,13 +979,13 @@
                 "group_pFhbAU"
               ]
             },
-            "group_YazXH7": {
+            "group_F3UXFM": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Promoción Minoxidil",
               "settings": {
                 "content_direction": "row",
-                "vertical_on_mobile": false,
-                "horizontal_alignment": "flex-start",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
@@ -996,9 +996,9 @@
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
+                "custom_height": 43,
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-1",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -1007,7 +1007,7 @@
                 "border_opacity": 100,
                 "border_radius": 12,
                 "toggle_overlay": true,
-                "overlay_color": "#00000012",
+                "overlay_color": "#ac965130",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "link": "",
@@ -1019,21 +1019,21 @@
                 "padding-inline-end": 20
               },
               "blocks": {
-                "group_bP6cb6": {
+                "group_JVWrkB": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Izquierdo",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
+                    "width": "custom",
+                    "custom_width": 40,
+                    "width_mobile": "custom",
                     "custom_width_mobile": 100,
                     "height": "fit",
                     "custom_height": 100,
@@ -1059,7 +1059,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "image_dgNY4Q": {
+                    "image_cJWK8h": {
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
@@ -1084,12 +1084,12 @@
                     }
                   },
                   "block_order": [
-                    "image_dgNY4Q"
+                    "image_cJWK8h"
                   ]
                 },
-                "group_LUAyBm": {
+                "group_VeUfWU": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Derecho",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -1100,7 +1100,7 @@
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
                     "width": "fill",
-                    "custom_width": 100,
+                    "custom_width": 55,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
                     "height": "fit",
@@ -1127,21 +1127,21 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "text_i7e9cn": {
+                    "text_9ppQee": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5><strong>Prueba nuestro bestseller</strong></h5>",
+                        "text": "<h2><strong>Prueba nuestro bestseller</strong></h2>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
+                        "font_size": "1.5rem",
+                        "line_height": "tight",
                         "letter_spacing": "normal",
                         "case": "none",
-                        "wrap": "balance",
+                        "wrap": "pretty",
                         "color": "var(--color-foreground)",
                         "background": false,
                         "background_color": "#00000026",
@@ -1153,7 +1153,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_gnBhHq": {
+                    "text_CeAmwG": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -1161,9 +1161,9 @@
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-body--family)",
-                        "font_size": "0.625rem",
+                        "font_size": "1rem",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -1179,9 +1179,9 @@
                       },
                       "blocks": {}
                     },
-                    "group_HU6ycX": {
+                    "group_ECVK93": {
                       "type": "group",
-                      "name": "t:names.group",
+                      "name": "Contenedor de Botón",
                       "settings": {
                         "content_direction": "column",
                         "vertical_on_mobile": true,
@@ -1197,70 +1197,115 @@
                         "custom_width_mobile": 100,
                         "height": "fit",
                         "custom_height": 100,
-                        "inherit_color_scheme": false,
-                        "color_scheme": "scheme-6",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
                         "background_media": "none",
                         "video_position": "cover",
                         "background_image_position": "cover",
                         "border": "none",
                         "border_width": 1,
                         "border_opacity": 100,
-                        "border_radius": 5,
-                        "toggle_overlay": true,
-                        "overlay_color": "#000000",
+                        "border_radius": 0,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
                         "overlay_style": "solid",
                         "gradient_direction": "to top",
-                        "link": "shopify://products/minoxidil-de-crema-para-barba",
+                        "link": "",
                         "open_in_new_tab": false,
                         "placeholder": "",
-                        "padding-block-start": 10,
-                        "padding-block-end": 10,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_WJM3kr": {
-                          "type": "text",
-                          "name": "t:names.text",
+                        "group_UD66UM": {
+                          "type": "group",
+                          "name": "Botón - Ver Serum",
                           "settings": {
-                            "text": "<p><strong>Ver Cremas</strong></p>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
+                            "content_direction": "column",
+                            "vertical_on_mobile": true,
+                            "horizontal_alignment": "flex-start",
+                            "vertical_alignment": "center",
+                            "align_baseline": false,
+                            "horizontal_alignment_flex_direction_column": "center",
+                            "vertical_alignment_flex_direction_column": "center",
+                            "gap": 12,
+                            "width": "fill",
+                            "custom_width": 70,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fit",
+                            "custom_height": 100,
+                            "inherit_color_scheme": false,
+                            "color_scheme": "scheme-6",
+                            "background_media": "none",
+                            "video_position": "cover",
+                            "background_image_position": "cover",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 5,
+                            "toggle_overlay": true,
+                            "overlay_color": "#000000",
+                            "overlay_style": "solid",
+                            "gradient_direction": "to top",
+                            "link": "shopify://products/serum-de-pestanas",
+                            "open_in_new_tab": false,
+                            "placeholder": "",
+                            "padding-block-start": 10,
+                            "padding-block-end": 10,
                             "padding-inline-start": 0,
                             "padding-inline-end": 0
                           },
-                          "blocks": {}
+                          "blocks": {
+                            "text_XGdiJh": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<h6><strong>Ver Cremas</strong></h6>",
+                                "width": "fit-content",
+                                "max_width": "normal",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "text_XGdiJh"
+                          ]
                         }
                       },
                       "block_order": [
-                        "text_WJM3kr"
+                        "group_UD66UM"
                       ]
                     }
                   },
                   "block_order": [
-                    "text_i7e9cn",
-                    "text_gnBhHq",
-                    "group_HU6ycX"
+                    "text_9ppQee",
+                    "text_CeAmwG",
+                    "group_ECVK93"
                   ]
                 }
               },
               "block_order": [
-                "group_bP6cb6",
-                "group_LUAyBm"
+                "group_JVWrkB",
+                "group_VeUfWU"
               ]
             },
             "accordion_URbLk9": {
@@ -1416,13 +1461,14 @@
             "divider_VJhene",
             "group_aLhQgR",
             "group_MycqGR",
-            "group_YazXH7",
+            "group_F3UXFM",
             "accordion_URbLk9"
           ]
         }
       },
       "custom_css": [
         ".product-information {margin-top: 28px;}",
+        "h6 {line-height: 1.2;}",
         "@media screen and (max-width: 749px) {.product-information {margin-top: 0; }}"
       ],
       "settings": {
