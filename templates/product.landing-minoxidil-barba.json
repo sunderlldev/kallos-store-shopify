@@ -4067,10 +4067,10 @@
         "image_position": "right"
       }
     },
-    "section_aNfTUn": {
+    "section_hfm43c": {
       "type": "section",
       "blocks": {
-        "group_enkTbD": {
+        "group_ndpJAp": {
           "type": "group",
           "name": "Contenedor",
           "settings": {
@@ -4110,7 +4110,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_DkRaUk": {
+            "group_x9AKe3": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -4150,7 +4150,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_PkMMfP": {
+                "group_8qFrdX": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -4190,15 +4190,15 @@
                     "padding-inline-end": 15
                   },
                   "blocks": {
-                    "text_HphMcc": {
+                    "text_YmfQDh": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<h5>¿Sigues teniendo preguntas?</h5>",
+                        "text": "<h3>¿Sigues teniendo preguntas?</h3>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "center",
-                        "type_preset": "custom",
+                        "type_preset": "rte",
                         "font": "var(--font-heading--family)",
                         "font_size": "2rem",
                         "line_height": "normal",
@@ -4216,11 +4216,11 @@
                       },
                       "blocks": {}
                     },
-                    "text_pn7RTW": {
+                    "text_6xdFNr": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5>¡Habla con un asesor! Escríbenos por WhatsApp usando el botón. Estamos disponibles 24/7 para resolver cualquier duda o pregunta que tengas.</h5>",
+                        "text": "<h6>¡Habla con un asesor! Escríbenos por WhatsApp usando el botón. Estamos disponibles 24/7 para resolver cualquier duda o pregunta que tengas.</h6>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -4244,16 +4244,16 @@
                     }
                   },
                   "block_order": [
-                    "text_HphMcc",
-                    "text_pn7RTW"
+                    "text_YmfQDh",
+                    "text_6xdFNr"
                   ]
                 }
               },
               "block_order": [
-                "group_PkMMfP"
+                "group_8qFrdX"
               ]
             },
-            "group_MRdegD": {
+            "group_RgNPWL": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -4293,7 +4293,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_UNmnRb": {
+                "group_UQyDDN": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -4333,7 +4333,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "icon_MjCinN": {
+                    "icon_w8AY3c": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -4344,7 +4344,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_PRVc97": {
+                    "group_Wx74NB": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -4384,11 +4384,11 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "text_x8Yhi4": {
+                        "text_bMBrfK": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<h5><strong>HABLAR CON ASESOR</strong></h5>",
+                            "text": "<h4>Hablar con un asesor</h4>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "center",
@@ -4412,29 +4412,32 @@
                         }
                       },
                       "block_order": [
-                        "text_x8Yhi4"
+                        "text_bMBrfK"
                       ]
                     }
                   },
                   "block_order": [
-                    "icon_MjCinN",
-                    "group_PRVc97"
+                    "icon_w8AY3c",
+                    "group_Wx74NB"
                   ]
                 }
               },
               "block_order": [
-                "group_UNmnRb"
+                "group_UQyDDN"
               ]
             }
           },
           "block_order": [
-            "group_DkRaUk",
-            "group_MRdegD"
+            "group_x9AKe3",
+            "group_RgNPWL"
           ]
         }
       },
       "block_order": [
-        "group_enkTbD"
+        "group_ndpJAp"
+      ],
+      "custom_css": [
+        "h6 {line-height: 1.3;}"
       ],
       "name": "Kallos · WhatsApp",
       "settings": {
@@ -4462,7 +4465,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 45,
-        "padding-block-end": 0
+        "padding-block-end": 20
       }
     },
     "featured_editorial_UzPViK": {
@@ -4486,7 +4489,7 @@
     "section_bbADrC",
     "176781003830b16789",
     "kallo_innovation_GLC4m8",
-    "section_aNfTUn",
+    "section_hfm43c",
     "featured_editorial_UzPViK"
   ]
 }
