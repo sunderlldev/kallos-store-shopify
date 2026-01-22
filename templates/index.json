@@ -544,7 +544,6 @@
         "group_NgaHpE"
       ],
       "custom_css": [
-        "@media screen and (max-width: 821px) {h1 {font-size: 40px !important; line-height: 1.2 !important; display: block !important; }}",
         "@media screen and (max-width: 821px) {h1 {font-size: 22px !important; }}"
       ],
       "name": "Kallos · Edición Verano",
