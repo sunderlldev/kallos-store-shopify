@@ -981,7 +981,7 @@
             },
             "group_Vc4C7B": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Promoción Slash+",
               "settings": {
                 "content_direction": "row",
                 "vertical_on_mobile": true,
@@ -1021,7 +1021,7 @@
               "blocks": {
                 "group_39VFKX": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Izquierdo",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
@@ -1032,7 +1032,7 @@
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
                     "width": "custom",
-                    "custom_width": 30,
+                    "custom_width": 40,
                     "width_mobile": "custom",
                     "custom_width_mobile": 100,
                     "height": "fit",
@@ -1089,7 +1089,7 @@
                 },
                 "group_D3EBCb": {
                   "type": "group",
-                  "name": "t:names.group",
+                  "name": "Contenedor Derecho",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": true,
