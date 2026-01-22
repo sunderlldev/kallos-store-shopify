@@ -633,21 +633,21 @@
           "type": "feature",
           "settings": {
             "custom_icon": "shopify://shop_images/molecule.png",
-            "text": "<h5><strong>Ayuda a fortalecer y alargar las pestañas</strong></h5>"
+            "text": "<h5>Ayuda a fortalecer y alargar las pestañas</h5>"
           }
         },
         "feature_DWwfC6": {
           "type": "feature",
           "settings": {
             "custom_icon": "shopify://shop_images/svgviewer-png-output_1.png",
-            "text": "<h5><strong>Mejora visiblemente su apariencia</strong></h5>"
+            "text": "<h5>Mejora visiblemente su apariencia</h5>"
           }
         },
         "feature_wXcqjk": {
           "type": "feature",
           "settings": {
             "custom_icon": "shopify://shop_images/svgviewer-png-output.png",
-            "text": "<h5><strong>Fórmula suave para uso diario</strong></h5>"
+            "text": "<h5>Fórmula suave para uso diario</h5>"
           }
         }
       },
