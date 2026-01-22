@@ -94,7 +94,7 @@
         "text_gtpUaL",
         "button_fp3PEW"
       ],
-      "name": "t:names.hero",
+      "name": "Kallos · Hero",
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/BANNER_EMBAJADORES.png",
@@ -174,13 +174,13 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h2>Creadores que ya colaboran con Kallos</h2>",
+                "text": "<h2><strong>Creadores que ya colaboran con Kallos</strong></h2>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
-                "type_preset": "h2",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "2.5rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -211,7 +211,7 @@
             "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "1.125rem",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -232,7 +232,7 @@
         "group_VXTRBX",
         "text_e9jjpc"
       ],
-      "name": "t:names.custom_section",
+      "name": "Kallos · Colaboradores",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -257,8 +257,70 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 70,
-        "padding-block-end": 15
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "section_ae8eMt": {
+      "type": "section",
+      "blocks": {
+        "text_ATfaBR": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2><strong>No necesitas millones de seguidores.</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "2.5rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_ATfaBR"
+      ],
+      "name": "Kallos · Prueba Social Header",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "slideshow_VAVbWh": {
@@ -323,7 +385,7 @@
         "slide_NYtrrf",
         "slide_CHRfcY"
       ],
-      "name": "PRUEBA SOCIAL",
+      "name": "Kallos · Prueba Social",
       "settings": {
         "display_mode": "full_frame",
         "section_width": "page-width",
@@ -340,68 +402,6 @@
         "autoplay_speed": 4,
         "padding-block-start": 5,
         "padding-block-end": 15
-      }
-    },
-    "section_ae8eMt": {
-      "type": "section",
-      "blocks": {
-        "text_ATfaBR": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<h5><strong>No necesitas millones de seguidores.</strong></h5>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "1.125rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_ATfaBR"
-      ],
-      "name": "FRASE DEBAJO DE VIDEOS UGC",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
       }
     },
     "section_WrxbQ4": {
@@ -1366,8 +1366,8 @@
     "main",
     "hero_yVtfyJ",
     "section_iYn9QA",
-    "slideshow_VAVbWh",
     "section_ae8eMt",
+    "slideshow_VAVbWh",
     "section_WrxbQ4",
     "section_VkDczK",
     "176833927070cc9f83"
