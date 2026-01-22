@@ -26,11 +26,11 @@
         "text_MDPYwQ": {
           "type": "text",
           "settings": {
-            "text": "<h2>Vende productos Kallos en tu negocio</h2>",
+            "text": "<h1>Vende productos Kallos en tu negocio</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "custom",
+            "type_preset": "rte",
             "font": "var(--font-heading--family)",
             "font_size": "3rem",
             "line_height": "tight",
@@ -51,11 +51,11 @@
         "text_NPLtdt": {
           "type": "text",
           "settings": {
-            "text": "<h5>Productos dermocosméticos con alta rotación, márgenes atractivos y una marca en rápido crecimiento.</h5>",
+            "text": "<h4>Productos dermocosméticos con alta rotación, márgenes atractivos y una marca en rápido crecimiento.</h4>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "custom",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1.25rem",
             "line_height": "normal",
