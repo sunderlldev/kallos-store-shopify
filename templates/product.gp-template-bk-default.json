@@ -8,70 +8,70 @@
  * ------------------------------------------------------------
  */
 {
+  "order": [
+    "main",
+    "kallos_benefits_tK9YyD",
+    "featured_editorial_ayigfN",
+    "223466973fb9e574a1"
+  ],
   "sections": {
-    "main": {
-      "type": "product-information",
+    "223466973fb9e574a1": {
+      "block_order": [
+        "72b96e07-f83c-4321-a150-71fca32954ea"
+      ],
+      "blocks": {
+        "72b96e07-f83c-4321-a150-71fca32954ea": {
+          "settings": {
+            "type": "reviews"
+          },
+          "type": "shopify://apps/a2reviews-product-reviews/blocks/main/6a88647f-451d-4142-88de-9df2dab10243"
+        }
+      },
+      "settings": {},
+      "type": "apps"
+    },
+    "featured_editorial_ayigfN": {
+      "name": "Destacados editorial",
       "settings": {
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": true,
-        "limit_details_width": false,
-        "gap": 48,
-        "enable_sticky_add_to_cart": true,
-        "info_envio_text": "",
-        "boton_texto": "",
-        "boton_link": "",
-        "color_scheme": "",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
+        "card_bg": "#ac9651",
+        "collection": "destacados",
+        "price_weight": "400",
+        "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
+        "subtitle_weight": "400",
+        "title": "Más de nuestros productos",
+        "title_weight": "700"
+      },
+      "type": "featured-editorial"
     },
     "kallos_benefits_tK9YyD": {
-      "type": "kallos-benefits",
       "custom_css": [
         "h5 {line-height: 1.5;}"
       ],
       "name": "Kallos · Beneficios",
       "settings": {
         "image": "shopify://shop_images/mock_up.png",
-        "title": "KALLOS es ciencia aplicada",
+        "image_position": "right",
         "text": "<h5>Cada fórmula KALLOS nace del estudio profundo de ingredientes activos, combinados con precisión para ofrecer resultados visibles y cuidado consciente.</h5>",
-        "image_position": "right"
-      }
-    },
-    "featured_editorial_ayigfN": {
-      "type": "featured-editorial",
-      "name": "Destacados editorial",
-      "settings": {
-        "collection": "destacados",
-        "title": "Más de nuestros productos",
-        "title_weight": "700",
-        "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
-        "subtitle_weight": "400",
-        "price_weight": "400",
-        "card_bg": "#ac9651"
-      }
-    },
-    "223466973fb9e574a1": {
-      "type": "apps",
-      "blocks": {
-        "72b96e07-f83c-4321-a150-71fca32954ea": {
-          "type": "shopify://apps/a2reviews-product-reviews/blocks/main/6a88647f-451d-4142-88de-9df2dab10243",
-          "settings": {
-            "type": "reviews"
-          }
-        }
+        "title": "KALLOS es ciencia aplicada"
       },
-      "block_order": [
-        "72b96e07-f83c-4321-a150-71fca32954ea"
-      ],
-      "settings": {}
+      "type": "kallos-benefits"
+    },
+    "main": {
+      "settings": {
+        "boton_link": "",
+        "boton_texto": "",
+        "color_scheme": "",
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "enable_sticky_add_to_cart": true,
+        "equal_columns": true,
+        "gap": 48,
+        "info_envio_text": "",
+        "limit_details_width": false,
+        "padding-block-end": 0,
+        "padding-block-start": 0
+      },
+      "type": "product-information"
     }
-  },
-  "order": [
-    "main",
-    "kallos_benefits_tK9YyD",
-    "featured_editorial_ayigfN",
-    "223466973fb9e574a1"
-  ]
+  }
 }
