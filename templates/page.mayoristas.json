@@ -722,6 +722,7 @@
                   "type": "icon",
                   "settings": {
                     "icon": "box",
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_3.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
@@ -872,6 +873,7 @@
                   "type": "icon",
                   "settings": {
                     "icon": "truck",
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_3.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
@@ -1022,6 +1024,7 @@
                   "type": "icon",
                   "settings": {
                     "icon": "map_pin",
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_2.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
@@ -1172,6 +1175,7 @@
                   "type": "icon",
                   "settings": {
                     "icon": "star",
+                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_4.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
