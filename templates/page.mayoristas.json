@@ -100,7 +100,7 @@
       "name": "Kallos · Hero Principal",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/BANNER_MAYORISTAS.png",
+        "image_1": "shopify://shop_images/BANNER_MAYORISTAS_2adf1ffc-a3c4-4372-bce8-17a752905307.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -722,7 +722,6 @@
                   "type": "icon",
                   "settings": {
                     "icon": "box",
-                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_1.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
@@ -873,7 +872,6 @@
                   "type": "icon",
                   "settings": {
                     "icon": "truck",
-                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_3.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
@@ -1024,7 +1022,6 @@
                   "type": "icon",
                   "settings": {
                     "icon": "map_pin",
-                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_2.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
@@ -1175,7 +1172,6 @@
                   "type": "icon",
                   "settings": {
                     "icon": "star",
-                    "image_upload": "shopify://shop_images/MAYORISTAS_ICONO_4.png",
                     "width": 38,
                     "link": "",
                     "open_in_new_tab": false
@@ -1653,42 +1649,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "hulk_form_builder_form_block_rEgAeU": {
-          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
-          "settings": {
-            "form_uuid": "kt5igr0r1acYmeLrpXfRYw",
-            "form_settings": false,
-            "font_color": "#000000",
-            "size": 20,
-            "input_background_color": "#fcfcfc",
-            "input_background_color_focus": "#f2eddf",
-            "input_border_radius": 5,
-            "input_border_color": "#dac78a",
-            "input_border_color_focus": "#dac78a",
-            "input_font_color": "#fafafa",
-            "input_size": 14,
-            "border_color": "#ac9651",
-            "border_radius": 18,
-            "border": 3,
-            "fill_color": "#ebe9e9",
-            "padding": 35,
-            "form_width": 600,
-            "btn_text": "Submit",
-            "sub_btn_txt_color": "#f3f3f3",
-            "sub_btn_bg_color": "#3f3333",
-            "sub_btn_font_size": 14,
-            "sub_btn_bdr_color": "#ffffff",
-            "sub_btn_bdr_rad": 3,
-            "sub_btn_bdr_width": 1,
-            "fonts": "Arial"
-          }
         }
       },
       "block_order": [
         "text_hrPEwN",
-        "text_DLKAJE",
-        "hulk_form_builder_form_block_rEgAeU"
+        "text_DLKAJE"
       ],
       "name": "t:names.contact_form",
       "settings": {
