@@ -8,26 +8,6 @@
  * ------------------------------------------------------------
  */
 {
-  "blocks": {
-    "load_video": "Cargar video: {{ description }}",
-    "sold_out": "Agotado",
-    "email_signup": {
-      "label": "Correo electrónico",
-      "placeholder": "Dirección de correo electrónico",
-      "success": "¡Gracias por suscribirte!"
-    },
-    "filter": "Filtro",
-    "payment_methods": "Formas de pago",
-    "contact_form": {
-      "name": "Nombre",
-      "email": "Correo electrónico",
-      "phone": "Teléfono",
-      "comment": "Comentario",
-      "post_success": "Gracias por contactarnos. Te responderemos lo antes posible.",
-      "error_heading": "Realiza los ajustes siguientes:"
-    },
-    "slider_label": "Carrusel"
-  },
   "accessibility": {
     "play_model": "Reproducir el modelo 3D",
     "play_video": "Reproducir el video",
@@ -117,6 +97,47 @@
     "sort": "Ordenar",
     "show_all_options": "Mostrar todas las opciones",
     "open": "Abrir"
+  },
+  "blocks": {
+    "load_video": "Cargar video: {{ description }}",
+    "sold_out": "Agotado",
+    "email_signup": {
+      "label": "Correo electrónico",
+      "placeholder": "Dirección de correo electrónico",
+      "success": "¡Gracias por suscribirte!"
+    },
+    "filter": "Filtro",
+    "payment_methods": "Formas de pago",
+    "contact_form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "comment": "Comentario",
+      "post_success": "Gracias por contactarnos. Te responderemos lo antes posible.",
+      "error_heading": "Realiza los ajustes siguientes:"
+    },
+    "slider_label": "Carrusel"
+  },
+  "blogs": {
+    "article": {
+      "comment_author_separator": "•",
+      "comments_heading": {
+        "one": "{{ count }} comentario",
+        "other": "{{ count }} comentarios",
+        "many": "{{ count }} comentarios"
+      }
+    },
+    "comment_form": {
+      "email": "Correo electrónico",
+      "error": "No se pudo publicar el comentario. Corrige lo siguiente:",
+      "heading": "Dejar un comentario",
+      "message": "Mensaje",
+      "moderated": "Ten en cuenta que los comentarios deben aprobarse antes de que se publiquen.",
+      "name": "Nombre",
+      "post": "Publicar comentario",
+      "success_moderated": "Comentario publicado y a la espera de moderación",
+      "success": "Comentario publicado"
+    }
   },
   "content": {
     "reviews": "reseñas",
@@ -278,6 +299,9 @@
       "many": "Se agregaron {{ count }} artículos al carrito"
     }
   },
+  "fields": {
+    "separator": "a"
+  },
   "gift_cards": {
     "issued": {
       "how_to_use_gift_card": "Usar el código de la tarjeta de regalo online o el código QR en la tienda",
@@ -321,28 +345,50 @@
       "sticky_add_to_cart": "Barra de agregar rápido al carrito"
     }
   },
-  "fields": {
-    "separator": "a"
-  },
-  "blogs": {
-    "article": {
-      "comment_author_separator": "•",
-      "comments_heading": {
-        "one": "{{ count }} comentario",
-        "other": "{{ count }} comentarios",
-        "many": "{{ count }} comentarios"
-      }
+  "gempages": {
+    "Carousel": {
+      "no_slider": "No Slider"
     },
-    "comment_form": {
-      "email": "Correo electrónico",
-      "error": "No se pudo publicar el comentario. Corrige lo siguiente:",
-      "heading": "Dejar un comentario",
-      "message": "Mensaje",
-      "moderated": "Ten en cuenta que los comentarios deben aprobarse antes de que se publiquen.",
-      "name": "Nombre",
-      "post": "Publicar comentario",
-      "success_moderated": "Comentario publicado y a la espera de moderación",
-      "success": "Comentario publicado"
+    "CarouselV3": {
+      "no_slider": "No Slider"
+    },
+    "Newsletter": {
+      "err_msg_default": "Can’t send email. Please try again later.",
+      "success_msg_default": "Thanks for subscribing"
+    },
+    "IconListV2": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconList": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconListHoz": {
+      "icons_not_found": "Icons not found"
+    },
+    "Product": {
+      "product_not_found": "Product not found"
+    },
+    "ProductList": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductListV3": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductTitle": {
+      "product_not_found": "Product Not Found"
+    },
+    "ProductVariants": {
+      "please_select": "Please select an option"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>HURRY!</mark> LET BUY NOW"
+    },
+    "Breadcrumb": {
+      "home": "Home"
     }
   }
 }
