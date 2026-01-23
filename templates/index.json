@@ -54,7 +54,7 @@
       "type": "featured-editorial",
       "name": "Kallos · Productos Destacados",
       "settings": {
-        "collection": "destacados",
+        "collection": "productos-destacados",
         "title": "Lo más destacado de Kallos",
         "title_weight": "700",
         "subtitle": "Productos creados para acompañar tu rutina de cuidado y potenciar tu mejor versión.",
@@ -562,7 +562,6 @@
         "color_scheme": "scheme-3d3cdf29-9eb3-4aa2-84c6-9357ddf1a970",
         "background_media": "none",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/follics.png",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
@@ -596,7 +595,7 @@
         "feature_bUPFpR": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/ICONO_Texturas_inteligentes_5479059c-5df5-4d38-a86b-e6abe8a54294.png",
+            "icon": "shopify://shop_images/ICONO_Texturas_inteligentes_5479.png",
             "label": "Texturas inteligentes"
           }
         },
@@ -620,7 +619,7 @@
       ],
       "name": "Kallos · Beneficios",
       "settings": {
-        "image": "shopify://shop_images/Banner_Kallos_es_ciencia_cuidado.png",
+        "image": "shopify://shop_images/Banner_Kallos_es_ciencia_cuidado_597d1df0-3638-40af-b2a5-c6e301833eae.png",
         "title": "Kallos es ciencia & cuidado",
         "text": "<h4>Cada producto Kallos nace del estudio preciso de ingredientes activos, pensados para cuidar la piel y el vello de forma consciente y efectiva.</h4><h4>Desarrollados por especialistas en dermocosmética, nuestras fórmulas equilibran eficacia, tolerancia y experiencia sensorial para integrarse naturalmente a tu rutina diaria.</h4>",
         "image_position": "right"
@@ -632,21 +631,18 @@
         "feature_bHMeYN": {
           "type": "feature",
           "settings": {
-            "custom_icon": "shopify://shop_images/molecule.png",
             "text": "<h5>Ayuda a fortalecer y alargar las pestañas</h5>"
           }
         },
         "feature_DWwfC6": {
           "type": "feature",
           "settings": {
-            "custom_icon": "shopify://shop_images/svgviewer-png-output_1.png",
             "text": "<h5>Mejora visiblemente su apariencia</h5>"
           }
         },
         "feature_wXcqjk": {
           "type": "feature",
           "settings": {
-            "custom_icon": "shopify://shop_images/svgviewer-png-output.png",
             "text": "<h5>Fórmula suave para uso diario</h5>"
           }
         }
