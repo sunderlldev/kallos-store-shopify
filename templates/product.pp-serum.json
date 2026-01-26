@@ -4312,6 +4312,57 @@
         "padding-block-end": 30
       }
     },
+    "kallo_innovation_EHpHBj": {
+      "type": "kallo-innovation",
+      "blocks": {
+        "item_RnmVJd": {
+          "type": "item",
+          "settings": {
+            "heading": "¿Puedo usarlo con rímel?",
+            "text": "<h5>¡Sí! Puedes aplicar primero tu suero para pestañas y dejar que se seque; luego, utiliza tu rímel favorito para lograr un aspecto definido y llamativo.</h5>"
+          }
+        },
+        "item_6GeNd6": {
+          "type": "item",
+          "settings": {
+            "heading": "¿Puedo usarlo si tengo extensiones de pestañas?",
+            "text": "<h5>Sí, puedes usar el serum de crecimiento de pestañas con extensiones. Ayudará a nutrir y fortalecer tus pestañas naturales, lo que puede mejorar la salud de tus extensiones.</h5>"
+          }
+        },
+        "item_KiL6F3": {
+          "type": "item",
+          "settings": {
+            "heading": "¿El serum de pestañas Kallos es seguro para ojos sensibles?",
+            "text": "<h5>Nuestro serum de pestañas está formulado con ingredientes suaves, pero si tienes ojos particularmente sensibles, recomendamos realizar una prueba de parche antes de usarlo.</h5>"
+          }
+        },
+        "item_qwEhFz": {
+          "type": "item",
+          "settings": {
+            "heading": "¿Cómo se usa?",
+            "text": "<h5>Aplica una línea fina del serum en la base de las pestañas superiores, sobre la piel limpia y seca, como si fuera un delineador.</h5><h5>Úsalo una vez al día, preferiblemente por la noche, y deja que se absorba antes de aplicar otros productos.</h5><h5>Evita el contacto directo con los ojos y no es necesario aplicarlo en las pestañas inferiores.</h5><h5>La constancia es clave para notar resultados progresivos.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "item_RnmVJd",
+        "item_6GeNd6",
+        "item_KiL6F3",
+        "item_qwEhFz"
+      ],
+      "custom_css": [
+        ".kallos-innovation-wrapper.no-image-centered {grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: center;}",
+        ".no-image-centered .kallos-accordion-trigger {text-align: left;}",
+        ".no-image-centered .kallos-innovation-text h2 {text-align: center;}",
+        ".kallos-innovation-wrapper h5 {text-align: left;}",
+        "h5 {line-height: 1.5;}"
+      ],
+      "name": "Kallos · Preguntas Frecuentes",
+      "settings": {
+        "title": "Preguntas Frecuentes",
+        "image_position": "right"
+      }
+    },
     "section_fcjqhf": {
       "type": "section",
       "blocks": {
@@ -4710,7 +4761,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 45,
-        "padding-block-end": 0
+        "padding-block-end": 20
       }
     },
     "featured_editorial_ayigfN": {
@@ -4733,6 +4784,7 @@
     "section_Hm8tjC",
     "section_ekK7Kc",
     "176944373062a2c264",
+    "kallo_innovation_EHpHBj",
     "section_fcjqhf",
     "featured_editorial_ayigfN"
   ]
