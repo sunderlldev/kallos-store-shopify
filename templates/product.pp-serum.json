@@ -1971,6 +1971,612 @@
         "padding-block-end": 0
       }
     },
+    "section_jpqriD": {
+      "type": "section",
+      "blocks": {
+        "group_hDRdXJ": {
+          "type": "group",
+          "name": "Header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 100,
+            "padding-block-end": 25,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_GXEexn": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>Científicamente Probado, Dermatológicamente Testado y Seguro</h1>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_QFUNBY": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h4>El Serum de pestañas de Kallos está impulsado por ingredientes 100% naturales.</h4>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 15,
+                "padding-inline-end": 15
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_GXEexn",
+            "text_QFUNBY"
+          ]
+        },
+        "group_QkY6bC": {
+          "type": "group",
+          "name": "Contenedor Principal",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_Tef3wc": {
+              "type": "group",
+              "name": "Bloque Centrado",
+              "settings": {
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 45,
+                "width": "custom",
+                "custom_width": 80,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "group_GDDAYN": {
+                  "type": "group",
+                  "name": "Bloque Izquierdo",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fill",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "video_PFtqHP": {
+                      "type": "video",
+                      "name": "t:names.video",
+                      "settings": {
+                        "source": "uploaded",
+                        "video": "shopify://files/videos/ce8f70e010f54ae8b873b5914ffb4524.mp4",
+                        "video_url": "",
+                        "video_autoplay": true,
+                        "video_loop": true,
+                        "alt": "",
+                        "custom_width": 85,
+                        "custom_width_mobile": 90,
+                        "aspect_ratio": "auto",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 32,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "video_PFtqHP"
+                  ]
+                },
+                "group_c9g8e3": {
+                  "type": "group",
+                  "name": "Bloque Derecho",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 20,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "custom",
+                    "custom_width_mobile": 90,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "accordion_zLYTX6": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
+                      "settings": {
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "accordion_row_qj7eA8": {
+                          "type": "_accordion-row",
+                          "settings": {
+                            "heading": "Extracto de Romero",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "image_upload": "shopify://shop_images/romero.png",
+                            "width": 30
+                          },
+                          "blocks": {
+                            "text_DWBcXj": {
+                              "type": "text",
+                              "settings": {
+                                "text": "<h5>Ayuda a mantener limpia la línea de las pestañas, eliminando impurezas y preparando la zona para una mejor absorción de los activos del serum.</h5>",
+                                "width": "100%",
+                                "max_width": "none",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "text_DWBcXj"
+                          ]
+                        }
+                      },
+                      "block_order": [
+                        "accordion_row_qj7eA8"
+                      ]
+                    },
+                    "accordion_dQD4bB": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
+                      "settings": {
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "accordion_row_fePmwE": {
+                          "type": "_accordion-row",
+                          "settings": {
+                            "heading": "Ginseng",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "image_upload": "shopify://shop_images/ginseng_239339de-f510-4a00-ac98.png",
+                            "width": 30
+                          },
+                          "blocks": {
+                            "text_CxV34r": {
+                              "type": "text",
+                              "settings": {
+                                "text": "<h5>Contribuye a nutrir las pestañas y mejorar su apariencia, ayudando a que luzcan más densas, saludables y revitalizadas.</h5>",
+                                "width": "100%",
+                                "max_width": "none",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "text_CxV34r"
+                          ]
+                        }
+                      },
+                      "block_order": [
+                        "accordion_row_fePmwE"
+                      ]
+                    },
+                    "accordion_cGgeQj": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
+                      "settings": {
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "accordion_row_jcF6k4": {
+                          "type": "_accordion-row",
+                          "name": "t:names.accordion_row",
+                          "settings": {
+                            "heading": "Extracto de Magnolia",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "image_upload": "shopify://shop_images/magnolia.png",
+                            "width": 30
+                          },
+                          "blocks": {
+                            "text_Uf9QVT": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<h5>Aporta nutrientes esenciales que acompañan el ciclo natural de crecimiento, favoreciendo pestañas con aspecto más largo y lleno con el uso constante.</h5>",
+                                "width": "100%",
+                                "max_width": "none",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "text_Uf9QVT"
+                          ]
+                        }
+                      },
+                      "block_order": [
+                        "accordion_row_jcF6k4"
+                      ]
+                    },
+                    "accordion_cnXPCP": {
+                      "type": "accordion",
+                      "name": "t:names.accordion",
+                      "settings": {
+                        "icon": "plus",
+                        "dividers": true,
+                        "type_preset": "h5",
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "accordion_row_Py9dX4": {
+                          "type": "_accordion-row",
+                          "name": "t:names.accordion_row",
+                          "settings": {
+                            "heading": "Biotina",
+                            "open_by_default": false,
+                            "icon": "none",
+                            "image_upload": "shopify://shop_images/biotina.png",
+                            "width": 30
+                          },
+                          "blocks": {
+                            "text_jfiFiB": {
+                              "type": "text",
+                              "name": "t:names.text",
+                              "settings": {
+                                "text": "<h5>Ingrediente clave que ayuda a fortalecer las fibras de las pestañas, reduciendo el quiebre y mejorando su resistencia y apariencia general.</h5>",
+                                "width": "100%",
+                                "max_width": "none",
+                                "alignment": "left",
+                                "type_preset": "rte",
+                                "font": "var(--font-body--family)",
+                                "font_size": "1rem",
+                                "line_height": "normal",
+                                "letter_spacing": "normal",
+                                "case": "none",
+                                "wrap": "pretty",
+                                "color": "var(--color-foreground)",
+                                "background": false,
+                                "background_color": "#00000026",
+                                "corner_radius": 0,
+                                "padding-block-start": 0,
+                                "padding-block-end": 0,
+                                "padding-inline-start": 0,
+                                "padding-inline-end": 0
+                              },
+                              "blocks": {}
+                            }
+                          },
+                          "block_order": [
+                            "text_jfiFiB"
+                          ]
+                        }
+                      },
+                      "block_order": [
+                        "accordion_row_Py9dX4"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "accordion_zLYTX6",
+                    "accordion_dQD4bB",
+                    "accordion_cGgeQj",
+                    "accordion_cnXPCP"
+                  ]
+                }
+              },
+              "block_order": [
+                "group_GDDAYN",
+                "group_c9g8e3"
+              ]
+            }
+          },
+          "block_order": [
+            "group_Tef3wc"
+          ]
+        }
+      },
+      "block_order": [
+        "group_hDRdXJ",
+        "group_QkY6bC"
+      ],
+      "custom_css": [
+        "h5 {line-height: 1.5;}"
+      ],
+      "name": "Kallos · Transparencia",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "full-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 50
+      }
+    },
     "176944373062a2c264": {
       "type": "_blocks",
       "blocks": {
@@ -2433,6 +3039,7 @@
   },
   "order": [
     "main",
+    "section_jpqriD",
     "176944373062a2c264",
     "section_fcjqhf",
     "featured_editorial_ayigfN"
