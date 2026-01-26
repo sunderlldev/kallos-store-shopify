@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "search": {
       "type": "search-header",
@@ -22,7 +23,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "",
+            "color": "var(--color-foreground)",
             "text": "",
             "read_only": true,
             "alignment": "left",
@@ -84,14 +85,14 @@
           "static": true,
           "settings": {
             "product_card_gap": 4,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-ccfe4dfd-fb89-41f8-8b22-183df59bfcf3",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
+            "border_radius": 18,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -132,8 +133,8 @@
                 "corner_radius": 0,
                 "padding-block-start": 4,
                 "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
               },
               "blocks": {}
             },
@@ -155,8 +156,16 @@
                 "color": "var(--color-foreground)",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            },
+            "custom_liquid_6DqXKa": {
+              "type": "custom-liquid",
+              "name": "Estrellas",
+              "settings": {
+                "custom_liquid": ""
               },
               "blocks": {}
             }
@@ -164,7 +173,8 @@
           "block_order": [
             "product_card_gallery_cFExAi",
             "product_title_j7qXTx",
-            "price_fYkUgG"
+            "price_fYkUgG",
+            "custom_liquid_6DqXKa"
           ]
         }
       },
@@ -172,9 +182,11 @@
         "layout_type": "grid",
         "product_card_size": "medium",
         "mobile_product_card_size": "small",
+        "enable_infinite_scroll": true,
+        "products_per_page": 24,
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
-        "columns_gap_horizontal": 16,
+        "columns_gap_horizontal": 20,
         "columns_gap_vertical": 24,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
