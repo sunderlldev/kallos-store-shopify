@@ -165,7 +165,7 @@
               "type": "custom-liquid",
               "name": "Estrellas",
               "settings": {
-                "custom_liquid": ""
+                "custom_liquid": "<div class=\"kallos-card-stars\">\n                    {% for i in (1..5) %}\n                      <svg class=\"kallos-star\" viewBox=\"0 0 24 24\">\n                        <path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/>\n                      </svg>\n                    {% endfor %}\n                  </div>\n\n<style>\n  .kallos-card-stars {\n    margin-top: 10px;\n    display: flex;\n    gap: 1px;\n    padding: 0 20px;\n  }\n\n  .kallos-star {\n    width: 18px;\n    height: 18px;\n    fill: #ffffff;\n    flex-shrink: 0;\n  }\n</style>"
               },
               "blocks": {}
             }
@@ -181,11 +181,11 @@
       "settings": {
         "layout_type": "grid",
         "product_card_size": "medium",
-        "mobile_product_card_size": "small",
+        "mobile_product_card_size": "large",
         "enable_infinite_scroll": true,
         "products_per_page": 24,
         "product_grid_width": "centered",
-        "full_width_on_mobile": true,
+        "full_width_on_mobile": false,
         "columns_gap_horizontal": 20,
         "columns_gap_vertical": 24,
         "padding-inline-start": 0,
