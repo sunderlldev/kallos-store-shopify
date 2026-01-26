@@ -2416,19 +2416,6 @@
         "padding-block-end": 0
       }
     },
-    "kallos_benefits_tK9YyD": {
-      "type": "kallos-benefits",
-      "custom_css": [
-        "h5 {line-height: 1.5;}"
-      ],
-      "name": "Kallos · Beneficios",
-      "settings": {
-        "image": "shopify://shop_images/mock_up.png",
-        "title": "KALLOS es ciencia aplicada",
-        "text": "<h5>Cada fórmula KALLOS nace del estudio profundo de ingredientes activos, combinados con precisión para ofrecer resultados visibles y cuidado consciente.</h5>",
-        "image_position": "right"
-      }
-    },
     "featured_editorial_ayigfN": {
       "type": "featured-editorial",
       "name": "Kallos · Productos Destacados",
@@ -2447,7 +2434,6 @@
     "main",
     "176944373062a2c264",
     "section_fcjqhf",
-    "kallos_benefits_tK9YyD",
     "featured_editorial_ayigfN"
   ]
 }
