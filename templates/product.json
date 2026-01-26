@@ -147,7 +147,7 @@
                   "type": "text",
                   "name": "Detalle del Producto",
                   "settings": {
-                    "text": "",
+                    "text": "<h6>{{ closest.product.metafields.custom.detalle.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -199,7 +199,7 @@
                   "type": "text",
                   "name": "Contenido del Producto",
                   "settings": {
-                    "text": "<h6><strong>Contenido:</strong> </h6>",
+                    "text": "<h6><strong>Contenido:</strong> {{ closest.product.metafields.custom.contenido.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
