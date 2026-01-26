@@ -4013,6 +4013,57 @@
         "padding-block-end": 30
       }
     },
+    "kallo_innovation_Qjj6jX": {
+      "type": "kallo-innovation",
+      "blocks": {
+        "item_C9qGTa": {
+          "type": "item",
+          "settings": {
+            "heading": "Mi piel es sensible, ¿Aún así lo puedo usar?",
+            "text": "<h5>Sí. Nuestra fórmula ha sido diseñada con activos de alta tolerancia dermatológica, libre de alcohol y parabenos, ideal incluso para pieles sensibles.</h5><h5>Sin embargo, si tienes antecedentes clínicos de hipersensibilidad, te recomendamos realizar una prueba de parche o consultar con tu dermatólogo antes del uso.</h5>"
+          }
+        },
+        "item_6wRrif": {
+          "type": "item",
+          "settings": {
+            "heading": "¿En cuánto tiempo veré resultados?",
+            "text": "<h5>La mayoría de nuestros clientes nota los primeros signos visibles a partir de la 3ª semana de uso continuo.<br/><br/>Para un resultado completo (barba más densa y uniforme), recomendamos un tratamiento de 3 a 6 meses, dependiendo del perfil genético y la constancia en la aplicación.<br/><br/>La constancia es clave: nuestro enfoque no es milagroso, es progresivo y respaldado por ciencia.</h5>"
+          }
+        },
+        "item_i3XbEi": {
+          "type": "item",
+          "settings": {
+            "heading": "¿Debo rasurarme o puedo dejar crecer la barba?",
+            "text": "<h5>No es necesario rasurarse completamente, pero es fundamental que la crema tenga contacto directo con la piel para estimular correctamente los folículos.<br/><br/>Si tienes una barba muy densa, recomendamos rebajarla ligeramente para asegurar la absorción de los activos en la zona deseada.</h5>"
+          }
+        },
+        "item_H9JGkT": {
+          "type": "item",
+          "settings": {
+            "heading": "¿Cómo lo uso?",
+            "text": "<h5>Aplica una <strong>pequeña cantidad</strong> de Minoxidil en crema sobre las cejas <strong>limpias y secas</strong>, una o dos veces al día según recomendación. Distribuye suavemente siguiendo la forma natural de la ceja, evitando el contacto con los ojos.</h5><h5>Deja actuar el producto y evita lavar la zona durante las siguientes horas para una mejor absorción. La constancia es clave para apreciar resultados progresivos.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "item_C9qGTa",
+        "item_6wRrif",
+        "item_i3XbEi",
+        "item_H9JGkT"
+      ],
+      "custom_css": [
+        ".kallos-innovation-wrapper.no-image-centered {grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: center;}",
+        ".no-image-centered .kallos-accordion-trigger {text-align: left;}",
+        ".no-image-centered .kallos-innovation-text h2 {text-align: center;}",
+        ".kallos-innovation-wrapper p {text-align: left;}",
+        "h5 {line-height: 1.5;}"
+      ],
+      "name": "Kallos · Preguntas Frecuentes",
+      "settings": {
+        "title": "Preguntas Frecuentes",
+        "image_position": "right"
+      }
+    },
     "section_fcjqhf": {
       "type": "section",
       "blocks": {
@@ -4434,6 +4485,7 @@
     "section_PnQQC9",
     "section_k8Tind",
     "176944373062a2c264",
+    "kallo_innovation_Qjj6jX",
     "section_fcjqhf",
     "featured_editorial_ayigfN"
   ]
