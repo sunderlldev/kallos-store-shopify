@@ -147,7 +147,7 @@
                   "type": "text",
                   "name": "Detalle del Producto",
                   "settings": {
-                    "text": "",
+                    "text": "<h6>{{ closest.product.metafields.custom.detalle.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -173,7 +173,7 @@
                   "type": "text",
                   "name": "Descripción del Producto",
                   "settings": {
-                    "text": "<p>{{ closest.product.description }}</p>",
+                    "text": "{{ closest.product.description }}",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -199,7 +199,7 @@
                   "type": "text",
                   "name": "Contenido del Producto",
                   "settings": {
-                    "text": "<h6><strong>Contenido:</strong> </h6>",
+                    "text": "<h6><strong>Contenido:</strong> {{ closest.product.metafields.custom.contenido.value }}</h6>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1066,7 +1066,7 @@
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
-                        "image": "shopify://shop_images/BEST_SELLER_FOLLICS_a376f83e-775f-497f-b731-449bbb131da1.png",
+                        "image": "{{ closest.product.metafields.custom.imagen_bestseller.value }}",
                         "link": "",
                         "image_ratio": "landscape",
                         "width": "fill",
@@ -1134,7 +1134,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h2><strong>Prueba nuestro bestseller</strong></h2>",
+                        "text": "<h2><strong>{{ closest.product.metafields.custom.titulo_bestseller.value }}</strong></h2>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1160,7 +1160,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<h5>Minoxidil en crema. Nuestra fórmula más elegida, diseñada para estimular el crecimiento del vello e integrarse fácilmente a tu rutina.</h5>",
+                        "text": "<h5>{{ closest.product.metafields.custom.descripcion_bestseller | metafield_tag }}</h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1253,7 +1253,7 @@
                             "overlay_color": "#000000",
                             "overlay_style": "solid",
                             "gradient_direction": "to top",
-                            "link": "shopify://collections/minoxidil-en-crema",
+                            "link": "{{ closest.product.metafields.custom.url_bestseller.value }}",
                             "open_in_new_tab": false,
                             "placeholder": "",
                             "padding-block-start": 10,
@@ -1266,7 +1266,7 @@
                               "type": "text",
                               "name": "t:names.text",
                               "settings": {
-                                "text": "<p><strong>Ver Cremas</strong></p>",
+                                "text": "<p><strong>{{ closest.product.metafields.custom.titulo_boton_bestseller.value }}</strong></p>",
                                 "width": "fit-content",
                                 "max_width": "normal",
                                 "alignment": "left",
