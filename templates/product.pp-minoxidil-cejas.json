@@ -113,7 +113,7 @@
                   "type": "custom-liquid",
                   "name": "t:names.custom_liquid",
                   "settings": {
-                    "custom_liquid": "{%- liquid\n  assign rating_value = product.metafields.reviews.rating.value.rating | default: 5.0 | plus: 0.0\n-%}\n\n<div class=\"kallos-pill-container\">\n  <div class=\"kallos-pill-main\">\n    \n    <div class=\"kallos-pill-icon-circle\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0790/9497/2665/files/fireIcon.png?v=1768506873\" alt=\"Fire Icon\" width=\"18\" height=\"18\">\n    </div>\n\n    <div class=\"kallos-pill-content\">\n      <span class=\"kallos-pill-text\">+10.000 clientes KALLOS ·</span>\n      \n      <div class=\"kallos-pill-stars\">\n        {%- for i in (1..5) -%}\n          {%- liquid\n            assign star_limit = i | plus: 0.0\n            assign prev_limit = star_limit | minus: 1.0\n            \n            assign fill_id = \"\"\n            if rating_value >= star_limit\n              assign fill_color = \"#AC9651\"\n            elsif rating_value > prev_limit\n              assign fill_color = \"url(#half-gold-\" | append: i | append: \")\"\n              assign fill_id = i\n            else\n              assign fill_color = \"#d1d1d1\"\n            endif\n          -%}\n          \n          <svg class=\"kallos-star-svg\" viewBox=\"0 0 24 24\" style=\"fill: {{ fill_color }};\">\n            {%- if fill_id != \"\" -%}\n              <defs>\n                <linearGradient id=\"half-gold-{{ fill_id }}\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n                  <stop offset=\"50%\" stop-color=\"#AC9651\"/>\n                  <stop offset=\"50%\" stop-color=\"#d1d1d1\"/>\n                </linearGradient>\n              </defs>\n            {%- endif -%}\n            <path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/>\n          </svg>\n        {%- endfor %}\n      </div>\n\n      <span class=\"kallos-pill-rating-num\">{{ rating_value | round: 1 }} / 5</span>\n    </div>\n  </div>\n</div>\n\n<style>\n  .kallos-pill-container { margin: 0; width: 100%; display: block; }\n  .kallos-pill-main {\n    background-color: #AC96511B;\n    border-radius: 50px;\n    padding: 6px 14px;\n    display: inline-flex;\n    align-items: center;\n    box-shadow: 0 2px 8px rgba(0,0,0,0.04);\n    box-sizing: border-box;\n    max-width: 100%;\n  }\n  .kallos-pill-icon-circle {\n    background-color: #fff;\n    border-radius: 50%;\n    width: 28px;\n    height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 12px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.08);\n    flex-shrink: 0;\n  }\n  .kallos-pill-icon-circle img { width: 18px; height: 18px; object-fit: contain; }\n  .kallos-pill-content { display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; }\n  .kallos-pill-text { font-size: 12px; font-weight: 500; color: #111; white-space: nowrap; }\n  .kallos-pill-stars { display: flex; gap: 2px; align-items: center; height: 14px; }\n  .kallos-star-svg { width: 14px; height: 14px; display: block; }\n  .kallos-pill-rating-num { font-size: 12px; font-weight: 600; color: #111; margin-left: 2px; }\n  \n  @media screen and (max-width: 480px) {\n    .kallos-pill-main { padding: 5px 10px; }\n    .kallos-pill-text { font-size: 11px; }\n    .kallos-pill-content { gap: 5px; }\n  }\n</style>"
+                    "custom_liquid": "{%- liquid\n  assign rating_value = product.metafields.reviews.rating.value.rating | default: 5.0 | plus: 0.0\n-%}\n\n<div class=\"kallos-pill-container\">\n  <div class=\"kallos-pill-main\">\n    \n    <div class=\"kallos-pill-icon-circle\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0656/6333/6536/files/fireIcon.png?v=1769448752\" alt=\"Fire Icon\" width=\"18\" height=\"18\">\n    </div>\n\n    <div class=\"kallos-pill-content\">\n      <span class=\"kallos-pill-text\">+10.000 clientes KALLOS ·</span>\n      \n      <div class=\"kallos-pill-stars\">\n        {%- for i in (1..5) -%}\n          {%- liquid\n            assign star_limit = i | plus: 0.0\n            assign prev_limit = star_limit | minus: 1.0\n            \n            assign fill_id = \"\"\n            if rating_value >= star_limit\n              assign fill_color = \"#AC9651\"\n            elsif rating_value > prev_limit\n              assign fill_color = \"url(#half-gold-\" | append: i | append: \")\"\n              assign fill_id = i\n            else\n              assign fill_color = \"#d1d1d1\"\n            endif\n          -%}\n          \n          <svg class=\"kallos-star-svg\" viewBox=\"0 0 24 24\" style=\"fill: {{ fill_color }};\">\n            {%- if fill_id != \"\" -%}\n              <defs>\n                <linearGradient id=\"half-gold-{{ fill_id }}\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n                  <stop offset=\"50%\" stop-color=\"#AC9651\"/>\n                  <stop offset=\"50%\" stop-color=\"#d1d1d1\"/>\n                </linearGradient>\n              </defs>\n            {%- endif -%}\n            <path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/>\n          </svg>\n        {%- endfor %}\n      </div>\n\n      <span class=\"kallos-pill-rating-num\">{{ rating_value | round: 1 }} / 5</span>\n    </div>\n  </div>\n</div>\n\n<style>\n  .kallos-pill-container { margin: 0; width: 100%; display: block; }\n  .kallos-pill-main {\n    background-color: #AC96511B;\n    border-radius: 50px;\n    padding: 6px 14px;\n    display: inline-flex;\n    align-items: center;\n    box-shadow: 0 2px 8px rgba(0,0,0,0.04);\n    box-sizing: border-box;\n    max-width: 100%;\n  }\n  .kallos-pill-icon-circle {\n    background-color: #fff;\n    border-radius: 50%;\n    width: 28px;\n    height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 12px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.08);\n    flex-shrink: 0;\n  }\n  .kallos-pill-icon-circle img { width: 18px; height: 18px; object-fit: contain; }\n  .kallos-pill-content { display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; }\n  .kallos-pill-text { font-size: 12px; font-weight: 500; color: #111; white-space: nowrap; }\n  .kallos-pill-stars { display: flex; gap: 2px; align-items: center; height: 14px; }\n  .kallos-star-svg { width: 14px; height: 14px; display: block; }\n  .kallos-pill-rating-num { font-size: 12px; font-weight: 600; color: #111; margin-left: 2px; }\n  \n  @media screen and (max-width: 480px) {\n    .kallos-pill-main { padding: 5px 10px; }\n    .kallos-pill-text { font-size: 11px; }\n    .kallos-pill-content { gap: 5px; }\n  }\n</style>"
                   },
                   "blocks": {}
                 },
@@ -3777,10 +3777,10 @@
         "padding-block-end": 75
       }
     },
-    "section_Q7Xfia": {
+    "section_FBkf9T": {
       "type": "section",
       "blocks": {
-        "group_YAf7XV": {
+        "group_NN7PnK": {
           "type": "group",
           "name": "Header",
           "settings": {
@@ -3820,7 +3820,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_jFhecE": {
+            "group_nqtk9a": {
               "type": "group",
               "name": "Contenedor Principal",
               "settings": {
@@ -3860,7 +3860,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_HGYRFP": {
+                "text_xww3hP": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
@@ -3886,7 +3886,7 @@
                   },
                   "blocks": {}
                 },
-                "text_Bf3rjh": {
+                "text_ahGmPr": {
                   "type": "text",
                   "name": "Descripción",
                   "settings": {
@@ -3914,27 +3914,27 @@
                 }
               },
               "block_order": [
-                "text_HGYRFP",
-                "text_Bf3rjh"
+                "text_xww3hP",
+                "text_ahGmPr"
               ]
             }
           },
           "block_order": [
-            "group_jFhecE"
+            "group_nqtk9a"
           ]
         },
-        "custom_liquid_FUPnw8": {
+        "custom_liquid_Vm6ViP": {
           "type": "custom-liquid",
           "name": "Follics Vs Otros",
           "settings": {
-            "custom_liquid": "<div class=\"kallos-comparison-full\">\n  <div class=\"kallos-table-wrapper\">\n    <table class=\"kallos-table\">\n      <thead>\n        <tr>\n          <th class=\"empty-cell\"></th>\n          <th class=\"col-featured\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container main-img\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0790/9497/2665/files/MOCKUP_FOLLICS_1_PARA_COMPARATIVA.png?v=1768926053\" alt=\"Kallos\">\n              </div>\n              <h5 class=\"table-header-title\">FOLLICS By Kallos</h5>\n            </div>\n          </th>\n          <th class=\"col-others\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0790/9497/2665/files/MOCKUP_FOLLICS_PARA_COMPARATIVA.png?v=1768926052\" alt=\"Others\" class=\"img-others\">\n              </div>\n              <h5 class=\"table-header-title\">OTROS</h5>\n            </div>\n          </th>\n        </tr>\n      </thead>\n      <tbody>\n        {% assign features = \"Minoxidil 5%,Base en crema ligera,Rápida absorción,No deja sensación grasosa,Incluye activos naturales,Irritación y resequedad\" | split: \",\" %}\n        {% for feature in features %}\n        <tr class=\"comparison-row\">\n          <td class=\"feature-label\"><h5>{{ feature }}</h5></td>\n\n          <td class=\"cell-featured\">\n            <div class=\"icon-container\">\n              <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n            </div>\n          </td>\n\n          <td class=\"cell-others\">\n            <div class=\"icon-container\">\n              {% if forloop.first or forloop.last %}\n                <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n              {% else %}\n                <img src=\"https://forchics.com/cdn/shop/files/cancel_1.webp?v=1707502858\" class=\"status-icon\">\n              {% endif %}\n            </div>\n          </td>\n        </tr>\n        {% endfor %}\n      </tbody>\n    </table>\n  </div>\n</div>\n\n<style>\n.kallos-comparison-full {\n  width: 100%;\n  max-width: 900px;\n  margin: 0 auto;\n  --main-accent: #AC9651;\n  --row-bg: #c0b67c;\n}\n\n.kallos-table-wrapper {\n  width: 100%;\n  padding-top: 110px;\n}\n\n.kallos-table {\n  width: 100%;\n  border-collapse: collapse;\n  table-layout: fixed;\n}\n\n.badge-wrapper {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  min-height: 60px;\n}\n\n.img-container {\n  position: absolute;\n  bottom: 45px;\n  display: flex;\n  justify-content: center;\n  width: 100%;\n  z-index: 10;\n}\n\n.main-img img { width: 86px; height: 72px; }\n.img-others { width: 46px; height: 72px; }\n\n.kallos-table h5 {\n  margin: 0;\n  font-weight: 700;\n  line-height: 1.2;\n  font-size: 14px;\n}\n\n.table-header-title {\n  padding: 12px 0;\n  font-size: 1.05em;\n  font-weight: 800;\n  text-align: center;\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n\n.col-featured {\n  background: var(--main-accent);\n  border-radius: 20px 20px 0 0;\n  color: white;\n}\n\n.col-others {\n  color: black;\n}\n\n.empty-cell { width: 32%; }\n\n.kallos-table td {\n  padding: 15px 10px;\n  border: none;\n}\n\n.comparison-row:first-child .feature-label { border-radius: 15px 0 0 0; }\n.comparison-row:last-child .feature-label { border-radius: 0 0 0 15px; }\n.comparison-row:first-child .cell-others { border-radius: 0 15px 0 0; }\n.comparison-row:last-child .cell-others { border-radius: 0 0 15px 0; }\n\n.feature-label {\n  background: var(--row-bg);\n  color: white;\n  text-align: left;\n  padding-left: 22px;\n  width: 52%;\n}\n\n.cell-featured {\n  background: var(--main-accent);\n  width: 24%;\n}\n\n.cell-others {\n  background: var(--row-bg);\n  width: 24%;\n}\n\n.icon-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.status-icon {\n  width: 16px;\n  height: 16px;\n  filter: brightness(0) invert(1);\n}\n\n@media screen and (min-width: 769px) {\n  .kallos-comparison-full {\n    width: 75%;\n  }\n}\n\n@media screen and (max-width: 768px) {\n  .kallos-comparison-full {\n    width: 100%;\n    padding: 0 10px;\n  }\n  .kallos-table-wrapper { padding-top: 80px; }\n  .main-img img { width: 76px; height: 62px; }\n  .img-others { width: 42px; height: 68px; }\n  .table-header-title { font-size: 13px; }\n  .kallos-table h5 { \n  font-size: 11px;\n}\n  .table-header-title {   \n    width: 80%;\n}\n}\n</style>"
+            "custom_liquid": "<div class=\"kallos-comparison-full\">\n  <div class=\"kallos-table-wrapper\">\n    <table class=\"kallos-table\">\n      <thead>\n        <tr>\n          <th class=\"empty-cell\"></th>\n          <th class=\"col-featured\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container main-img\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0656/6333/6536/files/MOCKUP_FOLLICS_1_PARA_COMPARATIVA.png?v=1769448591\" alt=\"Kallos\">\n              </div>\n              <h5 class=\"table-header-title\">FOLLICS By Kallos</h5>\n            </div>\n          </th>\n          <th class=\"col-others\">\n            <div class=\"badge-wrapper\">\n              <div class=\"img-container\">\n                <img src=\"https://cdn.shopify.com/s/files/1/0656/6333/6536/files/MOCKUP_FOLLICS_PARA_COMPARATIVA.png?v=1769448590\" alt=\"Others\" class=\"img-others\">\n              </div>\n              <h5 class=\"table-header-title\">OTROS</h5>\n            </div>\n          </th>\n        </tr>\n      </thead>\n      <tbody>\n        {% assign features = \"Minoxidil 5%,Base en crema ligera,Rápida absorción,No deja sensación grasosa,Incluye activos naturales,Irritación y resequedad\" | split: \",\" %}\n        {% for feature in features %}\n        <tr class=\"comparison-row\">\n          <td class=\"feature-label\"><h5>{{ feature }}</h5></td>\n\n          <td class=\"cell-featured\">\n            <div class=\"icon-container\">\n              <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n            </div>\n          </td>\n\n          <td class=\"cell-others\">\n            <div class=\"icon-container\">\n              {% if forloop.first or forloop.last %}\n                <img src=\"https://forchics.com/cdn/shop/files/checked_1.webp?v=1707502828\" class=\"status-icon\">\n              {% else %}\n                <img src=\"https://forchics.com/cdn/shop/files/cancel_1.webp?v=1707502858\" class=\"status-icon\">\n              {% endif %}\n            </div>\n          </td>\n        </tr>\n        {% endfor %}\n      </tbody>\n    </table>\n  </div>\n</div>\n\n<style>\n.kallos-comparison-full {\n  width: 100%;\n  max-width: 900px;\n  margin: 0 auto;\n  --main-accent: #AC9651;\n  --row-bg: #c0b67c;\n}\n\n.kallos-table-wrapper {\n  width: 100%;\n  padding-top: 110px;\n}\n\n.kallos-table {\n  width: 100%;\n  border-collapse: collapse;\n  table-layout: fixed;\n}\n\n.badge-wrapper {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  min-height: 60px;\n}\n\n.img-container {\n  position: absolute;\n  bottom: 45px;\n  display: flex;\n  justify-content: center;\n  width: 100%;\n  z-index: 10;\n}\n\n.main-img img { width: 86px; height: 72px; }\n.img-others { width: 46px; height: 72px; }\n\n.kallos-table h5 {\n  margin: 0;\n  font-weight: 700;\n  line-height: 1.2;\n  font-size: 14px;\n}\n\n.table-header-title {\n  padding: 12px 0;\n  font-size: 1.05em;\n  font-weight: 800;\n  text-align: center;\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n\n.col-featured {\n  background: var(--main-accent);\n  border-radius: 20px 20px 0 0;\n  color: white;\n}\n\n.col-others {\n  color: black;\n}\n\n.empty-cell { width: 32%; }\n\n.kallos-table td {\n  padding: 15px 10px;\n  border: none;\n}\n\n.comparison-row:first-child .feature-label { border-radius: 15px 0 0 0; }\n.comparison-row:last-child .feature-label { border-radius: 0 0 0 15px; }\n.comparison-row:first-child .cell-others { border-radius: 0 15px 0 0; }\n.comparison-row:last-child .cell-others { border-radius: 0 0 15px 0; }\n\n.feature-label {\n  background: var(--row-bg);\n  color: white;\n  text-align: left;\n  padding-left: 22px;\n  width: 52%;\n}\n\n.cell-featured {\n  background: var(--main-accent);\n  width: 24%;\n}\n\n.cell-others {\n  background: var(--row-bg);\n  width: 24%;\n}\n\n.icon-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.status-icon {\n  width: 16px;\n  height: 16px;\n  filter: brightness(0) invert(1);\n}\n\n@media screen and (min-width: 769px) {\n  .kallos-comparison-full {\n    width: 75%;\n  }\n}\n\n@media screen and (max-width: 768px) {\n  .kallos-comparison-full {\n    width: 100%;\n    padding: 0 10px;\n  }\n  .kallos-table-wrapper { padding-top: 80px; }\n  .main-img img { width: 76px; height: 62px; }\n  .img-others { width: 42px; height: 68px; }\n  .table-header-title { font-size: 13px; }\n  .kallos-table h5 { \n  font-size: 11px;\n}\n  .table-header-title {   \n    width: 80%;\n}\n}\n</style>"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "group_YAf7XV",
-        "custom_liquid_FUPnw8"
+        "group_NN7PnK",
+        "custom_liquid_Vm6ViP"
       ],
       "custom_css": [
         "h5 {line-height: 1.5;}"
@@ -4432,7 +4432,7 @@
     "main",
     "kallo_innovation_hAKtMq",
     "section_AkkBzg",
-    "section_Q7Xfia",
+    "section_FBkf9T",
     "176944373062a2c264",
     "section_fcjqhf",
     "featured_editorial_ayigfN"
