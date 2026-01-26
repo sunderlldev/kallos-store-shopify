@@ -1971,6 +1971,55 @@
         "padding-block-end": 0
       }
     },
+    "kallo_innovation_hAmX3g": {
+      "type": "kallo-innovation",
+      "blocks": {
+        "item_VhhgWe": {
+          "type": "item",
+          "settings": {
+            "heading": "Minoxidil 5%",
+            "text": "<h5>Activo principal de la fórmula, reconocido por estimular el crecimiento del vello y favorecer un desarrollo progresivo con el uso constante.</h5>"
+          }
+        },
+        "item_4EGytz": {
+          "type": "item",
+          "settings": {
+            "heading": "Biotina, aminoácidos y queratina",
+            "text": "<h5>Complejo fortalecedor que ayuda a mejorar la estructura y resistencia del vello, contribuyendo a una apariencia más uniforme y cuidada.</h5>"
+          }
+        },
+        "item_yh87ey": {
+          "type": "item",
+          "settings": {
+            "heading": "Cafeína y extractos botánicos",
+            "text": "<h5>Combinación de cafeína con extractos de bergamota y romero que estimula el folículo y cuida la piel, aportando frescura y confort durante la aplicación.</h5>"
+          }
+        },
+        "item_EfJQeH": {
+          "type": "item",
+          "settings": {
+            "heading": "Vitamina E",
+            "text": "<h5>Activo antioxidante que protege y nutre la piel, ayudando a mantenerla en buenas condiciones para el uso diario del producto.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "item_VhhgWe",
+        "item_4EGytz",
+        "item_yh87ey",
+        "item_EfJQeH"
+      ],
+      "custom_css": [
+        ".kallos-innovation {margin-top: 50px;}",
+        "h5 {line-height: 1.3;}"
+      ],
+      "name": "Kallos · Innovación",
+      "settings": {
+        "title": "Activos principales",
+        "image": "shopify://shop_images/Banner_Kallos_es_ciencia_cuidado_b8fafeba-4c03-475e-8f6c-24099e0e98f9.png",
+        "image_position": "right"
+      }
+    },
     "176944373062a2c264": {
       "type": "_blocks",
       "blocks": {
@@ -2433,6 +2482,7 @@
   },
   "order": [
     "main",
+    "kallo_innovation_hAmX3g",
     "176944373062a2c264",
     "section_fcjqhf",
     "featured_editorial_ayigfN"
