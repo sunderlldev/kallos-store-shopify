@@ -1455,6 +1455,18 @@
                 "accordion_row_xbEbmU",
                 "accordion_row_wwCyLi"
               ]
+            },
+            "divider_d3j7Ap": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 0.5,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -1463,14 +1475,15 @@
             "group_Y7iwtY",
             "group_Q9yFyJ",
             "group_Ci7aMD",
-            "accordion_fADwgx"
+            "accordion_fADwgx",
+            "divider_d3j7Ap"
           ]
         }
       },
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
+        "equal_columns": true,
         "limit_details_width": false,
         "gap": 48,
         "enable_sticky_add_to_cart": false,
