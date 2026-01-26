@@ -18,7 +18,7 @@
           "settings": {
             "title": "Carrito",
             "show_count": false,
-            "type_preset": "h3",
+            "type_preset": "h1",
             "alignment": "left",
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -73,7 +73,7 @@
       ],
       "name": "Kallos · Beneficios",
       "settings": {
-        "image": "shopify://shop_images/adds-11.png",
+        "image": "shopify://shop_images/Banner_Kallos_es_ciencia_cuidado_b8fafeba-4c03-475e-8f6c-24099e0e98f9.png",
         "title": "KALLOS es ciencia aplicada",
         "text": "<p>Cada fórmula KALLOS nace del estudio profundo de ingredientes activos, combinados con precisión para ofrecer resultados visibles y cuidado consciente.</p>",
         "image_position": "left"
